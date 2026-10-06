@@ -3,10 +3,11 @@ import os, json, re, datetime as dt, hashlib, time
 from urllib.parse import urlparse
 import feedparser, requests
 
-OUT="data/events.json"; TODAY=dt.date.today().isoformat()
-KEEP_DAYS=45; MAX_ITEMS=100; SOCIAL_MAX=40
+OUT="data/events.json"; QUEUE="data/source_queue.json"; TODAY=dt.date.today().isoformat()
+KEEP_DAYS=45; QUEUE_DAYS=2; MAX_ITEMS=100; SOCIAL_MAX=40; PROCESS_MAX_ITEMS=80
 MODEL=os.environ.get("MODEL","gemini-2.5-flash-lite")
 API_KEY=os.environ.get("GEMINI_API_KEY","")
+RUN_MODE=os.environ.get("RUN_MODE","process")
 
 FEEDS=[
  "https://news.google.com/rss/search?q=Tigray+when:2d&hl=en-US&gl=US&ceid=US:en",
@@ -102,7 +103,7 @@ Summaries must be neutral and attribute disputed claims such as "TPF says...".
 Items:
 {items}"""
 
-def extract_with_gemini(items):
+def extract_with_gemini(items, existing=None):
     if not items or not API_KEY:
         if not API_KEY: print("GEMINI_API_KEY missing; using deterministic fallback.")
         return []
@@ -115,7 +116,7 @@ def extract_with_gemini(items):
         "kind":{"type":"STRING"},"summary":{"type":"STRING"},"attribution":{"type":"STRING"},
         "items":{"type":"ARRAY","items":{"type":"INTEGER"}}},
         "required":["key","place","date","kind","summary","attribution","items"]}}
-    body={"contents":[{"parts":[{"text":PROMPT.format(today=TODAY,places=", ".join(PLACES),items=listing)}]}],
+    body={"contents":[{"parts":[{"text":PROMPT.format(today=TODAY,places=", ".join(PLACES),existing="\n".join(f"- {e.get('key','')} | {e.get('date','')} | {e.get('place','')} | {e.get('summary','')}" for e in (existing or [])[:30]) or "(none)",items=listing)}]}],
           "generationConfig":{"responseMimeType":"application/json","responseSchema":schema,
                               "temperature":0.1,"maxOutputTokens":5000}}
     url=f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
@@ -207,25 +208,54 @@ def deterministic_fallback(items):
             "items":[i]},items)
     return db
 
-def main():
-    if os.path.exists(OUT):
-        with open(OUT,encoding="utf-8") as f: old={e["key"]:e for e in json.load(f).get("events",[])}
-    else: old={}
-    items=gather(); candidates=extract_with_gemini(items); fresh={}
-    if candidates:
-        for n in candidates:
-            if isinstance(n,dict):
-                key=str(n.get("key","")).strip()
-                if key: finalize_event(fresh,key,n,items)
-        print("Gemini candidate events:",len(fresh))
-    else:
-        print("Using deterministic event fallback."); fresh=deterministic_fallback(items)
+def load_json(path, default):
+    if not os.path.exists(path): return default
+    try:
+        with open(path,encoding="utf-8") as f: return json.load(f)
+    except Exception as ex:
+        print("Could not read",path,ex); return default
+
+def save_queue(items):
+    queue=load_json(QUEUE, [])
+    urls={x.get("url") for x in queue}
+    for item in items:
+        if item.get("url") and item["url"] not in urls:
+            item=dict(item); item["processed"]=False
+            queue.append(item); urls.add(item["url"])
+    queue=queue[-500:]
+    with open(QUEUE,"w",encoding="utf-8") as f: json.dump(queue,f,indent=1,ensure_ascii=False)
+    print("queue saved:",len(queue),"unprocessed:",sum(not x.get("processed") for x in queue))
+
+def process_queue():
+    queue=load_json(QUEUE, [])
+    pending=[x for x in queue if not x.get("processed")][:PROCESS_MAX_ITEMS]
+    if not pending:
+        print("No new source items; Gemini skipped."); return
+    data=load_json(OUT, {"events":[]})
+    db={e["key"]:e for e in data.get("events",[]) if e.get("key")}
+    candidates=extract_with_gemini(pending,list(db.values()))
+    if not candidates:
+        print("Gemini did not return events; queue remains for retry."); return
+    for n in candidates:
+        if isinstance(n,dict):
+            key=str(n.get("key","")).strip()
+            if key: finalize_event(db,key,n,pending)
+    now=dt.datetime.now(dt.timezone.utc).isoformat()
+    for item in pending:
+        item["processed"]=True; item["processed_at"]=now
     cutoff=(dt.date.today()-dt.timedelta(days=KEEP_DAYS)).isoformat()
-    db={k:v for k,v in old.items() if v.get("manual") or v.get("last_seen",TODAY)>=cutoff}
-    db.update(fresh)
-    events=list(db.values()); events.sort(key=lambda e:(e.get("date",""),e.get("last_seen","")),reverse=True)
-    with open(OUT,"w",encoding="utf-8") as f:
-        json.dump({"updated":dt.datetime.now(dt.timezone.utc).isoformat(),"events":events},f,indent=1,ensure_ascii=False)
-    print("events saved:",len(events))
+    db={k:v for k,v in db.items() if v.get("manual") or v.get("last_seen",TODAY)>=cutoff}
+    events=sorted(db.values(),key=lambda e:(e.get("date",""),e.get("last_seen","")),reverse=True)
+    with open(OUT,"w",encoding="utf-8") as f: json.dump({"updated":now,"events":events},f,indent=1,ensure_ascii=False)
+    with open(QUEUE,"w",encoding="utf-8") as f: json.dump(queue,f,indent=1,ensure_ascii=False)
+    print("Gemini events processed:",len(candidates),"events saved:",len(events))
+
+def main():
+    if RUN_MODE=="collect":
+        save_queue(gather())
+    elif RUN_MODE=="process":
+        process_queue()
+    else:
+        raise SystemExit(f"Unknown RUN_MODE: {RUN_MODE}")
 
 if __name__=="__main__": main()
