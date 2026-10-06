@@ -28,9 +28,6 @@ jobs:
         run: pip install -r requirements.txt
       - name: Collect and process OSINT
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          MODEL: ${{ vars.MODEL }}
-          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           REDDIT_USER_AGENT: ${{ vars.REDDIT_USER_AGENT }}
