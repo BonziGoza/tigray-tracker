@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tigray OSINT Tracker</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+body{margin:0;font:15px/1.45 system-ui,sans-serif;color:#1b1f24;background:#f2f4f6}
+header{padding:12px 16px;background:#1b2733;color:#fff}header h1{margin:0;font-size:18px}header div{font-size:12px;opacity:.75}
+main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 62px)}
+#map{height:100%}#side{overflow:auto;background:#fff;border-left:1px solid #d5d9de;padding:10px}
+.f{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}.f button{border:1px solid #9aa4ae;background:#fff;border-radius:14px;padding:3px 10px;cursor:pointer}
+.f button.on{background:#1b2733;color:#fff}
+.ev{border-top:1px solid #e3e6e9;padding:8px 0;cursor:pointer}.ev p{margin:2px 0}.src{font-size:12px;color:#5a6672}
+.g{font-size:11px;font-weight:700;padding:1px 7px;border-radius:10px;color:#fff;margin-right:6px}
+.CONFIRMED{background:#1f7a3d}.REPORTED{background:#b7791f}.CLAIM{background:#b42318}
+@media(max-width:760px){main{grid-template-columns:1fr;grid-template-rows:50vh auto;height:auto}}
+</style></head><body>
+<header><h1>Tigray OSINT Tracker</h1><div id="up">Loading…</div></header>
+<main><div id="map"></div><div id="side"><div class="f" id="f"></div><div id="list"></div></div></main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const COL={CONFIRMED:"#1f7a3d",REPORTED:"#b7791f",CLAIM:"#b42318"};
+const map=L.map("map").setView([13,39.5],6);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:12,attribution:"© OpenStreetMap"}).addTo(map);
+let events=[],on={CONFIRMED:1,REPORTED:1,CLAIM:1},layer=L.layerGroup().addTo(map),markers={};
+function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e}
+function draw(){
+  layer.clearLayers();const list=document.getElementById("list");list.replaceChildren();
+  events.filter(e=>on[e.grade]).forEach(e=>{
+    if(e.lat!=null){const m=L.circleMarker([e.lat,e.lon],{radius:9,color:COL[e.grade],fillColor:COL[e.grade],fillOpacity:e.grade=="CLAIM"?.3:.8,dashArray:e.grade=="CONFIRMED"?null:"3 3"}).addTo(layer);
+      m.bindPopup(e.place+": "+e.summary);markers[e.key]=m}
+    const d=el("div","ev");const g=el("span","g "+e.grade,e.grade);const b=el("b","",e.date+" · "+(e.place||"location unclear"));
+    d.append(g,b,el("p","",e.summary));
+    const s=el("div","src");(e.sources||[]).slice(0,4).forEach(x=>{const a=el("a","",x.outlet);a.href=x.url;a.target="_blank";a.rel="noopener";s.append(a," ")});
+    d.append(s);d.onclick=()=>{if(markers[e.key]){map.setView([e.lat,e.lon],8);markers[e.key].openPopup()}};list.append(d)});
+}
+fetch("data/events.json?"+Date.now()).then(r=>r.json()).then(j=>{events=j.events;
+  document.getElementById("up").textContent="Last updated "+new Date(j.updated).toLocaleString()+" · positions approximate · grades are automatic, not guarantees";
+  const f=document.getElementById("f");["CONFIRMED","REPORTED","CLAIM"].forEach(k=>{const b=el("button","on",k);b.onclick=()=>{on[k]=!on[k];b.classList.toggle("on");draw()};f.append(b)});draw()})
+ .catch(()=>document.getElementById("up").textContent="Could not load data/events.json");
+</script></body></html>
