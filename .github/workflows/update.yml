@@ -26,16 +26,42 @@ jobs:
         run: pip install -r requirements.txt
       - name: Collect and process OSINT
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          MODEL: ${{ vars.MODEL }}
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           REDDIT_USER_AGENT: ${{ vars.REDDIT_USER_AGENT }}
+          RUN_MODE: collect
         run: python collect.py
       - name: Commit updated event data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/events.json
-          git diff --cached --quiet || git commit -m "Update OSINT event data"
+          git add data/source_queue.json
+          git diff --cached --quiet || git commit -m "Collect new OSINT sources"
+          git push
+  process:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '17 * * * *' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Process queued OSINT with Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MODEL: ${{ vars.MODEL }}
+          RUN_MODE: process
+        run: python collect.py
+      - name: Commit processed events and queue state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/events.json data/source_queue.json
+          git diff --cached --quiet || git commit -m "Process hourly OSINT events"
           git push
