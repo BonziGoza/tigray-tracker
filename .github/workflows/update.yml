@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -39,6 +41,7 @@ jobs:
           git diff --cached --quiet || git commit -m "Collect new OSINT sources"
           git push
   process:
+    needs: collect
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '17 * * * *' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
