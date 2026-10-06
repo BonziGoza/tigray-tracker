@@ -1,10 +1,12 @@
-"""Tigray OSINT collector using free public news/RSS/GDELT sources and optional Reddit API."""
-import os, json, re, datetime as dt, hashlib
+"""Tigray OSINT collector with news/social collection, optional Gemini extraction, and deterministic evidence grading."""
+import os, json, re, datetime as dt, hashlib, time
 from urllib.parse import urlparse
 import feedparser, requests
 
 OUT="data/events.json"; TODAY=dt.date.today().isoformat()
 KEEP_DAYS=45; MAX_ITEMS=100; SOCIAL_MAX=40
+MODEL=os.environ.get("MODEL","gemini-2.5-flash-lite")
+API_KEY=os.environ.get("GEMINI_API_KEY","")
 
 FEEDS=[
  "https://news.google.com/rss/search?q=Tigray+when:2d&hl=en-US&gl=US&ceid=US:en",
@@ -45,8 +47,8 @@ def gather_news():
                              "news","rss","",e.get("published",""))
         except Exception as ex: print("feed failed:",feed_url,ex)
     try:
-        r=requests.get(GDELT,params={"query":"Tigray OR TPLF OR Mekelle","mode":"artlist","format":"json",
-                                     "timespan":"2d","maxrecords":60},timeout=30)
+        r=requests.get(GDELT,params={"query":"Tigray OR TPLF OR Mekelle","mode":"artlist",
+                                     "format":"json","timespan":"2d","maxrecords":60},timeout=30)
         r.raise_for_status()
         for a in r.json().get("articles",[]):
             add_item(items,seen,a.get("title",""),a.get("domain",""),a.get("url",""),a.get("seendate",""),
@@ -73,9 +75,7 @@ def gather_reddit():
             for child in r.json().get("data",{}).get("children",[]):
                 p=child.get("data",{}); permalink=p.get("permalink","")
                 url="https://www.reddit.com"+permalink if permalink else p.get("url","")
-                published=""
-                if p.get("created_utc"):
-                    published=dt.datetime.fromtimestamp(p["created_utc"],dt.timezone.utc).isoformat()
+                published=dt.datetime.fromtimestamp(p["created_utc"],dt.timezone.utc).isoformat() if p.get("created_utc") else ""
                 add_item(items,seen,p.get("title",""),f"r/{p.get('subreddit','')}",url,p.get("selftext",""),
                          "social","reddit",p.get("author","") or "[deleted]",published)
     except Exception as ex: print("Reddit failed:",ex)
@@ -88,19 +88,61 @@ def gather():
           "social:",sum(x["source_type"]=="social" for x in items))
     return items[:MAX_ITEMS]
 
+PROMPT="""You are structuring OSINT reports about Tigray and northern Ethiopia.
+Today is {today}. Extract distinct real-world EVENTS from the numbered source items.
+Merge reports that clearly describe the same event. Do not invent facts. Ignore opinion/background.
+A social-media post is a report/claim, not proof. Preserve attribution. Do not treat reposts or repeated wording as independent evidence.
+Return only the requested JSON. Each event must contain:
+key, place, date, kind, summary, attribution, items.
+kind must be control_change, strike, clash, diplomatic, humanitarian, claim, or other.
+attribution must be party or independent.
+Use only these map places: {places}
+Use the source publication date if the event date is not explicit. Only assign a place when supported.
+Summaries must be neutral and attribute disputed claims such as "TPF says...".
+Items:
+{items}"""
+
+def extract_with_gemini(items):
+    if not items or not API_KEY:
+        if not API_KEY: print("GEMINI_API_KEY missing; using deterministic fallback.")
+        return []
+    listing="\n".join(
+        f"{i}. [{x['source_type']}/{x['platform']}] [{x['outlet']}] {x['title']} | "
+        f"{x['summary']} | published={x['published']} | url={x['url']}"
+        for i,x in enumerate(items))
+    schema={"type":"ARRAY","items":{"type":"OBJECT","properties":{
+        "key":{"type":"STRING"},"place":{"type":"STRING"},"date":{"type":"STRING"},
+        "kind":{"type":"STRING"},"summary":{"type":"STRING"},"attribution":{"type":"STRING"},
+        "items":{"type":"ARRAY","items":{"type":"INTEGER"}}},
+        "required":["key","place","date","kind","summary","attribution","items"]}}
+    body={"contents":[{"parts":[{"text":PROMPT.format(today=TODAY,places=", ".join(PLACES),items=listing)}]}],
+          "generationConfig":{"responseMimeType":"application/json","responseSchema":schema,
+                              "temperature":0.1,"maxOutputTokens":5000}}
+    url=f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+    for attempt in range(3):
+        try:
+            r=requests.post(url,headers={"x-goog-api-key":API_KEY},json=body,timeout=120)
+            if r.status_code in (429,503) and attempt<2:
+                print("Gemini busy/rate-limited; retrying...")
+                time.sleep(10*(attempt+1)); continue
+            if r.status_code!=200:
+                print("Gemini error",r.status_code,r.text[:300]); return []
+            text=r.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+            data=json.loads(text)
+            return data if isinstance(data,list) else []
+        except Exception as ex:
+            print("Gemini extraction failed:",ex)
+            if attempt<2: time.sleep(5*(attempt+1))
+    return []
+
 def infer_date(item):
-    value=item.get("published","")
-    if value:
-        m=re.search(r"(20\d{2})[-/]([01]\d)[-/]([0-3]\d)",value)
-        if m:
-            return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
-    return TODAY
+    value=item.get("published",""); m=re.search(r"(20\d{2})[-/]([01]\d)[-/]([0-3]\d)",value)
+    return f"{m.group(1)}-{m.group(2)}-{m.group(3)}" if m else TODAY
 
 def infer_place(text):
     low=text.lower()
     for place in sorted(PLACES,key=len,reverse=True):
-        if place.lower() in low:
-            return place
+        if place.lower() in low: return place
     return ""
 
 def infer_kind(text):
@@ -117,53 +159,71 @@ def event_key(item,place,date):
     words=[w for w in text.split() if len(w)>2][:12]
     return f"{place.lower().replace(' ','-') or 'unknown'}-{date}-"+hashlib.sha1(" ".join(words).encode()).hexdigest()[:8]
 
-def grade(sources):
+def grade(sources,attribution="independent"):
     outlets={(s.get("outlet") or "").lower() for s in sources if s.get("outlet")}
-    news={o for o in outlets if not o.startswith("@") and not o.startswith("r/")}
+    news={o for o in outlets if not o.startswith("r/")}
     wires={o for o in news if any(w in o for w in WIRES)}
     social=[s for s in sources if s.get("source_type")=="social"]
-    if len(wires)>=2: return "CONFIRMED"
-    if len(wires)>=1 and social: return "CORROBORATED"
+    if len(wires)>=2 and attribution!="party": return "CONFIRMED"
+    if len(wires)>=1 and social and attribution!="party": return "CORROBORATED"
     if len(news)>=2: return "REPORTED"
     if len(sources)>=2: return "DEVELOPING"
     return "CLAIM"
 
 def confidence(g): return {"CONFIRMED":90,"CORROBORATED":75,"REPORTED":65,"DEVELOPING":45,"CLAIM":25}.get(g,25)
 
-def build_events(items):
+def finalize_event(db,key,n,items):
+    if not key or not isinstance(n,dict): return
+    ev=db.get(key) or {"key":key,"sources":[],"manual":False}
+    if ev.get("manual"): return
+    place=n.get("place","") if n.get("place","") in PLACES else ""
+    date=n.get("date","")
+    if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}",str(date)): date=TODAY
+    ev.update({"place":place,"lat":PLACES.get(place,(None,None))[0],"lon":PLACES.get(place,(None,None))[1],
+               "date":date,"kind":n.get("kind","other"),"summary":str(n.get("summary",""))[:500],
+               "attribution":n.get("attribution","independent"),"last_seen":TODAY})
+    have={s.get("url") for s in ev["sources"]}
+    for i in n.get("items",[]):
+        if isinstance(i,int) and 0<=i<len(items):
+            s=items[i]
+            if s["url"] not in have:
+                ev["sources"].append({"outlet":s["outlet"],"url":s["url"],"title":s["title"],
+                    "source_type":s["source_type"],"platform":s["platform"],"author":s.get("author",""),
+                    "published":s.get("published","")}); have.add(s["url"])
+    ev["grade"]=grade(ev["sources"],ev.get("attribution","independent"))
+    ev["confidence"]=confidence(ev["grade"])
+    ev["source_count"]=len(ev["sources"])
+    ev["social_source_count"]=sum(s.get("source_type")=="social" for s in ev["sources"])
+    ev["news_source_count"]=sum(s.get("source_type")=="news" for s in ev["sources"])
+    db[key]=ev
+
+def deterministic_fallback(items):
     db={}
-    for item in items:
-        text=item["title"]+" "+item.get("summary","")
-        place=infer_place(text); date=infer_date(item); key=event_key(item,place,date)
-        ev=db.get(key)
-        if not ev:
-            ev={"key":key,"place":place,"lat":PLACES.get(place,(None,None))[0],
-                "lon":PLACES.get(place,(None,None))[1],"date":date,
-                "kind":infer_kind(text),"summary":item["title"],
-                "attribution":"social" if item["source_type"]=="social" else "independent",
-                "sources":[],"manual":False,"last_seen":TODAY}
-            db[key]=ev
-        if not any(s.get("url")==item["url"] for s in ev["sources"]):
-            ev["sources"].append({"outlet":item["outlet"],"url":item["url"],"title":item["title"],
-                "source_type":item["source_type"],"platform":item["platform"],
-                "author":item.get("author",""),"published":item.get("published","")})
-            ev["last_seen"]=TODAY
-        ev["grade"]=grade(ev["sources"]); ev["confidence"]=confidence(ev["grade"])
-        ev["source_count"]=len(ev["sources"])
-        ev["social_source_count"]=sum(s.get("source_type")=="social" for s in ev["sources"])
-        ev["news_source_count"]=sum(s.get("source_type")=="news" for s in ev["sources"])
+    for i,item in enumerate(items):
+        text=item["title"]+" "+item.get("summary",""); place=infer_place(text); date=infer_date(item)
+        key=event_key(item,place,date)
+        finalize_event(db,key,{"place":place,"date":date,"kind":infer_kind(text),
+            "summary":item["title"],"attribution":"party" if item["source_type"]=="social" else "independent",
+            "items":[i]},items)
     return db
 
 def main():
     if os.path.exists(OUT):
         with open(OUT,encoding="utf-8") as f: old={e["key"]:e for e in json.load(f).get("events",[])}
     else: old={}
-    fresh=build_events(gather())
-    db={k:v for k,v in old.items() if v.get("manual") or v.get("last_seen",TODAY)>=(
-        dt.date.today()-dt.timedelta(days=KEEP_DAYS)).isoformat()}
+    items=gather(); candidates=extract_with_gemini(items); fresh={}
+    if candidates:
+        for n in candidates:
+            if isinstance(n,dict):
+                key=str(n.get("key","")).strip()
+                if key: finalize_event(fresh,key,n,items)
+        print("Gemini candidate events:",len(fresh))
+    else:
+        print("Using deterministic event fallback."); fresh=deterministic_fallback(items)
+    cutoff=(dt.date.today()-dt.timedelta(days=KEEP_DAYS)).isoformat()
+    db={k:v for k,v in old.items() if v.get("manual") or v.get("last_seen",TODAY)>=cutoff}
     db.update(fresh)
-    events=list(db.values())
-    events.sort(key=lambda e:(e.get("date",""),e.get("last_seen","")),reverse=True)
+    events=list(db.values()); events.sort(key=lambda e:(e.get("date",""),e.get("last_seen","")),reverse=True)
     with open(OUT,"w",encoding="utf-8") as f:
         json.dump({"updated":dt.datetime.now(dt.timezone.utc).isoformat(),"events":events},f,indent=1,ensure_ascii=False)
     print("events saved:",len(events))
