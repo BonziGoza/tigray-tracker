@@ -1,111 +1,108 @@
-# Tigray OSINT Tracker — Free OSINT Implementation
+# Tigray OSINT Tracker — OSINT Implementation
 
-## What this branch adds
+## What this branch does
 
-- Optional Reddit collection through Reddit's authorized API.
-- A common source schema for news and social material.
-- Deterministic evidence grading: CLAIM, DEVELOPING, REPORTED, CORROBORATED, CONFIRMED.
-- Social/news filters on the website.
-- Social event count and Early Reports panel.
-- A real scheduled GitHub Actions workflow.
-- API credentials are read from GitHub Actions Secrets, never from the public page.
+- Collects recent Tigray/northern Ethiopia reporting from Google News RSS, Al Jazeera RSS, and GDELT.
+- Optionally collects recent Reddit posts through Reddit's authorized API.
+- Sends the normalized source batch to Gemini when GEMINI_API_KEY is configured.
+- Uses Gemini to identify distinct real-world events, merge reports describing the same event, extract date/place/type, and preserve source-item relationships.
+- Uses deterministic Python rules for evidence grading; Gemini does not decide whether an event is confirmed.
+- Falls back to deterministic local extraction if Gemini is unavailable or returns no usable events.
+- Provides NEWS/SOCIAL and evidence-grade filters, an Early Reports panel, source links, and approximate map locations.
+- Keeps API credentials in GitHub Actions Secrets; they are never sent to the browser.
 
-## Important Telegram decision
+## Gemini configuration
 
-Telegram is intentionally NOT connected to the Gemini pipeline in this version. Telegram's current API terms prohibit using, accessing, or aggregating data obtained from Telegram for AI/ML development or deployment. A future Telegram integration should therefore be designed separately and reviewed against the current terms before implementation.
+The workflow expects:
 
-## Step 1 — Keep the branch
+**Repository secret**
+- GEMINI_API_KEY
 
-This work is on the social-osint-v2 branch. Review it before merging into main.
+**Optional repository variable**
+- MODEL
 
-## Step 2 — Configure Reddit
+If MODEL is not set, the collector defaults to `gemini-2.5-flash-lite`. You can change the repository variable later without editing Python.
 
-Reddit's public API is currently transitioning toward the Reddit Developer Platform. If you use the Data API, register the app and follow Reddit's current migration requirements.
+The Gemini call uses the `generateContent` REST endpoint and requests JSON output. The API key is supplied to GitHub Actions only; it is never embedded in `index.html` or `data/events.json`.
 
-Add these Actions secrets:
+Gemini is used for **organization and extraction**, not as the evidence authority. The source URLs and source metadata remain attached to every event.
 
-REDDIT_CLIENT_ID
-REDDIT_CLIENT_SECRET
+## Reddit configuration
+
+Add these Actions secrets if you want Reddit collection:
+
+- REDDIT_CLIENT_ID
+- REDDIT_CLIENT_SECRET
 
 Optional Actions variable:
 
-REDDIT_USER_AGENT
+- REDDIT_USER_AGENT
 
 Suggested value:
 
-TigrayOSINTTracker/1.0 by BonziGoza
+`TigrayOSINTTracker/1.0 by BonziGoza`
 
-If the Reddit credentials are absent, the collector simply skips Reddit and continues.
+If Reddit credentials are absent, the collector skips Reddit and continues.
 
-## Step 3 — Test the workflow manually
+## X
 
-Open:
+X is intentionally **not connected** in this version. There is no X bearer token in the workflow and no X API dependency.
 
-Actions -> Update Tigray OSINT Tracker -> Run workflow
+## Telegram
 
-Check the logs for:
+Telegram is intentionally not connected to the Gemini pipeline. A future Telegram integration should be separately reviewed against Telegram's current terms before implementation.
 
-- items gathered
-- news count
-- social count
-- candidate events
-- events saved
+## How the pipeline works
 
-The first run may have zero social items if credentials are not configured.
+```
+Google News / Al Jazeera / GDELT
+              +
+           Reddit
+              |
+              v
+      normalized source items
+              |
+              v
+           Gemini
+     event extraction + merging
+              |
+              v
+     deterministic grading
+              |
+              v
+       data/events.json
+              |
+              v
+       public Leaflet map
+```
 
-## Step 4 — Inspect data/events.json
-
-Social sources now contain fields such as:
-
-- source_type: social
-- platform: x or reddit
-- author
-- published
-- outlet
-- url
-
-Existing manually curated events remain protected by manual: true.
-
-## Step 5 — Check the website
-
-The website now has:
-
-- evidence-grade filters
-- NEWS/SOCIAL filters
-- total event count
-- social event count
-- early-report count
-- evidence score
-- source platform labels
-- an Early Reports panel
+Gemini receives numbered source items and must return the item numbers supporting each event. This lets the tracker preserve the underlying sources rather than replacing them with an AI-generated summary.
 
 ## Evidence grading
 
-The tracker now uses deterministic Python rules rather than a paid AI API. Each source is retained with its platform metadata, and the collector assigns an evidence grade from the available source mix.
-
 Current ladder:
 
-CLAIM — one source or one social report.
+**CLAIM** — one source or one social report.
 
-DEVELOPING — multiple sources/social reports without sufficient independent corroboration.
+**DEVELOPING** — multiple reports without sufficient independent corroboration.
 
-REPORTED — multiple news outlets.
+**REPORTED** — multiple news outlets.
 
-CORROBORATED — at least one professional news source plus social reporting, where the event is not merely a party claim.
+**CORROBORATED** — at least one recognized professional news source plus social reporting, when the event is not merely a party claim.
 
-CONFIRMED — at least two recognized professional news sources and independent attribution.
+**CONFIRMED** — at least two recognized professional news sources and independent attribution.
 
-These labels are automated research assessments, not guarantees that an event occurred.
+Scores are currently 25 / 45 / 65 / 75 / 90.
+
+These are automated research assessments, not guarantees that an event occurred.
 
 ## Important limitation: repost cascades
 
-Five social accounts can all repeat one original claim.
+Five social accounts can repeat one original claim.
 
-Therefore:
+**5 posts != 5 independent sources**
 
-5 posts != 5 independent sources
-
-The next major backend improvement should detect:
+The next backend improvement should detect:
 
 - repost/quote relationships
 - identical or near-identical text
@@ -113,30 +110,67 @@ The next major backend improvement should detect:
 - identical media
 - common first-source claims
 
-This should become an independent-source calculation before using social counts in a stronger evidence grade.
+Until that exists, social-source counts should be treated cautiously.
 
-## Step 8 — Recommended next development
+## Manual workflow test
 
-1. Add a configurable source allowlist for known organizations and accounts.
-2. Add first_reported_at to every event.
-3. Add source-to-event relationship IDs.
-4. Add repost/cascade detection.
-5. Add separate confidence for geolocation.
-6. Add a human-review queue.
-7. Add image/video verification metadata.
-8. Preserve raw source metadata according to platform terms and an explicit retention policy.
-9. Add a database when JSON becomes too large.
-10. Add additional humanitarian and official sources.
+Open:
 
-## Step 8 — Do not expose secrets
+**Actions → Update Tigray OSINT Tracker → Run workflow**
+
+Check the logs for:
+
+- items gathered
+- news count
+- social count
+- Gemini candidate events
+- events saved
+
+Then inspect `data/events.json`.
+
+## Website behavior
+
+The site currently displays:
+
+- interactive map
+- event list
+- evidence-grade filters
+- NEWS/SOCIAL filters
+- total event count
+- social-event count
+- early-report count
+- evidence score
+- source platform labels
+- links to underlying reports
+
+Map positions are approximate.
+
+## Retention and manual events
+
+Automatic events are retained for 45 days based on `last_seen`.
+
+Events marked `manual: true` are preserved and are not overwritten by the automated collector.
+
+## Next improvements
+
+1. Repost/cascade detection so repeated social posts do not inflate corroboration.
+2. `first_reported_at` for each event.
+3. Source-to-event relationship IDs.
+4. Geolocation confidence.
+5. Human-review queue.
+6. Image/video verification metadata.
+7. Configurable source/account allowlists.
+8. Additional humanitarian and official sources.
+9. Database storage once JSON becomes too large.
+
+## Security
 
 Never commit:
 
+- Gemini API keys
 - Reddit client secrets
 - OAuth refresh tokens
-- Telegram API credentials
-
-There are currently no paid API keys required by the collector.
+- other provider credentials
 
 Use GitHub Actions Secrets.
 
@@ -144,10 +178,8 @@ Use GitHub Actions Secrets.
 
 The tracker should answer:
 
-"What is being reported, by whom, when, and how well is it corroborated?"
+> What is being reported, by whom, when, and how well is it corroborated?
 
-It should not claim:
+It should not answer:
 
-"This social-media post proves this happened."
-
-That distinction is central to making the project a credible OSINT research tool.
+> This social-media post proves this happened.
