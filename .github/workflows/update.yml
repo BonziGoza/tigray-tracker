@@ -3,17 +3,15 @@ name: Update Tigray OSINT Tracker
 on:
   schedule:
     - cron: "7,22,37,52 * * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
-concurrency:
-  group: tigray-tracker-update
-  cancel-in-progress: true
-
 jobs:
   collect:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '7,22,37,52 * * * *' || github.event.schedule == '17 * * * *' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
