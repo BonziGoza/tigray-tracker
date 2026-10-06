@@ -1,11 +1,9 @@
-# Tigray OSINT Tracker — Social Media Implementation
+# Tigray OSINT Tracker — Free OSINT Implementation
 
 ## What this branch adds
 
 - Optional Reddit collection through Reddit's authorized API.
-- Optional X collection through X's recent-search API.
 - A common source schema for news and social material.
-- Gemini event extraction that explicitly treats social posts as reports/claims, not proof.
 - Deterministic evidence grading: CLAIM, DEVELOPING, REPORTED, CORROBORATED, CONFIRMED.
 - Social/news filters on the website.
 - Social event count and Early Reports panel.
@@ -20,26 +18,7 @@ Telegram is intentionally NOT connected to the Gemini pipeline in this version. 
 
 This work is on the social-osint-v2 branch. Review it before merging into main.
 
-## Step 2 — Verify Gemini
-
-The existing collector needs the GEMINI_API_KEY secret.
-
-In GitHub:
-Settings -> Secrets and variables -> Actions -> New repository secret
-
-Do not put this key in index.html or any committed file.
-
-## Step 3 — Configure X
-
-Create or verify an approved X developer project and app with access to recent post search.
-
-Add this GitHub Actions secret:
-
-X_BEARER_TOKEN
-
-The collector calls the X recent-search endpoint and limits itself to recent, non-retweet English posts matching Tigray/Ethiopia queries.
-
-## Step 4 — Configure Reddit
+## Step 2 — Configure Reddit
 
 Reddit's public API is currently transitioning toward the Reddit Developer Platform. If you use the Data API, register the app and follow Reddit's current migration requirements.
 
@@ -58,7 +37,7 @@ TigrayOSINTTracker/1.0 by BonziGoza
 
 If the Reddit credentials are absent, the collector simply skips Reddit and continues.
 
-## Step 5 — Test the workflow manually
+## Step 3 — Test the workflow manually
 
 Open:
 
@@ -74,7 +53,7 @@ Check the logs for:
 
 The first run may have zero social items if credentials are not configured.
 
-## Step 6 — Inspect data/events.json
+## Step 4 — Inspect data/events.json
 
 Social sources now contain fields such as:
 
@@ -87,7 +66,7 @@ Social sources now contain fields such as:
 
 Existing manually curated events remain protected by manual: true.
 
-## Step 7 — Check the website
+## Step 5 — Check the website
 
 The website now has:
 
@@ -102,16 +81,7 @@ The website now has:
 
 ## Evidence grading
 
-The tracker intentionally separates AI interpretation from evidence grading.
-
-Gemini:
-- identifies candidate events
-- merges reports about the same event
-- extracts location/date/type
-- preserves attribution
-
-Python:
-- calculates the evidence grade
+The tracker now uses deterministic Python rules rather than a paid AI API. Each source is retained with its platform metadata, and the collector assigns an evidence grade from the available source mix.
 
 Current ladder:
 
@@ -158,15 +128,15 @@ This should become an independent-source calculation before using social counts 
 9. Add a database when JSON becomes too large.
 10. Add additional humanitarian and official sources.
 
-## Step 9 — Do not expose secrets
+## Step 8 — Do not expose secrets
 
 Never commit:
 
-- X bearer tokens
 - Reddit client secrets
-- Gemini API keys
 - OAuth refresh tokens
 - Telegram API credentials
+
+There are currently no paid API keys required by the collector.
 
 Use GitHub Actions Secrets.
 
