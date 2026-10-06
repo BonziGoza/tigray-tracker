@@ -30,7 +30,7 @@ const map=L.map("map").setView([13,39.5],6);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:12,attribution:"© OpenStreetMap"}).addTo(map);
 let events=[],gradeOn={CONFIRMED:1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},sourceOn={news:1,social:1},layer=L.layerGroup().addTo(map),markers={};
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
-function sourceLabel(s){if(s.platform==="x")return "X";if(s.platform==="reddit")return "Reddit";if(s.platform==="telegram")return "Telegram";if(s.platform==="gdelt")return "GDELT";return s.outlet||"Source"}
+function sourceLabel(s){if(s.platform==="reddit")return "Reddit";if(s.platform==="gdelt")return "GDELT";return s.outlet||"Source"}
 function visible(e){if(!gradeOn[e.grade])return false;const s=e.sources||[];return !s.length||s.some(x=>sourceOn[x.source_type||"news"])}
 function draw(){
  layer.clearLayers();markers={};const list=document.getElementById("list");list.replaceChildren();
