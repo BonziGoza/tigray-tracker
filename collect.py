@@ -1,146 +1,231 @@
-"""Tigray OSINT collector. Run by GitHub Actions every few hours.
-Steps: 1) gather headlines  2) ask Gemini to turn them into structured events
-       3) grade each event with plain rules (not by the AI)  4) save data/events.json
-"""
-import os, json, re, datetime as dt
+"""Tigray OSINT collector with news/social collection, optional Gemini extraction, and deterministic evidence grading."""
+import os, json, re, datetime as dt, hashlib, time
 from urllib.parse import urlparse
 import feedparser, requests
-import time
 
-MODEL = os.environ.get("MODEL", "gemini-flash-latest")   # change here if Google renames models
-API_KEY = os.environ.get("GEMINI_API_KEY", "")
-OUT = "data/events.json"
-TODAY = dt.date.today().isoformat()
-KEEP_DAYS = 45          # automatic events older than this are dropped
-MAX_ITEMS = 60          # headlines sent to the AI per run (controls usage)
+OUT="data/events.json"; TODAY=dt.date.today().isoformat()
+KEEP_DAYS=45; MAX_ITEMS=100; SOCIAL_MAX=40
+MODEL=os.environ.get("MODEL","gemini-2.5-flash-lite")
+API_KEY=os.environ.get("GEMINI_API_KEY","")
 
-# ---- 1. WHERE WE LOOK (edit freely) ------------------------------------
-FEEDS = [
-    "https://news.google.com/rss/search?q=Tigray+when:2d&hl=en-US&gl=US&ceid=US:en",
-    "https://news.google.com/rss/search?q=Mekelle+OR+TPLF+OR+Afar+OR+Eritrea+Ethiopia+when:2d&hl=en-US&gl=US&ceid=US:en",
-    "https://www.aljazeera.com/xml/rss/all.xml",
-]
-GDELT = "https://api.gdeltproject.org/api/v2/doc/doc"
-KEYWORDS = ["tigray", "tplf", "mekelle", "mekele", "eritrea", "afar", "amhara", "fano", "abiy", "ethiopia"]
+FEEDS=[
+ "https://news.google.com/rss/search?q=Tigray+when:2d&hl=en-US&gl=US&ceid=US:en",
+ "https://news.google.com/rss/search?q=Mekelle+OR+TPLF+OR+Afar+OR+Eritrea+Ethiopia+when:2d&hl=en-US&gl=US&ceid=US:en",
+ "https://www.aljazeera.com/xml/rss/all.xml"]
+GDELT="https://api.gdeltproject.org/api/v2/doc/doc"
+KEYWORDS=["tigray","tplf","mekelle","mekele","eritrea","afar","amhara","fano","abiy","ethiopia"]
+WIRES=["reuters","associated press","ap news","apnews","afp","al jazeera","bbc","france 24","dw","the guardian","new york times"]
+PLACES={"Mekelle":(13.50,39.47),"Alamata":(12.42,39.55),"Shire":(14.10,38.28),"Axum":(14.13,38.72),
+"Adwa":(14.17,38.90),"Adigrat":(14.28,39.46),"Abala":(13.38,39.99),"Erebti":(13.30,40.12),
+"Megale":(13.00,40.35),"Semera":(11.79,41.00),"Kobo":(12.15,39.63),"Sekota":(12.63,39.03),
+"Lalibela":(12.03,39.04),"Dessie":(11.13,39.63),"Woldia":(11.83,39.60),"Addis Ababa":(9.03,38.74),
+"Asmara":(15.34,38.93),"Bahir Dar":(11.59,37.39),"Gondar":(12.60,37.47),"Humera":(14.30,36.60),
+"Zalambessa":(14.52,39.55)}
 
-# Outlets we treat as independent, professional newsrooms
-WIRES = ["reuters", "associated press", "ap news", "apnews", "afp", "al jazeera", "bbc", "france 24", "dw", "the guardian", "new york times"]
+def clean_html(v): return re.sub(r"<[^>]+>"," ",v or "").strip()
 
-# Known places -> map position (approximate). Add more as needed.
-PLACES = {
- "Mekelle": (13.50, 39.47), "Alamata": (12.42, 39.55), "Shire": (14.10, 38.28),
- "Axum": (14.13, 38.72), "Adwa": (14.17, 38.90), "Adigrat": (14.28, 39.46),
- "Abala": (13.38, 39.99), "Erebti": (13.30, 40.12), "Megale": (13.00, 40.35),
- "Semera": (11.79, 41.00), "Kobo": (12.15, 39.63), "Sekota": (12.63, 39.03),
- "Lalibela": (12.03, 39.04), "Dessie": (11.13, 39.63), "Woldia": (11.83, 39.60),
- "Addis Ababa": (9.03, 38.74), "Asmara": (15.34, 38.93), "Bahir Dar": (11.59, 37.39),
- "Gondar": (12.60, 37.47), "Humera": (14.30, 36.60), "Zalambessa": (14.52, 39.55),
-}
+def add_item(items,seen,title,outlet,url,summary="",source_type="news",platform="news",author="",published=""):
+    title=(title or "").strip(); url=(url or "").strip()
+    if not title or not url or url in seen: return
+    seen.add(url)
+    items.append({"title":title[:300],"outlet":(outlet or platform)[:120],"url":url,
+                  "summary":clean_html(summary)[:600],"source_type":source_type,"platform":platform,
+                  "author":author[:120],"published":published})
 
-def outlet_of(entry):
-    src = entry.get("source")
-    if src and src.get("title"):
-        return src["title"]
-    return urlparse(entry.get("link", "")).netloc.replace("www.", "")
+def outlet_of(e):
+    src=e.get("source")
+    return src["title"] if src and src.get("title") else urlparse(e.get("link","")).netloc.replace("www.","")
 
-# ---- 2. GATHER ---------------------------------------------------------
-def gather():
-    items, seen = [], set()
-    def add(title, outlet, url, summary=""):
-        k = re.sub(r"\W+", " ", title.lower()).strip()
-        if k and k not in seen:
-            seen.add(k); items.append({"title": title, "outlet": outlet, "url": url, "summary": summary[:300]})
-    for f in FEEDS:
+def gather_news():
+    items=[]; seen=set()
+    for feed_url in FEEDS:
         try:
-            for e in feedparser.parse(f).entries[:40]:
-                text = (e.get("title", "") + " " + e.get("summary", "")).lower()
+            for e in feedparser.parse(feed_url).entries[:50]:
+                text=(e.get("title","")+" "+e.get("summary","")).lower()
                 if any(k in text for k in KEYWORDS):
-                    add(e.get("title", ""), outlet_of(e), e.get("link", ""), re.sub("<[^>]+>", "", e.get("summary", "")))
-        except Exception as ex:
-            print("feed failed:", f, ex)
+                    add_item(items,seen,e.get("title",""),outlet_of(e),e.get("link",""),e.get("summary",""),
+                             "news","rss","",e.get("published",""))
+        except Exception as ex: print("feed failed:",feed_url,ex)
     try:
-        r = requests.get(GDELT, params={"query": "Tigray OR TPLF OR Mekelle", "mode": "artlist", "format": "json",
-                                         "timespan": "2d", "maxrecords": 50}, timeout=30)
-        for a in r.json().get("articles", []):
-            add(a.get("title", ""), a.get("domain", ""), a.get("url", ""))
-    except Exception as ex:
-        print("GDELT failed:", ex)
+        r=requests.get(GDELT,params={"query":"Tigray OR TPLF OR Mekelle","mode":"artlist",
+                                     "format":"json","timespan":"2d","maxrecords":60},timeout=30)
+        r.raise_for_status()
+        for a in r.json().get("articles",[]):
+            add_item(items,seen,a.get("title",""),a.get("domain",""),a.get("url",""),a.get("seendate",""),
+                     "news","gdelt","",a.get("seendate",""))
+    except Exception as ex: print("GDELT failed:",ex)
+    return items
+
+def gather_reddit():
+    cid=os.environ.get("REDDIT_CLIENT_ID",""); secret=os.environ.get("REDDIT_CLIENT_SECRET","")
+    if not cid or not secret:
+        print("Reddit collector disabled: credentials not configured."); return []
+    items=[]; seen=set(); ua=os.environ.get("REDDIT_USER_AGENT","TigrayOSINTTracker/1.0 by BonziGoza")
+    try:
+        tr=requests.post("https://www.reddit.com/api/v1/access_token",auth=(cid,secret),
+                         data={"grant_type":"client_credentials"},headers={"User-Agent":ua},timeout=30)
+        tr.raise_for_status(); token=tr.json()["access_token"]
+        headers={"Authorization":f"bearer {token}","User-Agent":ua}
+        for query in ["Tigray","Mekelle","TPLF","Ethiopia Tigray"]:
+            r=requests.get("https://oauth.reddit.com/search",
+                params={"q":query,"sort":"new","t":"day","limit":25,"restrict_sr":"false","type":"link,self"},
+                headers=headers,timeout=30)
+            if r.status_code==429: print("Reddit rate limited; stopping."); break
+            r.raise_for_status()
+            for child in r.json().get("data",{}).get("children",[]):
+                p=child.get("data",{}); permalink=p.get("permalink","")
+                url="https://www.reddit.com"+permalink if permalink else p.get("url","")
+                published=dt.datetime.fromtimestamp(p["created_utc"],dt.timezone.utc).isoformat() if p.get("created_utc") else ""
+                add_item(items,seen,p.get("title",""),f"r/{p.get('subreddit','')}",url,p.get("selftext",""),
+                         "social","reddit",p.get("author","") or "[deleted]",published)
+    except Exception as ex: print("Reddit failed:",ex)
+    return items[:SOCIAL_MAX]
+
+def gather():
+    items=gather_news()+gather_reddit()
+    items=[x for x in items if x["source_type"]=="news" or any(k in (x["title"]+" "+x["summary"]).lower() for k in KEYWORDS)]
+    print("items gathered:",len(items),"news:",sum(x["source_type"]=="news" for x in items),
+          "social:",sum(x["source_type"]=="social" for x in items))
     return items[:MAX_ITEMS]
 
-# ---- 3. ASK GEMINI TO STRUCTURE (it extracts; it does NOT grade) ---------
-PROMPT = """Today is {today}. Below are numbered news items about the conflict in Tigray / northern Ethiopia.
-Extract distinct real-world EVENTS (territorial control change, airstrike/drone strike, clash, diplomatic move,
-humanitarian incident, claim by a party). Merge items describing the same event. Ignore opinion and background.
-Return ONLY a JSON list. Each object:
- "key": short stable id like "mekelle-control-2026-10-04" (lowercase, hyphens; same event => same key)
- "place": one of {places} or "" if none fits
- "date": YYYY-MM-DD when the event happened
- "kind": control_change | strike | clash | diplomatic | humanitarian | claim | other
- "summary": one neutral sentence, attribute claims ("TPF says...") never state them as fact
- "attribution": "party" if the information comes only from a fighting party or its supporters (ENDF, TPLF, TPF, Fano, Eritrean govt, etc.), else "independent"
- "items": list of item numbers that support it
+PROMPT="""You are structuring OSINT reports about Tigray and northern Ethiopia.
+Today is {today}. Extract distinct real-world EVENTS from the numbered source items.
+Merge reports that clearly describe the same event. Do not invent facts. Ignore opinion/background.
+A social-media post is a report/claim, not proof. Preserve attribution. Do not treat reposts or repeated wording as independent evidence.
+Return only the requested JSON. Each event must contain:
+key, place, date, kind, summary, attribution, items.
+kind must be control_change, strike, clash, diplomatic, humanitarian, claim, or other.
+attribution must be party or independent.
+Use only these map places: {places}
+Use the source publication date if the event date is not explicit. Only assign a place when supported.
+Summaries must be neutral and attribute disputed claims such as "TPF says...".
 Items:
 {items}"""
 
-def extract(items):
-    if not items:
+def extract_with_gemini(items):
+    if not items or not API_KEY:
+        if not API_KEY: print("GEMINI_API_KEY missing; using deterministic fallback.")
         return []
-    if not API_KEY:
-        print("GEMINI_API_KEY is missing. Add it as a secret (see README)."); return []
-    listing = "\n".join(f"{i}. [{x['outlet']}] {x['title']} - {x['summary']}" for i, x in enumerate(items))
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
-    body = {"contents": [{"parts": [{"text": PROMPT.format(today=TODAY, places=", ".join(PLACES), items=listing)}]}],
-            "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1}}
-    for attempt in range(3):                      # free tiers sometimes say "slow down" (429); wait and retry
-        r = requests.post(url, headers={"x-goog-api-key": API_KEY}, json=body, timeout=120)
-        if r.status_code in (429, 503):
-            print("Busy or rate-limited, retrying..."); time.sleep(30 * (attempt + 1)); continue
-        break
-    if r.status_code != 200:
-        print("Gemini error", r.status_code, r.text[:300]); return []
-    try:
-        text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-        text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
-        return json.loads(text)
-    except Exception as ex:
-        print("Could not read Gemini's answer:", ex); return []
+    listing="\n".join(
+        f"{i}. [{x['source_type']}/{x['platform']}] [{x['outlet']}] {x['title']} | "
+        f"{x['summary']} | published={x['published']} | url={x['url']}"
+        for i,x in enumerate(items))
+    schema={"type":"ARRAY","items":{"type":"OBJECT","properties":{
+        "key":{"type":"STRING"},"place":{"type":"STRING"},"date":{"type":"STRING"},
+        "kind":{"type":"STRING"},"summary":{"type":"STRING"},"attribution":{"type":"STRING"},
+        "items":{"type":"ARRAY","items":{"type":"INTEGER"}}},
+        "required":["key","place","date","kind","summary","attribution","items"]}}
+    body={"contents":[{"parts":[{"text":PROMPT.format(today=TODAY,places=", ".join(PLACES),items=listing)}]}],
+          "generationConfig":{"responseMimeType":"application/json","responseSchema":schema,
+                              "temperature":0.1,"maxOutputTokens":5000}}
+    url=f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+    for attempt in range(3):
+        try:
+            r=requests.post(url,headers={"x-goog-api-key":API_KEY},json=body,timeout=120)
+            if r.status_code in (429,503) and attempt<2:
+                print("Gemini busy/rate-limited; retrying...")
+                time.sleep(10*(attempt+1)); continue
+            if r.status_code!=200:
+                print("Gemini error",r.status_code,r.text[:300]); return []
+            text=r.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+            data=json.loads(text)
+            return data if isinstance(data,list) else []
+        except Exception as ex:
+            print("Gemini extraction failed:",ex)
+            if attempt<2: time.sleep(5*(attempt+1))
+    return []
 
-# ---- 4. GRADE WITH SIMPLE, VISIBLE RULES ---------------------------------
-def grade(ev):
-    outlets = {s["outlet"].lower() for s in ev["sources"]}
-    wires = {o for o in outlets if any(w in o for w in WIRES)}
-    if len(wires) >= 2 and ev.get("attribution") != "party":
-        return "CONFIRMED"
-    if len(outlets) >= 2:
-        return "REPORTED"      # several outlets, or a party claim that a few outlets repeat
+def infer_date(item):
+    value=item.get("published",""); m=re.search(r"(20\d{2})[-/]([01]\d)[-/]([0-3]\d)",value)
+    return f"{m.group(1)}-{m.group(2)}-{m.group(3)}" if m else TODAY
+
+def infer_place(text):
+    low=text.lower()
+    for place in sorted(PLACES,key=len,reverse=True):
+        if place.lower() in low: return place
+    return ""
+
+def infer_kind(text):
+    low=text.lower()
+    if any(x in low for x in ["airstrike","air strike","bombed","bombing","drone strike","missile","strike"]): return "strike"
+    if any(x in low for x in ["clash","fighting","battle","combat","killed","attack","ambush"]): return "clash"
+    if any(x in low for x in ["agreement","talks","meeting","negotiat","diplomatic","peace"]): return "diplomatic"
+    if any(x in low for x in ["displaced","famine","food","aid","humanitarian","refugee"]): return "humanitarian"
+    if any(x in low for x in ["control","captured","seized","occupied","withdrew","withdrawal"]): return "control_change"
+    return "claim" if any(x in low for x in ["claim","alleged","reportedly","unconfirmed"]) else "other"
+
+def event_key(item,place,date):
+    text=re.sub(r"[^a-z0-9 ]"," ",(item["title"]+" "+place).lower())
+    words=[w for w in text.split() if len(w)>2][:12]
+    return f"{place.lower().replace(' ','-') or 'unknown'}-{date}-"+hashlib.sha1(" ".join(words).encode()).hexdigest()[:8]
+
+def grade(sources,attribution="independent"):
+    outlets={(s.get("outlet") or "").lower() for s in sources if s.get("outlet")}
+    news={o for o in outlets if not o.startswith("r/")}
+    wires={o for o in news if any(w in o for w in WIRES)}
+    social=[s for s in sources if s.get("source_type")=="social"]
+    if len(wires)>=2 and attribution!="party": return "CONFIRMED"
+    if len(wires)>=1 and social and attribution!="party": return "CORROBORATED"
+    if len(news)>=2: return "REPORTED"
+    if len(sources)>=2: return "DEVELOPING"
     return "CLAIM"
 
-def merge(db, new, items):
-    for n in new:
-        key = n.get("key")
-        if not key: continue
-        ev = db.get(key) or {"key": key, "sources": [], "manual": False}
-        if ev.get("manual"): continue            # never overwrite hand-checked events
-        place = n.get("place", "")
-        ev.update({"place": place, "lat": PLACES.get(place, (None, None))[0], "lon": PLACES.get(place, (None, None))[1],
-                   "date": n.get("date", TODAY), "kind": n.get("kind", "other"), "summary": n.get("summary", ""),
-                   "attribution": n.get("attribution", "party"), "last_seen": TODAY})
-        have = {s["url"] for s in ev["sources"]}
-        for i in n.get("items", []):
-            if isinstance(i, int) and 0 <= i < len(items) and items[i]["url"] not in have:
-                s = items[i]; ev["sources"].append({"outlet": s["outlet"], "url": s["url"], "title": s["title"]})
-        ev["grade"] = grade(ev)
-        db[key] = ev
+def confidence(g): return {"CONFIRMED":90,"CORROBORATED":75,"REPORTED":65,"DEVELOPING":45,"CLAIM":25}.get(g,25)
+
+def finalize_event(db,key,n,items):
+    if not key or not isinstance(n,dict): return
+    ev=db.get(key) or {"key":key,"sources":[],"manual":False}
+    if ev.get("manual"): return
+    place=n.get("place","") if n.get("place","") in PLACES else ""
+    date=n.get("date","")
+    if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}",str(date)): date=TODAY
+    ev.update({"place":place,"lat":PLACES.get(place,(None,None))[0],"lon":PLACES.get(place,(None,None))[1],
+               "date":date,"kind":n.get("kind","other"),"summary":str(n.get("summary",""))[:500],
+               "attribution":n.get("attribution","independent"),"last_seen":TODAY})
+    have={s.get("url") for s in ev["sources"]}
+    for i in n.get("items",[]):
+        if isinstance(i,int) and 0<=i<len(items):
+            s=items[i]
+            if s["url"] not in have:
+                ev["sources"].append({"outlet":s["outlet"],"url":s["url"],"title":s["title"],
+                    "source_type":s["source_type"],"platform":s["platform"],"author":s.get("author",""),
+                    "published":s.get("published","")}); have.add(s["url"])
+    ev["grade"]=grade(ev["sources"],ev.get("attribution","independent"))
+    ev["confidence"]=confidence(ev["grade"])
+    ev["source_count"]=len(ev["sources"])
+    ev["social_source_count"]=sum(s.get("source_type")=="social" for s in ev["sources"])
+    ev["news_source_count"]=sum(s.get("source_type")=="news" for s in ev["sources"])
+    db[key]=ev
+
+def deterministic_fallback(items):
+    db={}
+    for i,item in enumerate(items):
+        text=item["title"]+" "+item.get("summary",""); place=infer_place(text); date=infer_date(item)
+        key=event_key(item,place,date)
+        finalize_event(db,key,{"place":place,"date":date,"kind":infer_kind(text),
+            "summary":item["title"],"attribution":"party" if item["source_type"]=="social" else "independent",
+            "items":[i]},items)
+    return db
 
 def main():
-    db = {e["key"]: e for e in json.load(open(OUT))["events"]} if os.path.exists(OUT) else {}
-    items = gather(); print("items gathered:", len(items))
-    merge(db, extract(items), items)
-    cutoff = (dt.date.today() - dt.timedelta(days=KEEP_DAYS)).isoformat()
-    events = [e for e in db.values() if e.get("manual") or e.get("last_seen", TODAY) >= cutoff]
-    events.sort(key=lambda e: e.get("date", ""), reverse=True)
-    json.dump({"updated": dt.datetime.utcnow().isoformat() + "Z", "events": events}, open(OUT, "w"), indent=1)
-    print("events saved:", len(events))
+    if os.path.exists(OUT):
+        with open(OUT,encoding="utf-8") as f: old={e["key"]:e for e in json.load(f).get("events",[])}
+    else: old={}
+    items=gather(); candidates=extract_with_gemini(items); fresh={}
+    if candidates:
+        for n in candidates:
+            if isinstance(n,dict):
+                key=str(n.get("key","")).strip()
+                if key: finalize_event(fresh,key,n,items)
+        print("Gemini candidate events:",len(fresh))
+    else:
+        print("Using deterministic event fallback."); fresh=deterministic_fallback(items)
+    cutoff=(dt.date.today()-dt.timedelta(days=KEEP_DAYS)).isoformat()
+    db={k:v for k,v in old.items() if v.get("manual") or v.get("last_seen",TODAY)>=cutoff}
+    db.update(fresh)
+    events=list(db.values()); events.sort(key=lambda e:(e.get("date",""),e.get("last_seen","")),reverse=True)
+    with open(OUT,"w",encoding="utf-8") as f:
+        json.dump({"updated":dt.datetime.now(dt.timezone.utc).isoformat(),"events":events},f,indent=1,ensure_ascii=False)
+    print("events saved:",len(events))
 
-if __name__ == "__main__":
-    main()
+if __name__=="__main__": main()

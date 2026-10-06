@@ -1,40 +1,62 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tigray OSINT Tracker</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
 body{margin:0;font:15px/1.45 system-ui,sans-serif;color:#1b1f24;background:#f2f4f6}
-header{padding:12px 16px;background:#1b2733;color:#fff}header h1{margin:0;font-size:18px}header div{font-size:12px;opacity:.75}
-main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 62px)}
+header{padding:12px 16px;background:#1b2733;color:#fff}header h1{margin:0;font-size:19px}header div{font-size:12px;opacity:.78}
+main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 68px)}
 #map{height:100%}#side{overflow:auto;background:#fff;border-left:1px solid #d5d9de;padding:10px}
-.f{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}.f button{border:1px solid #9aa4ae;background:#fff;border-radius:14px;padding:3px 10px;cursor:pointer}
-.f button.on{background:#1b2733;color:#fff}
-.ev{border-top:1px solid #e3e6e9;padding:8px 0;cursor:pointer}.ev p{margin:2px 0}.src{font-size:12px;color:#5a6672}
-.g{font-size:11px;font-weight:700;padding:1px 7px;border-radius:10px;color:#fff;margin-right:6px}
-.CONFIRMED{background:#1f7a3d}.REPORTED{background:#b7791f}.CLAIM{background:#b42318}
+.f{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}.f button{border:1px solid #9aa4ae;background:#fff;border-radius:14px;padding:4px 10px;cursor:pointer}.f button.on{background:#1b2733;color:#fff}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}.stat{background:#f2f4f6;border-radius:8px;padding:7px;text-align:center}.stat b{display:block;font-size:18px}
+.ev{border-top:1px solid #e3e6e9;padding:9px 0;cursor:pointer}.ev p{margin:3px 0}.src{font-size:12px;color:#5a6672}.src a{margin-right:7px}
+.g{font-size:11px;font-weight:700;padding:2px 7px;border-radius:10px;color:#fff;margin-right:6px}
+.CONFIRMED{background:#1f7a3d}.CORROBORATED{background:#2563a6}.REPORTED{background:#b7791f}.DEVELOPING{background:#9a6700}.CLAIM{background:#b42318}
+.badge{font-size:11px;padding:2px 6px;border-radius:8px;background:#eef1f4;margin-left:4px}.early{background:#fff8e1;border:1px solid #f0d78c;border-radius:8px;padding:8px;margin-bottom:9px}.early b{display:block}
 @media(max-width:760px){main{grid-template-columns:1fr;grid-template-rows:50vh auto;height:auto}}
-</style></head><body>
+</style></head>
+<body>
 <header><h1>Tigray OSINT Tracker</h1><div id="up">Loading…</div></header>
-<main><div id="map"></div><div id="side"><div class="f" id="f"></div><div id="list"></div></div></main>
+<main><div id="map"></div><div id="side">
+<div class="stats" id="stats"></div><div class="early" id="early"></div>
+<div class="f" id="gradeFilters"></div><div class="f" id="sourceFilters"></div><div id="list"></div>
+</div></main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
-const COL={CONFIRMED:"#1f7a3d",REPORTED:"#b7791f",CLAIM:"#b42318"};
+const COL={CONFIRMED:"#1f7a3d",CORROBORATED:"#2563a6",REPORTED:"#b7791f",DEVELOPING:"#9a6700",CLAIM:"#b42318"};
 const map=L.map("map").setView([13,39.5],6);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:12,attribution:"© OpenStreetMap"}).addTo(map);
-let events=[],on={CONFIRMED:1,REPORTED:1,CLAIM:1},layer=L.layerGroup().addTo(map),markers={};
-function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e}
+let events=[],gradeOn={CONFIRMED:1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},sourceOn={news:1,social:1},layer=L.layerGroup().addTo(map),markers={};
+function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
+function sourceLabel(s){if(s.platform==="reddit")return "Reddit";if(s.platform==="gdelt")return "GDELT";return s.outlet||"Source"}
+function visible(e){if(!gradeOn[e.grade])return false;const s=e.sources||[];return !s.length||s.some(x=>sourceOn[x.source_type||"news"])}
 function draw(){
-  layer.clearLayers();const list=document.getElementById("list");list.replaceChildren();
-  events.filter(e=>on[e.grade]).forEach(e=>{
-    if(e.lat!=null){const m=L.circleMarker([e.lat,e.lon],{radius:9,color:COL[e.grade],fillColor:COL[e.grade],fillOpacity:e.grade=="CLAIM"?.3:.8,dashArray:e.grade=="CONFIRMED"?null:"3 3"}).addTo(layer);
-      m.bindPopup(e.place+": "+e.summary);markers[e.key]=m}
-    const d=el("div","ev");const g=el("span","g "+e.grade,e.grade);const b=el("b","",e.date+" · "+(e.place||"location unclear"));
-    d.append(g,b,el("p","",e.summary));
-    const s=el("div","src");(e.sources||[]).slice(0,4).forEach(x=>{const a=el("a","",x.outlet);a.href=x.url;a.target="_blank";a.rel="noopener";s.append(a," ")});
-    d.append(s);d.onclick=()=>{if(markers[e.key]){map.setView([e.lat,e.lon],8);markers[e.key].openPopup()}};list.append(d)});
+ layer.clearLayers();markers={};const list=document.getElementById("list");list.replaceChildren();
+ events.filter(visible).forEach(e=>{
+  if(e.lat!=null){const color=COL[e.grade]||"#555";const m=L.circleMarker([e.lat,e.lon],{radius:9,color,fillColor:color,fillOpacity:e.grade==="CLAIM"?.25:.8,dashArray:e.grade==="CONFIRMED"?null:"3 3"}).addTo(layer);
+   m.bindPopup("<b>"+(e.place||"Unknown location")+"</b><br>"+e.summary+"<br><small>"+(e.confidence||25)+"% evidence score</small>");markers[e.key]=m}
+  const d=el("div","ev"),g=el("span","g "+e.grade,e.grade),b=el("b","",e.date+" · "+(e.place||"location unclear")),score=el("span","badge",(e.confidence||25)+"%");
+  d.append(g,b,score,el("p","",e.summary));const s=el("div","src");
+  (e.sources||[]).slice(0,6).forEach(x=>{const a=el("a","",sourceLabel(x));a.href=x.url;a.target="_blank";a.rel="noopener";s.append(a)});d.append(s);
+  d.onclick=()=>{if(markers[e.key]&&e.lat!=null){map.setView([e.lat,e.lon],8);markers[e.key].openPopup()}};list.append(d);
+ });
 }
-fetch("data/events.json?"+Date.now()).then(r=>r.json()).then(j=>{events=j.events;
-  document.getElementById("up").textContent="Last updated "+new Date(j.updated).toLocaleString()+" · positions approximate · grades are automatic, not guarantees";
-  const f=document.getElementById("f");["CONFIRMED","REPORTED","CLAIM"].forEach(k=>{const b=el("button","on",k);b.onclick=()=>{on[k]=!on[k];b.classList.toggle("on");draw()};f.append(b)});draw()})
- .catch(()=>document.getElementById("up").textContent="Could not load data/events.json");
+function button(parent,label,key,store){const b=el("button","on",label);b.onclick=()=>{store[key]=!store[key];b.classList.toggle("on");draw()};parent.append(b)}
+function renderControls(){
+ const gf=document.getElementById("gradeFilters"),sf=document.getElementById("sourceFilters");gf.replaceChildren();sf.replaceChildren();
+ ["CONFIRMED","CORROBORATED","REPORTED","DEVELOPING","CLAIM"].forEach(k=>button(gf,k,k,gradeOn));
+ [["NEWS","news"],["SOCIAL","social"]].forEach(x=>button(sf,x[0],x[1],sourceOn));
+}
+function renderStats(){
+ const stats=document.getElementById("stats");stats.replaceChildren();
+ const total=events.length,social=events.filter(e=>(e.social_source_count||0)>0).length,early=events.filter(e=>["CLAIM","DEVELOPING"].includes(e.grade)).length;
+ [[total,"EVENTS"],[social,"SOCIAL EVENTS"],[early,"EARLY REPORTS"]].forEach(x=>{const d=el("div","stat");d.append(el("b","",String(x[0])),el("span","",x[1]));stats.append(d)});
+ const box=document.getElementById("early"),earlyEvents=events.filter(e=>["CLAIM","DEVELOPING"].includes(e.grade)).filter(e=>(e.social_source_count||0)>0).slice(0,3);
+ box.replaceChildren(el("b","", "⚠ Early reports"));
+ if(!earlyEvents.length)box.append(el("div","", "No social-media early reports currently detected."));
+ else earlyEvents.forEach(e=>box.append(el("div","",e.date+" · "+(e.place||"Unknown")+" — "+e.summary)));
+}
+fetch("data/events.json?"+Date.now()).then(r=>r.json()).then(j=>{events=j.events||[];document.getElementById("up").textContent="Last updated "+new Date(j.updated).toLocaleString()+" · map positions approximate · evidence grades are automated assessments, not guarantees";renderControls();renderStats();draw()}).catch(()=>document.getElementById("up").textContent="Could not load data/events.json");
 </script></body></html>
