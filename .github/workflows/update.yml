@@ -1,4 +1,4 @@
-"""Tigray OSINT collector. Run by GitHub Actions every few hours.
+Tigray OSINT collector. Run by GitHub Actions every few hours.
 Steps: 1) gather headlines  2) ask Gemini to turn them into structured events
        3) grade each event with plain rules (not by the AI)  4) save data/events.json
 """
