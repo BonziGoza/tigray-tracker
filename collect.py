@@ -90,8 +90,9 @@ def gather():
     return items[:MAX_ITEMS]
 
 PROMPT="""You are structuring OSINT reports about Tigray and northern Ethiopia.
-Today is {today}. Extract distinct real-world EVENTS from the numbered source items.
-Merge reports that clearly describe the same event. Do not invent facts. Ignore opinion/background.
+Today is {today}. Extract distinct real-world EVENTS from the numbered NEW source items.
+Merge reports that clearly describe the same event. If a new report clearly describes an existing event below, reuse that existing event's key.
+Do not invent facts. Ignore opinion/background.
 A social-media post is a report/claim, not proof. Preserve attribution. Do not treat reposts or repeated wording as independent evidence.
 Return only the requested JSON. Each event must contain:
 key, place, date, kind, summary, attribution, items.
@@ -100,7 +101,9 @@ attribution must be party or independent.
 Use only these map places: {places}
 Use the source publication date if the event date is not explicit. Only assign a place when supported.
 Summaries must be neutral and attribute disputed claims such as "TPF says...".
-Items:
+EXISTING RECENT EVENTS:
+{existing}
+NEW SOURCE ITEMS:
 {items}"""
 
 def extract_with_gemini(items, existing=None):
