@@ -1,11 +1,16 @@
 """Tigray OSINT collector with language-aware translation, event extraction, and deterministic evidence grading."""
 import os, json, re, datetime as dt, hashlib, time
 from urllib.parse import urlparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import feedparser, requests
+import trafilatura
 
 OUT="data/events.json"; QUEUE="data/source_queue.json"; STATUS="data/status.json"; TODAY=dt.date.today().isoformat()
 KEEP_DAYS=45; QUEUE_DAYS=2; MAX_ITEMS=100; SOCIAL_MAX=40; PROCESS_MAX_ITEMS=180; PROCESS_BATCH_SIZE=30
 MODEL=os.environ.get("MODEL","gemini-2.5-flash-lite")
+ARTICLE_TIMEOUT=15
+ARTICLE_MAX_CHARS=12000
+ARTICLE_FETCH_WORKERS=6
 API_KEY=os.environ.get("GEMINI_API_KEY","")
 RUN_MODE=os.environ.get("RUN_MODE","process")
 
@@ -106,7 +111,10 @@ def gather():
     return items[:MAX_ITEMS]
 
 PROMPT="""You are structuring OSINT reports about Tigray and northern Ethiopia.
-Today is {today}. First detect the language of each NEW source item. Only when the source text is Amharic (አማርኛ) or Tigrinya (ትግርኛ), translate it to neutral English for analysis. Do NOT translate English text. Preserve the original wording for every translated item and do not silently alter names, places, numbers, dates, or claims. If language detection is uncertain, do not translate; mark language as unknown. Then extract distinct real-world EVENTS from the numbered NEW source items.
+Today is {today}. Analyze the actual source content supplied for each NEW source item, not merely its RSS metadata.
+For NEWS sources, ARTICLE_TEXT is the primary evidence. The feed title is also source wording. Treat RSS_SUMMARY only as discovery metadata and NEVER use it by itself to establish a location, event detail, date, or claim when ARTICLE_TEXT is unavailable. If ARTICLE_TEXT is unavailable, be conservative.
+For SOCIAL sources, use the supplied post text/title as the source content.
+First detect the language of the source content. Only when the source text is Amharic (አማርኛ) or Tigrinya (ትግርኛ), translate it to neutral English for analysis. Do NOT translate English text. Preserve the original wording for every translated item and do not silently alter names, places, numbers, dates, or claims. If language detection is uncertain, do not translate; mark language as unknown. Then extract distinct real-world EVENTS from the numbered NEW source items.
 Merge reports that clearly describe the same event. If a new report clearly describes an existing event below, reuse that existing event's key.
 Do not invent facts. Ignore only clearly irrelevant content.
 Do not silently drop a relevant news or social report: if it describes a real development, make or attach it to an event. Political, diplomatic, humanitarian, security, and control developments are still events even when they are not combat.
@@ -118,7 +126,7 @@ kind must be control_change, strike, clash, diplomatic, humanitarian, claim, or 
 attribution must be party or independent.
 Use only these exact map places: {places}
 Regional areas allowed: Northern Tigray, Western Tigray, Eastern Tigray, Southern Tigray, Central Tigray, Northwestern Tigray, Northeastern Tigray.
-LOCATION RULES: Only report a specific place when the source explicitly names that place. Never infer a town/city from a region or from the general topic. If the source explicitly says "Northern Tigray" or another regional area, set region to that region and leave place empty. If no geographic area is stated, leave both place and region empty. Do not use "unknown", "unconfirmed", "unclear", or similar text as a location.
+STRICT LOCATION RULES: A specific place may be assigned ONLY when that exact place is explicitly named in the source title or ARTICLE_TEXT/post text. Do NOT infer a city/town from the outlet, URL slug, RSS query, nearby geography, or general knowledge. If the source explicitly states "Northern Tigray" or another allowed regional area, set region to that exact region and leave place empty. Never convert a regional statement into a city. If no recognized place or region is explicitly stated in the source content, leave both place and region empty. Never infer a town/city from a region or from the general topic. If the source explicitly says "Northern Tigray" or another regional area, set region to that region and leave place empty. If no geographic area is stated, leave both place and region empty. Do not use "unknown", "unconfirmed", "unclear", or similar text as a location.
 Use the source publication date if the event date is not explicit. Only assign a place or region when supported by the source.
 Summaries must be neutral and attribute disputed claims such as "TPF says...". For translations, include one object per translated source in translations with source_index, language ("am" or "ti"), original_text, and english_translation. For English sources, do not include a translation object.
 EXISTING RECENT EVENTS:
@@ -132,7 +140,9 @@ def extract_with_gemini(items, existing=None):
         return deterministic_fallback(items)
     listing="\n".join(
         f"{i}. [{x['source_type']}/{x['platform']}] [{x['outlet']}] {x['title']} | "
-        f"{x['summary']} | published={x['published']} | url={x['url']}"
+        f"RSS_SUMMARY={x.get('summary','')} | published={x['published']} | url={x['url']}\\n"
+        f"ARTICLE_TEXT_AVAILABLE={x.get('article_text_available',False)}\\n"
+        f"ARTICLE_TEXT={x.get('article_text','')}"
         for i,x in enumerate(items))
     schema={"type":"ARRAY","items":{"type":"OBJECT","properties":{
         "key":{"type":"STRING"},"place":{"type":"STRING"},"region":{"type":"STRING"},"date":{"type":"STRING"},
@@ -166,15 +176,77 @@ def extract_with_gemini(items, existing=None):
             return deterministic_fallback(items)
     return deterministic_fallback(items)
 
+
+def fetch_article_text(item):
+    """Fetch and extract a news article body for analysis only; never persist the body."""
+    if item.get("source_type") != "news":
+        return ""
+    url=str(item.get("url","") or "").strip()
+    if not url.startswith(("http://","https://")):
+        return ""
+    try:
+        r=requests.get(url,headers={
+            "User-Agent":"Mozilla/5.0 (compatible; TigrayTracker/1.0; +https://bonzigoza.github.io/tigray-tracker/)",
+            "Accept":"text/html,application/xhtml+xml"
+        },timeout=ARTICLE_TIMEOUT,allow_redirects=True)
+        r.raise_for_status()
+        content_type=(r.headers.get("content-type") or "").lower()
+        if "html" not in content_type and "text/" not in content_type:
+            return ""
+        raw=r.content[:5_000_000]
+        text=trafilatura.extract(
+            raw,url=r.url,include_comments=False,include_tables=False,
+            favor_precision=True,output_format="txt"
+        ) or ""
+        text=re.sub(r"\s+"," ",text).strip()
+        return text[:ARTICLE_MAX_CHARS]
+    except Exception as ex:
+        print("article fetch failed:",url[:120],type(ex).__name__)
+        return ""
+
+def enrich_news_items(items):
+    """Add transient article_text to news items before Gemini analysis."""
+    targets=[(i,x) for i,x in enumerate(items) if x.get("source_type")=="news"]
+    if not targets:
+        return items
+    results={}
+    with ThreadPoolExecutor(max_workers=ARTICLE_FETCH_WORKERS) as pool:
+        futures={pool.submit(fetch_article_text,x):i for i,x in targets}
+        for future in as_completed(futures):
+            i=futures[future]
+            try:
+                results[i]=future.result() or ""
+            except Exception:
+                results[i]=""
+    enriched=[]
+    extracted=0
+    for i,item in enumerate(items):
+        x=dict(item)
+        if x.get("source_type")=="news":
+            x["article_text"]=results.get(i,"")
+            x["article_text_available"]=bool(x["article_text"])
+            if x["article_text"]:
+                extracted+=1
+        enriched.append(x)
+    print("article bodies extracted:",extracted,"/",len(targets))
+    return enriched
+
 def contains_ethio_script(text):
     return bool(re.search(r"[\u1200-\u137F]", str(text or "")))
 
 def translate_social_items(items):
     """Translate Amharic/Tigrinya social posts to neutral English when Gemini is available."""
     if not API_KEY: return {}
-    targets=[(i,x) for i,x in enumerate(items) if contains_ethio_script(x.get("title","")) or contains_ethio_script(x.get("summary",""))]
+    targets=[(i,x) for i,x in enumerate(items) if (
+        contains_ethio_script(x.get("title","")) or
+        contains_ethio_script(x.get("summary","")) or
+        contains_ethio_script(x.get("article_text",""))
+    )]
     if not targets: return {}
-    listing="\n".join(f'{i}. {x["title"]} | {x.get("summary","")}' for i,x in targets)
+    listing="\n".join(
+        f'{i}. TITLE: {x["title"]} | RSS_SUMMARY: {x.get("summary","")} | '
+        f'ARTICLE_TEXT: {x.get("article_text","")[:8000]}'
+        for i,x in targets)
     prompt=f"""Translate the following source items for an English-language OSINT tracker. Today is {TODAY}.\nDetect the language. Translate ONLY Amharic or Tigrinya into neutral, literal English. If language is uncertain, return language=unknown and do not invent a translation. If an item is already English, return its original text unchanged. Preserve names, places, numbers, dates, and uncertainty. Do not add facts. Return JSON only as an array of objects with source_index, language (am/ti/unknown/en), original_text, english_translation. Every source index must appear exactly once.\nITEMS:\n{listing}"""
     schema={"type":"ARRAY","items":{"type":"OBJECT","properties":{"source_index":{"type":"INTEGER"},"language":{"type":"STRING"},"original_text":{"type":"STRING"},"english_translation":{"type":"STRING"}},"required":["source_index","language","original_text","english_translation"]}}
     body={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","responseSchema":schema,"temperature":0.1,"maxOutputTokens":6000}}
@@ -434,6 +506,10 @@ def process_queue():
         batch=pending_all[offset:offset+PROCESS_BATCH_SIZE]
         if not batch: continue
         batch_count+=1
+
+        # Fetch actual article bodies transiently. They are passed to Gemini
+        # but never written to source_queue.json or events.json.
+        batch=enrich_news_items(batch)
 
         # Translate first so Gemini sees English text for Amharic/Tigrinya social
         # sources while we still preserve the original source text.
