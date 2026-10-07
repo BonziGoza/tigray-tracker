@@ -159,14 +159,14 @@ def extract_with_gemini(items, existing=None):
     return deterministic_fallback(items)
 
 def contains_ethio_script(text):
-    return bool(re.search(r"[\\u1200-\\u137F]", str(text or "")))
+    return bool(re.search(r"[\u1200-\u137F]", str(text or "")))
 
 def translate_social_items(items):
     """Translate Amharic/Tigrinya social posts to neutral English when Gemini is available."""
     if not API_KEY: return {}
     targets=[(i,x) for i,x in enumerate(items) if x.get("source_type")=="social"]
     if not targets: return {}
-    listing="\\n".join(f'{i}. {x["title"]} | {x.get("summary","")}' for i,x in targets)
+    listing="\n".join(f'{i}. {x["title"]} | {x.get("summary","")}' for i,x in targets)
     prompt=f"""Translate the following social-media source items for an English-language OSINT tracker. Today is {TODAY}.\nDetect the language. Translate ONLY Amharic or Tigrinya into neutral, literal English. If an item is already English, return its original text unchanged. Preserve names, places, numbers, dates, and uncertainty. Do not add facts. Return JSON only as an array of objects with source_index, language (am/ti/unknown/en), original_text, english_translation. Every source index must appear exactly once.\nITEMS:\n{listing}"""
     schema={"type":"ARRAY","items":{"type":"OBJECT","properties":{"source_index":{"type":"INTEGER"},"language":{"type":"STRING"},"original_text":{"type":"STRING"},"english_translation":{"type":"STRING"}},"required":["source_index","language","original_text","english_translation"]}}
     body={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","responseSchema":schema,"temperature":0.1,"maxOutputTokens":6000}}
