@@ -22,6 +22,12 @@ PLACES={"Mekelle":(13.50,39.47),"Alamata":(12.42,39.55),"Shire":(14.10,38.28),"A
 "Lalibela":(12.03,39.04),"Dessie":(11.13,39.63),"Woldia":(11.83,39.60),"Addis Ababa":(9.03,38.74),
 "Asmara":(15.34,38.93),"Bahir Dar":(11.59,37.39),"Gondar":(12.60,37.47),"Humera":(14.30,36.60),
 "Zalambessa":(14.52,39.55)}
+REGIONS={
+    "Northern Tigray":"Northern Tigray","Western Tigray":"Western Tigray",
+    "Eastern Tigray":"Eastern Tigray","Southern Tigray":"Southern Tigray",
+    "Central Tigray":"Central Tigray","Northwestern Tigray":"Northwestern Tigray",
+    "Northeastern Tigray":"Northeastern Tigray"
+}
 
 def clean_html(v): return re.sub(r"<[^>]+>"," ",v or "").strip()
 
@@ -107,7 +113,7 @@ Do not silently drop a relevant news or social report: if it describes a real de
 A social-media post is a report/claim, not proof. Preserve attribution. Do not treat reposts or repeated wording as independent evidence.
 Every relevant source item should appear in at least one event's items array. If an item is truly irrelevant, put its index in ignored_items with a brief reason.
 Return only the requested JSON. Each event must contain:
-key, place, date, kind, summary, attribution, items, translations.
+key, place, region, date, kind, summary, attribution, items, translations.
 kind must be control_change, strike, clash, diplomatic, humanitarian, claim, or other.
 attribution must be party or independent.
 Use only these map places: {places}
@@ -127,14 +133,14 @@ def extract_with_gemini(items, existing=None):
         f"{x['summary']} | published={x['published']} | url={x['url']}"
         for i,x in enumerate(items))
     schema={"type":"ARRAY","items":{"type":"OBJECT","properties":{
-        "key":{"type":"STRING"},"place":{"type":"STRING"},"date":{"type":"STRING"},
+        "key":{"type":"STRING"},"place":{"type":"STRING"},"region":{"type":"STRING"},"date":{"type":"STRING"},
         "kind":{"type":"STRING"},"summary":{"type":"STRING"},"attribution":{"type":"STRING"},
         "items":{"type":"ARRAY","items":{"type":"INTEGER"}},
         "ignored_items":{"type":"ARRAY","items":{"type":"INTEGER"}},
         "translations":{"type":"ARRAY","items":{"type":"OBJECT","properties":{
             "source_index":{"type":"INTEGER"},"language":{"type":"STRING"},"original_text":{"type":"STRING"},"english_translation":{"type":"STRING"}},
             "required":["source_index","language","original_text","english_translation"]}}},
-        "required":["key","place","date","kind","summary","attribution","items","ignored_items","translations"]}}
+        "required":["key","place","region","date","kind","summary","attribution","items","ignored_items","translations"]}}
     body={"contents":[{"parts":[{"text":PROMPT.format(today=TODAY,places=", ".join(PLACES),existing="\n".join(f"- {e.get('key','')} | {e.get('date','')} | {e.get('place','')} | {e.get('summary','')}" for e in (existing or [])[:30]) or "(none)",items=listing)}]}],
           "generationConfig":{"responseMimeType":"application/json","responseSchema":schema,
                               "temperature":0.1,"maxOutputTokens":5000}}
@@ -164,10 +170,10 @@ def contains_ethio_script(text):
 def translate_social_items(items):
     """Translate Amharic/Tigrinya social posts to neutral English when Gemini is available."""
     if not API_KEY: return {}
-    targets=[(i,x) for i,x in enumerate(items) if x.get("source_type")=="social"]
+    targets=[(i,x) for i,x in enumerate(items) if contains_ethio_script(x.get("title","")) or contains_ethio_script(x.get("summary",""))]
     if not targets: return {}
     listing="\n".join(f'{i}. {x["title"]} | {x.get("summary","")}' for i,x in targets)
-    prompt=f"""Translate the following social-media source items for an English-language OSINT tracker. Today is {TODAY}.\nDetect the language. Translate ONLY Amharic or Tigrinya into neutral, literal English. If an item is already English, return its original text unchanged. Preserve names, places, numbers, dates, and uncertainty. Do not add facts. Return JSON only as an array of objects with source_index, language (am/ti/unknown/en), original_text, english_translation. Every source index must appear exactly once.\nITEMS:\n{listing}"""
+    prompt=f"""Translate the following source items for an English-language OSINT tracker. Today is {TODAY}.\nDetect the language. Translate ONLY Amharic or Tigrinya into neutral, literal English. If language is uncertain, return language=unknown and do not invent a translation. If an item is already English, return its original text unchanged. Preserve names, places, numbers, dates, and uncertainty. Do not add facts. Return JSON only as an array of objects with source_index, language (am/ti/unknown/en), original_text, english_translation. Every source index must appear exactly once.\nITEMS:\n{listing}"""
     schema={"type":"ARRAY","items":{"type":"OBJECT","properties":{"source_index":{"type":"INTEGER"},"language":{"type":"STRING"},"original_text":{"type":"STRING"},"english_translation":{"type":"STRING"}},"required":["source_index","language","original_text","english_translation"]}}
     body={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","responseSchema":schema,"temperature":0.1,"maxOutputTokens":6000}}
     url=f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
@@ -185,9 +191,15 @@ def infer_date(item):
     return f"{m.group(1)}-{m.group(2)}-{m.group(3)}" if m else TODAY
 
 def infer_place(text):
-    low=text.lower()
+    low=str(text or "").lower()
     for place in sorted(PLACES,key=len,reverse=True):
         if place.lower() in low: return place
+    return ""
+
+def infer_region(text):
+    low=str(text or "").lower()
+    for region in sorted(REGIONS,key=len,reverse=True):
+        if region.lower() in low: return region
     return ""
 
 def infer_kind(text):
@@ -231,20 +243,31 @@ def independent_sources(sources):
     return out
 
 def evidence_score(sources,attribution="independent"):
+    """Evidence score: source quality plus independent corroboration; not a truth probability."""
     src=independent_sources(sources)
-    high={s.get("outlet","").lower() for s in src if source_quality(s)>=3 and s.get("source_type")=="news"}
-    professional={s.get("outlet","").lower() for s in src if source_quality(s)>=2 and s.get("source_type")=="news"}
-    news={s.get("outlet","").lower() for s in src if s.get("source_type")=="news" and s.get("outlet")}
+    news={s.get("outlet","").lower().strip():s for s in src if s.get("source_type")=="news" and s.get("outlet")}
+    high={k:v for k,v in news.items() if source_quality(v)>=3}
+    professional={k:v for k,v in news.items() if source_quality(v)>=2}
     social=[s for s in src if s.get("source_type")=="social"]
-    score=20 + 32*len(high) + 8*max(0,len(professional)-len(high)) + 5*len(social)
-    score += 4*max(0,len(news)-len(professional))
-    if attribution=="party":
-        score -= 8
+    if len(high)>=3: score=96
+    elif len(high)>=2: score=88
+    elif len(high)==1 and len(professional)>=2: score=78
+    elif len(high)==1 and social: score=68
+    elif len(high)==1: score=58
+    elif len(professional)>=3: score=72
+    elif len(professional)==2: score=62
+    elif len(professional)==1 and social: score=55
+    elif len(professional)==1: score=48
+    elif len(social)>=3: score=40
+    elif len(social)==2: score=32
+    elif len(social)==1: score=24
+    else: score=18
+    if attribution=="party": score-=5
     return max(10,min(98,score))
 
 def grade(sources,attribution="independent"):
     score=evidence_score(sources,attribution)
-    if score>=82: return "CONFIRMED"
+    if score>=88: return "CONFIRMED"
     if score>=62: return "CORROBORATED"
     if score>=48: return "REPORTED"
     if score>=32: return "DEVELOPING"
@@ -258,9 +281,11 @@ def finalize_event(db,key,n,items):
     ev=db.get(key) or {"key":key,"sources":[],"manual":False}
     if ev.get("manual"): return
     place=n.get("place","") if n.get("place","") in PLACES else ""
+    region=n.get("region","") if n.get("region","") in REGIONS else ""
+    if place: region=""
     date=n.get("date","")
     if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}",str(date)): date=TODAY
-    ev.update({"place":place,"lat":PLACES.get(place,(None,None))[0],"lon":PLACES.get(place,(None,None))[1],
+    ev.update({"place":place,"region":region,"lat":PLACES.get(place,(None,None))[0],"lon":PLACES.get(place,(None,None))[1],
                "date":date,"kind":n.get("kind","other"),"summary":str(n.get("summary",""))[:500],
                "attribution":n.get("attribution","independent"),"last_seen":TODAY})
     if "translations" not in ev: ev["translations"]=[]
@@ -299,13 +324,14 @@ def deterministic_fallback(items):
     for i,item in enumerate(items):
         text=(item.get("title","")+" "+item.get("summary","")).strip()
         place=infer_place(text)
+        region="" if place else infer_region(text)
         date=infer_date(item)
         kind=infer_kind(text)
         normalized=re.sub(r"[^a-z0-9 ]"," ",text.lower())
         words={w for w in normalized.split() if len(w)>3}
         best=None; best_score=0
         for g in groups:
-            if g["place"] != place or g["date"] != date: continue
+            if g["place"] != place or g["region"] != region or g["date"] != date: continue
             overlap=len(words & g["words"])/max(1,len(words | g["words"]))
             if overlap >= 0.45 and overlap > best_score:
                 best_score=overlap; best=g
@@ -313,9 +339,9 @@ def deterministic_fallback(items):
             best["items"].append(i); best["words"] |= words
         else:
             groups.append({
-                "place":place,"date":date,"kind":kind,"words":words,
+                "place":place,"region":region,"date":date,"kind":kind,"words":words,
                 "items":[i],
-                "key":event_key(item,place,date),
+                "key":event_key(item,place or region,date),
                 "summary":item["title"][:500],
                 "attribution":"party" if item["source_type"]=="social" else "independent",
                 "translations":[]
