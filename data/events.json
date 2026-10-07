@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T18:38:13.075904+00:00",
+ "updated": "2026-10-07T19:04:33.218996+00:00",
  "events": [
   {
    "key": "unknown-2026-10-07-ec0b6796",
@@ -99,6 +99,15 @@
      "platform": "rss",
      "author": "",
      "published": "Wed, 07 Oct 2026 16:57:22 GMT"
+    },
+    {
+     "outlet": "Demócrata",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaHRDYmxCOTNIUXZJZmFaSTBzZTY4eVp1N0kyUEVzSVktSjZuUzUxZ3BsX0NRRkJrMzIxVEhkZm1nd0dtdkVXa0JUdXYzZEVKU0dIeU5KLXhDR2QtakR2ZktHVWpZZGFIcjQxVkVqREpKTkRhbXl2ckFkWVBkOGF6Y1dWMFp6Q3lSQzZzX2wyOXVaX1ZWSzRqdlJKdnpycGl4TFNQUkVnbFc0YnhBRllpdzh5MC0xcjBUb2pFak84MHRKQVgzbF8xRC1JLXJmYVN0bk56MmFORUVjVVRUeW1CMTBQd07SAeoBQVVfeXFMTmFwQ09hOHhqcUtSQ2JiRzFNdmtudWJFWWxPLW5VaG5QSHEwc1g4VkJndUZNSDlwaEtoMnRic0ttUk92VmMtX24tRDlWa1I1cHk0NGExandZci12Y002NDJPM1dhMk1abXBBdV91YWJCSjMyQVJTVUhEUjRnWmlPTEYzUGswTlF3YWY0MDlVMzRZNUdOOUpZb2ZRNHdCY2ZrV2VURldaMnZsTzh4ZVNPbVVIWVhwOUwtRFVyRlhSd2dpQXdmN0poWjZudjBUR25PSko1ZnZpMWNQTnBsaFpsNG9hUDNiM1pEMmd3?oc=5",
+     "title": "Allies of the Ethiopian government denounce the entry of Eritrean troops into Tigray in support of the TPLF - Demócrata",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Wed, 07 Oct 2026 16:57:22 GMT"
     }
    ],
    "manual": false,
@@ -111,11 +120,11 @@
    "attribution": "independent",
    "last_seen": "2026-10-07",
    "translations": [],
-   "grade": "CLAIM",
-   "confidence": 25,
-   "source_count": 1,
+   "grade": "DEVELOPING",
+   "confidence": 45,
+   "source_count": 2,
    "social_source_count": 0,
-   "news_source_count": 1
+   "news_source_count": 2
   },
   {
    "key": "unknown-2026-10-07-50271530",
@@ -2160,6 +2169,1657 @@
    "source_count": 1,
    "social_source_count": 0,
    "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-6385686f",
+   "sources": [
+    {
+     "outlet": "Yahoo",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZDVhdUtfWHlyMnlUdkpMdVhDSmdFdTE1R0hTMWppS1pJRkVHT3djWTJTWkZQYTJzQzNvd0FnVl9STzdHMUVkeDNnbUJzUFRoUENseTRseXJnM2FFUXh2WUhNdVRYaWFqTDEzY0V1NmJGWTdmM1J5NnVjTFJGYlpJQjVrejhSSEJpcVVfYUZPN09MMnJoVE9xNE5B?oc=5",
+     "title": "Witnesses spot Eritrean troops inside northern Ethiopia as tensions flare - Yahoo",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Wed, 07 Oct 2026 18:43:47 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Witnesses spot Eritrean troops inside northern Ethiopia as tensions flare - Yahoo",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-4dcb3a0d",
+   "sources": [
+    {
+     "outlet": "https://kulu-media.com/",
+     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4M3pCdi1fUTNYWEdBQ0VPdzItX21nY0ZkejlyT1JzNU1BaVRUZUJRTGN2REhqajZId09LV3hCVzNZQThkUUMxak9DNjUyRWFBcW1PYTJwU2JqaVk0ZTNHNTJFdlc4dTZ1Z0E?oc=5",
+     "title": "ENDF Drones Target Eritrean Forces in Eastern Tigray, ACLED Reports - https://kulu-media.com/",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Wed, 07 Oct 2026 18:42:30 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "ENDF Drones Target Eritrean Forces in Eastern Tigray, ACLED Reports - https://kulu-media.com/",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-1270fbc4",
+   "sources": [
+    {
+     "outlet": "BBC",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1sTG9Wa1o0dGJVN2k4M2wyeDQzWlE2WFhWbEFoa0lqUjhqQzFiTWo3VU5hdVNRUURVODg4TXV0SjBUY1JBSzhhLVZtMHJPMmMxcFIwemc0NGxmWXM?oc=5",
+     "title": "Eritrean troops move deep into Ethiopia's Tigray region as fighting escalates - BBC",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Wed, 07 Oct 2026 18:40:52 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "clash",
+   "summary": "Eritrean troops move deep into Ethiopia's Tigray region as fighting escalates - BBC",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-da39a3ee",
+   "sources": [
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33495",
+     "title": "ምስ ራኢ ሓድነት ኣፍሪካ ዝተኣሳሰረ ርክብ ኢትዮጵያን ናይጄርያን",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T18:31:00+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiatigrigna",
+     "url": "https://t.me/tikvahethiopiatigrigna/6451",
+     "title": "ስሩዓት ኣባላት ፖሊስ ከተማ መቐለ ናብ ስሩዕ ስረሖም ክምለሱ ፃውዒት ቀሪቡ ።",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiatigrigna",
+     "published": "2026-10-07T18:12:05+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiatigrigna",
+     "url": "https://t.me/tikvahethiopiatigrigna/6449",
+     "title": "ወታደራት ኤርትራ (ሻዕቢያ) ናብ ከተማና ኣትዮም ኢሎም ነበርቲ ከተማ ዓዲግራት ።  ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiatigrigna",
+     "published": "2026-10-07T18:01:39+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33494",
+     "title": "ቀዳማ ሚኒስትር ኣቢይ (ዶ/ር) ምስ ምክትል ፕሬዚዳንት ናይጄሪያ ተዛቲዮም",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T17:44:31+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33493",
+     "title": "ካብ ምስቁንቋን ናብ ምውሳን – ንኢትዮጵያ ናብ ቦታኣ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T17:11:19+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33492",
+     "title": "ቀዳማይ ሚኒስትር ጃማይካ ኣንድሪው ሆልነስ ንቀዳማይ ሚኒስትር ኣቢይ (ዶ/ር)መልእኽቲ እንኳዕ ደስ ኣበለኩም ኣመሓላሊፎም",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T15:57:00+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33491",
+     "title": "ኣብ ኢትዮጵያ ዝህነፅ መፈልፈሊ ሓይሊ ኒውክሌር ጠመተ ዝገበረ ዘተ ተኻይዱ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T14:19:40+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33490",
+     "title": "ፕሬዚዳንት ሕቡራት ኤሚሬታት ዓረብ ንቀዳማይ ሚኒስትር ኣቢይ (ዶ/ር) መልእኽቲ እንኳዕ ደስ ኣበለኩም ኣመሓላሊፎም",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T14:14:40+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33489",
+     "title": "ዘይሕጋዊ ጉጅለ ሕወሓት ህፃናትን ሰገናትን ናብ ኣገዳዲ ውትድርና ይምልምል ኣሎ – ዘ ጋርዲያን",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T14:01:21+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33488",
+     "title": "ኣሰልጣኒ ሚኬል ኣርቴታ ምስ ኣርሰናል ዘለዎም ውዕል ኣናዊሖም",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T13:45:57+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiA",
+     "url": "https://t.me/tikvahethiopiA/108512",
+     "title": "የዓዲግራት ከተማ ነዋሪዎች የኤርትራ (ሻዕቢያ) ጦር ሠራዊት ወደ ከተማቸው እንደገባ አሳወቁ።",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiA",
+     "published": "2026-10-07T11:05:30+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33487",
+     "title": "ካቢኔ ጋና ንብሪክስ ንምፅንባር ሕቶ ንምቕራብ ዘኽእል ውሳነ ኣሕሊፉ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T10:57:02+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiA",
+     "url": "https://t.me/tikvahethiopiA/108506",
+     "title": "ሴጅ ማሰልጠኛ ኢንስቲትዩት",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiA",
+     "published": "2026-10-07T10:47:02+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33486",
+     "title": "ባይቶ ወከልቲ ህዝቢ ስያመ፣ ኣወዳድባ፣ ስልጣንን ተግባርን ፈፀምቲ ኣካላት መንግስቲ ፌደራል ንምውሳን ዝቐረበ ረቂቕ ኣዋጅ ኣፅዲቑ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T10:38:45+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiA",
+     "url": "https://t.me/tikvahethiopiA/108505",
+     "title": "🔄 የሕዝብ ተወካዮች ም/ቤት የፌዴራል መንግሥት አስፈፃሚ አካላትን ስያሜ ፣ አደረጃጀት ፣ ስልጣንና ተግባር ለመወሰን የቀረበ ረቂቅ አዋጅን መርምሮ በሙሉ ድምጽ አጽድቋል፡፡",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiA",
+     "published": "2026-10-07T10:16:34+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33485",
+     "title": "ብመረፃ ዝዓምበበ ተሳትፎ ብልምዓት እንትድገም",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T10:08:33+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33484",
+     "title": "ኢትዮጵያ ካብ በሪ ባሕሪ ነጺልካ ምፅናሕ ኣይከኣልን – ኣይተ ኣባዱላ ገመዳ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T08:55:16+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiatigrigna",
+     "url": "https://t.me/tikvahethiopiatigrigna/6447",
+     "title": "እናት ባንክ ፈላሚ ቦንድ ስርዓተ ፆታ ንምትእትታው ኣብ ናይ መወዳእታ ምዕራፍ ከምእትርከብ ኣፍሊጣ።",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiatigrigna",
+     "published": "2026-10-07T07:43:27+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiatigrigna",
+     "url": "https://t.me/tikvahethiopiatigrigna/6446",
+     "title": "ሻውዓይ ቤት ምኽሪ ወከልቲ ህዝቢ ኣብ ከልተ መንግስታዊ ቤት ዕዮ ለውጢ ስያመ ገይሩ ።",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiatigrigna",
+     "published": "2026-10-07T07:42:22+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiatigrigna",
+     "url": "https://t.me/tikvahethiopiatigrigna/6441",
+     "title": "ሰራዊት ምክልኻል ሃገር ምስ ሓይሊ ሰላም ትግራይ ብምኻን ኣብ ዝተቖፃፀረን ከተማታት ቀልጢፉ መሓውር ፀጥታን ክዘርጋሕ መንግስታዊ ኣገልግሎት ክጅመርን ነበርቲ ዝተፈላለያ ከተማታት ትግራይ ሓቲቶም።",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiatigrigna",
+     "published": "2026-10-07T07:38:22+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33483",
+     "title": "ባይቶ ወከልቲ ህዝቢ ኣብ 1ይ ፍሉይ ኣኼባኡ ኣብ ዝቐረበ ረቂቕ ኣዋጅ ይዛተ ኣሎ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-07T07:30:22+00:00"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "ባይቶ ወከልቲ ህዝቢ ኣብ 1ይ ፍሉይ ኣኼባኡ ኣብ ዝቐረበ ረቂቕ ኣዋጅ ይዛተ ኣሎ",
+   "attribution": "party",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "REPORTED",
+   "confidence": 65,
+   "source_count": 21,
+   "social_source_count": 21,
+   "news_source_count": 0
+  },
+  {
+   "key": "unknown-2026-10-07-aae4c5e4",
+   "sources": [
+    {
+     "outlet": "Devdiscourse",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPc25OdEw5ZFpUYjlTWGZRQlZwSjNJV1VkWmFndUppWXVObE5jUjNMTWhlMVpTNHpWR01GQk54ZGRrc0I2QjUzZVdHRm55aGFlelVPdldPWC1oemxGRUg3cFNaQ29QUnU5UkhIUUZham1OMFJTWWZ1Wk5INWNMdWNzZU1ldEZEU25ZZURFbjJPMWhSUktPWThMMjBBdXZ0Mm9BVGhRTnZfZnh1aHFQelBhaFRNMk9NWVh2Sm1WR0ZlRTFFUTY2cjVUXy1B0gHKAUFVX3lxTE9zbk50TDlkWlRiOVNYZlFCVnBKM0lXVWRaYWd1SmlZdU5sTmNSM0xNaGUxWlM0elZHTUZCTnhkZGtzQjZCNTNlV0dGbnloYWV6VU92V09YLWh6bEZFSDdwU1pDb1BSdTlSSEhRRmFqbU4wUlNZZnVaTkg1Y0x1Y3NlTWV0RkRTblllREVuMk8xaFJSS09ZOEwyMEF1dnQyb0FUaFFOdl9meHVocVB6UGFoVE0yT01ZWHZKbVZHRmVFMUVRNjZyNVRfLUE?oc=5",
+     "title": "Eritrean troops drive through northern Ethiopian town, witnesses say - Devdiscourse",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Wed, 07 Oct 2026 17:20:41 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Eritrean troops drive through northern Ethiopian town, witnesses say - Devdiscourse",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-b03921ca",
+   "sources": [
+    {
+     "outlet": "Africanews",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbjNLZkE5eTVrak5ILVF1UWkwMDg3ZGJmdjFHNzk0S2xibWtxc1JWZldFeTBENHllYXJvUk1iWUk0cU1NV0pqTl9pbVFETEdPUkQ3T3UwVVBaZGhoRzRBTVM4ZjN5VjBmOHU5VEtzQmJ2dFRJWkc2WjBLYW5YWXRvWXVGdjN0Q3JVYXFLSldvNWZYUUc3OFRBUFNZWWkwY084T3R0ck9sMHRKQdIBqgFBVV95cUxQbjNLZkE5eTVrak5ILVF1UWkwMDg3ZGJmdjFHNzk0S2xibWtxc1JWZldFeTBENHllYXJvUk1iWUk0cU1NV0pqTl9pbVFETEdPUkQ3T3UwVVBaZGhoRzRBTVM4ZjN5VjBmOHU5VEtzQmJ2dFRJWkc2WjBLYW5YWXRvWXVGdjN0Q3JVYXFLSldvNWZYUUc3OFRBUFNZWWkwY084T3R0ck9sMHRKQQ?oc=5",
+     "title": "Eritrean troops deploy in Ethiopia's Tigray region, witnesses say - Africanews",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Wed, 07 Oct 2026 15:09:15 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Eritrean troops deploy in Ethiopia's Tigray region, witnesses say - Africanews",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-5046672c",
+   "sources": [
+    {
+     "outlet": "tikvahethiopiA",
+     "url": "https://t.me/tikvahethiopiA/108514",
+     "title": "#EBOLA⚠️",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiA",
+     "published": "2026-10-07T11:23:03+00:00"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "#EBOLA⚠️",
+   "attribution": "party",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 1,
+   "news_source_count": 0
+  },
+  {
+   "key": "unknown-2026-10-07-0c422ba6",
+   "sources": [
+    {
+     "outlet": "tikvahethiopiA",
+     "url": "https://t.me/tikvahethiopiA/108510",
+     "title": "በአዲስ አበባ ከተማ የ2019 ዓ/ም የሁሉም እርከን የተማሪዎች ምዝገባ መስከረም 30 ቀን እንዲጠናቀቅ የአዲስ አበባ ትምህርት ቢሮ አሳሰበ።",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiA",
+     "published": "2026-10-07T10:47:31+00:00"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "በአዲስ አበባ ከተማ የ2019 ዓ/ም የሁሉም እርከን የተማሪዎች ምዝገባ መስከረም 30 ቀን እንዲጠናቀቅ የአዲስ አበባ ትምህርት ቢሮ አሳሰበ።",
+   "attribution": "party",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 1,
+   "news_source_count": 0
+  },
+  {
+   "key": "unknown-2026-10-07-ec9f74ca",
+   "sources": [
+    {
+     "outlet": "tikvahethiopiA",
+     "url": "https://t.me/tikvahethiopiA/108508",
+     "title": "ሳዑዲ አረቢያ 🇸🇦 Saudi Arabia",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiA",
+     "published": "2026-10-07T10:47:08+00:00"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "ሳዑዲ አረቢያ 🇸🇦 Saudi Arabia",
+   "attribution": "party",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 1,
+   "news_source_count": 0
+  },
+  {
+   "key": "unknown-2026-10-07-e52fda5c",
+   "sources": [
+    {
+     "outlet": "tikvahethiopiA",
+     "url": "https://t.me/tikvahethiopiA/108504",
+     "title": "#HoPR",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiA",
+     "published": "2026-10-07T07:07:52+00:00"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "#HoPR",
+   "attribution": "party",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 1,
+   "news_source_count": 0
+  },
+  {
+   "key": "unknown-2026-10-07-d80f753d",
+   "sources": [
+    {
+     "outlet": "Goshen News",
+     "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNR2VLMWpuaUVjMms0Ulg1SkpiTVNwSVY4SWlPVGVHWDI0TEZQODJPTE9jZktUMklKYVUtYjhmVlBXVFdvYW5jdUdwRUpqNXNvTGxCNm1ieF8wYTBwT1N2OG5oX1FLcjZpV0pTd3ZOSGd5NHVxaE5NaU9kZUdBUzBWZHN4OU01OUtBQ2lNcnVXY0FjNkI1YkpoaDJERk8xVlNuYkRLZGZycFhUaVJtaG0zcWEyTGhsUm1BTXB2NFJxNWtyOVkyYVA1QWc4YUFyTWRNVU1MMFZuQjZQSkl3dk5xcmN2aXdYODFkOXk0U3R1QU9xbmIycFdkLThCeDAzUUJBcndsc1I0YVNfRHpiTXNoMjViNA?oc=5",
+     "title": "Ethiopian commander reports drone strikes in Tigray as markets reopen in regional capital - Goshen News",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 14:22:14 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "strike",
+   "summary": "Ethiopian commander reports drone strikes in Tigray as markets reopen in regional capital - Goshen News",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-51d91362",
+   "sources": [
+    {
+     "outlet": "Oskaloosa Herald",
+     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNUzNDYlI0OWZIdHFGR1U2NDU0YW95M3R6cncyMDJST2c4SjB5ZzRhUXQ4NWxIRDQ4d3JPS2s2eklxN2xZbGpZYmR2NjVkV1oyWUI4bHhIZ3kyMVVkMmpaZEg0Yi16aTBsZkk3dUtWZTRmalR0eU9qZkpJSUVPUVNQSTlUaWlmM2FocjBSOFp0OUpTall6OTZNX19EYV9LQW51UG1pLWFGSTZVdF9mNUUwWkRUVjctNERqSGk1d2kyRkpsaFhlM000UjQ5VFY3VzdDT0NSYkxqcDZJS1cxOF9XQmlFSVduM0NxS2s5VlNpUTRGNWJNNmR3bXlkcWFic3lfVFB3aVllX3JITFdsb2tZNURR?oc=5",
+     "title": "Ethiopian commander reports drone strikes in Tigray as markets reopen in regional capital - Oskaloosa Herald",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 14:22:14 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "strike",
+   "summary": "Ethiopian commander reports drone strikes in Tigray as markets reopen in regional capital - Oskaloosa Herald",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-19008416",
+   "sources": [
+    {
+     "outlet": "The Batesville Daily Guard",
+     "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPTFZjUjkwaTdNeG93UHhxcU1oU0dWaV83cDRPS1NvekpQVmRfSXFveUVnalVMdFFfOUNFOU12Q3V2WWJyNjFEaXVMYjBqbDdZOGZoX3JRMERsMFFLaWE4OFh5S1pFTFdoMUNxR3o4d09qTzZrWlBWRG15T3RDeXdIOHBiRVF0T2c3bU9WU2xHQ19lUmVCMWJwa3hTdGNzSDJaanJaOWFGN2tXdjFVUW9zQ0ZqZlBWb0trVFBQVG5XbjhpMnd1ZkVoZ2l4dFFESkF6ZVZ0ZGZrZktudVpTM3V0cnRsY0QtQk55M2xNelZlUFhWLUFDWDZRdlRlenIwdDJ6SV9DWUFXOXRBZw?oc=5",
+     "title": "Ethiopian commander reports drone strikes in Tigray as markets reopen in regional capital - The Batesville Daily Guard",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 14:22:14 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "strike",
+   "summary": "Ethiopian commander reports drone strikes in Tigray as markets reopen in regional capital - The Batesville Daily Guard",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-91b12167",
+   "sources": [
+    {
+     "outlet": "Ottumwa Courier",
+     "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOT3VCU1p5T0RoeS0tLThjRmpDSnNRQUZfa3lORHVrb2NLSmFCMk8wNW5KSkNiZnlEWDN4d2lVM2VOQjhLQU1uTkxCLUFDZVdsdkdoenhvZFhibHVxQ2MzWW8zQlAteVlaWlFHWGpVZ1hCZXo3dm00QjVkUWZBLVo5T0pPS2ZWcXB6V1VPdWNFNk50RUlwRFpYdFRUdUhrX0NKNWVUVUtnWUJCYmpaMWlJa19TQU9aVV9qeU9rV1EyOVAtaTBYN3V1dHJfdXFaRjlpMjdWTGp6a1c3cy1yeHVCSWlDV1F1bVRfbGtwVGg1eEFmU3RFNDY5T2xBZ3k1SW1pX2tHZE80bDd2a0l6TldOWTBjeWZZNktG?oc=5",
+     "title": "Ethiopian commander reports drone strikes in Tigray as markets reopen in regional capital - Ottumwa Courier",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 14:22:14 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "strike",
+   "summary": "Ethiopian commander reports drone strikes in Tigray as markets reopen in regional capital - Ottumwa Courier",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-4899abb4",
+   "sources": [
+    {
+     "outlet": "AP News",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQ0lkMFZxZ0wwT1dpUlAwRWVEX2wxTE1hVkZVVldsWkljc3JKTnUzN29Vbm1OUEU4Qzg1T05xbHZDTUxDN0RHZXRteXI0TGVjNVJSbHcwZmtkdTUwX3RFQ2h2Vlp6eWdWbGVpSlVqQnA5NEthb0pwcnpRRDlhOVNWbVVjSllUQkNJcTVGcm9DOHRoc0ZUWTRXSzJ0dDRPLWpLeXJ5YlRVaGZBM1NWTldnblpB?oc=5",
+     "title": "Ethiopian commander reports drone strikes in Tigray as markets reopen in regional capital - AP News",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 14:22:00 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "strike",
+   "summary": "Ethiopian commander reports drone strikes in Tigray as markets reopen in regional capital - AP News",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-374ac502",
+   "sources": [
+    {
+     "outlet": "France 24",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUWFndE5aeWpwaGxzdEZXMmViU2VUTWNFMjNGM3ptd3RkbEw3b3YyZkZxY0ZITVpHRUQ5akUwczdxZ01vdnQtRi1wd0d2My1EMTRpVUl4M25ZTm1Fa3B3cm5HNFVmMEc1SVhKWHFpMkJoX01vdHltNkpGb1cwTWZoRjRseGEtOEVXWVlrTjI5UHNDMHIxcUMzaXRnUFJZRDQ?oc=5",
+     "title": "Ethiopia 'fears Tigray conflict could get out of control' - France 24",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 13:49:43 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "control_change",
+   "summary": "Ethiopia 'fears Tigray conflict could get out of control' - France 24",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-c5ed615a",
+   "sources": [
+    {
+     "outlet": "ACLED",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWDg4Rm1Tb2IxSVVHdWEycVpTODAzc3Q1bUVLODN5YnZvSHRzYjNQOU1XNFpKamdLZ2dVMWE2OHlpRENxQnZNejZuQnBHN1puSnN4bU1vdk1zNnNiMmw0MFh2Vkh5Z3lIU2loTlFYaEpHMDhGTW1PWnYyLU84OEdEQ0JXamx5dnE1RFhIaWVwLUtYaWU4cnRqb0IteVRhSTd6Wk5QMGk1QnZhQXM?oc=5",
+     "title": "The TPLF move on critical sites after heading a new alliance. A new phase of the next war? - ACLED",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 13:49:20 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "The TPLF move on critical sites after heading a new alliance. A new phase of the next war? - ACLED",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-615e9d96",
+   "sources": [
+    {
+     "outlet": "Anadolu Ajansı",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPajNiWmh0b2wzVXBnNkpCemNyMU5iajdoQ1NqUjJHWWtKakNVcEt0RlpKMzNiU1NHVi1VeWFUaXE1b3ExeFIybmMwb2lDU0RRaTNaSDYxMkF0eV9lcjF6RFpsal93aURqTkM1OUJJb3prSGJGT1BycXBVWHpVWDBEN09hRWZBRFFfU08tWThseVJUVHVCWGV3Z25ncGJOb1dQNU5xNTRYUEpMQTlQWGJvNlhsT25BN3V3SUhfcUtR?oc=5",
+     "title": "EXPLAINER - Why renewed Tigray fighting is raising fears of another Ethiopian war - Anadolu Ajansı",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 13:36:17 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "clash",
+   "summary": "EXPLAINER - Why renewed Tigray fighting is raising fears of another Ethiopian war - Anadolu Ajansı",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-1c7838c7",
+   "sources": [
+    {
+     "outlet": "DW.com",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQktnN3JCUndaVlBpTUZKUDJyWEV6U1JQVExuUHpTSGN2U19lRVlVY0JXa3NTb2VpMmJXb1JNZU44elI1d3h3Q2J4THd5Y3VwdDFJUGNYSTJDYl9GOTNKQzZMakFtNnV4RENRdkxuZDJURVdhaWRmRWVrbGRyd3M4Tk5vZkFKN2Y3RG9iU2pPTkw3Z1NGa3VRUzRGOW4xRTNmYmZKcTB2dS1FaGNKSFotc1ZUenFpd9IBtgFBVV95cUxOQktnN3JCUndaVlBpTUZKUDJyWEV6U1JQVExuUHpTSGN2U19lRVlVY0JXa3NTb2VpMmJXb1JNZU44elI1d3h3Q2J4THd5Y3VwdDFJUGNYSTJDYl9GOTNKQzZMakFtNnV4RENRdkxuZDJURVdhaWRmRWVrbGRyd3M4Tk5vZkFKN2Y3RG9iU2pPTkw3Z1NGa3VRUzRGOW4xRTNmYmZKcTB2dS1FaGNKSFotc1ZUenFpdw?oc=5",
+     "title": "Ethiopian army advances in Tigray may cause the conflict to spill over to Eritrea - DW.com",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 13:35:38 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopian army advances in Tigray may cause the conflict to spill over to Eritrea - DW.com",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-22bc515a",
+   "sources": [
+    {
+     "outlet": "Modern Ghana",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBEOUo2YkJZck9LbkFnR2FkX05VUGJfTW95Q043NWUwd1dnUWZFU2tzeXJWZ3pUdU45SlMwTkh4WFV0S0tKZXRwSXEyUlh4ZDZJZnRtcmZrQ01sdFp1WnM5aGFiaVpfUdIBXEFVX3lxTE5Za2NVeUlwOFgwSnBpeWdXb0RLamFCel9iazhkRlZ6Z25aSWxURmZ1VnA3eU1WVXcxX2tPblByVEJPM0xWeFNKTmozYl9pMVVEY2tsWlRKbUY3S2FG?oc=5",
+     "title": "Tigray students relocated by conflict say fled forced conscription - Modern Ghana",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 13:30:00 GMT"
+    },
+    {
+     "outlet": "Modern Ghana",
+     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Za2NVeUlwOFgwSnBpeWdXb0RLamFCel9iazhkRlZ6Z25aSWxURmZ1VnA3eU1WVXcxX2tPblByVEJPM0xWeFNKTmozYl9pMVVEY2tsWlRKbUY3S2FG0gFcQVVfeXFMTllrY1V5SXA4WDBKcGl5Z1dvREtqYUJ6X2JrOGRGVnpnblpJbFRGZnVWcDd5TVZVdzFfa09uUHJUQk8zTFZ4U0pOajNiX2kxVURja2xaVEptRjdLYUY?oc=5",
+     "title": "Tigray students relocated by conflict say fled forced conscription - Modern Ghana",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 12:31:16 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Tigray students relocated by conflict say fled forced conscription - Modern Ghana",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "DEVELOPING",
+   "confidence": 45,
+   "source_count": 2,
+   "social_source_count": 0,
+   "news_source_count": 2
+  },
+  {
+   "key": "unknown-2026-10-07-317bbf85",
+   "sources": [
+    {
+     "outlet": "allAfrica.com",
+     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9FZ2htYjZXdzB6Y0RHZk4xM2I5MjdUSG5OWjB5LTdBRktNRmVfWE9DQTRBa3ZkemJuQnhkcjFSdVotU0hkbkhrM1EyYk43aGx0QXB0NkdQaHBCY2VpRkxPSXo4NFRtUUFnS1I4?oc=5",
+     "title": "Horn of Africa States Urge De-Escalation of Tensions in Ethiopia - allAfrica.com",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 13:20:39 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Horn of Africa States Urge De-Escalation of Tensions in Ethiopia - allAfrica.com",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-2d92bc71",
+   "sources": [
+    {
+     "outlet": "Africanews",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcWx6OU9DNEVsaVVtZ205U1h4TFVsZzU4WldKVmRjSjF1SDVtUnNMVTRfczNiUHRLZ1VHcmRwRUlwX0tLdTlUSDBfQ0RLcUhfdWQtT0N1LVpxd1F2THdYQ3ZOYTBRLWZDX1J5QmVvWlh5eWFMSHZpR1pSTC1wUExPRkZicldrRWJVR2FoTlpfUXFoZXVpZkp1VmVwa0xZUmROdzdScDhsQUllNEcyLUHSAbMBQVVfeXFMTlJoTjlYNG4wX05yYXpoOFJ0alB1azVEXzhfOXlmR1B0b29INHllQloteHlMUVF6T0xLQnh3X0ZSUDlmeFVzWk1GcEN6UlU0OGszbkZVYVpXbHVLOWtRVzN2TzlaRjBXUXc1SXZFMERvYl9qaVYyc3d3THk5TjhwZmJBODZ6N2xYT0tDNW1xZE9LMTNIR3NVMkkwMEtYSS1OYXNJRDAzZG1Fd2JTVFhxRnhiWE0?oc=5",
+     "title": "Renewed violence in Ethiopia's Tigray leaves dozens of children wounded - Africanews",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 13:06:15 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Renewed violence in Ethiopia's Tigray leaves dozens of children wounded - Africanews",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-b73a1cf0",
+   "sources": [
+    {
+     "outlet": "France 24",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdDJzaS1ibWhRSEdBVzZpTEstTjdYWkx5TGpvXzJBbWkyMW1jdGhtWi10bDlRVmdoaFpIWE56VjdSaU1NVTdiMUh3Smxld3kwUFZibkIzUFhxcEJpNUpab3U4bThTN0pGQlVtRi0yZFMySTRRcUVmMTgzeFEzcVJCYkxyTzBtbVY3WWFua3JQYkoyYU9kYzZuSFhUMFdhZ0I4eUZHSmFhZ3ZFVXBZUHc?oc=5",
+     "title": "Tigray students relocated by conflict say fled forced conscription - France 24",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 12:24:59 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Tigray students relocated by conflict say fled forced conscription - France 24",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-f099ae59",
+   "sources": [
+    {
+     "outlet": "Global Dispatches",
+     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBMMzhqQ29FcWZZQkRYeUdhN1kwRFV4U2h3SUM3dDhNNzZlbmhWaFZqVXAzX3NBV25JWFBDUzZMX21SVjhuVm1CTk1rZTVydENvNEtkcExYa3pmelNpNG9YY0FQU0kxUnhrQ2RhYUE5RnM0VkdnR1BUeg?oc=5",
+     "title": "Why You Should Be Paying Attention to Ethiopia Right Now - Global Dispatches",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 11:58:58 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Why You Should Be Paying Attention to Ethiopia Right Now - Global Dispatches",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "mekelle-2026-10-07-493485dc",
+   "sources": [
+    {
+     "outlet": "The Lufkin Daily News",
+     "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPVUFEeVVQSzFtMTIzWF9zYkFhY0hlQXdLc2traEJhTkdhRS1YdjZ6S3BQd0VKYXpQdHZHZ3dGTlVqVU1fLVpiNl95UGdBRGVvOFE5TnR3QTdQSVRtM294VF9MOVR0QlpMZEwtX2VITGJmLTF6RlVnbkQ0cGVMRWktam9NcXhyRG10OEc3OVV3ci1UWVMtM1dObUZTVy1abnljUmxWRWp1RVFGdUVvVVBZbkhJTGl4S1pIcmlkaUc1UWpnUVQ1b0xpU19tRTJaTTlLNl9TVkJ0OEVuejl6MG9Cd3ozTkdTVDd6YXVLem42OXdQdWtXQmVaaFJaQXVjV0dxRTJBWUF5dzVLWmJ1bUl2eWFmUFdCNFZrcU9vZW44SzBlQkREZkE?oc=5",
+     "title": "Members of the Ethiopian pro-government Tigray Peace Force patrol after the Tigray People's Liberation Front army retreated from the regional capital Mekelle - The Lufkin Daily News",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 11:51:01 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "Mekelle",
+   "lat": 13.5,
+   "lon": 39.47,
+   "date": "2026-10-07",
+   "kind": "diplomatic",
+   "summary": "Members of the Ethiopian pro-government Tigray Peace Force patrol after the Tigray People's Liberation Front army retreated from the regional capital Mekelle - The Lufkin Daily News",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-abec5750",
+   "sources": [
+    {
+     "outlet": "Middle East Eye",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVXJ2aTFpcVhld3lwZEw1ZDJFRUtBWTIzXy1jWFBmOG5vMHJfeWVVVWRSa1ROc2VpdFA0Z3ZWRXEwYU0tTGtlX3FNQW45Y2tvS3NGeWZYYWZGTGdFV0pKd1Y5TklpcXNHa093dEFTeFRLOXN3OFJBeGhBWWRiSHFjZ0tTYWJwV0FGOFJ5b1FFMnhMSUlXY1lpS0VhMzVpdFVSb0VoQ2NZRFpTWnFGWGc?oc=5",
+     "title": "Ethiopia pushes to secure Red Sea access as Tigray war raises regional tensions - Middle East Eye",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 11:01:04 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopia pushes to secure Red Sea access as Tigray war raises regional tensions - Middle East Eye",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-4207e7c7",
+   "sources": [
+    {
+     "outlet": "Pan African Review",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeDBkbFhXZGcwdlViZ2FCMXg0NDFtb1hfUDR1NTduVUwzNy1iSF94QWdKYnVLcVdtMXBMODN0MWUzT3RvRVAzdHFpRm0wSzJpOFFOQnV5NDF4S2x5b2FZQS1yd0NVZTlSZzFtYmVscGhRVGdqTUFSOWhydzVzc2I3WWNRYk5FWDN4ekFYLUFUZ3h6TFh0b0VFXw?oc=5",
+     "title": "TPLF’s Political Miscalculation and Ethiopia’s Shifting Landscape - Pan African Review",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 10:35:58 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "TPLF’s Political Miscalculation and Ethiopia’s Shifting Landscape - Pan African Review",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-a2dc488a",
+   "sources": [
+    {
+     "outlet": "Africanews",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUnVmcThiVy1hd0k4MlBrNUk2QTZTSm1GaFc3bXRtWWhqMlJYakRGM0NycW1qVFpDYzZXd2NrZkFxS3dMVnNfQzhwSGV3SlFlc3hBbHFWWFZqODZTaWlSZHBFUW5BeDhiRHFfb3NLb2IteVFHc2Y5SkFxWkpnMnZOMTU3dlBKVWltb000cGJKWGxmYjRkcUh2SnN5SmN1V0ZqYVg1X2d1R1kybFHSAasBQVVfeXFMTVJ1ZnE4YlctYXdJODJQazVJNkE2U0ptRmhXN210bVloajJSWGpERjNDcnFtalRaQ2M2V3dja2ZBcUt3TFZzX0M4cEhld0pRZXN4QWxxVlhWajg2U2lpUmRwRVFuQXg4YkRxX29zS29iLXlRR3NmOUpBcVpKZzJ2TjE1N3ZQSlVpbW9NNHBiSlhsZmI0ZHFIdkpzeUpjdVdGamFYNV9ndUdZMmxR?oc=5",
+     "title": "Tigray violence drives risk of Ethiopia-Eritrea war, analyst says - Africanews",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 10:27:21 GMT"
+    },
+    {
+     "outlet": "Africanews",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWmg4V1ExRThjSzF0bDFFM3k4QVJ3bVhER0xfWC1JRzJsVlNFX3NzRHJlM0Rld3ZGS0hrOFdIRElsSG15cE5lekgzcjhZMnN3dFJpaUVQYkJnYnlaM2VTdzh5SEtqcGFjSXR0UDh5VkdBcWdwRk9UbnJiRlNTR18yLThCMHFxVmszYWJ0NWw3bk9GaGdnY0pOel8yYVlvTTl6UHp4UVB30gGrAUFVX3lxTE1SdWZxOGJXLWF3STgyUGs1STZBNlNKbUZoVzdtdG1ZaGoyUlhqREYzQ3JxbWpUWkNjNld3Y2tmQXFLd0xWc19DOHBIZXdKUWVzeEFscVZYVmo4NlNpaVJkcEVRbkF4OGJEcV9vc0tvYi15UUdzZjlKQXFaSmcydk4xNTd2UEpVaW1vTTRwYkpYbGZiNGRxSHZKc3lKY3VXRmphWDVfZ3VHWTJsUQ?oc=5",
+     "title": "Tigray violence drives risk of Ethiopia-Eritrea war, analyst says - Africanews",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 05:20:54 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Tigray violence drives risk of Ethiopia-Eritrea war, analyst says - Africanews",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "DEVELOPING",
+   "confidence": 45,
+   "source_count": 2,
+   "social_source_count": 0,
+   "news_source_count": 2
+  },
+  {
+   "key": "unknown-2026-10-07-e9795283",
+   "sources": [
+    {
+     "outlet": "Belga Share",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZmo3Q1FpMjI2enRnOEdlcGV0Sm43bXVXdHRUQ0xSblRLdXZURmJGUkc5MnlYemVYZnY2cjRvZ2w4WE13bzh1Zm5DbWRtMUhUTjNpTGJ5U2pZTkc5eVNDUGtCVGRUMm1kVk50cnM3WERpZXktcUh5UkNodVZXSGlqOV9jeGFOWjVxUnBhWXFrWENwc1ptYVdjS2xDX0tOWWJtcXZSMVNvN2FaWnVvUVpNRGtxdGVpSW5Pc29va3pOazdudU54WklRb0dYT1JmempuRVE?oc=5",
+     "title": "EU concerned about escalation of conflict between Ethiopia and Eritrea - Belga Share",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 09:21:19 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "EU concerned about escalation of conflict between Ethiopia and Eritrea - Belga Share",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-78e451d6",
+   "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOMExLVWVuVW5wSGJudzB0QU8xMDBzQ1R0S2F4N3ZlZUYxYjBVZ3cxV1VFNTZ6MGE1ckg5SG5BellHMVN5OHZXUmRfNUIxTTJERnR2RDFOMklBckhIdy1GSTM2OTdVU1d1dTVEaENRdEhFeFdjN0d1Z2MyRTVfU2Zrc2dUaFJqNDRBSDVXb3FKX1hqdWlISW1fUlI1V19Bd2ZseDdBU0ZLYnpQSW9FdmU5TmZULUNsZHByajVtYVhhcGhvbkVIbDg5NXJVck81Y2M2cDB5LTN3MGlScUNCcGJPcA?oc=5",
+     "title": "#EU urges #Ethiopia, #Eritrea to de-escalate tensions, warns of wider Horn conflict watch - Facebook",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 09:04:10 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "#EU urges #Ethiopia, #Eritrea to de-escalate tensions, warns of wider Horn conflict watch - Facebook",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-59fa8d3f",
+   "sources": [
+    {
+     "outlet": "DW.com",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUDlvRHJ5b21OYXE3M0Z0QTVkbmFXMkZxTUZSTzdQU0VScF9wMm1wbUFmUnZQNkdVcVhnSFVycThnajJsZ0xQT1ZyeWVTdU9yR3NjY2VleGQ0Y3FjckZhMDgyd1dJQWFLek0tQnhTaXROVWZyY0MxUWNCanpqSm43NU0tbVlNMlU4RzQ5R3JCY0JielNvRjFJLTRLTDdycTF6WVE?oc=5",
+     "title": "Ethiopia's Tigray conflict What's next for Abiy Ahmed? - DW.com",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 08:28:51 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopia's Tigray conflict What's next for Abiy Ahmed? - DW.com",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-c70be3f2",
+   "sources": [
+    {
+     "outlet": "Al Jazeera",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQb3h5LUZTNDhpeEpMVllucThEN1F2eW9DT1l0NFBQSFpfTm45TlBRM3ZIcnBRN1QxU2R6WUNnVG1YY1pYd0k5dl9vSkJjXzdkbUx6MC1tYVo1R3ladU94ZEk2X2JSMHFWbHpLdEVrcmJvek1pbGVndjFlay1FcjVzSnRaYUh2dTRhU2ZMVjJkZFFVRi1idTRUaVBSelJuQmFLUWNZODZzN0w0SW1Za3NJN3Z3djlsd9IBuwFBVV95cUxPbTlsMTJlQXVEOVJ3cTJMc1JNZ2x1azRSVEhkRWxiSWhDZ2ZBRDFoWklLLUg5V044VFVNX1dJRWpTZzZWcWxGSVJYQm9VQkVZN1lKS3JhdHFLdFhiVVo3a3FlbUk1ZERYMmRlT0tLZ29mblRFR1p2Q1ZCeHA3NERQQmIydHp4NHEzSF9mUzc0cjN0T0x5X3hKRW9STDNyaXhxS1JDTGgzVjJHeTJtR29Ddms3ZnVpNmxXVkdv?oc=5",
+     "title": "Ethiopian PM Abiy demands Red Sea access as tensions with neighbours rise - Al Jazeera",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 05:52:08 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopian PM Abiy demands Red Sea access as tensions with neighbours rise - Al Jazeera",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-eb72f32c",
+   "sources": [
+    {
+     "outlet": "UA.NEWS",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWEp3Y1lQNjZKUzV4X2JDQmtrR0JhZGZBbWNlNTBJWVROTllJWFp1dXhxSWpLWTJ5RDBaa25rMERwWHRZMC1jSmN5MS11ekhLcVk1c0dBY2hmLWdkMVdFUFBtcXFNY3hWaEppYXdVRFVabzMydUhJMWw4RkF3ZkhVVTEtZmxfTmVWMEJqWmg5bTRNLWZwc2o1UXFaeUJEalZFR1NmZXFRZE83RGs?oc=5",
+     "title": "Witnesses report forced recruitment of boys as young as 15 in Tigray — The Guardian - UA.NEWS",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 05:10:35 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Witnesses report forced recruitment of boys as young as 15 in Tigray — The Guardian - UA.NEWS",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-610137a4",
+   "sources": [
+    {
+     "outlet": "The Guardian",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWC1JT0VjVHdpbWh2dF82UU9JckxQZ2pMZzVZRldwX2dwMXNVeEJtM041VVNJU2lwV0w0amhnUEV1Y3RjV1pSY1FSR0tqLTI1R0JXVW9PNHNNcFZndUlIMUZjcmlJWDNuRjBwTU9oV0lyQm5pTUh6am9ONEU0RnJNQTQzVFAyRm9LLXNHQThOb2hTOEc0UHdtTmo2b05aN3M2U1A4NndWQmZnTExMR0JKRjlLaFNxOV9QYkxxQkNoYUpjZFdvdlhN?oc=5",
+     "title": "Tigray rebel groups ‘forcibly recruiting boys as young as 15’ as fighting spreads | Global development - The Guardian",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 05:01:00 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "clash",
+   "summary": "Tigray rebel groups ‘forcibly recruiting boys as young as 15’ as fighting spreads | Global development - The Guardian",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "adwa-2026-10-07-69857713",
+   "sources": [
+    {
+     "outlet": "allAfrica.com",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB4TFltR3JoNlFPNVRaMERVeTQ0dENaLXVqdDVnUlkyd05iOXVqRlBIeTJrc0tCOGctTl84NU9WQ1ktdXVfMzdtUG1rNktKNTFqSUR5YWl0M2VpeWc?oc=5",
+     "title": "Ethiopia: Drone Strikes Kill Civilians Including IDPs in Tigray's Shiraro and Adwa, Residents Say - allAfrica.com",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 04:24:57 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "Adwa",
+   "lat": 14.17,
+   "lon": 38.9,
+   "date": "2026-10-07",
+   "kind": "strike",
+   "summary": "Ethiopia: Drone Strikes Kill Civilians Including IDPs in Tigray's Shiraro and Adwa, Residents Say - allAfrica.com",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-9a4860ea",
+   "sources": [
+    {
+     "outlet": "Al Jazeera",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMkZUZkItbUcxYXlaRVNNeTRmbVNsVlJIemN2UWhRYkR3UE5OeDNlN2ZoT2tjTmhzTW80bnFqZkNmZFowdHYxcXEycFpGWFVNSTdiZDN1V3hPTWM5YkJpNlVVMGhTZ2NudlpHeVR1TmJvZll5THJWRlhjdGxWa1N3ZURoNEPSAYoBQVVfeXFMTzZQb0l0OERpb0hnbmdMc05PczVDTTJpVTg3T2I5Qm11OFd6TGVpNENUSmg4X19wWDEzall1WGFyT2ZPWGFBa2Q0dXdXY0QzNEdYU1h0Q01sbWwwVDlFbDY4cGY3ZGNLTjNla3J4bnJ0dmprd1JmZUpLQk15SzBoQ3UzV09LanN4b0Jn?oc=5",
+     "title": "What’s happening in Ethiopia? - Al Jazeera",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 02:39:16 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "What’s happening in Ethiopia? - Al Jazeera",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-8e270163",
+   "sources": [
+    {
+     "outlet": "consilium.europa.eu",
+     "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQY2s4UDM3aFkyUnNOLV9JdkJhb0pFYy1GS2hhUlpqUXJ0andwWF9mcEtZMEd0anZ3RTJKRTUtOUF4eEV3VVNjZkhqWnpoRHFQNWtkN1ZqMlhrM1JuNjJFZlNLVXNjMVlvSGV0QmRDTEY5emNoYUt1ekVLakgwMWF5SnhQeDlpcW5wdXdpTC1OWjdDemtEckVmcW05cFl1QkwxM0M4dHUyZmJ2SGtDaDhSdHBLcUNwLWFfajEzQ3Z1T2QyOFR5RjhtYWdCZUxmbEpSMEtJamJGVEFNWVNnNnA3cWhrWFJQVUFDdVc0d3pYOVl5MTJzU1BDZm1vMTg3N0pzN2FxRTV2WXdJeGVEck4yTHBGUHNoYXdKVWFhNzdJUUw4eE9qcWktb3B1Tjl4VzczLXdLVEZ4dmcwV01LRll3SVVR?oc=5",
+     "title": "Ethiopia: Statement by the High Representative on behalf of the European Union on the escalating conflict in Ethiopia and the implications for the region - consilium.europa.eu",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 02:34:58 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopia: Statement by the High Representative on behalf of the European Union on the escalating conflict in Ethiopia and the implications for the region - consilium.europa.eu",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "mekelle-2026-10-07-fb840b1d",
+   "sources": [
+    {
+     "outlet": "IDN-InDepthNews",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9pNWpqaW4taXZaVVEwem1JQng3a0NFOUdvdEFpWVJRTDE5REFRQlVRZUFrcmFfT2lNdnZYaUlZNG41Z19SQ3ctak01clZQWjl1YVRuQm9WYzFvNWNYRVY2LTZ2VzNBVzVFdFpaZjNsTzFEdw?oc=5",
+     "title": "EEPA reports on ENDF recaptures Mekelle - IDN-InDepthNews",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 06 Oct 2026 01:03:44 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "Mekelle",
+   "lat": 13.5,
+   "lon": 39.47,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "EEPA reports on ENDF recaptures Mekelle - IDN-InDepthNews",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-1d94ec96",
+   "sources": [
+    {
+     "outlet": "horn review",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdElWeURnb1lMZmdkR01zeW0wbk9ubWx1RlZ1dVpaczRJQ2FjQVNnb0U3TjVJU1FTdkZQWF96QW13cHA5Ql9naWZJODNGUFYzQnQyS205ODd3SVpNQ1R2ZC1hVm9BaVVFeGdUazdQWEk5U2RRSVZLOVdxNmxTcV9wOEtGaE5NQUk?oc=5",
+     "title": "Eritrea’s Old Narrative in a New Red Sea Order - horn review",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 23:07:18 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Eritrea’s Old Narrative in a New Red Sea Order - horn review",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-0b177c1e",
+   "sources": [
+    {
+     "outlet": "CNBC Africa",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdmdqOVJ5VEd2TS1Md01heEhsQXVQQ1psaV9panJpdUl6R3RubHdOeHAybXZxYTdmbG1zdmVCR1ktN2lPb1c2VGVEenFxZmItWkprWng5YWJ0MmYxVk1Vb21PUnNqWnlqWnhmS2V4VE1BS0laSVJydXN2MC1UV2owaU1fNkwwVHpZVHBQM3c3SDByLUxXam0yZEM5LVJxaUFkUWlUUF96Y2M1Vi1EbWViY2dsM296bWl5cFE?oc=5",
+     "title": "Airstrikes and artillery hit north Ethiopia after Tigray capital’s fall, aid sources say - CNBC Africa",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 22:28:00 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "strike",
+   "summary": "Airstrikes and artillery hit north Ethiopia after Tigray capital’s fall, aid sources say - CNBC Africa",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-dfe88a91",
+   "sources": [
+    {
+     "outlet": "Al Jazeera",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ3d3Q1ZtbjZMVVdRZ2NuZnZCZ0NTZzlWOVhSN09feDF3cFN0blFsUm40Rk5vaGx6aWYwUnlHaEpIRHhTY0NDNGFydzRXbVRRVTRPWThiWGRNVG55WGJxdGVMXzFxSWRiYVVlRGp1dnRIZjE4ZjljTGNUdXR3NjV4TlR4RDA1VHUwdFg3Z01IR2tlLV9BSFZtV2tEc0ZuMWNnUTBmTVJpV05ncThjZzhKVNIBtgFBVV95cUxQaVNpZ1pMT3NTWGQtRDhtZE1GUHZBSlRMeXVDanlLNktCU2ZWUWtlQ3A3V1E5VVJOdVJZR0E0YUZjemQwVnBFNFJ5dDhFaDVpZGNBd182Vmw2NHc2OG9NSzk0WXlicEc1M1JwUWVSWEFjaDNENmEzYUhVdGdFZk85dVdjQi0zY1p1emhZVXZrUkpJUHpmVEJRNVhRZG50bWdMLUItUnVnbzFqMzVSRTUtTGlXN0x2dw?oc=5",
+     "title": "Four African leaders issue joint declaration as Ethiopia war escalates - Al Jazeera",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 22:00:06 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Four African leaders issue joint declaration as Ethiopia war escalates - Al Jazeera",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-e5b73346",
+   "sources": [
+    {
+     "outlet": "Face2Face Africa",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdWlBMjBSdVVzRF9rY0dmQXRDYmNZS185SjdXNnlNa2NEbk9mYmFVci1nRzFwRkRROWY3anRBSFB5WjY4eXBKTFBSZWFzblFKd0dtSjNwaFozOWo3VlRtTVhoSExDcW5OSC1rNmhlbm5wWnJjYm9PV2RXTFowYnN5NXpzNl9lYXhkd1EzTldYQ0ZSWnVtZkJfRGpEYUhXbEVneW1JWmhZd2E?oc=5",
+     "title": "Airstrikes reportedly hit north Ethiopia after fall of Tigray capital - Face2Face Africa",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 21:59:00 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "strike",
+   "summary": "Airstrikes reportedly hit north Ethiopia after fall of Tigray capital - Face2Face Africa",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-abf753df",
+   "sources": [
+    {
+     "outlet": "France 24",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5QM0d0VW9Sd3hPMGE3LTVPZlZPNUtSblgzcUx3RlJYQnR0a0Z3Q0ZvdlNMQWxDSXdKdzdKalBJMkVVWGdmZXJhcmVNcWp1cHpDU3Fna183VWxCQmFKTkEyX2w2OVBvek1LN09WLXZyVnhKZ2FEd3VyVEpSaDU?oc=5",
+     "title": "Ethiopia again demands access to the Red Sea - Eye on Africa - France 24",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 20:28:19 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopia again demands access to the Red Sea - Eye on Africa - France 24",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-ec4b40c6",
+   "sources": [
+    {
+     "outlet": "RANE Worldview",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNM19rRzdINjNmZ2VZaGp1RXYwOF9QOFIwZGtiOWI3ZE5VNExKakhINDN6MXFwUVFsd19yNVNBYjlHNEFIQWJNemlVMmlxNkx4OGVmcWgyYXowOGxsR0dJUWtPUFpvVlR3MElkVDVKZmgwdUVsd3ZHcldIU0V3R0ZMa05EX1d2Q08xSUFId2xZbFh1QmNvSnZfXzdxX2o0b2prTFliNk9ZRllscTlDdzZTSlVfakRKTjd5cnVPSGpKdWV4RUNNOE1zeg?oc=5",
+     "title": "Ethiopia and Eritrea Stand on the Precipice of War - RANE Worldview",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 20:02:00 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopia and Eritrea Stand on the Precipice of War - RANE Worldview",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-12f4c721",
+   "sources": [
+    {
+     "outlet": "horn review",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUk8wWDlwUDBDTUE5YTJ6Q2RXMk1OV3hXV09WZXFEbEhPeXo4M2dnVmZpSkt3aElMbXZNRG1xWkFUS0pUY3JWZV9PYlc1MURjbmFaVlFVcDlWeV9ZbW9ZWnQ1TFBwOE9DMlVZVGdIUklkUGRsWVR0VTluM2Y1SF9VMTZldFBtejNBa1pnU2IwblF0MlpoSHBQM0Fnb3M2MkhRZnQzVzdaSnluTkhVcUY0ekxJajJ3Z0wwSkx2dWQ0MnQ?oc=5",
+     "title": "Egypt Displays Its Anti-Addis Coalition as Ethiopia Gains Against Rebels. What Comes Next? - horn review",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 19:31:23 GMT"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Egypt Displays Its Anti-Addis Coalition as Ethiopia Gains Against Rebels. What Comes Next? - horn review",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-06-da39a3ee",
+   "sources": [
+    {
+     "outlet": "tikvahethiopiA",
+     "url": "https://t.me/tikvahethiopiA/108502",
+     "title": "ስለ ወተት የተደረገው ጥናት ምንድነው የሚለው ?",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiA",
+     "published": "2026-10-06T21:05:07+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiatigrigna",
+     "url": "https://t.me/tikvahethiopiatigrigna/6440",
+     "title": "ኣብ ትግራይ ዝንቀሳቐሱ ዝነበሩ ዕጡቓት ናብ ማእኸላት ተሃድሶ ክኣትው ፃውዒት ቀሪቡ።  ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiatigrigna",
+     "published": "2026-10-06T18:48:08+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiA",
+     "url": "https://t.me/tikvahethiopiA/108501",
+     "title": "\" ሀሰተኛ ዜና ነው \" - ደሳለኝ ጫኔ (ዶ/ር) ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiA",
+     "published": "2026-10-06T18:46:12+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiA",
+     "url": "https://t.me/tikvahethiopiA/108499",
+     "title": "ፎቶ ፦ በመቐለ \" እንዳ ማርያም ጉግሳ \" አካባቢ የሚገኘውና በቅርብ በዋይኤምሲኤ ድጋፍ ታድሶ ለአገልግሎት ተዘጋጅቶ ነበር የተባለ የህዝብ ቤተ መጻሕፍት በዘራፊዎች ከፍተኛ ውድመት ደርሶበታል።",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiA",
+     "published": "2026-10-06T18:45:47+00:00"
+    },
+    {
+     "outlet": "tikvahethiopiatigrigna",
+     "url": "https://t.me/tikvahethiopiatigrigna/6439",
+     "title": "እዋናዊ መግለፂ ወታደራዊ ኮማንድ ሓይሊ ሰላም ትግራይ !!",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiatigrigna",
+     "published": "2026-10-06T11:50:50+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33482",
+     "title": "ኣትሌት ትእግስት ኣሰፋ ኣብ ሽልማት ኮኾብ ኣትሌት እዚ ዓመት ሕፅይቲ ኮይና",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-06T11:39:41+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33481",
+     "title": "ብሄራዊ ረብሓታት ኢትዮጵያ ምሕላው ዘምፅኦ ትርፊ ኣዝዩ ብዙሕ እዩ – ፕሬዚደንት ታዬ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-06T11:18:51+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33480",
+     "title": "መንግስቲ ብሄራዊ ረብሓ ንምኽባር ኩሎም ዓቕሚታት እናተጠቐመ ይርከብ – ፕሬዚዳንት ታዬ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-06T08:51:27+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33479",
+     "title": "ኩለመዳይ ተሳትፎ ሕብረተሰብ ጭቡጥ ዕቤት ንኽምዝገብ ኣኽኢሉ እዩ – ፕሬዚዳንት ታዬ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-06T08:29:07+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33478",
+     "title": "ኣባላት ቤት ምኽሪ ሰላም ምፅናዕን መፍረያይነት ምድንፋዕን ቀዳማይ ተግባሮም ክኸውን ይግባእ – ፕሬዚዳንት ታዬ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-06T07:46:05+00:00"
+    },
+    {
+     "outlet": "tigrignafana",
+     "url": "https://t.me/tigrignafana/33477",
+     "title": "ሓበራዊ ኣኼባ ክልቲኦም ኣቢያተ ምኽሪ ይካየድ ኣሎ",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tigrignafana",
+     "published": "2026-10-06T06:33:13+00:00"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-06",
+   "kind": "other",
+   "summary": "ሓበራዊ ኣኼባ ክልቲኦም ኣቢያተ ምኽሪ ይካየድ ኣሎ",
+   "attribution": "party",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "REPORTED",
+   "confidence": 65,
+   "source_count": 11,
+   "social_source_count": 11,
+   "news_source_count": 0
+  },
+  {
+   "key": "unknown-2026-10-06-0a25ba59",
+   "sources": [
+    {
+     "outlet": "tikvahethiopiA",
+     "url": "https://t.me/tikvahethiopiA/108494",
+     "title": "#Update",
+     "source_type": "social",
+     "platform": "telegram",
+     "author": "tikvahethiopiA",
+     "published": "2026-10-06T15:43:17+00:00"
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-06",
+   "kind": "other",
+   "summary": "#Update",
+   "attribution": "party",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 25,
+   "source_count": 1,
+   "social_source_count": 1,
+   "news_source_count": 0
   },
   {
    "key": "unknown-2026-10-06-610137a4",
