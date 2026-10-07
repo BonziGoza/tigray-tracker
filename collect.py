@@ -57,6 +57,15 @@ def gather_news():
     except Exception as ex: print("GDELT failed:",ex)
     return items
 
+TELEGRAM_CHANNELS=[
+    "Tigrai_Ttv",
+    "axumawianmedia",
+    "tigrignafana",
+    "tikvahethiopiA",
+    "tikvahethiopiatigrigna",
+    "ASCENTIG",
+]
+
 def gather_reddit():
     cid=os.environ.get("REDDIT_CLIENT_ID",""); secret=os.environ.get("REDDIT_CLIENT_SECRET","")
     if not cid or not secret:
