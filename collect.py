@@ -116,8 +116,10 @@ Return only the requested JSON. Each event must contain:
 key, place, region, date, kind, summary, attribution, items, translations.
 kind must be control_change, strike, clash, diplomatic, humanitarian, claim, or other.
 attribution must be party or independent.
-Use only these map places: {places}
-Use the source publication date if the event date is not explicit. Only assign a place when supported.
+Use only these exact map places: {places}
+Regional areas allowed: Northern Tigray, Western Tigray, Eastern Tigray, Southern Tigray, Central Tigray, Northwestern Tigray, Northeastern Tigray.
+LOCATION RULES: Only report a specific place when the source explicitly names that place. Never infer a town/city from a region or from the general topic. If the source explicitly says "Northern Tigray" or another regional area, set region to that region and leave place empty. If no geographic area is stated, leave both place and region empty. Do not use "unknown", "unconfirmed", "unclear", or similar text as a location.
+Use the source publication date if the event date is not explicit. Only assign a place or region when supported by the source.
 Summaries must be neutral and attribute disputed claims such as "TPF says...". For translations, include one object per translated source in translations with source_index, language ("am" or "ti"), original_text, and english_translation. For English sources, do not include a translation object.
 EXISTING RECENT EVENTS:
 {existing}
