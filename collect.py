@@ -145,7 +145,7 @@ def extract_with_gemini(items, existing=None):
                 print("Gemini error",r.status_code,r.text[:300]); return deterministic_fallback(items)
             text=r.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
             data=json.loads(text)
-            return data if isinstance(data,list) else deterministic_fallback(items)
+            return data if isinstance(data,list) and data else deterministic_fallback(items)
         except Exception as ex:
             print("Gemini extraction failed:",ex)
             if attempt<2:
