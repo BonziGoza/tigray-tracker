@@ -154,6 +154,25 @@ def extract_with_gemini(items, existing=None):
             return deterministic_fallback(items)
     return deterministic_fallback(items)
 
+def translate_social_items(items):
+    """Translate Amharic/Tigrinya social posts to neutral English when Gemini is available."""
+    if not API_KEY: return {}
+    targets=[(i,x) for i,x in enumerate(items) if x.get("source_type")=="social"]
+    if not targets: return {}
+    listing="\\n".join(f'{i}. {x["title"]} | {x.get("summary","")}' for i,x in targets)
+    prompt=f"""Translate the following social-media source items for an English-language OSINT tracker. Today is {TODAY}.\nDetect the language. Translate ONLY Amharic or Tigrinya into neutral, literal English. If an item is already English, return its original text unchanged. Preserve names, places, numbers, dates, and uncertainty. Do not add facts. Return JSON only as an array of objects with source_index, language (am/ti/unknown/en), original_text, english_translation. Every source index must appear exactly once.\nITEMS:\n{listing}"""
+    schema={"type":"ARRAY","items":{"type":"OBJECT","properties":{"source_index":{"type":"INTEGER"},"language":{"type":"STRING"},"original_text":{"type":"STRING"},"english_translation":{"type":"STRING"}},"required":["source_index","language","original_text","english_translation"]}}
+    body={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","responseSchema":schema,"temperature":0.1,"maxOutputTokens":6000}}
+    url=f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+    try:
+        r=requests.post(url,headers={"x-goog-api-key":API_KEY},json=body,timeout=120)
+        if r.status_code!=200:
+            print("Gemini translation error",r.status_code,r.text[:300]); return {}
+        data=json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"].strip())
+        return {int(x["source_index"]):x for x in data if isinstance(x,dict) and str(x.get("language")) in ("am","ti") and x.get("english_translation")}
+    except Exception as ex:
+        print("Gemini translation failed:",ex); return {}
+
 def infer_date(item):
     value=item.get("published",""); m=re.search(r"(20\d{2})[-/]([01]\d)[-/]([0-3]\d)",value)
     return f"{m.group(1)}-{m.group(2)}-{m.group(3)}" if m else TODAY
@@ -289,10 +308,14 @@ def process_queue():
     candidates=extract_with_gemini(pending,list(db.values()))
     if not candidates:
         print("Gemini did not return events; queue remains for retry."); return
+    translations=translate_social_items(pending)
     for n in candidates:
         if isinstance(n,dict):
             key=str(n.get("key","")).strip()
-            if key: finalize_event(db,key,n,pending)
+            if key:
+                if translations:
+                    n["translations"]=(n.get("translations") or [])+[dict(v,source_index=k) for k,v in translations.items() if k in (n.get("items") or [])]
+                finalize_event(db,key,n,pending)
     now=dt.datetime.now(dt.timezone.utc).isoformat()
     for item in pending:
         item["processed"]=True; item["processed_at"]=now
