@@ -13,7 +13,7 @@ main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 68px)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}.stat{background:#f2f4f6;border-radius:8px;padding:7px;text-align:center}.stat b{display:block;font-size:18px}
 .ev{border-top:1px solid #e3e6e9;padding:9px 0;cursor:pointer}.ev p{margin:3px 0}.src{font-size:12px;color:#5a6672}.src a{margin-right:7px}
 .g{font-size:11px;font-weight:700;padding:2px 7px;border-radius:10px;color:#fff;margin-right:6px}
-.CONFIRMED{background:#1f7a3d}.CORROBORATED{background:#2563a6}.REPORTED{background:#b7791f}.DEVELOPING{background:#9a6700}.CLAIM{background:#b42318}
+.CONFIRMED{background:#1f7a3d}.STRONGLY-CORROBORATED{background:#18794e}.CORROBORATED{background:#2563a6}.REPORTED{background:#b7791f}.DEVELOPING{background:#9a6700}.CLAIM{background:#b42318}
 .badge{font-size:11px;padding:2px 6px;border-radius:8px;background:#eef1f4;margin-left:4px}.early{background:#fff8e1;border:1px solid #f0d78c;border-radius:8px;padding:8px;margin-bottom:9px}.early b{display:block}
 @media(max-width:760px){main{grid-template-columns:1fr;grid-template-rows:50vh auto;height:auto}}
 </style></head>
@@ -25,10 +25,10 @@ main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 68px)}
 </div></main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
-const COL={CONFIRMED:"#1f7a3d",CORROBORATED:"#2563a6",REPORTED:"#b7791f",DEVELOPING:"#9a6700",CLAIM:"#b42318"};
+const COL={CONFIRMED:"#1f7a3d","STRONGLY CORROBORATED":"#18794e",CORROBORATED:"#2563a6",REPORTED:"#b7791f",DEVELOPING:"#9a6700",CLAIM:"#b42318"};
 const map=L.map("map").setView([13,39.5],6);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:12,attribution:"© OpenStreetMap"}).addTo(map);
-let events=[],gradeOn={CONFIRMED:1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},sourceOn={news:1,social:1},layer=L.layerGroup().addTo(map),markers={};
+let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},sourceOn={news:1,social:1},layer=L.layerGroup().addTo(map),markers={};
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
 function sourceLabel(s){if(s.platform==="reddit")return "Reddit";if(s.platform==="gdelt")return "GDELT";return s.outlet||"Source"}
 function visible(e){if(!gradeOn[e.grade])return false;const s=e.sources||[];return !s.length||s.some(x=>sourceOn[x.source_type||"news"])}
@@ -37,11 +37,17 @@ function draw(){
  events.filter(visible).forEach(e=>{
   if(e.lat!=null && e.lon!=null){const color=COL[e.grade]||"#555";const m=L.circleMarker([e.lat,e.lon],{radius:9,color,fillColor:color,fillOpacity:e.grade==="CLAIM"?.25:.8,dashArray:e.grade==="CONFIRMED"?null:"3 3"}).addTo(layer);
    m.bindPopup("<b>"+e.place+"</b><br>"+e.summary+"<br><small>"+(e.confidence??0)+"% evidence score</small>");markers[e.key]=m}
-  const d=el("div","ev"),g=el("span","g "+e.grade,e.grade);
+  const d=el("div","ev"),g=el("span","g "+e.grade.replaceAll(" ","-"),e.grade);
   const loc=e.place||e.region||"";
   const b=el("b","",loc ? (e.date+" · "+loc) : e.date);
   const score=el("span","badge",(e.confidence??0)+"%");
-  d.append(g,b,score,el("p","",e.summary));
+  const tier=el("span","badge",(e.source_tier||"D")+"-tier"+(e.best_source?" · "+e.best_source:""));
+  d.append(g,b,score,tier,el("p","",e.summary));
+  if(e.evidence_explanation){
+    const why=el("div","src",e.evidence_explanation);
+    why.style.marginTop="5px";
+    d.append(why);
+  }
   const translated=(e.translations||[]).map(x=>x.english_translation).filter(Boolean)[0];
   if(translated && translated!==e.summary){const t=el("p","",translated);t.style.marginTop="6px";t.style.fontWeight="600";d.append(t);}
   const s=el("div","src");
@@ -52,7 +58,7 @@ function draw(){
 function button(parent,label,key,store){const b=el("button","on",label);b.onclick=()=>{store[key]=!store[key];b.classList.toggle("on");draw()};parent.append(b)}
 function renderControls(){
  const gf=document.getElementById("gradeFilters"),sf=document.getElementById("sourceFilters");gf.replaceChildren();sf.replaceChildren();
- ["CONFIRMED","CORROBORATED","REPORTED","DEVELOPING","CLAIM"].forEach(k=>button(gf,k,k,gradeOn));
+ ["CONFIRMED","STRONGLY CORROBORATED","CORROBORATED","REPORTED","DEVELOPING","CLAIM"].forEach(k=>button(gf,k,k,gradeOn));
  [["NEWS","news"],["SOCIAL","social"]].forEach(x=>button(sf,x[0],x[1],sourceOn));
 }
 function renderStats(){
