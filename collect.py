@@ -118,7 +118,7 @@ NEW SOURCE ITEMS:
 def extract_with_gemini(items, existing=None):
     if not items or not API_KEY:
         if not API_KEY: print("GEMINI_API_KEY missing; using deterministic fallback.")
-        return []
+        return deterministic_fallback(items)
     listing="\n".join(
         f"{i}. [{x['source_type']}/{x['platform']}] [{x['outlet']}] {x['title']} | "
         f"{x['summary']} | published={x['published']} | url={x['url']}"
@@ -142,14 +142,17 @@ def extract_with_gemini(items, existing=None):
                 print("Gemini busy/rate-limited; retrying...")
                 time.sleep(10*(attempt+1)); continue
             if r.status_code!=200:
-                print("Gemini error",r.status_code,r.text[:300]); return []
+                print("Gemini error",r.status_code,r.text[:300]); return deterministic_fallback(items)
             text=r.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
             data=json.loads(text)
-            return data if isinstance(data,list) else []
+            return data if isinstance(data,list) else deterministic_fallback(items)
         except Exception as ex:
             print("Gemini extraction failed:",ex)
-            if attempt<2: time.sleep(5*(attempt+1))
-    return []
+            if attempt<2:
+                time.sleep(5*(attempt+1))
+                continue
+            return deterministic_fallback(items)
+    return deterministic_fallback(items)
 
 def infer_date(item):
     value=item.get("published",""); m=re.search(r"(20\d{2})[-/]([01]\d)[-/]([0-3]\d)",value)
@@ -224,14 +227,22 @@ def finalize_event(db,key,n,items):
     db[key]=ev
 
 def deterministic_fallback(items):
-    db={}
+    """Create conservative one-source events when Gemini is unavailable."""
+    candidates=[]
     for i,item in enumerate(items):
-        text=item["title"]+" "+item.get("summary",""); place=infer_place(text); date=infer_date(item)
-        key=event_key(item,place,date)
-        finalize_event(db,key,{"place":place,"date":date,"kind":infer_kind(text),
-            "summary":item["title"],"attribution":"party" if item["source_type"]=="social" else "independent",
-            "items":[i]},items)
-    return db
+        text=item["title"]+" "+item.get("summary","")
+        place=infer_place(text); date=infer_date(item)
+        candidates.append({
+            "key":event_key(item,place,date),
+            "place":place,
+            "date":date,
+            "kind":infer_kind(text),
+            "summary":item["title"][:500],
+            "attribution":"party" if item["source_type"]=="social" else "independent",
+            "items":[i],
+            "translations":[]
+        })
+    return candidates
 
 def load_json(path, default):
     if not os.path.exists(path): return default
