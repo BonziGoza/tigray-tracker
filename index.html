@@ -35,9 +35,12 @@ function visible(e){if(!gradeOn[e.grade])return false;const s=e.sources||[];retu
 function draw(){
  layer.clearLayers();markers={};const list=document.getElementById("list");list.replaceChildren();
  events.filter(visible).forEach(e=>{
-  if(e.lat!=null){const color=COL[e.grade]||"#555";const m=L.circleMarker([e.lat,e.lon],{radius:9,color,fillColor:color,fillOpacity:e.grade==="CLAIM"?.25:.8,dashArray:e.grade==="CONFIRMED"?null:"3 3"}).addTo(layer);
-   m.bindPopup("<b>"+(e.place||"Unknown location")+"</b><br>"+e.summary+"<br><small>"+(e.confidence||25)+"% evidence score</small>");markers[e.key]=m}
-  const d=el("div","ev"),g=el("span","g "+e.grade,e.grade),b=el("b","",e.date+" · "+(e.place||"location unclear")),score=el("span","badge",(e.confidence||25)+"%");
+  if(e.lat!=null && e.lon!=null){const color=COL[e.grade]||"#555";const m=L.circleMarker([e.lat,e.lon],{radius:9,color,fillColor:color,fillOpacity:e.grade==="CLAIM"?.25:.8,dashArray:e.grade==="CONFIRMED"?null:"3 3"}).addTo(layer);
+   m.bindPopup("<b>"+e.place+"</b><br>"+e.summary+"<br><small>"+(e.confidence??0)+"% evidence score</small>");markers[e.key]=m}
+  const d=el("div","ev"),g=el("span","g "+e.grade,e.grade);
+  const loc=e.place||e.region||"";
+  const b=el("b","",loc ? (e.date+" · "+loc) : e.date);
+  const score=el("span","badge",(e.confidence??0)+"%");
   d.append(g,b,score,el("p","",e.summary));
   const translated=(e.translations||[]).map(x=>x.english_translation).filter(Boolean)[0];
   if(translated && translated!==e.summary){const t=el("p","",translated);t.style.marginTop="6px";t.style.fontWeight="600";d.append(t);}
@@ -59,7 +62,7 @@ function renderStats(){
  const box=document.getElementById("early"),earlyEvents=events.filter(e=>["CLAIM","DEVELOPING"].includes(e.grade)).filter(e=>(e.social_source_count||0)>0).slice(0,3);
  box.replaceChildren(el("b","", "⚠ Early reports"));
  if(!earlyEvents.length)box.append(el("div","", "No social-media early reports currently detected."));
- else earlyEvents.forEach(e=>box.append(el("div","",e.date+" · "+(e.place||"Unknown")+" — "+e.summary)));
+ else earlyEvents.forEach(e=>box.append(el("div","",e.date+(e.place||e.region?" · "+(e.place||e.region):"")+" — "+e.summary)));
 }
 Promise.all([
  fetch("data/events.json?"+Date.now()).then(r=>r.json()),
