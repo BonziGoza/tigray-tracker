@@ -3,7 +3,7 @@ import os, json, re, datetime as dt, hashlib, time
 from urllib.parse import urlparse
 import feedparser, requests
 
-OUT="data/events.json"; QUEUE="data/source_queue.json"; TODAY=dt.date.today().isoformat()
+OUT="data/events.json"; QUEUE="data/source_queue.json"; STATUS="data/status.json"; TODAY=dt.date.today().isoformat()
 KEEP_DAYS=45; QUEUE_DAYS=2; MAX_ITEMS=100; SOCIAL_MAX=40; PROCESS_MAX_ITEMS=80
 MODEL=os.environ.get("MODEL","gemini-2.5-flash-lite")
 API_KEY=os.environ.get("GEMINI_API_KEY","")
@@ -218,6 +218,11 @@ def load_json(path, default):
     except Exception as ex:
         print("Could not read",path,ex); return default
 
+def save_status():
+    now=dt.datetime.now(dt.timezone.utc).isoformat()
+    with open(STATUS,"w",encoding="utf-8") as f: json.dump({"last_checked":now},f,indent=1,ensure_ascii=False)
+    print("last source check:",now)
+
 def save_queue(items):
     queue=load_json(QUEUE, [])
     urls={x.get("url") for x in queue}
@@ -256,6 +261,7 @@ def process_queue():
 def main():
     if RUN_MODE=="collect":
         save_queue(gather())
+        save_status()
     elif RUN_MODE=="process":
         process_queue()
     else:
