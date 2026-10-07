@@ -12,7 +12,7 @@ CHANNELS=[
     "tikvahethiopiatigrigna",
     "ASCENTIG",
 ]
-KEYWORDS=["tigray","tigrinya","tigrigna","mekelle","mekele","tplf","eritrea","afar","amhara","fano","abiy","ethiopia"]
+KEYWORDS=["tigray","tigrai","tigrinya","tigrigna","tegaru","tigrayan","mekelle","mekele","tplf","eritrea","afar","axum","aksum","adwa","adigrat","alamata","shire","shifta","zalaambessa","zalambessa"]
 LOOKBACK_HOURS=48
 MAX_PER_CHANNEL=25
 MAX_NEW_ITEMS=80
