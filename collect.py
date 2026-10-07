@@ -267,9 +267,21 @@ def save_queue(items):
     with open(QUEUE,"w",encoding="utf-8") as f: json.dump(queue,f,indent=1,ensure_ascii=False)
     print("queue saved:",len(queue),"unprocessed:",sum(not x.get("processed") for x in queue))
 
+def published_sort_key(item):
+    """Normalize mixed RSS and ISO timestamps so newest sources are processed first."""
+    value=str(item.get("published","") or "").strip()
+    if not value: return 0.0
+    try:
+        return dt.datetime.fromisoformat(value.replace("Z","+00:00")).timestamp()
+    except ValueError:
+        try:
+            return dt.datetime.strptime(value, "%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=dt.timezone.utc).timestamp()
+        except ValueError:
+            return 0.0
+
 def process_queue():
     queue=load_json(QUEUE, [])
-    pending=sorted((x for x in queue if not x.get("processed")), key=lambda x: x.get("published",""), reverse=True)[:PROCESS_MAX_ITEMS]
+    pending=sorted((x for x in queue if not x.get("processed")), key=published_sort_key, reverse=True)[:PROCESS_MAX_ITEMS]
     if not pending:
         print("No new source items; Gemini skipped."); return
     data=load_json(OUT, {"events":[]})
