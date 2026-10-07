@@ -258,7 +258,7 @@ def save_queue(items):
 
 def process_queue():
     queue=load_json(QUEUE, [])
-    pending=[x for x in queue if not x.get("processed")][:PROCESS_MAX_ITEMS]
+    pending=sorted((x for x in queue if not x.get("processed")), key=lambda x: x.get("published",""), reverse=True)[:PROCESS_MAX_ITEMS]
     if not pending:
         print("No new source items; Gemini skipped."); return
     data=load_json(OUT, {"events":[]})
