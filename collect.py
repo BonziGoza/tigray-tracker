@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 import feedparser, requests
 
 OUT="data/events.json"; QUEUE="data/source_queue.json"; STATUS="data/status.json"; TODAY=dt.date.today().isoformat()
-KEEP_DAYS=45; QUEUE_DAYS=2; MAX_ITEMS=100; SOCIAL_MAX=40; PROCESS_MAX_ITEMS=80
+KEEP_DAYS=45; QUEUE_DAYS=2; MAX_ITEMS=100; SOCIAL_MAX=40; PROCESS_MAX_ITEMS=180; PROCESS_BATCH_SIZE=30
 MODEL=os.environ.get("MODEL","gemini-2.5-flash-lite")
 API_KEY=os.environ.get("GEMINI_API_KEY","")
 RUN_MODE=os.environ.get("RUN_MODE","process")
@@ -93,7 +93,8 @@ def gather_reddit():
 
 def gather():
     items=gather_news()+gather_reddit()
-    items=[x for x in items if x["source_type"]=="news" or any(k in (x["title"]+" "+x["summary"]).lower() for k in KEYWORDS)]
+    # Telegram has its own relevance filter. Do not apply the Latin-keyword
+    # filter here: it can discard valid Amharic/Tigrinya social posts.
     print("items gathered:",len(items),"news:",sum(x["source_type"]=="news" for x in items),
           "social:",sum(x["source_type"]=="social" for x in items))
     return items[:MAX_ITEMS]
@@ -101,8 +102,10 @@ def gather():
 PROMPT="""You are structuring OSINT reports about Tigray and northern Ethiopia.
 Today is {today}. First detect the language of each NEW source item. Only when the source text is Amharic (አማርኛ) or Tigrinya (ትግርኛ), translate it to neutral English for analysis. Do NOT translate English text. Preserve the original wording for every translated item and do not silently alter names, places, numbers, dates, or claims. If language detection is uncertain, do not translate; mark language as unknown. Then extract distinct real-world EVENTS from the numbered NEW source items.
 Merge reports that clearly describe the same event. If a new report clearly describes an existing event below, reuse that existing event's key.
-Do not invent facts. Ignore opinion/background.
+Do not invent facts. Ignore only clearly irrelevant content.
+Do not silently drop a relevant news or social report: if it describes a real development, make or attach it to an event. Political, diplomatic, humanitarian, security, and control developments are still events even when they are not combat.
 A social-media post is a report/claim, not proof. Preserve attribution. Do not treat reposts or repeated wording as independent evidence.
+Every relevant source item should appear in at least one event's items array. If an item is truly irrelevant, put its index in ignored_items with a brief reason.
 Return only the requested JSON. Each event must contain:
 key, place, date, kind, summary, attribution, items, translations.
 kind must be control_change, strike, clash, diplomatic, humanitarian, claim, or other.
@@ -127,10 +130,11 @@ def extract_with_gemini(items, existing=None):
         "key":{"type":"STRING"},"place":{"type":"STRING"},"date":{"type":"STRING"},
         "kind":{"type":"STRING"},"summary":{"type":"STRING"},"attribution":{"type":"STRING"},
         "items":{"type":"ARRAY","items":{"type":"INTEGER"}},
+        "ignored_items":{"type":"ARRAY","items":{"type":"INTEGER"}},
         "translations":{"type":"ARRAY","items":{"type":"OBJECT","properties":{
             "source_index":{"type":"INTEGER"},"language":{"type":"STRING"},"original_text":{"type":"STRING"},"english_translation":{"type":"STRING"}},
             "required":["source_index","language","original_text","english_translation"]}}},
-        "required":["key","place","date","kind","summary","attribution","items","translations"]}}
+        "required":["key","place","date","kind","summary","attribution","items","ignored_items","translations"]}}
     body={"contents":[{"parts":[{"text":PROMPT.format(today=TODAY,places=", ".join(PLACES),existing="\n".join(f"- {e.get('key','')} | {e.get('date','')} | {e.get('place','')} | {e.get('summary','')}" for e in (existing or [])[:30]) or "(none)",items=listing)}]}],
           "generationConfig":{"responseMimeType":"application/json","responseSchema":schema,
                               "temperature":0.1,"maxOutputTokens":5000}}
@@ -197,18 +201,54 @@ def event_key(item,place,date):
     words=[w for w in text.split() if len(w)>2][:12]
     return f"{place.lower().replace(' ','-') or 'unknown'}-{date}-"+hashlib.sha1(" ".join(words).encode()).hexdigest()[:8]
 
+def source_quality(source):
+    """Return a small quality score used for evidence grading, not truth."""
+    if source.get("source_type") == "social":
+        return 1
+    outlet=(source.get("outlet") or "").lower().strip()
+    if any(w in outlet for w in WIRES):
+        return 3
+    if any(x in outlet for x in [
+        "africanews","addis standard","allafrica","semafor","guardian",
+        "france 24","dw","bbc","voa","al-monitor","foreign policy"
+    ]):
+        return 2
+    return 1
+
+def independent_sources(sources):
+    """Collapse obvious reposts before counting independent evidence."""
+    seen_fingerprints=set()
+    out=[]
+    for source in sources:
+        fp=source.get("repost_of_fingerprint") or source.get("fingerprint")
+        if fp and fp in seen_fingerprints:
+            continue
+        if fp: seen_fingerprints.add(fp)
+        out.append(source)
+    return out
+
+def evidence_score(sources,attribution="independent"):
+    src=independent_sources(sources)
+    high={s.get("outlet","").lower() for s in src if source_quality(s)>=3 and s.get("source_type")=="news"}
+    professional={s.get("outlet","").lower() for s in src if source_quality(s)>=2 and s.get("source_type")=="news"}
+    news={s.get("outlet","").lower() for s in src if s.get("source_type")=="news" and s.get("outlet")}
+    social=[s for s in src if s.get("source_type")=="social"]
+    score=20 + 32*len(high) + 8*max(0,len(professional)-len(high)) + 5*len(social)
+    score += 4*max(0,len(news)-len(professional))
+    if attribution=="party":
+        score -= 8
+    return max(10,min(98,score))
+
 def grade(sources,attribution="independent"):
-    outlets={(s.get("outlet") or "").lower() for s in sources if s.get("outlet")}
-    news={o for o in outlets if not o.startswith("r/")}
-    wires={o for o in news if any(w in o for w in WIRES)}
-    social=[s for s in sources if s.get("source_type")=="social"]
-    if len(wires)>=2 and attribution!="party": return "CONFIRMED"
-    if len(wires)>=1 and social and attribution!="party": return "CORROBORATED"
-    if len(news)>=2: return "REPORTED"
-    if len(sources)>=2: return "DEVELOPING"
+    score=evidence_score(sources,attribution)
+    if score>=82: return "CONFIRMED"
+    if score>=62: return "CORROBORATED"
+    if score>=48: return "REPORTED"
+    if score>=32: return "DEVELOPING"
     return "CLAIM"
 
-def confidence(g): return {"CONFIRMED":90,"CORROBORATED":75,"REPORTED":65,"DEVELOPING":45,"CLAIM":25}.get(g,25)
+def confidence(sources,attribution="independent"):
+    return evidence_score(sources,attribution)
 
 def finalize_event(db,key,n,items):
     if not key or not isinstance(n,dict): return
@@ -237,31 +277,47 @@ def finalize_event(db,key,n,items):
             if s["url"] not in have:
                 ev["sources"].append({"outlet":s["outlet"],"url":s["url"],"title":s["title"],
                     "source_type":s["source_type"],"platform":s["platform"],"author":s.get("author",""),
-                    "published":s.get("published","")}); have.add(s["url"])
+                    "published":s.get("published",""),"fingerprint":s.get("fingerprint",""),
+                    "repost_of_fingerprint":s.get("repost_of_fingerprint","")}); have.add(s["url"])
+    if contains_ethio_script(ev.get("summary","")):
+        translated_for_event=[x.get("english_translation") for x in ev.get("translations",[]) if x.get("english_translation")]
+        if translated_for_event:
+            ev["summary"]=translated_for_event[0][:500]
     ev["grade"]=grade(ev["sources"],ev.get("attribution","independent"))
-    ev["confidence"]=confidence(ev["grade"])
-    ev["source_count"]=len(ev["sources"])
+    ev["confidence"]=confidence(ev["sources"],ev.get("attribution","independent"))
+    ev["source_count"]=len(independent_sources(ev["sources"]))
     ev["social_source_count"]=sum(s.get("source_type")=="social" for s in ev["sources"])
     ev["news_source_count"]=sum(s.get("source_type")=="news" for s in ev["sources"])
     db[key]=ev
 
 def deterministic_fallback(items):
-    """Create conservative one-source events when Gemini is unavailable."""
-    candidates=[]
+    """Conservative fallback that groups obvious duplicates and keeps every source."""
+    groups=[]
     for i,item in enumerate(items):
-        text=item["title"]+" "+item.get("summary","")
-        place=infer_place(text); date=infer_date(item)
-        candidates.append({
-            "key":event_key(item,place,date),
-            "place":place,
-            "date":date,
-            "kind":infer_kind(text),
-            "summary":item["title"][:500],
-            "attribution":"party" if item["source_type"]=="social" else "independent",
-            "items":[i],
-            "translations":[]
-        })
-    return candidates
+        text=(item.get("title","")+" "+item.get("summary","")).strip()
+        place=infer_place(text)
+        date=infer_date(item)
+        kind=infer_kind(text)
+        normalized=re.sub(r"[^a-z0-9 ]"," ",text.lower())
+        words={w for w in normalized.split() if len(w)>3}
+        best=None; best_score=0
+        for g in groups:
+            if g["place"] != place or g["date"] != date: continue
+            overlap=len(words & g["words"])/max(1,len(words | g["words"]))
+            if overlap >= 0.45 and overlap > best_score:
+                best_score=overlap; best=g
+        if best:
+            best["items"].append(i); best["words"] |= words
+        else:
+            groups.append({
+                "place":place,"date":date,"kind":kind,"words":words,
+                "items":[i],
+                "key":event_key(item,place,date),
+                "summary":item["title"][:500],
+                "attribution":"party" if item["source_type"]=="social" else "independent",
+                "translations":[]
+            })
+    return [{k:v for k,v in g.items() if k!="words"} for g in groups]
 
 def load_json(path, default):
     if not os.path.exists(path): return default
@@ -300,31 +356,94 @@ def published_sort_key(item):
 
 def process_queue():
     queue=load_json(QUEUE, [])
-    pending=sorted((x for x in queue if not x.get("processed")), key=published_sort_key, reverse=True)[:PROCESS_MAX_ITEMS]
-    if not pending:
+    pending_all=sorted((x for x in queue if not x.get("processed")), key=published_sort_key, reverse=True)
+    if not pending_all:
         print("No new source items; Gemini skipped."); return
+
+    # Work in bounded batches so a large Telegram burst cannot crowd out news,
+    # and so one model response cannot accidentally merge unrelated stories.
+    pending_all=pending_all[:PROCESS_MAX_ITEMS]
     data=load_json(OUT, {"events":[]})
     db={e["key"]:e for e in data.get("events",[]) if e.get("key")}
-    candidates=extract_with_gemini(pending,list(db.values()))
-    if not candidates:
-        print("Gemini did not return events; queue remains for retry."); return
-    translations=translate_social_items(pending)
-    for n in candidates:
-        if isinstance(n,dict):
+    processed_count=0
+    batch_count=0
+
+    for offset in range(0,len(pending_all),PROCESS_BATCH_SIZE):
+        batch=pending_all[offset:offset+PROCESS_BATCH_SIZE]
+        if not batch: continue
+        batch_count+=1
+
+        # Translate first so Gemini sees English text for Amharic/Tigrinya social
+        # sources while we still preserve the original source text.
+        translations=translate_social_items(batch)
+        analysis_items=[]
+        for i,item in enumerate(batch):
+            x=dict(item)
+            x["original_title"]=item.get("title","")
+            tr=translations.get(i)
+            if tr and tr.get("english_translation"):
+                x["title"]=tr["english_translation"][:300]
+                x["summary"]=tr["english_translation"][:600]
+                x["detected_language"]=tr.get("language")
+            analysis_items.append(x)
+
+        candidates=extract_with_gemini(analysis_items,list(db.values()))
+        if not candidates:
+            print("No candidates returned for batch; leaving batch unprocessed.")
+            continue
+
+        covered=set()
+        valid_candidates=[]
+        for n in candidates:
+            if not isinstance(n,dict): continue
+            indices=[i for i in n.get("items",[]) if isinstance(i,int) and 0<=i<len(batch)]
+            if not indices:
+                continue
+            n["items"]=indices
+            covered.update(indices)
+            if translations:
+                n["translations"]=(n.get("translations") or [])+[
+                    dict(v,source_index=k) for k,v in translations.items() if k in indices
+                ]
+            valid_candidates.append(n)
+
+        # Never let a model omission permanently lose a source. Create a
+        # conservative fallback event for every uncovered source.
+        uncovered=[i for i in range(len(batch)) if i not in covered]
+        if uncovered:
+            print("Uncovered source items; deterministic fallback:",len(uncovered))
+            for n in deterministic_fallback([batch[i] for i in uncovered]):
+                remapped=[]
+                for local_i in n.get("items",[]):
+                    if isinstance(local_i,int) and 0<=local_i<len(uncovered):
+                        remapped.append(uncovered[local_i])
+                n["items"]=remapped
+                valid_candidates.append(n)
+
+        for n in valid_candidates:
             key=str(n.get("key","")).strip()
             if key:
-                if translations:
-                    n["translations"]=(n.get("translations") or [])+[dict(v,source_index=k) for k,v in translations.items() if k in (n.get("items") or [])]
-                finalize_event(db,key,n,pending)
-    now=dt.datetime.now(dt.timezone.utc).isoformat()
-    for item in pending:
-        item["processed"]=True; item["processed_at"]=now
+                finalize_event(db,key,n,analysis_items)
+
+        now=dt.datetime.now(dt.timezone.utc).isoformat()
+        batch_urls={x.get("url") for x in batch}
+        for item in queue:
+            if item.get("url") in batch_urls and not item.get("processed"):
+                item["processed"]=True
+                item["processed_at"]=now
+        processed_count+=len(batch)
+
     cutoff=(dt.date.today()-dt.timedelta(days=KEEP_DAYS)).isoformat()
     db={k:v for k,v in db.items() if v.get("manual") or v.get("last_seen",TODAY)>=cutoff}
     events=sorted(db.values(),key=lambda e:(e.get("date",""),e.get("last_seen","")),reverse=True)
-    with open(OUT,"w",encoding="utf-8") as f: json.dump({"updated":now,"events":events},f,indent=1,ensure_ascii=False)
-    with open(QUEUE,"w",encoding="utf-8") as f: json.dump(queue,f,indent=1,ensure_ascii=False)
-    print("Gemini events processed:",len(candidates),"events saved:",len(events))
+    now=dt.datetime.now(dt.timezone.utc).isoformat()
+    with open(OUT,"w",encoding="utf-8") as f:
+        json.dump({"updated":now,"events":events},f,indent=1,ensure_ascii=False)
+    with open(QUEUE,"w",encoding="utf-8") as f:
+        json.dump(queue,f,indent=1,ensure_ascii=False)
+    remaining=sum(not x.get("processed") for x in queue)
+    print("Batches processed:",batch_count,"sources processed:",processed_count,
+          "events saved:",len(events),"queue remaining:",remaining)
 
 def main():
     if RUN_MODE=="collect":
