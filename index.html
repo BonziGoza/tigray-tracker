@@ -58,5 +58,17 @@ function renderStats(){
  if(!earlyEvents.length)box.append(el("div","", "No social-media early reports currently detected."));
  else earlyEvents.forEach(e=>box.append(el("div","",e.date+" · "+(e.place||"Unknown")+" — "+e.summary)));
 }
-Promise.all([fetch("data/events.json?"+Date.now()).then(r=>r.json()),fetch("data/status.json?"+Date.now()).then(r=>r.ok?r.json():{})]).then(([j,s])=>{events=j.events||[];const checked=s.last_checked?new Date(s.last_checked).toLocaleString():"Waiting for first automatic check";const updated=j.updated?new Date(j.updated).toLocaleString():"Unknown";document.getElementById("up").innerHTML="Last checked: <b>"+checked+"</b> · Event database updated: <b>"+updated+"</b><br><span style="opacity:.78">Map positions approximate · evidence grades are automated assessments, not guarantees</span>";renderControls();renderStats();draw()}).catch(()=>document.getElementById("up").textContent="Could not load tracker data");
+Promise.all([
+ fetch("data/events.json?"+Date.now()).then(r=>r.json()),
+ fetch("data/status.json?"+Date.now()).then(r=>r.ok?r.json():{})
+]).then(([j,s])=>{
+ events=j.events||[];
+ const checked=s.last_checked?new Date(s.last_checked).toLocaleString():"Waiting for first automatic check";
+ const updated=j.updated?new Date(j.updated).toLocaleString():"Unknown";
+ document.getElementById("up").innerHTML =
+   `Last checked: <b>${checked}</b> · Event database updated: <b>${updated}</b><br><span style="opacity:.78">Map positions approximate · evidence grades are automated assessments, not guarantees</span>`;
+ renderControls();
+ renderStats();
+ draw();
+}).catch(()=>document.getElementById("up").textContent="Could not load tracker data");
 </script></body></html>
