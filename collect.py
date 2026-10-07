@@ -290,96 +290,176 @@ def event_key(item,place,date):
     words=[w for w in text.split() if len(w)>2][:12]
     return f"{place.lower().replace(' ','-') or 'unknown'}-{date}-"+hashlib.sha1(" ".join(words).encode()).hexdigest()[:8]
 
-def source_quality(source):
-    """Return a small quality score used for evidence grading, not truth."""
+
+SOURCE_PROFILES = [
+    ("reuters", "A", 45, "Reuters"),
+    ("associated press", "A", 44, "Associated Press"),
+    ("ap news", "A", 44, "AP News"),
+    ("apnews", "A", 44, "AP News"),
+    ("afp", "A", 42, "AFP"),
+    ("bbc", "A", 40, "BBC"),
+    ("cnn", "A", 38, "CNN"),
+    ("al jazeera", "A", 37, "Al Jazeera"),
+    ("france 24", "A", 36, "France 24"),
+    ("dw", "A", 36, "DW"),
+    ("new york times", "A", 35, "The New York Times"),
+    ("the guardian", "A", 34, "The Guardian"),
+    ("africanews", "B", 31, "Africanews"),
+    ("addis standard", "B", 30, "Addis Standard"),
+    ("allafrica", "B", 29, "AllAfrica"),
+    ("semafor", "B", 29, "Semafor"),
+    ("al-monitor", "B", 29, "Al-Monitor"),
+    ("foreign policy", "B", 29, "Foreign Policy"),
+    ("voa", "B", 29, "VOA"),
+    ("borkena", "B", 27, "Borkena"),
+    ("fana", "B", 26, "Fana"),
+    ("tigrai television", "B", 26, "Tigrai Television"),
+    ("tikvah", "B", 25, "TIKVAH"),
+    ("tikvahethiopia", "B", 25, "TIKVAH Ethiopia"),
+    ("axumawian", "C", 22, "Axumawian"),
+]
+
+def source_profile(source):
     if source.get("source_type") == "social":
-        return 1
+        return {"tier":"D","base":12,"label":source.get("platform","Social")}
     outlet=(source.get("outlet") or "").lower().strip()
-    if any(w in outlet for w in WIRES):
-        return 3
-    if any(x in outlet for x in [
-        "africanews","addis standard","allafrica","semafor","guardian",
-        "france 24","dw","bbc","voa","al-monitor","foreign policy"
-    ]):
-        return 2
-    return 1
+    for needle,tier,base,label in sorted(SOURCE_PROFILES,key=lambda x:len(x[0]),reverse=True):
+        if needle in outlet:
+            return {"tier":tier,"base":base,"label":label}
+    return {"tier":"C","base":18,"label":source.get("outlet") or "Unknown source"}
+
+def source_quality(source):
+    return source_profile(source)["base"]
 
 def independent_sources(sources):
-    """Collapse obvious reposts before counting independent evidence."""
     seen_fingerprints=set()
     out=[]
     for source in sources:
         fp=source.get("repost_of_fingerprint") or source.get("fingerprint")
         if fp and fp in seen_fingerprints:
             continue
-        if fp: seen_fingerprints.add(fp)
+        if fp:
+            seen_fingerprints.add(fp)
         out.append(source)
     return out
 
-def evidence_score(sources,attribution="independent"):
-    """Continuous 0-100 evidence score; this is not a probability of truth."""
+def _source_assessment(source):
+    e=source.get("evidence") or {}
+    return {
+        "named":max(0,min(5,int(e.get("named_sources",0) or 0))),
+        "anonymous":max(0,min(5,int(e.get("anonymous_sources",0) or 0))),
+        "direct":bool(e.get("direct_observation",False)),
+        "official":max(0,min(3,int(e.get("official_sources",0) or 0))),
+        "documentary":bool(e.get("documentary_evidence",False)),
+        "visual":bool(e.get("visual_evidence",False)),
+        "attributed":bool(e.get("attributed_claim",False)),
+        "party":bool(e.get("source_is_party",False)),
+        "contested":bool(e.get("contested",False)),
+    }
+
+def reporting_quality(source):
+    e=_source_assessment(source)
+    score=min(10,e["named"]*3+(1 if e["named"]>=2 else 0))
+    score+=min(4,e["official"]*2)
+    if e["direct"]: score+=5
+    if e["documentary"]: score+=4
+    if e["visual"]: score+=2
+    score=max(0,score-min(4,e["anonymous"]))
+    return min(25,score)
+
+def corroboration_score(sources):
     src=independent_sources(sources)
-    news={}
-    for source in src:
-        if source.get("source_type")=="news" and source.get("outlet"):
-            news[source.get("outlet","").lower().strip()]=source
-    high=[x for x in news.values() if source_quality(x)>=3]
-    professional=[x for x in news.values() if source_quality(x)>=2]
-    social=[x for x in src if x.get("source_type")=="social"]
+    news=[s for s in src if s.get("source_type")=="news"]
+    social=[s for s in src if s.get("source_type")=="social"]
+    profiles=[source_profile(s) for s in news]
+    a=sum(p["tier"]=="A" for p in profiles)
+    b=sum(p["tier"]=="B" for p in profiles)
+    c=sum(p["tier"]=="C" for p in profiles)
+    score=0
+    if a>=2: score+=10
+    if a>=3: score+=6
+    if a>=4: score+=3
+    if b>=2: score+=7
+    if b>=3: score+=4
+    if c>=2: score+=4
+    if news and social: score+=min(3,len(social))
+    elif len(social)>=2: score+=min(2,len(social)-1)
+    return min(25,score)
 
-    # Starting evidence reflects source quality. Corroboration then raises the
-    # score. A single social post can never look equivalent to a professional
-    # news report, and copied/reposted sources are already collapsed above.
-    if high:
-        score=70
-        score += min(20, 12*(len(high)-1))
-    elif professional:
-        score=58
-        score += min(24, 10*(len(professional)-1))
-    elif news:
-        score=42
-        score += min(24, 8*(len(news)-1))
-    elif social:
-        score=24
-        score += min(20, 8*(len(social)-1))
-    else:
-        score=15
-
-    # Cross-type corroboration is useful but weaker than an independent
-    # professional news source.
-    if high and social:
-        score += min(8, 4*len(social))
-    elif professional and social:
-        score += min(6, 3*len(social))
-
-    if attribution=="party":
-        score-=8
-    return max(10,min(98,int(round(score))))
-
-def grade(sources,attribution="independent"):
+def evidence_score(sources,attribution="independent",event_evidence=None):
     src=independent_sources(sources)
-    news={}
-    for source in src:
-        if source.get("source_type")=="news" and source.get("outlet"):
-            news[source.get("outlet","").lower().strip()]=source
-    high=[x for x in news.values() if source_quality(x)>=3]
-    professional=[x for x in news.values() if source_quality(x)>=2]
-    social=[x for x in src if x.get("source_type")=="social"]
+    if not src:
+        return 10
+    best=max(src,key=source_quality)
+    publisher=source_quality(best)
+    reporting=max((reporting_quality(s) for s in src),default=0)
+    corroboration=corroboration_score(src)
+    context=0
+    ee=event_evidence or {}
+    specificity=str(ee.get("specificity","")).lower()
+    if specificity=="high": context+=4
+    elif specificity=="medium": context+=2
+    if any((s.get("evidence") or {}).get("direct_observation") for s in src):
+        context+=1
+    score=publisher+reporting+corroboration+min(5,context)
+    party_sources=sum(_source_assessment(s)["party"] for s in src)
+    attributed_claims=sum(_source_assessment(s)["attributed"] for s in src)
+    contested=bool(ee.get("contradicted",False)) or any(_source_assessment(s)["contested"] for s in src)
+    if attribution=="party": score-=8
+    if party_sources and party_sources==len(src): score-=7
+    if attributed_claims and not corroboration: score-=4
+    if contested: score-=10
+    if not any(s.get("source_type")=="news" for s in src): score=min(score,39)
+    if len(src)==1 and source_profile(best)["tier"]=="A": score=min(score,78)
+    elif len(src)==1 and source_profile(best)["tier"]=="B": score=min(score,64)
+    return max(5,min(98,int(round(score))))
 
-    # Grade is categorical and deliberately stricter than the numeric score.
-    # "Confirmed" requires substantial independent professional corroboration.
-    if len(high)>=3 or (len(high)>=2 and len(professional)>=3):
+def grade(sources,attribution="independent",event_evidence=None):
+    src=independent_sources(sources)
+    news=[s for s in src if s.get("source_type")=="news"]
+    a=[s for s in news if source_profile(s)["tier"]=="A"]
+    b=[s for s in news if source_profile(s)["tier"]=="B"]
+    score=evidence_score(src,attribution,event_evidence)
+    if score>=90 and (len(a)>=2 or (len(a)>=1 and len(b)>=2)):
         return "CONFIRMED"
-    if len(high)>=2 or len(professional)>=2:
+    if score>=75 and (len(a)>=2 or len(news)>=3):
+        return "STRONGLY CORROBORATED"
+    if score>=60 and (len(a)>=2 or len(b)>=2 or len(news)>=2):
         return "CORROBORATED"
     if news:
         return "REPORTED"
-    if len(social)>=2:
+    if len(src)>=2:
         return "DEVELOPING"
     return "CLAIM"
 
-def confidence(sources,attribution="independent"):
-    return evidence_score(sources,attribution)
+def confidence(sources,attribution="independent",event_evidence=None):
+    return evidence_score(sources,attribution,event_evidence)
+
+def evidence_explanation(sources,event_evidence=None):
+    src=independent_sources(sources)
+    if not src:
+        return "No source evidence available."
+    profiles=[source_profile(s) for s in src]
+    best=max(profiles,key=lambda p:p["base"])
+    labels=[]
+    for p in profiles:
+        if p["label"] not in labels:
+            labels.append(p["label"])
+    a=sum(p["tier"]=="A" for p in profiles)
+    b=sum(p["tier"]=="B" for p in profiles)
+    c=sum(p["tier"]=="C" for p in profiles)
+    social=sum(s.get("source_type")=="social" for s in src)
+    parts=[f"Best source: {best['label']} ({best['tier']}-tier)."]
+    parts.append(f"{len(src)} independent source record{'s' if len(src)!=1 else ''}; {a} A-tier, {b} B-tier, {c} C-tier, {social} social.")
+    rq=max((reporting_quality(s) for s in src),default=0)
+    if rq>=18: parts.append("Strong source-level reporting/sourcing.")
+    elif rq>=10: parts.append("Moderate source-level reporting/sourcing.")
+    else: parts.append("Limited source-level sourcing.")
+    if event_evidence and event_evidence.get("contradicted"):
+        parts.append("Material contradiction detected.")
+    elif event_evidence and any((s.get("evidence") or {}).get("contested") for s in src):
+        parts.append("A meaningful dispute/denial is reported.")
+    return " ".join(parts)
 
 def finalize_event(db,key,n,items):
     if not key or not isinstance(n,dict): return
