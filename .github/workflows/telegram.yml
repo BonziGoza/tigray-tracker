@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: telegram-collector-${{ github.ref }}
+  group: tigray-data-writes
   cancel-in-progress: false
 
 jobs:
