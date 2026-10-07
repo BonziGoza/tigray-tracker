@@ -121,7 +121,12 @@ Do not silently drop a relevant news or social report: if it describes a real de
 A social-media post is a report/claim, not proof. Preserve attribution. Do not treat reposts or repeated wording as independent evidence.
 Every relevant source item should appear in at least one event's items array. If an item is truly irrelevant, put its index in ignored_items with a brief reason.
 Return only the requested JSON. Each event must contain:
-key, place, region, date, kind, summary, attribution, items, translations.
+key, place, region, date, kind, summary, attribution, items, translations, evidence.
+The evidence object must contain source_assessments (one object per source index in the event), specificity ("high", "medium", or "low"), and contradicted (boolean).
+Each source assessment must contain source_index, source_role, named_sources, anonymous_sources, direct_observation, official_sources, documentary_evidence, visual_evidence, attributed_claim, source_is_party, and contested.
+source_role must be one of direct_report, reported_sourcing, official_statement, party_claim, secondary_report, social_claim, or other.
+Count named_sources only when the article/post identifies the person, organization, institution, or document providing information. Count anonymous_sources separately. official_sources means government, military, diplomatic, humanitarian, or party officials quoted or directly cited. direct_observation means the reporting organization says its reporter/correspondent directly witnessed or gathered the information. documentary_evidence means the source relies on a named document, record, imagery, data, court filing, etc. visual_evidence means the source presents or explicitly describes photographs/video as evidence of the reported event. attributed_claim means the central claim is explicitly attributed rather than presented as independently established fact. source_is_party means the claim originates from a party to the conflict. contested means the source itself reports a meaningful denial or dispute.
+Do not assume a source is independent merely because it is a different publication.
 kind must be control_change, strike, clash, diplomatic, humanitarian, claim, or other.
 attribution must be party or independent.
 Use only these exact map places: {places}
@@ -152,7 +157,18 @@ def extract_with_gemini(items, existing=None):
         "translations":{"type":"ARRAY","items":{"type":"OBJECT","properties":{
             "source_index":{"type":"INTEGER"},"language":{"type":"STRING"},"original_text":{"type":"STRING"},"english_translation":{"type":"STRING"}},
             "required":["source_index","language","original_text","english_translation"]}}},
-        "required":["key","place","region","date","kind","summary","attribution","items","ignored_items","translations"]}}
+        "evidence":{"type":"OBJECT","properties":{
+            "source_assessments":{"type":"ARRAY","items":{"type":"OBJECT","properties":{
+                "source_index":{"type":"INTEGER"},"source_role":{"type":"STRING"},
+                "named_sources":{"type":"INTEGER"},"anonymous_sources":{"type":"INTEGER"},
+                "direct_observation":{"type":"BOOLEAN"},"official_sources":{"type":"INTEGER"},
+                "documentary_evidence":{"type":"BOOLEAN"},"visual_evidence":{"type":"BOOLEAN"},
+                "attributed_claim":{"type":"BOOLEAN"},"source_is_party":{"type":"BOOLEAN"},
+                "contested":{"type":"BOOLEAN"}},
+                "required":["source_index","source_role","named_sources","anonymous_sources","direct_observation","official_sources","documentary_evidence","visual_evidence","attributed_claim","source_is_party","contested"]}},
+            "specificity":{"type":"STRING"},"contradicted":{"type":"BOOLEAN"}},
+            "required":["source_assessments","specificity","contradicted"]}},
+        "required":["key","place","region","date","kind","summary","attribution","items","ignored_items","translations","evidence"]}}
     body={"contents":[{"parts":[{"text":PROMPT.format(today=TODAY,places=", ".join(PLACES),existing="\n".join(f"- {e.get('key','')} | {e.get('date','')} | {e.get('place','')} | {e.get('summary','')}" for e in (existing or [])[:30]) or "(none)",items=listing)}]}],
           "generationConfig":{"responseMimeType":"application/json","responseSchema":schema,
                               "temperature":0.1,"maxOutputTokens":5000}}
@@ -484,23 +500,46 @@ def finalize_event(db,key,n,items):
         if not record["original_text"] or not record["english_translation"]: continue
         if not any(x.get("url")==record["url"] for x in ev["translations"]): ev["translations"].append(record)
     have={s.get("url") for s in ev["sources"]}
+    assessments={}
+    raw_evidence=n.get("evidence") or {}
+    if isinstance(raw_evidence,dict):
+        for a in raw_evidence.get("source_assessments",[]):
+            if isinstance(a,dict) and isinstance(a.get("source_index"),int):
+                assessments[a["source_index"]]=a
     for i in n.get("items",[]):
         if isinstance(i,int) and 0<=i<len(items):
             s=items[i]
+            record={"outlet":s["outlet"],"url":s["url"],"title":s.get("original_title",s["title"]),
+                "source_type":s["source_type"],"platform":s["platform"],"author":s.get("author",""),
+                "published":s.get("published",""),"fingerprint":s.get("fingerprint",""),
+                "repost_of_fingerprint":s.get("repost_of_fingerprint","")}
+            if i in assessments:
+                record["evidence"]=assessments[i]
             if s["url"] not in have:
-                ev["sources"].append({"outlet":s["outlet"],"url":s["url"],"title":s.get("original_title",s["title"]),
-                    "source_type":s["source_type"],"platform":s["platform"],"author":s.get("author",""),
-                    "published":s.get("published",""),"fingerprint":s.get("fingerprint",""),
-                    "repost_of_fingerprint":s.get("repost_of_fingerprint","")}); have.add(s["url"])
+                ev["sources"].append(record); have.add(s["url"])
+            elif i in assessments:
+                for existing_source in ev["sources"]:
+                    if existing_source.get("url")==s["url"]:
+                        existing_source["evidence"]=assessments[i]
+                        break
     if contains_ethio_script(ev.get("summary","")):
         translated_for_event=[x.get("english_translation") for x in ev.get("translations",[]) if x.get("english_translation")]
         if translated_for_event:
             ev["summary"]=translated_for_event[0][:500]
-    ev["grade"]=grade(ev["sources"],ev.get("attribution","independent"))
-    ev["confidence"]=confidence(ev["sources"],ev.get("attribution","independent"))
+    event_evidence=raw_evidence if isinstance(raw_evidence,dict) else {}
+    ev["evidence"]=event_evidence
+    ev["grade"]=grade(ev["sources"],ev.get("attribution","independent"),event_evidence)
+    ev["confidence"]=confidence(ev["sources"],ev.get("attribution","independent"),event_evidence)
     ev["source_count"]=len(independent_sources(ev["sources"]))
     ev["social_source_count"]=sum(s.get("source_type")=="social" for s in ev["sources"])
     ev["news_source_count"]=sum(s.get("source_type")=="news" for s in ev["sources"])
+    profiles=[source_profile(s) for s in independent_sources(ev["sources"])]
+    best_profile=max(profiles,key=lambda p:p["base"]) if profiles else {"tier":"D","label":"None","base":0}
+    ev["source_tier"]=best_profile["tier"]
+    ev["best_source"]=best_profile["label"]
+    ev["independent_source_count"]=len(independent_sources(ev["sources"]))
+    ev["high_quality_source_count"]=sum(p["tier"]=="A" for p in profiles)
+    ev["evidence_explanation"]=evidence_explanation(ev["sources"],event_evidence)
     db[key]=ev
 
 def deterministic_fallback(items):
