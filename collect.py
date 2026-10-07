@@ -158,6 +158,9 @@ def extract_with_gemini(items, existing=None):
             return deterministic_fallback(items)
     return deterministic_fallback(items)
 
+def contains_ethio_script(text):
+    return bool(re.search(r"[\\u1200-\\u137F]", str(text or "")))
+
 def translate_social_items(items):
     """Translate Amharic/Tigrinya social posts to neutral English when Gemini is available."""
     if not API_KEY: return {}
@@ -275,7 +278,7 @@ def finalize_event(db,key,n,items):
         if isinstance(i,int) and 0<=i<len(items):
             s=items[i]
             if s["url"] not in have:
-                ev["sources"].append({"outlet":s["outlet"],"url":s["url"],"title":s["title"],
+                ev["sources"].append({"outlet":s["outlet"],"url":s["url"],"title":s.get("original_title",s["title"]),
                     "source_type":s["source_type"],"platform":s["platform"],"author":s.get("author",""),
                     "published":s.get("published",""),"fingerprint":s.get("fingerprint",""),
                     "repost_of_fingerprint":s.get("repost_of_fingerprint","")}); have.add(s["url"])
