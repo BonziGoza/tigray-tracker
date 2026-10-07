@@ -245,34 +245,65 @@ def independent_sources(sources):
     return out
 
 def evidence_score(sources,attribution="independent"):
-    """Evidence score: source quality plus independent corroboration; not a truth probability."""
+    """Continuous 0-100 evidence score; this is not a probability of truth."""
     src=independent_sources(sources)
-    news={s.get("outlet","").lower().strip():s for s in src if s.get("source_type")=="news" and s.get("outlet")}
-    high={k:v for k,v in news.items() if source_quality(v)>=3}
-    professional={k:v for k,v in news.items() if source_quality(v)>=2}
-    social=[s for s in src if s.get("source_type")=="social"]
-    if len(high)>=3: score=96
-    elif len(high)>=2: score=88
-    elif len(high)==1 and len(professional)>=2: score=78
-    elif len(high)==1 and social: score=68
-    elif len(high)==1: score=58
-    elif len(professional)>=3: score=72
-    elif len(professional)==2: score=62
-    elif len(professional)==1 and social: score=55
-    elif len(professional)==1: score=48
-    elif len(social)>=3: score=40
-    elif len(social)==2: score=32
-    elif len(social)==1: score=24
-    else: score=18
-    if attribution=="party": score-=5
-    return max(10,min(98,score))
+    news={}
+    for source in src:
+        if source.get("source_type")=="news" and source.get("outlet"):
+            news[source.get("outlet","").lower().strip()]=source
+    high=[x for x in news.values() if source_quality(x)>=3]
+    professional=[x for x in news.values() if source_quality(x)>=2]
+    social=[x for x in src if x.get("source_type")=="social"]
+
+    # Starting evidence reflects source quality. Corroboration then raises the
+    # score. A single social post can never look equivalent to a professional
+    # news report, and copied/reposted sources are already collapsed above.
+    if high:
+        score=70
+        score += min(20, 12*(len(high)-1))
+    elif professional:
+        score=58
+        score += min(24, 10*(len(professional)-1))
+    elif news:
+        score=42
+        score += min(24, 8*(len(news)-1))
+    elif social:
+        score=24
+        score += min(20, 8*(len(social)-1))
+    else:
+        score=15
+
+    # Cross-type corroboration is useful but weaker than an independent
+    # professional news source.
+    if high and social:
+        score += min(8, 4*len(social))
+    elif professional and social:
+        score += min(6, 3*len(social))
+
+    if attribution=="party":
+        score-=8
+    return max(10,min(98,int(round(score))))
 
 def grade(sources,attribution="independent"):
-    score=evidence_score(sources,attribution)
-    if score>=88: return "CONFIRMED"
-    if score>=62: return "CORROBORATED"
-    if score>=48: return "REPORTED"
-    if score>=32: return "DEVELOPING"
+    src=independent_sources(sources)
+    news={}
+    for source in src:
+        if source.get("source_type")=="news" and source.get("outlet"):
+            news[source.get("outlet","").lower().strip()]=source
+    high=[x for x in news.values() if source_quality(x)>=3]
+    professional=[x for x in news.values() if source_quality(x)>=2]
+    social=[x for x in src if x.get("source_type")=="social"]
+
+    # Grade is categorical and deliberately stricter than the numeric score.
+    # "Confirmed" requires substantial independent professional corroboration.
+    if len(high)>=3 or (len(high)>=2 and len(professional)>=3):
+        return "CONFIRMED"
+    if len(high)>=2 or (len(professional)>=2 and len(social)>=1):
+        return "CORROBORATED"
+    if high or professional:
+        return "REPORTED"
+    if len(social)>=2:
+        return "DEVELOPING"
     return "CLAIM"
 
 def confidence(sources,attribution="independent"):
