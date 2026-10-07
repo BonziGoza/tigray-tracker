@@ -1,4 +1,4 @@
-"""Tigray OSINT collector with news/social collection, optional Gemini extraction, and deterministic evidence grading."""
+"""Tigray OSINT collector with language-aware translation, event extraction, and deterministic evidence grading."""
 import os, json, re, datetime as dt, hashlib, time
 from urllib.parse import urlparse
 import feedparser, requests
@@ -90,17 +90,17 @@ def gather():
     return items[:MAX_ITEMS]
 
 PROMPT="""You are structuring OSINT reports about Tigray and northern Ethiopia.
-Today is {today}. Extract distinct real-world EVENTS from the numbered NEW source items.
+Today is {today}. First detect the language of each NEW source item. Only when the source text is Amharic (አማርኛ) or Tigrinya (ትግርኛ), translate it to neutral English for analysis. Do NOT translate English text. Preserve the original wording for every translated item and do not silently alter names, places, numbers, dates, or claims. If language detection is uncertain, do not translate; mark language as unknown. Then extract distinct real-world EVENTS from the numbered NEW source items.
 Merge reports that clearly describe the same event. If a new report clearly describes an existing event below, reuse that existing event's key.
 Do not invent facts. Ignore opinion/background.
 A social-media post is a report/claim, not proof. Preserve attribution. Do not treat reposts or repeated wording as independent evidence.
 Return only the requested JSON. Each event must contain:
-key, place, date, kind, summary, attribution, items.
+key, place, date, kind, summary, attribution, items, translations.
 kind must be control_change, strike, clash, diplomatic, humanitarian, claim, or other.
 attribution must be party or independent.
 Use only these map places: {places}
 Use the source publication date if the event date is not explicit. Only assign a place when supported.
-Summaries must be neutral and attribute disputed claims such as "TPF says...".
+Summaries must be neutral and attribute disputed claims such as "TPF says...". For translations, include one object per translated source in translations with source_index, language ("am" or "ti"), original_text, and english_translation. For English sources, do not include a translation object.
 EXISTING RECENT EVENTS:
 {existing}
 NEW SOURCE ITEMS:
@@ -117,8 +117,11 @@ def extract_with_gemini(items, existing=None):
     schema={"type":"ARRAY","items":{"type":"OBJECT","properties":{
         "key":{"type":"STRING"},"place":{"type":"STRING"},"date":{"type":"STRING"},
         "kind":{"type":"STRING"},"summary":{"type":"STRING"},"attribution":{"type":"STRING"},
-        "items":{"type":"ARRAY","items":{"type":"INTEGER"}}},
-        "required":["key","place","date","kind","summary","attribution","items"]}}
+        "items":{"type":"ARRAY","items":{"type":"INTEGER"}},
+        "translations":{"type":"ARRAY","items":{"type":"OBJECT","properties":{
+            "source_index":{"type":"INTEGER"},"language":{"type":"STRING"},"original_text":{"type":"STRING"},"english_translation":{"type":"STRING"}},
+            "required":["source_index","language","original_text","english_translation"]}}},
+        "required":["key","place","date","kind","summary","attribution","items","translations"]}}
     body={"contents":[{"parts":[{"text":PROMPT.format(today=TODAY,places=", ".join(PLACES),existing="\n".join(f"- {e.get('key','')} | {e.get('date','')} | {e.get('place','')} | {e.get('summary','')}" for e in (existing or [])[:30]) or "(none)",items=listing)}]}],
           "generationConfig":{"responseMimeType":"application/json","responseSchema":schema,
                               "temperature":0.1,"maxOutputTokens":5000}}
@@ -186,6 +189,16 @@ def finalize_event(db,key,n,items):
     ev.update({"place":place,"lat":PLACES.get(place,(None,None))[0],"lon":PLACES.get(place,(None,None))[1],
                "date":date,"kind":n.get("kind","other"),"summary":str(n.get("summary",""))[:500],
                "attribution":n.get("attribution","independent"),"last_seen":TODAY})
+    if "translations" not in ev: ev["translations"]=[]
+    for tr in n.get("translations",[]):
+        if not isinstance(tr,dict) or tr.get("language") not in ("am","ti"): continue
+        source_index=tr.get("source_index")
+        if not isinstance(source_index,int) or not (0<=source_index<len(items)): continue
+        source=items[source_index]
+        record={"outlet":source["outlet"],"url":source["url"],"language":tr["language"],
+                "original_text":str(tr.get("original_text",""))[:1500],"english_translation":str(tr.get("english_translation",""))[:1500]}
+        if not record["original_text"] or not record["english_translation"]: continue
+        if not any(x.get("url")==record["url"] for x in ev["translations"]): ev["translations"].append(record)
     have={s.get("url") for s in ev["sources"]}
     for i in n.get("items",[]):
         if isinstance(i,int) and 0<=i<len(items):
