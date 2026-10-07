@@ -38,7 +38,10 @@ function draw(){
   if(e.lat!=null){const color=COL[e.grade]||"#555";const m=L.circleMarker([e.lat,e.lon],{radius:9,color,fillColor:color,fillOpacity:e.grade==="CLAIM"?.25:.8,dashArray:e.grade==="CONFIRMED"?null:"3 3"}).addTo(layer);
    m.bindPopup("<b>"+(e.place||"Unknown location")+"</b><br>"+e.summary+"<br><small>"+(e.confidence||25)+"% evidence score</small>");markers[e.key]=m}
   const d=el("div","ev"),g=el("span","g "+e.grade,e.grade),b=el("b","",e.date+" · "+(e.place||"location unclear")),score=el("span","badge",(e.confidence||25)+"%");
-  d.append(g,b,score,el("p","",e.summary));const s=el("div","src");
+  d.append(g,b,score,el("p","",e.summary));
+  const translated=(e.translations||[]).map(x=>x.english_translation).filter(Boolean)[0];
+  if(translated && translated!==e.summary){const t=el("p","",translated);t.style.marginTop="6px";t.style.fontWeight="600";d.append(t);}
+  const s=el("div","src");
   (e.sources||[]).slice(0,6).forEach(x=>{const a=el("a","",sourceLabel(x));a.href=x.url;a.target="_blank";a.rel="noopener";s.append(a)});d.append(s);
   d.onclick=()=>{if(markers[e.key]&&e.lat!=null){map.setView([e.lat,e.lon],8);markers[e.key].openPopup()}};list.append(d);
  });
