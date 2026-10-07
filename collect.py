@@ -542,6 +542,24 @@ def finalize_event(db,key,n,items):
     ev["evidence_explanation"]=evidence_explanation(ev["sources"],event_evidence)
     db[key]=ev
 
+def rescore_event(ev):
+    """Recalculate score/grade for stored events after scoring-model changes."""
+    if not isinstance(ev,dict) or ev.get("manual"):
+        return ev
+    sources=ev.get("sources") or []
+    event_evidence=ev.get("evidence") if isinstance(ev.get("evidence"),dict) else {}
+    ev["grade"]=grade(sources,ev.get("attribution","independent"),event_evidence)
+    ev["confidence"]=confidence(sources,ev.get("attribution","independent"),event_evidence)
+    profiles=[source_profile(s) for s in independent_sources(sources)]
+    best=max(profiles,key=lambda p:p["base"]) if profiles else {"tier":"D","label":"None","base":0}
+    ev["source_tier"]=best["tier"]
+    ev["best_source"]=best["label"]
+    ev["source_count"]=len(independent_sources(sources))
+    ev["independent_source_count"]=len(independent_sources(sources))
+    ev["high_quality_source_count"]=sum(p["tier"]=="A" for p in profiles)
+    ev["evidence_explanation"]=evidence_explanation(sources,event_evidence)
+    return ev
+
 def deterministic_fallback(items):
     """Conservative fallback that groups obvious duplicates and keeps every source."""
     groups=[]
@@ -615,14 +633,25 @@ def published_sort_key(item):
 def process_queue():
     queue=load_json(QUEUE, [])
     pending_all=sorted((x for x in queue if not x.get("processed")), key=published_sort_key, reverse=True)
+
+    # Rescore stored events on every processing run so scoring-model changes
+    # take effect even when there are no new source items.
+    data=load_json(OUT, {"events":[]})
+    db={e["key"]:e for e in data.get("events",[]) if e.get("key")}
+    for key,ev in list(db.items()):
+        db[key]=rescore_event(ev)
+
     if not pending_all:
-        print("No new source items; Gemini skipped."); return
+        now=dt.datetime.now(dt.timezone.utc).isoformat()
+        events=sorted(db.values(),key=lambda e:(e.get("date",""),e.get("last_seen","")),reverse=True)
+        with open(OUT,"w",encoding="utf-8") as f:
+            json.dump({"updated":now,"events":events},f,indent=1,ensure_ascii=False)
+        print("No new source items; stored events rescored:",len(events))
+        return
 
     # Work in bounded batches so a large Telegram burst cannot crowd out news,
     # and so one model response cannot accidentally merge unrelated stories.
     pending_all=pending_all[:PROCESS_MAX_ITEMS]
-    data=load_json(OUT, {"events":[]})
-    db={e["key"]:e for e in data.get("events",[]) if e.get("key")}
     processed_count=0
     batch_count=0
 
