@@ -128,7 +128,7 @@ Use only these exact map places: {places}
 Regional areas allowed: Northern Tigray, Western Tigray, Eastern Tigray, Southern Tigray, Central Tigray, Northwestern Tigray, Northeastern Tigray.
 STRICT LOCATION RULES: A specific place may be assigned ONLY when that exact place is explicitly named in the source title or ARTICLE_TEXT/post text. Do NOT infer a city/town from the outlet, URL slug, RSS query, nearby geography, or general knowledge. If the source explicitly states "Northern Tigray" or another allowed regional area, set region to that exact region and leave place empty. Never convert a regional statement into a city. If no recognized place or region is explicitly stated in the source content, leave both place and region empty. Never infer a town/city from a region or from the general topic. If the source explicitly says "Northern Tigray" or another regional area, set region to that region and leave place empty. If no geographic area is stated, leave both place and region empty. Do not use "unknown", "unconfirmed", "unclear", or similar text as a location.
 Use the source publication date if the event date is not explicit. Only assign a place or region when supported by the source.
-Summaries must be neutral and attribute disputed claims such as "TPF says...". For translations, include one object per translated source in translations with source_index, language ("am" or "ti"), original_text, and english_translation. For English sources, do not include a translation object.
+Summaries must be concise, neutral English and attribute disputed claims such as "TPLF says...". Never leave Amharic or Tigrinya script in the event summary when a translation is available. For translations, include one object per translated source in translations with source_index, language ("am" or "ti"), original_text, and english_translation. For English sources, do not include a translation object.
 EXISTING RECENT EVENTS:
 {existing}
 NEW SOURCE ITEMS:
@@ -427,7 +427,12 @@ def deterministic_fallback(items):
     """Conservative fallback that groups obvious duplicates and keeps every source."""
     groups=[]
     for i,item in enumerate(items):
-        text=(item.get("title","")+" "+item.get("summary","")).strip()
+        # Fallback location extraction must never use an RSS summary for news.
+        # For news, use only the article title/body; for social, use the post text.
+        if item.get("source_type")=="news":
+            text=(item.get("title","")+" "+item.get("article_text","")).strip()
+        else:
+            text=(item.get("title","")+" "+item.get("summary","")).strip()
         place=infer_place(text)
         region="" if place else infer_region(text)
         date=infer_date(item)
