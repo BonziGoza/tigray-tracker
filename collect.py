@@ -167,7 +167,7 @@ def extract_with_gemini(items, existing=None):
                 "contested":{"type":"BOOLEAN"}},
                 "required":["source_index","source_role","named_sources","anonymous_sources","direct_observation","official_sources","documentary_evidence","visual_evidence","attributed_claim","source_is_party","contested"]}},
             "specificity":{"type":"STRING"},"contradicted":{"type":"BOOLEAN"}},
-            "required":["source_assessments","specificity","contradicted"]}},
+            "required":["source_assessments","specificity","contradicted"]},
         "required":["key","place","region","date","kind","summary","attribution","items","ignored_items","translations","evidence"]}}
     body={"contents":[{"parts":[{"text":PROMPT.format(today=TODAY,places=", ".join(PLACES),existing="\n".join(f"- {e.get('key','')} | {e.get('date','')} | {e.get('place','')} | {e.get('summary','')}" for e in (existing or [])[:30]) or "(none)",items=listing)}]}],
           "generationConfig":{"responseMimeType":"application/json","responseSchema":schema,
