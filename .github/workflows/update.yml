@@ -60,7 +60,7 @@ jobs:
       - name: Process queued OSINT with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          MODEL: ${{ vars.MODEL }}
+          # Leave MODEL unset so collect.py uses its safe default model.
           RUN_MODE: process
         run: python collect.py
       - name: Commit processed events and queue state
