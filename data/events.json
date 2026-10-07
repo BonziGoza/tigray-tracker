@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T20:39:00.876464+00:00",
+ "updated": "2026-10-07T20:44:17.910372+00:00",
  "events": [
   {
    "key": "unknown-2026-10-07-ec0b6796",
@@ -1526,6 +1526,28 @@
      "published": "Mon, 05 Oct 2026 16:30:06 GMT",
      "fingerprint": "",
      "repost_of_fingerprint": ""
+    },
+    {
+     "outlet": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOYUFxY2dITnU0S3lxNkwwbjZRd0s2RDdrcmU4dk1hWGE3SnhaVUpCXzYtaERfZGoxU3RrcVlRQTdmcWhOQkRSaFVwS2NvREJCTFBtVFJFNXJ1cXdtYTFkMVJQWS0tZExYYzVsQkpOTnhLVU83RDkyeWF3c1hBWHUwZUxWM3JaVXBmYXZtckpCMGxMa1NlelRYbm1Oelo0Q2NsaTVneENEcmtBQzRmbzNyN1JnNWE4RmNQLWlPbjV5eVpjcndPSmc?oc=5",
+     "title": "Airstrikes and artillery hit north Ethiopia as government and rebels clash, sources say - Reuters",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 13:19:00 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    },
+    {
+     "outlet": "KWSN",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbmpmQkZ4elNIYW1hbmdadUFQUnhHRXNqNGdIdi1jQm5Wc1dKMDYwMlV2ejV2VEZZTDNSRFMyU2tRdERWZ2JMRWVORkhMT1d1alVGN0NGbXJWU20xZ2tDcjgyb3VXSnJSYTBqMURVX3FOei01QkJENWJyWUJ3SjhTMUcwVWNya1NNdjVXMTlMLXNCWWd0SlppOHlTMTlqaU5zLWJORUZKV2JJMklWa09LeXd5ZUQwdw?oc=5",
+     "title": "Airstrikes and artillery hit north Ethiopia as government and rebels clash, sources say - KWSN",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 07:00:00 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
     }
    ],
    "manual": false,
@@ -1534,15 +1556,15 @@
    "lon": null,
    "date": "2026-10-07",
    "kind": "strike",
-   "summary": "Airstrikes and artillery hit north Ethiopia as government and rebels clash, sources say - Biloxi Sun Herald",
+   "summary": "Airstrikes and artillery hit north Ethiopia as government and rebels clash, sources say - Reuters",
    "attribution": "independent",
    "last_seen": "2026-10-07",
    "translations": [],
-   "grade": "CLAIM",
-   "confidence": 28,
-   "source_count": 2,
+   "grade": "CORROBORATED",
+   "confidence": 64,
+   "source_count": 4,
    "social_source_count": 0,
-   "news_source_count": 2
+   "news_source_count": 4
   },
   {
    "key": "unknown-2026-10-07-9e509bc9",
@@ -3510,6 +3532,17 @@
      "published": "Mon, 05 Oct 2026 17:02:05 GMT",
      "fingerprint": "",
      "repost_of_fingerprint": ""
+    },
+    {
+     "outlet": "Durham Herald Sun",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8zTk5tdndreGNULV93NEFUWnFxaGpaUm1oME80RG9pbFpNdnNqMkdBdGxmVnVCQnBHNzhZeHBOOFkxeXdvekRvbWozZkJQVXROZi10ZjkyamREOV94TV9DblFZWVJMSmtzQ3F1WkZfb0pjZkUxdnRjVDhfSQ?oc=5",
+     "title": "Airstrikes and artillery hit north Ethiopia after Tigray capital's fall, aid sources say - Durham Herald Sun",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 13:30:07 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
     }
    ],
    "manual": false,
@@ -3518,15 +3551,15 @@
    "lon": null,
    "date": "2026-10-07",
    "kind": "strike",
-   "summary": "Airstrikes and artillery hit north Ethiopia after Tigray capital’s fall, aid sources say - CNBC Africa",
+   "summary": "Airstrikes and artillery hit north Ethiopia after Tigray capital's fall, aid sources say - Durham Herald Sun",
    "attribution": "independent",
    "last_seen": "2026-10-07",
    "translations": [],
    "grade": "DEVELOPING",
-   "confidence": 32,
-   "source_count": 3,
+   "confidence": 36,
+   "source_count": 4,
    "social_source_count": 0,
-   "news_source_count": 3
+   "news_source_count": 4
   },
   {
    "key": "unknown-2026-10-07-dfe88a91",
@@ -3834,6 +3867,28 @@
      "published": "Wed, 07 Oct 2026 18:43:47 GMT",
      "fingerprint": "",
      "repost_of_fingerprint": ""
+    },
+    {
+     "outlet": "Al Jazeera",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPODU0cXBwMmFzM240MmcwR2ZHRWhKM3NiekpYMUVLekNReXprUHJsTEpBcXJMMGpHQjRmU2p2TjVzTEM1VFlMSFV0cUZtNWJYRE9TbEFDSi0waEZSWFZWLUJFemhabWNBS0Zoa2hpUmdoVS1YOU9oLVlvclE4aER4MFktTkdPZDZMdHhfeEkwb3ZXUnhTd2hUb0h6T2V3RlVmZ2FLRG4wQjROSUtMV0ZfZ2Z4VnFickxRbUHSAboBQVVfeXFMTzg1NHFwcDJhczNuNDJnMEdmR0VoSjNzYnpKWDFFS3pDUXl6a1BybExKQXFyTDBqR0I0ZlNqdk41c0xDNVRZTEhVdHFGbTViWERPU2xBQ0otMGhGUlhWVi1CRXpoWm1jQUtGaGtoaVJnaFUtWDlPaC1Zb3JROGhEeDBZLU5HT2Q2THR4X3hJMG92V1J4U3doVG9Iek9ld0ZVZmdhS0RuMEI0TklLTFdGX2dmeFZxYnJMUW1B?oc=5",
+     "title": "Witnesses spot Eritrean troops inside northern Ethiopia as tensions flare - Al Jazeera",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Wed, 07 Oct 2026 18:44:11 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    },
+    {
+     "outlet": "aljazeera.com",
+     "url": "https://www.aljazeera.com/news/2026/10/7/witnesses-spot-eritrean-troops-inside-northern-ethiopia-as-tensions-flare?traffic_source=rss",
+     "title": "Witnesses spot Eritrean troops inside northern Ethiopia as tensions flare",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Wed, 07 Oct 2026 18:43:47 +0000",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
     }
    ],
    "manual": false,
@@ -3847,10 +3902,10 @@
    "last_seen": "2026-10-07",
    "translations": [],
    "grade": "REPORTED",
-   "confidence": 56,
-   "source_count": 2,
+   "confidence": 60,
+   "source_count": 4,
    "social_source_count": 0,
-   "news_source_count": 2
+   "news_source_count": 4
   },
   {
    "key": "unknown-2026-10-07-da39a3ee",
@@ -4353,6 +4408,482 @@
    "date": "2026-10-07",
    "kind": "other",
    "summary": "Ethiopian government seizes Tigray capital in blow to rebels - Financial Times",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 24,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-f33654d0",
+   "sources": [
+    {
+     "outlet": "TRT World",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcnlXdmd0QlMwb3N2b3Nub0RoajNIYllia0ljaFpGclhwTmFrWjNHREtBX1hvUmFqUC1YV1lKWUgtcnRZVlBTU1BpSGV4NHhtazR3Yzc3ZVJSNUNLZEg5TkNtU0k0bzVCaC1CbTdpTms5YmtXZmdjUlJXbXM3SW91OWNfdF9WcXRKX0VWNjhGeG5DelkxejRiWEwtNEdFUlBMMnhFdEttNTFxMGpOSHoxZ04tNm41WkVTWEh3M19pLVFYeXU2LTZhQU13V190VGdlbDM4cTFnVDBQNlFYc2pseW5JMS1xaHlFR3BJ?oc=5",
+     "title": "Eritrean troops enter Tigray as regional war fears grow - TRT World",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Wed, 07 Oct 2026 19:37:56 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Eritrean troops enter Tigray as regional war fears grow - TRT World",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 24,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-afbf916f",
+   "sources": [
+    {
+     "outlet": "BBC",
+     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5zaWszdG1NZC1oVHFxQkxudk05eHNmTjRPR3JVY3RwbnV2dU56STBweFFVbndrNEpSNVhmOFMzLXp6dHZiSksyOWY3MDlvZjB2dzNGZk03VzRfalp4?oc=5",
+     "title": "Tigray conflict: Eritrean troops move deep into Ethiopia as fighting escalates - BBC",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Wed, 07 Oct 2026 18:37:32 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "clash",
+   "summary": "Tigray conflict: Eritrean troops move deep into Ethiopia as fighting escalates - BBC",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "REPORTED",
+   "confidence": 52,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "mekelle-2026-10-07-bbf9c338",
+   "sources": [
+    {
+     "outlet": "Al Jazeera",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcU5YbjVUUnNodzJYQkliQUZseHNPWE9xbUVmaVA0WWhfZ3pza1pmMEdqSTloajlTcUdSeWZ5SWlGdmZPOTQ5bjBrMDhuRkZTZWFmcUlTVEs2b0ZIWGY4TGxJcDZhSl9ETTZEMjZtZktpU2tEVWVDNUNjMV9Cd0huZ18xQjJkZ21SSXh1SkM0dndtaDVZZVdrcDdYai1pREtHXy000gGoAUFVX3lxTE9yTEJUZ1V5cE45LWVQYmRnT3pRZDdKWjRra01DZHlVWVFTZkVmeFAyR0hBWnhWcUtCeWpzUW5CTUo2N3NKVUUwUEZIZjhZUG8zNVRVc05kTVVBSG1KYjdKUTN1cDZRVUZlUFVQbU1IN1pKQnZJanNwbDZ1QmtNWXFPelBOVzZvZmw3Ym5iUWRCd1FZRXRsRm5WcWlpaTg4aWEwTEh1VVhDVQ?oc=5",
+     "title": "Ethiopia’s forces retake Mekelle amid renewed Tigray fighting - Al Jazeera",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 14:10:50 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "Mekelle",
+   "lat": 13.5,
+   "lon": 39.47,
+   "date": "2026-10-07",
+   "kind": "clash",
+   "summary": "Ethiopia’s forces retake Mekelle amid renewed Tigray fighting - Al Jazeera",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "REPORTED",
+   "confidence": 52,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-f86a78d3",
+   "sources": [
+    {
+     "outlet": "Semafor",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPcHNsQjk1cXJ2NjJBRmJzTzZRdl9vSHJfSUNJU0pIc3dURHNtY2JtWHJjdjlKcEM2bWlqVmJKdUwydXNYM0s4aWd2S0R6RXcyZmNXVVZVVlQwaTNjaVI1c1g0TVpQdnp6UkVfSlVUWGpxNHByVDk2RkVHTTl1R0NsY2tkSQ?oc=5",
+     "title": "Ethiopia recaptures Tigray capital amid conflict escalation - Semafor",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 13:36:00 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopia recaptures Tigray capital amid conflict escalation - Semafor",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 28,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-77dad992",
+   "sources": [
+    {
+     "outlet": "France 24",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQY0RSZEpHS2pBa2RzQzJ2d0NwYnFKNkFDYmhQdGdMSzdIVThBdXRKT2YzZi1FZzdFX0k3OXJoVjMyZ2tZQV82YWJBbXo3R2VESGJ2ZVV4Nl82c1FVcUV2RGZDRFBFSWZaSWEwLVBOTWpMLS1IUzRscWF4YUZMbXZNRERGblp0TjdXdm5jc0NfZFNubzRPTnpJYnJ2WUNvTGV2STJPek94Z0k?oc=5",
+     "title": "Drone hits Ethiopia IDP camp as fears grow of regional war - France 24",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 13:12:45 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Drone hits Ethiopia IDP camp as fears grow of regional war - France 24",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "REPORTED",
+   "confidence": 52,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-3b8f4722",
+   "sources": [
+    {
+     "outlet": "France 24",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZ3VxeWw2RVNlUkRmVUlsZlRIZHVhVzg2YUhLdU1Ka3M2ZUxzVVNHRU1nU01KamJPNFJaWTdSNVRXZVotR1FUMWpEbHhzZEVhOEJhQS12Ump6d19Iclo4WTFSRTFaN2dRTkZBUTRmdGxWWUo2dklwbEp3emhZV1BfNWh5LS1RQXY2OXllNEJ3NWhHNEprZXNnUlhidlp2X21x?oc=5",
+     "title": "Ethiopian govt retakes Tigray capital as rebels pull out - France 24",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 11:23:06 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopian govt retakes Tigray capital as rebels pull out - France 24",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "REPORTED",
+   "confidence": 52,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-954acc5d",
+   "sources": [
+    {
+     "outlet": "National Security News",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbDB2anFyOGlzaTJLb1daT2QtNVgxMEdlSEZVdmt3aGhPaHVHeDJxeHNXS3VMTFAyVzVrMy1VeWQ3elRxeDRjdUhtbHk1WDNyQ1J6alpSWTZvaW9sREpnR3luaUQxYXhfSlNVcTNydVAwbENWZGpCR3Q3LTJMWjg0R2tSdWdJbXdsY0RlVjlLLUlVUzFhZnfSAZsBQVVfeXFMUGFkQWRMcU02cEpBLUJDb1M2NUR1ZTlLRV8wYUF3NXV0SFFya1k4OEo1Z043V2hTb1FSSHlSdi1RZS1GRWFneWRYNk93UHB4Z1dsd05kTXA4OWxNRXBJTzdNY29hWGRzRXRoZUIwV0Y4dnBzaUpVRGpySHk5SDcyNm5VRHJxQmVaUzNxbldJMHd6T1doaXpzNnhlX2c?oc=5",
+     "title": "Ethiopia recaptures rebel city as wider war looms - National Security News",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 09:58:32 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopia recaptures rebel city as wider war looms - National Security News",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 24,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "mekelle-2026-10-07-3767679d",
+   "sources": [
+    {
+     "outlet": "Al Jazeera",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOUtoNkFPOEhFT1NoYTlKUWxvS0FLa0dmNVIwUWlBZ1ZXUk1OdFBxY2I1NXhFeElqcVJTV1dKTTluaVl0M2premQ2S1FTOVRvclFwRzZjeGI2RHFJRXBwckZEV2RRbDNka0VoU3lrWWVyelVDNC1fVFFNOThBSTRhZWU1czVfdGoydzRNTTU3cmVsSkk0Yk1UYVctVXEwNmlzS0FMZ05GOG4xVnNQandYTdIBtgFBVV95cUxQaHJCMklNc0NFTzBYNUF0VEM3U3JGUVZBSGFQUWg5TWNYeDZHbEFqM1pJNVo3NHkwSU5vdEZ4UHBpVkNRTGNTTGEtVEdFVENiaEk1QWlweEZuM2dPU1dKVVRZY3pxcS1nT08xS2VtUV9mdXJPNEtRTHJoZmp6X1l6cmNpTzRkcGRrNzg3MDYwbERNVEdKdjUzLS05TUVUcS1vc0NuZGF5WWlrMDhXX3llY250Y2hXZw?oc=5",
+     "title": "Ethiopian government forces seize Tigray capital Mekelle as TPLF withdraws - Al Jazeera",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 09:05:35 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    },
+    {
+     "outlet": "BBC",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5lZnJpVTV6SGZsTVlPOXZPdHpmdGhReGpQa1RneHB5TUR5LXJVcHl3ajI3OHM5ei1IaWc5dmFUWWpmTldsSTVURklnZ0ZBdC1tQXYwYk91ZmNFdkU?oc=5",
+     "title": "Ethiopian conflict: TPLF forces withdraw from Tigray regional capital Mekelle - BBC",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 08:29:12 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "Mekelle",
+   "lat": 13.5,
+   "lon": 39.47,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopian government forces seize Tigray capital Mekelle as TPLF withdraws - Al Jazeera",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CONFIRMED",
+   "confidence": 84,
+   "source_count": 2,
+   "social_source_count": 0,
+   "news_source_count": 2
+  },
+  {
+   "key": "mekelle-2026-10-07-000a598e",
+   "sources": [
+    {
+     "outlet": "https://globalpost.com/",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRG1LMnY2UktmN3BOVmJwSUs1Qmd5SGhuM2tYRkxIaU90a3gxMFdBMjctX3RvaS1CMkNlUDJ5SEhOMHIwYXRrYllOSGtLdTRHVmZiaEY3S0dDUFc4MjRsZE1ycFp0aF80Y3VKNFp3bXF5NUVBWkxYNzdPaDVvdVozMVdJM2FCWVdSdUxFVFBnZkVjM0M1clN2S3RQTWpxRGlSd1hzRjRkV3pmUVdVLXBfdlNR?oc=5",
+     "title": "Ethiopian Forces Retake Tigray Capital Mekelle as Tensions With Eritrea Escalate - https://globalpost.com/",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 08:35:54 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "Mekelle",
+   "lat": 13.5,
+   "lon": 39.47,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopian Forces Retake Tigray Capital Mekelle as Tensions With Eritrea Escalate - https://globalpost.com/",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 24,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-415ae3c8",
+   "sources": [
+    {
+     "outlet": "chinadailyhk",
+     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1DOFE0YkRjQkNHZnd5cWt2cEk1cWlIMUZQZk1EckNlQ1VjWWlHZU9LbTRQRVlwQlc2TUx5djM0Q2p3eUJ0UzQzSTk2T0FRQTVpQlp0T2k4Q0k?oc=5",
+     "title": "Ethiopian army advances in Tigray amid growing regional spillover concerns - chinadailyhk",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 08:03:58 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopian army advances in Tigray amid growing regional spillover concerns - chinadailyhk",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 24,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-cdc7f69f",
+   "sources": [
+    {
+     "outlet": "Daily Sabah",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcXdVek9jVUYyb2lZWVYtUFI2eGQ3WXBxV0Nvc2lJQXgwWW1iZGRnczhPMnRsMFdZMnJXT1Z5dEU4MkZEODJDV29jRFdqZXVvZ0UxT2lXQnVnZkpxVE9SdmI1b1ZFS2lyOG44Q25wTlEwQ2llSHVFdGtIc2dfZ0VBejJ4MFl3YUxtb2h1SXJTZTJYck5FRmdUbFFUdzVNMVRGRHVR?oc=5",
+     "title": "Ethiopia's govt. forces push back TPLF to retake Tigray capital - Daily Sabah",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 07:46:00 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopia's govt. forces push back TPLF to retake Tigray capital - Daily Sabah",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 24,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "mekelle-2026-10-07-6b6c69ce",
+   "sources": [
+    {
+     "outlet": "Türkiye Today",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUTNmQTl1MnE5bFhHcUctNUM1eDJVU3FVV3REejJhVUZLVTlkNUg2Q0xMN1g1bk9Pb0szbWVka29iMGRCMmwtNU9QU2gwekRPVlJ6bVkxSlQxZkMwbG5mTGN5NWd1WVQ4WF9FUzVTNmhaNzFjUzk2azlvT3VpWms3Z0N6WGwzV25XOWxGaG9ubG5OcjdsZk8zZUJ1cnpwdnF0ajcwNTl3?oc=5",
+     "title": "Ethiopian forces seize Mekelle as Tigray rebels abandon city - Türkiye Today",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 07:27:25 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "Mekelle",
+   "lat": 13.5,
+   "lon": 39.47,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopian forces seize Mekelle as Tigray rebels abandon city - Türkiye Today",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 24,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-db66c991",
+   "sources": [
+    {
+     "outlet": "Business Insider Africa",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPYXZ4QWprOE0tRkpSVGN1bGJQVVBabWV2enhLczlJZVhFMHpQOF9kdDNxWV9WYjRNZUlvSUZsTnBVS095eUp1UlJsRHpMakhxa0pGeGFoNnZIVWdTczZ5R3lTWWY1blZ6SnF3VXBBcVNKVktTdFVTUlVKNWRQUG1heUhVQ1Voa0phdjViaTFuQVVhdmZaX0hERlhfWENka01qdWxTMUgwekx2TjZTQUo1ZHlDXzNsNkNjNE1uOEprX3Y5WXF4Rk1STVViQ05Vbkdh?oc=5",
+     "title": "Ethiopia retakes Tigray’s capital as rebel leaders withdraw and vow to fight on - Business Insider Africa",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 06:56:52 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopia retakes Tigray’s capital as rebel leaders withdraw and vow to fight on - Business Insider Africa",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "CLAIM",
+   "confidence": 24,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "unknown-2026-10-07-ee1d0e19",
+   "sources": [
+    {
+     "outlet": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUlhfbUhRWjZFZkRxeE84N2tUWUhoaTFra1RISEt5M0xkMG55cXp1MzJFdF9SVzZia2p1Q1ZQbUZyeXF2NUI0cGpXR0QxaDduUk9WYWRITVBickQ5Wnptd0xKRGtPaG4wMEV4eC0zVmY4dTgzSG1ka2t5RHVhb0NBRFR5Zm5sMWZHc3VYbFdjUThSM1ZzVkE?oc=5",
+     "title": "As Iran war smolders, shunned Eritrea looks to come in from the cold - Reuters",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 06:07:00 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "As Iran war smolders, shunned Eritrea looks to come in from the cold - Reuters",
+   "attribution": "independent",
+   "last_seen": "2026-10-07",
+   "translations": [],
+   "grade": "REPORTED",
+   "confidence": 52,
+   "source_count": 1,
+   "social_source_count": 0,
+   "news_source_count": 1
+  },
+  {
+   "key": "mekelle-2026-10-07-4ae5c07e",
+   "sources": [
+    {
+     "outlet": "The Jerusalem Post",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5aWUplUHRMeHdPOGxHaDFhY0RYajN0WDBjMVJyVjd5X3duelNGUkUxZnB3MnNkMEVWVGF4cmRRa29vZEMxRlVicG9paWhQLU5RQy1RbGV0aUwyZUpRNVVv?oc=5",
+     "title": "Ethiopian troops retake Mekelle as TPLF rebels retreat from Tigray's capital - The Jerusalem Post",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 05 Oct 2026 06:01:28 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": ""
+    }
+   ],
+   "manual": false,
+   "place": "Mekelle",
+   "lat": 13.5,
+   "lon": 39.47,
+   "date": "2026-10-07",
+   "kind": "other",
+   "summary": "Ethiopian troops retake Mekelle as TPLF rebels retreat from Tigray's capital - The Jerusalem Post",
    "attribution": "independent",
    "last_seen": "2026-10-07",
    "translations": [],
