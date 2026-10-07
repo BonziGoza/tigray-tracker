@@ -415,7 +415,7 @@ def process_queue():
         uncovered=[i for i in range(len(batch)) if i not in covered]
         if uncovered:
             print("Uncovered source items; deterministic fallback:",len(uncovered))
-            for n in deterministic_fallback([batch[i] for i in uncovered]):
+            for n in deterministic_fallback([analysis_items[i] for i in uncovered]):
                 remapped=[]
                 for local_i in n.get("items",[]):
                     if isinstance(local_i,int) and 0<=local_i<len(uncovered):
