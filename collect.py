@@ -298,9 +298,9 @@ def grade(sources,attribution="independent"):
     # "Confirmed" requires substantial independent professional corroboration.
     if len(high)>=3 or (len(high)>=2 and len(professional)>=3):
         return "CONFIRMED"
-    if len(high)>=2 or (len(professional)>=2 and len(social)>=1):
+    if len(high)>=2 or len(professional)>=2:
         return "CORROBORATED"
-    if high or professional:
+    if news:
         return "REPORTED"
     if len(social)>=2:
         return "DEVELOPING"
