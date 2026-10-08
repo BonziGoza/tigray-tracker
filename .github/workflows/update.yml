@@ -30,6 +30,8 @@ jobs:
           cache: "pip"
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Refresh Google My Maps geographic layer
+        run: python sync_map.py
       - name: Collect and process OSINT
         env:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
@@ -41,7 +43,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/source_queue.json data/status.json
+          git add data/source_queue.json data/status.json data/base_map.geojson
           git diff --cached --quiet || git commit -m "Collect new OSINT sources"
           git push
   process:
