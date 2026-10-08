@@ -562,7 +562,7 @@ def save_status():
     print("last source check:",now)
 
 def save_queue(items):
-    # Social sources are disabled; keep only the news queue while preserving processed news.
+    # Keep only the active news queue while preserving processed news.
     queue=[x for x in load_json(QUEUE, []) if x.get("source_type")=="news"]
     urls={x.get("url") for x in queue}
     for item in items:
