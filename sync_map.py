@@ -120,6 +120,11 @@ def main():
             print(f"Google My Maps layer unchanged: {len(fc['features'])} features")
     except Exception as exc:
         # Never break OSINT collection because the optional geographic layer failed.
+        # If this is the first run, create an empty valid layer so the workflow's
+        # git-add step still succeeds. A later successful run will replace it.
+        OUT.parent.mkdir(parents=True, exist_ok=True)
+        if not OUT.exists():
+            OUT.write_text('{"type":"FeatureCollection","features":[]}\n', encoding="utf-8")
         print(f"WARNING: could not refresh Google My Maps layer: {exc}", file=sys.stderr)
         sys.exit(0)
 
