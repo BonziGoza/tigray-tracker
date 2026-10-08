@@ -29,9 +29,27 @@ const COL={CONFIRMED:"#1f7a3d","STRONGLY CORROBORATED":"#18794e",CORROBORATED:"#
 const map=L.map("map").setView([13,39.5],6);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:12,attribution:"© OpenStreetMap"}).addTo(map);
 let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},sourceOn={news:1,social:1},layer=L.layerGroup().addTo(map),markers={};
+let baseMapLayer=null;
+const baseMapStyle={color:"#5b6470",weight:1.5,fillOpacity:.08,opacity:.8};
+const baseMapPointStyle={radius:5,color:"#46515c",fillColor:"#fff",fillOpacity:.9,weight:1.5};
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
 function sourceLabel(s){if(s.platform==="reddit")return "Reddit";if(s.platform==="gdelt")return "GDELT";return s.outlet||"Source"}
 function visible(e){if(!gradeOn[e.grade])return false;const s=e.sources||[];return !s.length||s.some(x=>sourceOn[x.source_type||"news"])}
+function addBaseMap(data){
+  if(baseMapLayer){map.removeLayer(baseMapLayer);}
+  baseMapLayer=L.geoJSON(data,{
+    style:()=>baseMapStyle,
+    pointToLayer:(_,latlng)=>L.circleMarker(latlng,baseMapPointStyle),
+    onEachFeature:(feature,layer)=>{
+      const p=feature.properties||{};
+      const title=p.name||p.folder||"Map feature";
+      if(title||p.description){
+        layer.bindPopup("<b>"+title+"</b>"+(p.description?"<br><small>"+p.description+"</small>":""));
+      }
+    }
+  }).addTo(map);
+  baseMapLayer.bringToBack();
+}
 function draw(){
  layer.clearLayers();markers={};const list=document.getElementById("list");list.replaceChildren();
  events.filter(visible).forEach(e=>{
@@ -71,6 +89,7 @@ function renderStats(){
  else earlyEvents.forEach(e=>box.append(el("div","",e.date+(e.place||e.region?" · "+(e.place||e.region):"")+" — "+e.summary)));
 }
 Promise.all([
+ fetch("data/base_map.geojson?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null),
  fetch("data/events.json?"+Date.now()).then(r=>r.json()),
  fetch("data/status.json?"+Date.now()).then(r=>r.ok?r.json():{})
 ]).then(([j,s])=>{
