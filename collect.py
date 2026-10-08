@@ -421,7 +421,7 @@ def evidence_explanation(sources,event_evidence=None):
     b=sum(p["tier"]=="B" for p in profiles)
     c=sum(p["tier"]=="C" for p in profiles)
     parts=[f"Best source: {best['label']} ({best['tier']}-tier)."]
-    parts.append(f"{len(src)} independent source record{'s' if len(src)!=1 else ''}; {a} A-tier, {b} B-tier, {c} C-tier, {social} social.")
+    parts.append(f"{len(src)} independent source record{'s' if len(src)!=1 else ''}; {a} A-tier, {b} B-tier, {c} C-tier.")
     rq=max((reporting_quality(s) for s in src),default=0)
     if rq>=18: parts.append("Strong source-level reporting/sourcing.")
     elif rq>=10: parts.append("Moderate source-level reporting/sourcing.")
@@ -486,7 +486,6 @@ def finalize_event(db,key,n,items):
     ev["grade"]=grade(ev["sources"],ev.get("attribution","independent"),event_evidence)
     ev["confidence"]=confidence(ev["sources"],ev.get("attribution","independent"),event_evidence)
     ev["source_count"]=len(independent_sources(ev["sources"]))
-    ev["social_source_count"]=sum(s.get("source_type")=="social" for s in ev["sources"])
     ev["news_source_count"]=sum(s.get("source_type")=="news" for s in ev["sources"])
     profiles=[source_profile(s) for s in independent_sources(ev["sources"])]
     best_profile=max(profiles,key=lambda p:p["base"]) if profiles else {"tier":"D","label":"None","base":0}
