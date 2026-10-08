@@ -94,7 +94,8 @@ Promise.all([
  fetch("data/base_map.geojson?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null),
  fetch("data/events.json?"+Date.now()).then(r=>r.json()),
  fetch("data/status.json?"+Date.now()).then(r=>r.ok?r.json():{})
-]).then(([j,s])=>{
+ ]).then(([base,j,s])=>{
+ if(base && base.features) addBaseMap(base);
  events=j.events||[];
  const checked=s.last_checked?new Date(s.last_checked).toLocaleString():"Waiting for first automatic check";
  const updated=j.updated?new Date(j.updated).toLocaleString():"Unknown";
