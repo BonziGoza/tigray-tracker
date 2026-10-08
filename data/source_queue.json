@@ -2767,7 +2767,9 @@
   "platform": "telegram",
   "author": "tigrignafana",
   "published": "2026-10-08T08:17:58+00:00",
-  "fingerprint": "409fc600d82346106a76"
+  "fingerprint": "409fc600d82346106a76",
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "ሰሩዕ ኣኼባ ባይቶ ወከልቲ ህዝቢ ይካየድ ኣሎ",
@@ -2778,7 +2780,9 @@
   "platform": "telegram",
   "author": "tigrignafana",
   "published": "2026-10-08T06:18:39+00:00",
-  "fingerprint": "9cf803816b60f9843a99"
+  "fingerprint": "9cf803816b60f9843a99",
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "ቀዳማይ ሚኒስትር ፌዴሪኢ ኣቢይ ኣሕመድ (ዶ/ር) ንተወከልቲ ህዝቢ ብሕፁይነት ዝቐረቡዎም ሚኒስቴራት ሽመቶም ብሙሉእ ድምፂ ፀዲቑሎም።",
@@ -2789,7 +2793,9 @@
   "platform": "telegram",
   "author": "tikvahethiopiatigrigna",
   "published": "2026-10-08T07:43:13+00:00",
-  "fingerprint": "1c9ca009960f027c2b64"
+  "fingerprint": "1c9ca009960f027c2b64",
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Ethiopia’s Northern Conflict Does Not Begin or End in Ethiopia - Middle East Forum",
@@ -2800,7 +2806,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 10:03:13 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean soldiers entered northern Ethiopian towns, government-allied commander says - News4JAX",
@@ -2811,7 +2818,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 06:43:48 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean soldiers entered northern Ethiopian towns, government-allied commander says - Bozeman Daily Chronicle",
@@ -2822,7 +2830,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 06:43:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "US issues Level 4 ‘Do Not Travel’ warning for 14 areas across Ethiopia amid security risks - Business Insider Africa",
@@ -2833,7 +2842,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 07:22:40 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "The world’s most powerful country just warned its citizens in Ethiopia of possible long-range attacks - Business Insider Africa",
@@ -2844,7 +2854,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 07:30:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Tigray conflict: Eritrean troops move deep into Ethiopia, residents tell BBC - BBC",
@@ -2855,7 +2866,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 07 Oct 2026 18:37:32 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean troops deploy in Ethiopia's Tigray region - Times of Suriname",
@@ -2866,7 +2878,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 08:03:01 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean troops deploy in Ethiopia's Tigray region | Hindustan Times - Hindustan Times",
@@ -2877,7 +2890,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 07 Oct 2026 19:00:28 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean troops drive through northern Ethiopian town, witnesses say - Arab News",
@@ -2888,7 +2902,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 07 Oct 2026 09:15:07 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean troops deploy in Ethiopia's Tigray region, witnesses say - Africanews English",
@@ -2899,7 +2914,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 07 Oct 2026 11:32:19 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "TPLF Fighters Withdraw From Shire, Residents Say - https://kulu-media.com/",
@@ -2910,7 +2926,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 08:24:26 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean soldiers entered northern Ethiopian towns, government-allied commander says - Bay News 9",
@@ -2921,7 +2938,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 06:43:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean soldiers entered northern Ethiopian towns, government-allied commander says - Goshen News",
@@ -2932,7 +2950,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 06:43:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Daily_Brief: #Sudan’s al-Burhan inspects army division in #Kassala near #Ethiopia, #Eritrea borders - Addis Standard",
@@ -2943,7 +2962,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 09:10:22 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Who gets to speak for Eritrea? - Geeska",
@@ -2954,7 +2974,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 07:42:27 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Tigray faces a double catastrophe: War and worsening hunger - The New Humanitarian",
@@ -2965,7 +2986,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 09:44:55 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "EEPA reports on Eritrean forces seen in Adigrat, Tigray - IDN-InDepthNews",
@@ -2976,7 +2998,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 14:51:31 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopia and Eritrea edge closer to direct conflict as troops enter Tigray - The National",
@@ -2987,7 +3010,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 12:10:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Eritrean forces seen entering towns in Ethiopia’s Tigray region after crossing border - myMotherLode.com",
@@ -2998,7 +3022,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 14:04:34 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopian drone strikes hit Eritrean forces in northern Tigray city - RFI",
@@ -3009,7 +3034,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 10:50:55 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopian drones hit Eritrean forces accused of backing rebels in Tigray - Euronews.com",
@@ -3020,7 +3046,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 12:15:43 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopia launches strikes at Eritrean troops venturing into N. Tigray - Daily Sabah",
@@ -3031,7 +3058,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 09:40:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Ethiopia and Eritrea are on the brink of another conflict - The Economist",
@@ -3042,7 +3070,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 13:01:51 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Reports: Eritrean troops in Ethiopia's Tigray fuel new fears of war - Yahoo",
@@ -3053,7 +3082,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 15:18:37 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Eritrean troops reportedly enter Ethiopia’s Tigray region - France 24",
@@ -3064,7 +3094,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 10:18:08 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Eritrean troops seen inside Ethiopia’s Tigray as conflict fears grow - African Business",
@@ -3075,7 +3106,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 12:33:45 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Witnesses spot Eritrean troops inside northern Ethiopia as tensions flare - Al Jazeera",
@@ -3086,7 +3118,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 07 Oct 2026 18:53:45 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean troops enter Ethiopia’s Tigray as renewed fighting raises fears of regional war - thecradle.co",
@@ -3097,7 +3130,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 15:09:38 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "ACLED analyst reports Eritrean troops entered Tigray — The National - UA.NEWS",
@@ -3108,7 +3142,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 11:40:43 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Eritrean forces seen entering towns in Ethiopia's Tigray region after crossing border - Goshen News",
@@ -3119,7 +3154,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 12:20:38 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Eritrean soldiers entered northern Ethiopian towns, government-allied commander says - Plainview Herald",
@@ -3130,7 +3166,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 06:57:28 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Is Assab Port the real prize in the looming Ethiopia-Eritrea war? - The Africa Report",
@@ -3141,7 +3178,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 15:30:32 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopia drones hit Eritrean troops in Tigray - Winnipeg Sun",
@@ -3152,7 +3190,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 10:48:09 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopia drone strikes against Eritrean troops in northern Tigray: witnesses, monitor - Africa - World - Ahram Online",
@@ -3163,7 +3202,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 10:35:57 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopian drones hit Eritrean forces accused of backing rebels in Tigray - Yahoo News UK",
@@ -3174,7 +3214,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 12:15:43 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Eritrean troops reportedly enter Ethiopia’s Tigray region - Modern Ghana",
@@ -3185,7 +3226,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 10:43:36 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopia Strikes Eritrean Forces in Tigray Region With Drones - TVC News",
@@ -3196,7 +3238,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 13:38:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Firaministan Habasha ya sake dawowa madafun iko lokacin da rikicin Tigray ke fadada - DW.com",
@@ -3207,7 +3250,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 12:15:06 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopia drones hit Eritrean troops in Tigray - Adelaide Now",
@@ -3218,7 +3262,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 12:41:12 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Eritrean forces seen entering towns in Ethiopia’s Tigray region after crossing border - The Spec",
@@ -3229,7 +3274,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 06:44:03 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Ethiopian commander reports drone strikes in Tigray as markets reopen in regional capital - The Washington Post",
@@ -3240,7 +3286,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 06 Oct 2026 21:22:53 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean Troops Retreat After Drone Strikes in Tigray - https://kulu-media.com/",
@@ -3251,7 +3298,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 15:22:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopia drone strikes against Eritrean troops in northern Tigray - News24",
@@ -3262,7 +3310,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 10:55:09 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Eritrean troops reportedly enter Ethiopia’s Tigray region - Inbox.eu",
@@ -3273,7 +3322,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 10:30:13 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Upstream Battle: Ethiopia’s Civil War Draws in Regional Rivalries - Geopolitical Monitor",
@@ -3284,7 +3334,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 14:41:20 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "As Iran War Smolders, Shunned Eritrea Looks to Come in from the Cold - The Restored Church of God",
@@ -3295,7 +3346,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 14:17:34 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopia drones hit Eritrean troops in Tigray - Bangkok Post",
@@ -3306,7 +3358,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 11:45:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Eritrean forces seen entering towns in Ethiopia's Tigray region after crossing border - The Batesville Daily Guard",
@@ -3317,7 +3370,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 12:20:38 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "US Issues Ethiopia Travel Advisory, Cites Long-Range Attacks - Bloomberg.com",
@@ -3328,7 +3382,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 05:20:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean troops deployed in Ethiopia's Tigray region - The Express Tribune",
@@ -3339,7 +3394,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 09:04:19 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrea denies troop deployment in Ethiopia as fighting escalates - Modern Ghana",
@@ -3350,7 +3406,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 10:10:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Eritrean soldiers entered northern Ethiopian towns, government-allied commander says - KSAT",
@@ -3361,7 +3418,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 06:44:44 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrean soldiers entered northern Ethiopian towns, government-allied commander says - Toronto Star",
@@ -3372,7 +3430,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 06:44:03 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  },
  {
   "title": "Eritrea: Sovereignty Is Never an “Old Narrative” - Eritrea Ministry Of Information",
@@ -3383,7 +3442,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 12:20:05 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "Ethiopia accuses Eritrea of supporting the TPLF and points to Isaias Afewerki as the \"father of the miscalculations.\" - Demócrata",
@@ -3394,7 +3454,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 13:16:58 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:18.555582+00:00"
  },
  {
   "title": "#Daily_Brief: #Sudan’s al-Burhan inspects army division in #Kassala near #Ethiopia, #Eritrea borders Sudan’s army chief and Transitional Sovereignty Council chairman, General Abdel Fattah al-Burhan, visited the headquarters of the Sudanese Armed Force - Facebook",
@@ -3405,6 +3466,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 08 Oct 2026 10:07:26 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-08T15:39:20.183780+00:00"
  }
 ]
