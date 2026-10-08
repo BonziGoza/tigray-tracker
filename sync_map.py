@@ -68,17 +68,72 @@ def geometry(el):
     return None
 
 
-def placemarks(root):
+
+def abgr_to_rgba(value):
+    """Convert KML AABBGGRR colors to CSS/GeoJSON color + opacity."""
+    value=(value or "").strip().lstrip("#")
+    if len(value)==6:
+        value="ff"+value
+    if len(value)!=8 or not all(ch in "0123456789abcdefABCDEF" for ch in value):
+        return None, None
+    a,b,g,r=value[0:2],value[2:4],value[4:6],value[6:8]
+    return f"#{r}{g}{b}", int(a,16)/255
+
+
+def parse_styles(root):
+    styles={}
+    for st in root.findall(".//k:Style", NS):
+        sid=st.get("id")
+        if not sid: continue
+        icon=st.find("k:IconStyle",NS)
+        line=st.find("k:LineStyle",NS)
+        poly=st.find("k:PolyStyle",NS)
+        out={}
+        if line is not None:
+            color=abgr_to_rgba(text(line,"color"))
+            if color[0]: out.update(strokeColor=color[0],strokeOpacity=color[1])
+            width=text(line,"width")
+            if width:
+                try: out["strokeWeight"]=float(width)
+                except ValueError: pass
+        if poly is not None:
+            color=abgr_to_rgba(text(poly,"color"))
+            if color[0]: out.update(fillColor=color[0],fillOpacity=color[1])
+            fill=text(poly,"fill")
+            if fill=="0": out["fillOpacity"]=0
+        if icon is not None:
+            scale=text(icon,"scale")
+            if scale:
+                try: out["iconScale"]=float(scale)*5
+                except ValueError: pass
+            color=abgr_to_rgba(text(icon,"color"))
+            if color[0]: out.update(fillColor=color[0],fillOpacity=color[1])
+        styles[sid]=out
+    for sm in root.findall(".//k:StyleMap", NS):
+        sid=sm.get("id")
+        if not sid: continue
+        chosen=""
+        for pair in sm.findall("k:Pair",NS):
+            if text(pair,"key")=="normal":
+                chosen=text(pair,"styleUrl").lstrip("#")
+                break
+        if chosen in styles: styles[sid]=dict(styles[chosen])
+    return styles
+
+def placemarks(root,styles):
     features = []
     for pm in root.findall(".//k:Placemark", NS):
         g = geometry(pm)
         if not g:
             continue
+        style_id=text(pm,"styleUrl").lstrip("#")
         props = {
             "name": text(pm, "name"),
             "description": text(pm, "description"),
             "styleUrl": text(pm, "styleUrl"),
         }
+        if style_id in styles:
+            props.update(styles[style_id])
         folder = pm
         parent_name = ""
         # KML export commonly keeps folder names outside the Placemark.
@@ -108,7 +163,8 @@ def main():
                 data = z.read(names[0])
 
         root = ET.fromstring(data)
-        fc = {"type": "FeatureCollection", "features": placemarks(root)}
+        styles = parse_styles(root)
+        fc = {"type": "FeatureCollection", "features": placemarks(root, styles)}
         OUT.parent.mkdir(parents=True, exist_ok=True)
 
         new = json.dumps(fc, ensure_ascii=False, separators=(",", ":")) + "\n"
