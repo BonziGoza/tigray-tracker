@@ -6,7 +6,7 @@ import feedparser, requests
 import trafilatura
 
 OUT="data/events.json"; QUEUE="data/source_queue.json"; STATUS="data/status.json"; TODAY=dt.date.today().isoformat()
-KEEP_DAYS=45; QUEUE_DAYS=2; MAX_ITEMS=100; SOCIAL_MAX=40; PROCESS_MAX_ITEMS=180; PROCESS_BATCH_SIZE=30
+KEEP_DAYS=45; QUEUE_DAYS=2; MAX_ITEMS=100; PROCESS_MAX_ITEMS=180; PROCESS_BATCH_SIZE=30
 MODEL=os.environ.get("MODEL","gemini-2.5-flash-lite")
 ARTICLE_TIMEOUT=15
 ARTICLE_MAX_CHARS=12000
@@ -68,46 +68,9 @@ def gather_news():
     except Exception as ex: print("GDELT failed:",ex)
     return items
 
-TELEGRAM_CHANNELS=[
-    "Tigrai_Ttv",
-    "axumawianmedia",
-    "tigrignafana",
-    "tikvahethiopiA",
-    "tikvahethiopiatigrigna",
-    "ASCENTIG",
-]
-
-def gather_reddit():
-    cid=os.environ.get("REDDIT_CLIENT_ID",""); secret=os.environ.get("REDDIT_CLIENT_SECRET","")
-    if not cid or not secret:
-        print("Reddit collector disabled: credentials not configured."); return []
-    items=[]; seen=set(); ua=os.environ.get("REDDIT_USER_AGENT","TigrayOSINTTracker/1.0 by BonziGoza")
-    try:
-        tr=requests.post("https://www.reddit.com/api/v1/access_token",auth=(cid,secret),
-                         data={"grant_type":"client_credentials"},headers={"User-Agent":ua},timeout=30)
-        tr.raise_for_status(); token=tr.json()["access_token"]
-        headers={"Authorization":f"bearer {token}","User-Agent":ua}
-        for query in ["Tigray","Mekelle","TPLF","Ethiopia Tigray"]:
-            r=requests.get("https://oauth.reddit.com/search",
-                params={"q":query,"sort":"new","t":"day","limit":25,"restrict_sr":"false","type":"link,self"},
-                headers=headers,timeout=30)
-            if r.status_code==429: print("Reddit rate limited; stopping."); break
-            r.raise_for_status()
-            for child in r.json().get("data",{}).get("children",[]):
-                p=child.get("data",{}); permalink=p.get("permalink","")
-                url="https://www.reddit.com"+permalink if permalink else p.get("url","")
-                published=dt.datetime.fromtimestamp(p["created_utc"],dt.timezone.utc).isoformat() if p.get("created_utc") else ""
-                add_item(items,seen,p.get("title",""),f"r/{p.get('subreddit','')}",url,p.get("selftext",""),
-                         "social","reddit",p.get("author","") or "[deleted]",published)
-    except Exception as ex: print("Reddit failed:",ex)
-    return items[:SOCIAL_MAX]
-
 def gather():
-    items=gather_news()+gather_reddit()
-    # Telegram has its own relevance filter. Do not apply the Latin-keyword
-    # filter here: it can discard valid Amharic/Tigrinya social posts.
-    print("items gathered:",len(items),"news:",sum(x["source_type"]=="news" for x in items),
-          "social:",sum(x["source_type"]=="social" for x in items))
+    items = gather_news()
+    print("items gathered:", len(items), "news:", len(items))
     return items[:MAX_ITEMS]
 
 PROMPT="""You are structuring OSINT reports about Tigray and northern Ethiopia.
@@ -250,8 +213,8 @@ def enrich_news_items(items):
 def contains_ethio_script(text):
     return bool(re.search(r"[\u1200-\u137F]", str(text or "")))
 
-def translate_social_items(items):
-    """Translate Amharic/Tigrinya social posts to neutral English when Gemini is available."""
+def translate_non_english_items(items):
+    """Translate Amharic/Tigrinya source items to neutral English when Gemini is available."""
     if not API_KEY: return {}
     targets=[(i,x) for i,x in enumerate(items) if (
         contains_ethio_script(x.get("title","")) or
@@ -631,13 +594,20 @@ def published_sort_key(item):
             return 0.0
 
 def process_queue():
-    queue=load_json(QUEUE, [])
+    queue=[x for x in load_json(QUEUE, []) if x.get("source_type")=="news"]
     pending_all=sorted((x for x in queue if not x.get("processed")), key=published_sort_key, reverse=True)
 
     # Rescore stored events on every processing run so scoring-model changes
     # take effect even when there are no new source items.
     data=load_json(OUT, {"events":[]})
     db={e["key"]:e for e in data.get("events",[]) if e.get("key")}
+    # Social/Telegram sources are intentionally disabled for now. Remove them from stored events.
+    for key,ev in list(db.items()):
+        ev["sources"]=[x for x in ev.get("sources",[]) if x.get("source_type")=="news"]
+        if not ev["sources"]:
+            db.pop(key, None)
+            continue
+        ev["social_source_count"]=0
     for key,ev in list(db.items()):
         db[key]=rescore_event(ev)
 
@@ -666,7 +636,7 @@ def process_queue():
 
         # Translate first so Gemini sees English text for Amharic/Tigrinya social
         # sources while we still preserve the original source text.
-        translations=translate_social_items(batch)
+        translations=translate_non_english_items(batch)
         analysis_items=[]
         for i,item in enumerate(batch):
             x=dict(item)
