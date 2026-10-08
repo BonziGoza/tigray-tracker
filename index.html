@@ -49,6 +49,8 @@ function addBaseMap(data){
     }
   }).addTo(map);
   baseMapLayer.bringToBack();
+  const bounds=baseMapLayer.getBounds();
+  if(bounds.isValid()) map.fitBounds(bounds.pad(.08));
 }
 function draw(){
  layer.clearLayers();markers={};const list=document.getElementById("list");list.replaceChildren();
