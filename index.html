@@ -20,7 +20,7 @@ main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 68px)}
 <body>
 <header><h1>Tigray OSINT Tracker</h1><div id="up">Loading…</div></header>
 <main><div id="map"></div><div id="side">
-<div class="stats" id="stats"></div><div class="early" id="early"></div>
+<div class="stats" id="stats"></div>
 <div class="f" id="gradeFilters"></div><div class="f" id="sourceFilters"></div><div id="list"></div>
 </div></main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -28,18 +28,36 @@ main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 68px)}
 const COL={CONFIRMED:"#1f7a3d","STRONGLY CORROBORATED":"#18794e",CORROBORATED:"#2563a6",REPORTED:"#b7791f",DEVELOPING:"#9a6700",CLAIM:"#b42318"};
 const map=L.map("map").setView([13,39.5],6);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:12,attribution:"© OpenStreetMap"}).addTo(map);
-let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},sourceOn={news:1,social:1},layer=L.layerGroup().addTo(map),markers={};
+let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},layer=L.layerGroup().addTo(map),markers={};
 let baseMapLayer=null;
-const baseMapStyle={color:"#5b6470",weight:1.5,fillOpacity:.08,opacity:.8};
+const baseMapStyle={color:"#5b6470",weight:1.5,fillColor:"#9aa4ae",fillOpacity:.28,opacity:.95};
 const baseMapPointStyle={radius:5,color:"#46515c",fillColor:"#fff",fillOpacity:.9,weight:1.5};
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
 function sourceLabel(s){if(s.platform==="reddit")return "Reddit";if(s.platform==="gdelt")return "GDELT";return s.outlet||"Source"}
-function visible(e){if(!gradeOn[e.grade])return false;const s=e.sources||[];return !s.length||s.some(x=>sourceOn[x.source_type||"news"])}
+function visible(e){return !!gradeOn[e.grade]}
 function addBaseMap(data){
   if(baseMapLayer){map.removeLayer(baseMapLayer);}
   baseMapLayer=L.geoJSON(data,{
-    style:()=>baseMapStyle,
-    pointToLayer:(_,latlng)=>L.circleMarker(latlng,baseMapPointStyle),
+    style:(feature)=>{
+      const p=feature.properties||{};
+      return {
+        color:p.strokeColor||baseMapStyle.color,
+        weight:Number(p.strokeWeight)||baseMapStyle.weight,
+        opacity:p.strokeOpacity!=null?Number(p.strokeOpacity):baseMapStyle.opacity,
+        fillColor:p.fillColor||baseMapStyle.fillColor,
+        fillOpacity:p.fillOpacity!=null?Number(p.fillOpacity):baseMapStyle.fillOpacity
+      };
+    },
+    pointToLayer:(feature,latlng)=>{
+      const p=feature.properties||{};
+      return L.circleMarker(latlng,{
+        radius:Number(p.iconScale)||baseMapPointStyle.radius,
+        color:p.strokeColor||baseMapPointStyle.color,
+        fillColor:p.fillColor||baseMapPointStyle.fillColor,
+        fillOpacity:p.fillOpacity!=null?Number(p.fillOpacity):baseMapPointStyle.fillOpacity,
+        weight:Number(p.strokeWeight)||baseMapPointStyle.weight
+      });
+    },
     onEachFeature:(feature,layer)=>{
       const p=feature.properties||{};
       const title=p.name||p.folder||"Map feature";
@@ -77,18 +95,13 @@ function draw(){
 }
 function button(parent,label,key,store){const b=el("button","on",label);b.onclick=()=>{store[key]=!store[key];b.classList.toggle("on");draw()};parent.append(b)}
 function renderControls(){
- const gf=document.getElementById("gradeFilters"),sf=document.getElementById("sourceFilters");gf.replaceChildren();sf.replaceChildren();
+ const gf=document.getElementById("gradeFilters");gf.replaceChildren();
  ["CONFIRMED","STRONGLY CORROBORATED","CORROBORATED","REPORTED","DEVELOPING","CLAIM"].forEach(k=>button(gf,k,k,gradeOn));
- [["NEWS","news"],["SOCIAL","social"]].forEach(x=>button(sf,x[0],x[1],sourceOn));
 }
 function renderStats(){
  const stats=document.getElementById("stats");stats.replaceChildren();
- const total=events.length,social=events.filter(e=>(e.social_source_count||0)>0).length,early=events.filter(e=>["CLAIM","DEVELOPING"].includes(e.grade)).length;
- [[total,"EVENTS"],[social,"SOCIAL EVENTS"],[early,"EARLY REPORTS"]].forEach(x=>{const d=el("div","stat");d.append(el("b","",String(x[0])),el("span","",x[1]));stats.append(d)});
- const box=document.getElementById("early"),earlyEvents=events.filter(e=>["CLAIM","DEVELOPING"].includes(e.grade)).filter(e=>(e.social_source_count||0)>0).slice(0,3);
- box.replaceChildren(el("b","", "⚠ Early reports"));
- if(!earlyEvents.length)box.append(el("div","", "No social-media early reports currently detected."));
- else earlyEvents.forEach(e=>box.append(el("div","",e.date+(e.place||e.region?" · "+(e.place||e.region):"")+" — "+e.summary)));
+ const total=events.length,early=events.filter(e=>["CLAIM","DEVELOPING"].includes(e.grade)).length;
+ [[total,"EVENTS"],[early,"EARLY REPORTS"]].forEach(x=>{const d=el("div","stat");d.append(el("b","",String(x[0])),el("span","",x[1]));stats.append(d)});
 }
 Promise.all([
  fetch("data/base_map.geojson?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null),
