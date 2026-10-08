@@ -76,18 +76,16 @@ def gather():
 PROMPT="""You are structuring OSINT reports about Tigray and northern Ethiopia.
 Today is {today}. Analyze the actual source content supplied for each NEW source item, not merely its RSS metadata.
 For NEWS sources, ARTICLE_TEXT is the primary evidence. The feed title is also source wording. Treat RSS_SUMMARY only as discovery metadata and NEVER use it by itself to establish a location, event detail, date, or claim when ARTICLE_TEXT is unavailable. If ARTICLE_TEXT is unavailable, be conservative.
-For SOCIAL sources, use the supplied post text/title as the source content.
 First detect the language of the source content. Only when the source text is Amharic (አማርኛ) or Tigrinya (ትግርኛ), translate it to neutral English for analysis. Do NOT translate English text. Preserve the original wording for every translated item and do not silently alter names, places, numbers, dates, or claims. If language detection is uncertain, do not translate; mark language as unknown. Then extract distinct real-world EVENTS from the numbered NEW source items.
 Merge reports that clearly describe the same event. If a new report clearly describes an existing event below, reuse that existing event's key.
 Do not invent facts. Ignore only clearly irrelevant content.
-Do not silently drop a relevant news or social report: if it describes a real development, make or attach it to an event. Political, diplomatic, humanitarian, security, and control developments are still events even when they are not combat.
-A social-media post is a report/claim, not proof. Preserve attribution. Do not treat reposts or repeated wording as independent evidence.
+Do not silently drop a relevant news report: if it describes a real development, make or attach it to an event. Political, diplomatic, humanitarian, security, and control developments are still events even when they are not combat.
 Every relevant source item should appear in at least one event's items array. If an item is truly irrelevant, put its index in ignored_items with a brief reason.
 Return only the requested JSON. Each event must contain:
 key, place, region, date, kind, summary, attribution, items, translations, evidence.
 The evidence object must contain source_assessments (one object per source index in the event), specificity ("high", "medium", or "low"), and contradicted (boolean).
 Each source assessment must contain source_index, source_role, named_sources, anonymous_sources, direct_observation, official_sources, documentary_evidence, visual_evidence, attributed_claim, source_is_party, and contested.
-source_role must be one of direct_report, reported_sourcing, official_statement, party_claim, secondary_report, social_claim, or other.
+source_role must be one of direct_report, reported_sourcing, official_statement, party_claim, secondary_report, or other.
 Count named_sources only when the article/post identifies the person, organization, institution, or document providing information. Count anonymous_sources separately. official_sources means government, military, diplomatic, humanitarian, or party officials quoted or directly cited. direct_observation means the reporting organization says its reporter/correspondent directly witnessed or gathered the information. documentary_evidence means the source relies on a named document, record, imagery, data, court filing, etc. visual_evidence means the source presents or explicitly describes photographs/video as evidence of the reported event. attributed_claim means the central claim is explicitly attributed rather than presented as independently established fact. source_is_party means the claim originates from a party to the conflict. contested means the source itself reports a meaningful denial or dispute.
 Do not assume a source is independent merely because it is a different publication.
 kind must be control_change, strike, clash, diplomatic, humanitarian, claim, or other.
@@ -299,8 +297,6 @@ SOURCE_PROFILES = [
 ]
 
 def source_profile(source):
-    if source.get("source_type") == "social":
-        return {"tier":"D","base":12,"label":source.get("platform","Social")}
     outlet=(source.get("outlet") or "").lower().strip()
     for needle,tier,base,label in sorted(SOURCE_PROFILES,key=lambda x:len(x[0]),reverse=True):
         if needle in outlet:
@@ -349,7 +345,6 @@ def reporting_quality(source):
 def corroboration_score(sources):
     src=independent_sources(sources)
     news=[s for s in src if s.get("source_type")=="news"]
-    social=[s for s in src if s.get("source_type")=="social"]
     profiles=[source_profile(s) for s in news]
     a=sum(p["tier"]=="A" for p in profiles)
     b=sum(p["tier"]=="B" for p in profiles)
@@ -361,8 +356,6 @@ def corroboration_score(sources):
     if b>=2: score+=7
     if b>=3: score+=4
     if c>=2: score+=4
-    if news and social: score+=min(3,len(social))
-    elif len(social)>=2: score+=min(2,len(social)-1)
     return min(25,score)
 
 def evidence_score(sources,attribution="independent",event_evidence=None):
@@ -427,7 +420,6 @@ def evidence_explanation(sources,event_evidence=None):
     a=sum(p["tier"]=="A" for p in profiles)
     b=sum(p["tier"]=="B" for p in profiles)
     c=sum(p["tier"]=="C" for p in profiles)
-    social=sum(s.get("source_type")=="social" for s in src)
     parts=[f"Best source: {best['label']} ({best['tier']}-tier)."]
     parts.append(f"{len(src)} independent source record{'s' if len(src)!=1 else ''}; {a} A-tier, {b} B-tier, {c} C-tier, {social} social.")
     rq=max((reporting_quality(s) for s in src),default=0)
@@ -528,7 +520,7 @@ def deterministic_fallback(items):
     groups=[]
     for i,item in enumerate(items):
         # Fallback location extraction must never use an RSS summary for news.
-        # For news, use only the article title/body; for social, use the post text.
+        # Use only the article title/body for news.
         if item.get("source_type")=="news":
             text=(item.get("title","")+" "+item.get("article_text","")).strip()
         else:
@@ -553,7 +545,7 @@ def deterministic_fallback(items):
                 "items":[i],
                 "key":event_key(item,place or region,date),
                 "summary":item["title"][:500],
-                "attribution":"party" if item["source_type"]=="social" else "independent",
+                "attribution":"independent",
                 "translations":[]
             })
     return [{k:v for k,v in g.items() if k!="words"} for g in groups]
@@ -602,13 +594,11 @@ def process_queue():
     # take effect even when there are no new source items.
     data=load_json(OUT, {"events":[]})
     db={e["key"]:e for e in data.get("events",[]) if e.get("key")}
-    # Social/Telegram sources are intentionally disabled for now. Remove them from stored events.
     for key,ev in list(db.items()):
         ev["sources"]=[x for x in ev.get("sources",[]) if x.get("source_type")=="news"]
         if not ev["sources"]:
             db.pop(key, None)
             continue
-        ev["social_source_count"]=0
     for key,ev in list(db.items()):
         db[key]=rescore_event(ev)
 
@@ -620,7 +610,7 @@ def process_queue():
         print("No new source items; stored events rescored:",len(events))
         return
 
-    # Work in bounded batches so a large Telegram burst cannot crowd out news,
+    # Work in bounded batches so one large source batch cannot crowd out other news,
     # and so one model response cannot accidentally merge unrelated stories.
     pending_all=pending_all[:PROCESS_MAX_ITEMS]
     processed_count=0
@@ -635,8 +625,7 @@ def process_queue():
         # but never written to source_queue.json or events.json.
         batch=enrich_news_items(batch)
 
-        # Translate first so Gemini sees English text for Amharic/Tigrinya social
-        # sources while we still preserve the original source text.
+        # Translate first so Gemini sees English text for Amharic/Tigrinya news sources while preserving the original source text.
         translations=translate_non_english_items(batch)
         analysis_items=[]
         for i,item in enumerate(batch):
