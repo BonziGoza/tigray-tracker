@@ -1,0 +1,51 @@
+[
+  {
+    "date": "2026-10-09",
+    "generated_at": "2026-10-09T18:41:27.026Z",
+    "horizon_days": 7,
+    "scenarios": [
+      {
+        "name": "Continued localized conflict and shifting control",
+        "weight": 44,
+        "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
+      },
+      {
+        "name": "Wider cross-border escalation",
+        "weight": 46,
+        "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
+      },
+      {
+        "name": "Relative stabilization or a temporary pause",
+        "weight": 10,
+        "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
+      }
+    ],
+    "regions": [
+      {
+        "region": "Central Tigray",
+        "risk_index": 63,
+        "level": "GUARDED"
+      },
+      {
+        "region": "Addis Ababa",
+        "risk_index": 37,
+        "level": "WATCH"
+      },
+      {
+        "region": "Northern Tigray",
+        "risk_index": 34,
+        "level": "WATCH"
+      },
+      {
+        "region": "Eastern Tigray",
+        "risk_index": 23,
+        "level": "WATCH"
+      },
+      {
+        "region": "Northwestern Tigray",
+        "risk_index": 2,
+        "level": "WATCH"
+      }
+    ]
+  }
+]
