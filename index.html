@@ -14,14 +14,13 @@ main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 68px)}
 .ev{border-top:1px solid #e3e6e9;padding:9px 0;cursor:pointer}.ev p{margin:3px 0}.src{font-size:12px;color:#5a6672}.src a{margin-right:7px}.article-row{padding:5px 7px;margin:5px 0;border-radius:7px;background:#f7f8fa;font-size:12px}.cred-strong{border-left:3px solid #1f7a3d}.cred-moderate{border-left:3px solid #b7791f}.cred-limited{border-left:3px solid #b42318}.cred-btn{font-size:12px}.why{display:none;margin-top:3px;color:#5a6672}.article-row.open .why{display:block}
 .g{font-size:11px;font-weight:700;padding:2px 7px;border-radius:10px;color:#fff;margin-right:6px}
 .CONFIRMED{background:#1f7a3d}.STRONGLY-CORROBORATED{background:#18794e}.CORROBORATED{background:#2563a6}.REPORTED{background:#b7791f}.DEVELOPING{background:#9a6700}.CLAIM{background:#b42318}
-.badge{font-size:11px;padding:2px 6px;border-radius:8px;background:#eef1f4;margin-left:4px}.early{background:#fff8e1;border:1px solid #f0d78c;border-radius:8px;padding:8px;margin-bottom:9px}.early b{display:block}
+.badge{font-size:11px;padding:2px 6px;border-radius:8px;background:#eef1f4;margin-left:4px}.early{background:#fff8e1;border:1px solid #f0d78c;border-radius:8px;padding:8px;margin-bottom:9px}.view-tabs{border-bottom:1px solid #d5d9de;padding-bottom:8px}.experimental{font-size:9px;background:#fff1c2;color:#7a4c00;border-radius:4px;padding:2px 4px}.forecast-card{border:1px solid #dfe3e8;border-radius:9px;padding:10px;margin:8px 0;background:#fff}.forecast-card h4{margin:0 0 5px;font-size:14px}.forecast-card p{margin:5px 0;font-size:12px;color:#4b5563}.weight{font-size:22px;font-weight:750}.bar{height:7px;background:#e8edf1;border-radius:8px;overflow:hidden;margin:7px 0}.bar span{display:block;height:100%;background:#647b8f}.risk-head{display:flex;justify-content:space-between;gap:8px;align-items:center}.risk-index{font-size:18px;font-weight:750}.risk-ELEVATED{color:#b42318}.risk-GUARDED{color:#9a6700}.risk-WATCH{color:#1f7a3d}.method{font-size:12px;border-top:1px solid #dfe3e8;margin-top:12px;padding-top:10px;color:#4b5563}.early b{display:block}
 @media(max-width:760px){main{grid-template-columns:1fr;grid-template-rows:50vh auto;height:auto}}
 </style></head>
 <body>
 <header><h1>Tigray OSINT Tracker</h1><div id="up">Loading…</div></header>
 <main><div id="map"></div><div id="side">
-<div class="stats" id="stats"></div>
-<div class="f" id="gradeFilters"></div><div class="f" id="sourceFilters"></div><div id="list"></div>
+<div class="f view-tabs" id="viewTabs"><button class="on" data-view="feed">Live feed</button><button data-view="forecast">Forecast &amp; scenarios <span class="experimental">EXPERIMENTAL</span></button></div><div id="feedView"><div class="stats" id="stats"></div><div class="f" id="gradeFilters"></div><div class="f" id="sourceFilters"></div><div id="list"></div></div><div id="forecastView" hidden><div id="forecastStatus" class="early"></div><div class="stats" id="forecastSummary"></div><h3>Scenario outlook · next 7 days</h3><div id="scenarios"></div><h3>Regional instability indicators</h3><p class="src">Only regions supported by explicitly located reports are shown. Indicators describe recent reporting signals, not certainty about future events.</p><div id="regionForecasts"></div><div class="method"><b>Method and limitations</b><p>Recent event types, existing evidence grades, and article credibility scores contribute to the indicators. Duplicate and syndicated reports can still be present in the event database.</p><p>Control changes are shown as reported developments, not definitive front lines. The forecast does not identify specific future targets or tactical details.</p></div></div>
 </div></main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
@@ -29,7 +28,7 @@ const COL={CONFIRMED:"#1f7a3d","STRONGLY CORROBORATED":"#18794e",CORROBORATED:"#
 const map=L.map("map").setView([13,39.5],6);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:12,attribution:"© OpenStreetMap"}).addTo(map);
 let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},credOn={STRONG:1,MODERATE:1,LIMITED:1},layer=L.layerGroup().addTo(map),markers={};
-let baseMapLayer=null;
+let baseMapLayer=null, forecastData=null;
 const baseMapStyle={color:"#5b6470",weight:1.5,fillColor:"#9aa4ae",fillOpacity:.28,opacity:.95};
 const baseMapPointStyle={radius:5,color:"#46515c",fillColor:"#fff",fillOpacity:.9,weight:1.5};
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
@@ -70,6 +69,8 @@ function addBaseMap(data){
   const bounds=baseMapLayer.getBounds();
   if(bounds.isValid()) map.fitBounds(bounds.pad(.08));
 }
+function setView(view){document.getElementById("feedView").hidden=view!=="feed";document.getElementById("forecastView").hidden=view!=="forecast";document.querySelectorAll("#viewTabs button").forEach(b=>b.classList.toggle("on",b.dataset.view===view));if(view==="forecast")renderForecast();setTimeout(()=>map.invalidateSize(),80)}
+document.querySelectorAll("#viewTabs button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
 function draw(){
  layer.clearLayers();markers={};const list=document.getElementById("list");list.replaceChildren();
  events.filter(visible).forEach(e=>{
@@ -103,6 +104,20 @@ function draw(){
   d.onclick=()=>{if(markers[e.key]&&e.lat!=null){map.setView([e.lat,e.lon],8);markers[e.key].openPopup()}};list.append(d);
  });
 }
+function renderForecast(){
+ const status=document.getElementById("forecastStatus"),summary=document.getElementById("forecastSummary"),sc=document.getElementById("scenarios"),regions=document.getElementById("regionForecasts");
+ summary.replaceChildren();sc.replaceChildren();regions.replaceChildren();
+ if(!forecastData){status.textContent="Forecast data will appear after the next successful processing run.";return;}
+ status.replaceChildren(el("b","",forecastData.status||"EXPERIMENTAL"));
+ status.append(el("div","", "Generated: "+(forecastData.generated_at?new Date(forecastData.generated_at).toLocaleString():"unknown")+" · Lookback: "+forecastData.lookback_days+" days · Horizon: "+forecastData.horizon_days+" days));
+ status.append(el("p","",forecastData.disclaimer||"Experimental outlook; not validated."));
+ const sm=forecastData.summary||{};
+ [[sm.recent_event_records||0,"RECENT RECORDS"],[sm.regions_with_located_evidence||0,"LOCATED REGIONS"],[sm.overall_evidence_uncertainty||0,"% EARLY / DISPUTED"]].forEach(v=>{const d=el("div","stat");d.append(el("b","",String(v[0])),el("span","",v[1]));summary.append(d)});
+ (forecastData.scenarios||[]).forEach(s=>{const c=el("div","forecast-card");c.append(el("h4","",s.name),el("div","weight",s.weight+"% relative weight"));const bar=el("div","bar"),fill=el("span","");fill.style.width=Math.max(0,Math.min(100,s.weight))+"%";bar.append(fill);c.append(bar,el("p","",s.rationale));sc.append(c)});
+ if(!(forecastData.regions||[]).length)regions.append(el("p","src","No recent events with usable explicit location evidence were found."));
+ (forecastData.regions||[]).forEach(r=>{const c=el("div","forecast-card"),head=el("div","risk-head");head.append(el("h4","",r.region),el("span","risk-index risk-"+r.level,r.risk_index+"/100"));c.append(head,el("span","badge",r.level+" · "+r.event_count+" event records"));const bar=el("div","bar"),fill=el("span","");fill.style.width=Math.max(0,Math.min(100,r.risk_index))+"%";bar.append(fill);c.append(bar,el("p","",r.explanation),el("p","", "Evidence uncertainty: "+r.uncertainty+"/100; this is uncertainty in reporting, not probability of violence."));
+ (r.examples||[]).forEach(x=>{c.append(el("p","",x.date+" · ["+x.grade+"] "+x.title));const links=el("div","src");(x.sources||[]).forEach(s=>{if(!s.url)return;const a=el("a","",s.outlet||"Source");a.href=s.url;a.target="_blank";a.rel="noopener";a.style.marginRight="8px";links.append(a)});c.append(links)});regions.append(c)});
+}
 function button(parent,label,key,store){const b=el("button","on",label);b.onclick=()=>{store[key]=!store[key];b.classList.toggle("on");draw()};parent.append(b)}
 function renderControls(){
  const gf=document.getElementById("gradeFilters");gf.replaceChildren();
@@ -119,10 +134,11 @@ function renderStats(){
 Promise.all([
  fetch("data/base_map.geojson?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null),
  fetch("data/events.json?"+Date.now()).then(r=>r.json()),
- fetch("data/status.json?"+Date.now()).then(r=>r.ok?r.json():{})
- ]).then(([base,j,s])=>{
+ fetch("data/status.json?"+Date.now()).then(r=>r.ok?r.json():{}),
+ fetch("data/forecasts.json?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null)
+ ]).then(([base,j,s,f])=>{
  if(base && base.features) addBaseMap(base);
- events=j.events||[];
+ events=j.events||[];forecastData=f;
  const checked=s.last_checked?new Date(s.last_checked).toLocaleString():"Waiting for first automatic check";
  const updated=j.updated?new Date(j.updated).toLocaleString():"Unknown";
  document.getElementById("up").innerHTML =
@@ -130,5 +146,6 @@ Promise.all([
  renderControls();
  renderStats();
  draw();
+ renderForecast();
 }).catch(()=>document.getElementById("up").textContent="Could not load tracker data");
 </script></body></html>
