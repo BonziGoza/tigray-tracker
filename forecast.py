@@ -72,7 +72,7 @@ def main():
         total=sum(w for _,w in rows)
         hard=sum(w for e,w in rows if e.get("kind") in ("clash","strike","control_change"))
         control=sum(w for e,w in rows if e.get("kind")=="control_change")
-        early=sum(w for e,w in rows if e.get("grade") in ("CLAIM","DEVELOPING","REPORTED"))
+        early=sum(w*{"CONFIRMED":.15,"STRONGLY CORROBORATED":.25,"CORROBORATED":.35,"REPORTED":.55,"DEVELOPING":.8,"CLAIM":.95}.get(e.get("grade","REPORTED"),.6) for e,w in rows)/max(sum(w for _,w in rows),.01)
         idx=round(100*(1-math.exp(-.42*(hard+.35*total))))
         level="ELEVATED" if idx>=65 else "GUARDED" if idx>=38 else "WATCH"
         examples=[]; seen=set()
@@ -83,9 +83,9 @@ def main():
             examples.append({"date":e.get("date",""),"title":title,"grade":e.get("grade","REPORTED"),
                 "sources":[{"outlet":s.get("outlet","Source"),"url":s.get("url","")} for s in (e.get("sources") or [])[:2] if s.get("url")]})
             if len(examples)>=3:break
-        regions.append({"region":r,"risk_index":idx,"level":level,"uncertainty":round(100*min(.95,.25+.13*early/max(total,.01))),
+        regions.append({"region":r,"risk_index":idx,"level":level,"uncertainty":round(100*min(.95,early)),
             "event_count":len(rows),"weighted_signal":round(total,2),"control_change_signal":round(control,2),
-            "explanation":f"{len(rows)} recent event records weighted by recency, event type, existing evidence grade, and article credibility. {sum(1 for e,_ in rows if e.get('grade') in ('CLAIM','DEVELOPING','REPORTED'))} records are reported/developing/claim-grade; source uncertainty is material.",
+            "explanation":f"{len(rows)} recent event records weighted by recency, event type, existing evidence grade, and article credibility. {sum(1 for e,_ in rows if e.get('grade') in ('CLAIM','DEVELOPING','REPORTED'))} records are claim/developing-grade; source uncertainty is material.",
             "examples":examples})
     regions.sort(key=lambda r:(r["risk_index"],r["weighted_signal"]),reverse=True)
     total=sum(w for _,w in recent)
@@ -93,7 +93,7 @@ def main():
     cross=sum(w for e,w in recent if any(k in (str(e.get("summary",""))+" "+str(e.get("region",""))+" "+str(e.get("place",""))).lower() for k in ("eritrea","eritrean","border","zelambessa","adigrat")))
     diplomacy=sum(w for e,w in recent if e.get("kind")=="diplomatic")
     control=sum(w for e,w in recent if e.get("kind")=="control_change")
-    early=sum(w for e,w in recent if e.get("grade") in ("CLAIM","DEVELOPING","REPORTED"))/max(total,.01)
+    early=sum(w*{"CONFIRMED":.15,"STRONGLY CORROBORATED":.25,"CORROBORATED":.35,"REPORTED":.55,"DEVELOPING":.8,"CLAIM":.95}.get(e.get("grade","REPORTED"),.6) for e,w in recent)/max(total,.01)
     # Relative scenario weights are transparent heuristics, not calibrated probabilities.
     raw=[
       ("Continued localized conflict and shifting control",1+1.7*hard+.6*control,"Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."),
@@ -106,7 +106,7 @@ def main():
       "method":"experimental_heuristic_v1","status":"EXPERIMENTAL — NOT CALIBRATED",
       "disclaimer":"Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
       "summary":{"recent_event_records":len(recent),"regions_with_located_evidence":len(regions),"control_change_records":sum(1 for e,_ in recent if e.get("kind")=="control_change"),
-        "contested_or_early_records":sum(1 for e,_ in recent if e.get("grade") in ("CLAIM","DEVELOPING","REPORTED")),"duplicate_records_ignored":duplicate_records_ignored,"overall_evidence_uncertainty":round(100*min(1,early))},
+        "contested_or_early_records":sum(1 for e,_ in recent if e.get("grade") in ("CLAIM","DEVELOPING")),"reported_records":sum(1 for e,_ in recent if e.get("grade")=="REPORTED"),"duplicate_records_ignored":duplicate_records_ignored,"overall_evidence_uncertainty":round(100*min(1,early))},
       "scenarios":scenarios,"regions":regions}
     os.makedirs("data",exist_ok=True)
     with open(OUT,"w",encoding="utf-8") as f:json.dump(payload,f,ensure_ascii=False,indent=2)
