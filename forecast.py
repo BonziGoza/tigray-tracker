@@ -85,7 +85,7 @@ def main():
             if len(examples)>=3:break
         regions.append({"region":r,"risk_index":idx,"level":level,"uncertainty":round(100*min(.95,early)),
             "event_count":len(rows),"weighted_signal":round(total,2),"control_change_signal":round(control,2),
-            "explanation":f"{len(rows)} recent event records weighted by recency, event type, existing evidence grade, and article credibility. {sum(1 for e,_ in rows if e.get('grade') in ('CLAIM','DEVELOPING','REPORTED'))} records are claim/developing-grade; source uncertainty is material.",
+            "explanation":f"{len(rows)} recent event records weighted by recency, event type, existing evidence grade, and article credibility. {sum(1 for e,_ in rows if e.get('grade') in ('CLAIM','DEVELOPING'))} records are claim/developing-grade; source uncertainty is material.",
             "examples":examples})
     regions.sort(key=lambda r:(r["risk_index"],r["weighted_signal"]),reverse=True)
     total=sum(w for _,w in recent)
