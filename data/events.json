@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T16:15:22.060617+00:00",
+ "updated": "2026-10-09T20:24:51.144374+00:00",
  "events": [
   {
    "key": "unknown-2026-10-09-4456f303",
@@ -820,7 +820,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: Plainview Herald (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 9. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: Plainview Herald (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
     },
     {
      "outlet": "Ottumwa Courier",
@@ -834,7 +834,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: Ottumwa Courier (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 9. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: Ottumwa Courier (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
     },
     {
      "outlet": "Goshen News",
@@ -848,7 +848,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: Goshen News (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 9. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: Goshen News (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
     },
     {
      "outlet": "The Daily Corinthian",
@@ -862,7 +862,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: The Daily Corinthian (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 9. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: The Daily Corinthian (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
     },
     {
      "outlet": "The Killeen Daily Herald",
@@ -876,7 +876,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: The Killeen Daily Herald (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: The Killeen Daily Herald (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 11. Article credibility score: 34/100."
     },
     {
      "outlet": "Arab News PK",
@@ -890,7 +890,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: Arab News PK (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 9. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: Arab News PK (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
     },
     {
      "outlet": "KSAT",
@@ -904,7 +904,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: KSAT (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 6. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: KSAT (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 7. Article credibility score: 34/100."
     },
     {
      "outlet": "News4JAX",
@@ -918,7 +918,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: News4JAX (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 6. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: News4JAX (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 7. Article credibility score: 34/100."
     },
     {
      "outlet": "KTVN",
@@ -932,7 +932,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: KTVN (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 6. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: KTVN (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 7. Article credibility score: 34/100."
     },
     {
      "outlet": "Bozeman Daily Chronicle",
@@ -946,7 +946,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: Bozeman Daily Chronicle (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 9. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: Bozeman Daily Chronicle (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
     },
     {
      "outlet": "WFMZ.com",
@@ -960,7 +960,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: WFMZ.com (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 9. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: WFMZ.com (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
     },
     {
      "outlet": "The Batesville Daily Guard",
@@ -974,7 +974,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: The Batesville Daily Guard (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: The Batesville Daily Guard (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 11. Article credibility score: 34/100."
     },
     {
      "outlet": "Audacy",
@@ -988,7 +988,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: Audacy (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 6. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: Audacy (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 7. Article credibility score: 34/100."
     },
     {
      "outlet": "The Washington Post",
@@ -1002,7 +1002,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: The Washington Post (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 9. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: The Washington Post (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
     },
     {
      "outlet": "Toronto Star",
@@ -1016,7 +1016,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: Toronto Star (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 9. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: Toronto Star (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
     },
     {
      "outlet": "tdtnews.com",
@@ -1030,7 +1030,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: tdtnews.com (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 9. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: tdtnews.com (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
     },
     {
      "outlet": "ClickOnDetroit | WDIV Local 4",
@@ -1044,7 +1044,21 @@
      "repost_of_fingerprint": "",
      "credibility_score": 34,
      "credibility_label": "LIMITED",
-     "credibility_explanation": "Publisher profile: ClickOnDetroit | WDIV Local 4 (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 9. Article credibility score: 34/100."
+     "credibility_explanation": "Publisher profile: ClickOnDetroit | WDIV Local 4 (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
+    },
+    {
+     "outlet": "The Sun Chronicle",
+     "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNVDdkV09DbWpMdC1RQUI1V09NYUZwQ0RGdUhuSnRvR2U1eFh3aDZ3ODRqeE14djRsZE01LTNBdXRKU2ZaZ3lpZGphakIyZDczbWNQdkJIbGptODRpTW0tTkZGcGlRTHV6NkVFbFlZSGd5UFhXQ2RGMGtoNXVrdjJYb3pWWmZzZWJIWXZyeGNFVGVtZ3ZNZjdaVGZYamZ6VWQwTUM0S1BWRHUycDZSTVZXUGNDdlRMZzlENmtTY2swUVVuTzJoandIR3RpakxlaWJUNFh2NThISG5VaHE2MEdlREZhQmFlRHBxRy1WTnBuWVlvTkRzTWhJVUNHMkwycUkxZ0VKZFBJYmVRenNXajJnSDcxdEdxMDZRZFNXTjhqdGJXMkFuOVE?oc=5",
+     "title": "Ethiopian police ask residents in Tigray regional capital to help restore order after rebel pullout - The Sun Chronicle",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 11:21:44 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 34,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: The Sun Chronicle (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 10. Article credibility score: 34/100."
     }
    ],
    "manual": false,
@@ -1054,20 +1068,20 @@
    "lon": null,
    "date": "2026-10-09",
    "kind": "other",
-   "summary": "Ethiopian police ask residents in Tigray regional capital to help restore order after rebel pullout - The Washington Post",
+   "summary": "Ethiopian police ask residents in Tigray regional capital to help restore order after rebel pullout - The Sun Chronicle",
    "attribution": "independent",
    "last_seen": "2026-10-09",
    "translations": [],
    "evidence": {},
    "grade": "REPORTED",
    "confidence": 22,
-   "source_count": 9,
-   "news_source_count": 17,
+   "source_count": 10,
+   "news_source_count": 18,
    "source_tier": "C",
    "best_source": "Plainview Herald",
-   "independent_source_count": 9,
+   "independent_source_count": 10,
    "high_quality_source_count": 0,
-   "evidence_explanation": "Best source: Plainview Herald (C-tier). 9 independent source records; 0 A-tier, 0 B-tier, 9 C-tier. Limited source-level sourcing."
+   "evidence_explanation": "Best source: Plainview Herald (C-tier). 10 independent source records; 0 A-tier, 0 B-tier, 10 C-tier. Limited source-level sourcing."
   },
   {
    "key": "unknown-2026-10-09-a5174a70",
@@ -1729,6 +1743,20 @@
      "credibility_score": 14,
      "credibility_label": "LIMITED",
      "credibility_explanation": "Publisher profile: Yahoo (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    },
+    {
+     "outlet": "GZERO Media",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbXctVU5YN2hrVV84emZMUW1YdWFidmQzbS1XME43MlA5M0p6bUpkV2FhR2FLQlpoaGhCSWozOUtHY0J2U1dSQXNBdjdvTFVlWEFUdlJyLTJfOGZCcmE5SGxyUWJuN1Juby05d0JodlA5YnU2NThUbmJ6YW12UDh6RVlMMTRycHdkTDQzNDNlRERmeHZWWXV4aGpwUVhHbTViZTNyZDZJSWtpQ0FUUFZBb1EzNllNQWwyVXVuVm1XTzJna2RET2c?oc=5",
+     "title": "Tensions boil between Ethiopia and Eritrea, UK’s Labour Party notches win, Lula’s chances slim in Brazil - GZERO Media",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 15:40:49 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: GZERO Media (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
     }
    ],
    "manual": false,
@@ -1738,7 +1766,7 @@
    "lon": null,
    "date": "2026-10-09",
    "kind": "other",
-   "summary": "Tensions boil between Ethiopia and Eritrea, UK’s Labour Party notches win, Lula’s chances slim in Brazil - Yahoo",
+   "summary": "Tensions boil between Ethiopia and Eritrea, UK’s Labour Party notches win, Lula’s chances slim in Brazil - GZERO Media",
    "attribution": "independent",
    "last_seen": "2026-10-09",
    "translations": [],
@@ -1746,7 +1774,7 @@
    "grade": "REPORTED",
    "confidence": 18,
    "source_count": 1,
-   "news_source_count": 1,
+   "news_source_count": 2,
    "source_tier": "C",
    "best_source": "Yahoo",
    "independent_source_count": 1,
@@ -2824,6 +2852,542 @@
    "independent_source_count": 1,
    "high_quality_source_count": 0,
    "evidence_explanation": "Best source: aljazeera.com (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-09-a3cbcb8a",
+   "sources": [
+    {
+     "outlet": "Modern Ghana",
+     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE41RkgwcXpVMXJXWHV0bm9vMEFNY2dITXpRSnhwb3hrcm5iYUc0OEpxX28xRVJLU2tqU09vQmxIaXRlcXNWb0Nldm5tVFlwQlNmWlphN3Q2dTFIX3lGelHSAVxBVV95cUxPczdwci04X3VJRENGamFfWG1rTmJQd0o1SzVMcU9mR01ubzQtWTgtS0JCMVVVbzhycGl4eExtRDVQaW1hWmN1elFFVUt4NXVUcmVMemRveDR0MGxKVQ?oc=5",
+     "title": "Why fighting in Tigray matters far beyond northern Ethiopia | DW News - Modern Ghana",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 19:00:58 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: Modern Ghana (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    },
+    {
+     "outlet": "Modern Ghana",
+     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9zN3ByLThfdUlEQ0ZqYV9YbWtOYlB3SjVLNUxxT2ZHTW5vNC1ZOC1LQkIxVVVvOHJwaXh4TG1ENVBpbWFaY3V6UUVVS3g1dVRyZUx6ZG94NHQwbEpV0gFcQVVfeXFMT3M3cHItOF91SURDRmphX1hta05iUHdKNUs1THFPZkdNbm80LVk4LUtCQjFVVW84cnBpeHhMbUQ1UGltYVpjdXpRRVVLeDV1VHJlTHpkb3g0dDBsSlU?oc=5",
+     "title": "Why fighting in Tigray matters far beyond northern Ethiopia | DW News - Modern Ghana",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 18:42:04 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: Modern Ghana (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-09",
+   "kind": "clash",
+   "summary": "Why fighting in Tigray matters far beyond northern Ethiopia | DW News - Modern Ghana",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 2,
+   "source_tier": "C",
+   "best_source": "Modern Ghana",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Modern Ghana (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-09-8da06252",
+   "sources": [
+    {
+     "outlet": "Nacionale News",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWWZ0VlR0THhZVWtleEVKOGFkUkhXLXhMbUlCUmVHSUIxNWlGSHNzdE5IcXZad2FEZUVLNmI2U0xidkVYdGF2MzNxOVE5UmxYVWdFdk82RDJwdEN4UWpGNHlMOUpwUm91WVJiVzd5bkdkd2dVUC1GYVFERlBKUXBnUGVVaXJsZkl6QkJZR3lDUlM4YVpXZXBxZHJJTWtSa2d6T3VfQk02ZDZrTFJwMXRlOGUxSnM2NjRiTmc?oc=5",
+     "title": "After Its Soldiers Crossed the Border, Ethiopia Warns Eritrea It Will Defend Itself - Nacionale News",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 18:01:36 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 28,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: Nacionale News (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 3. Article credibility score: 28/100."
+    },
+    {
+     "outlet": "BBC",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sc1g0anZIc3h4MmpDV1BLcXFaS0FKR3NoQzZlVVpKQ0tvSnVsT0FhTFBuYS1yUmRveE5ZQUFLRW5VaUJwSmo3U1lUQlVZY3VxNy1lNkZmUnY3ZXc?oc=5",
+     "title": "Ethiopia warns Eritrea it will defend itself after troops enter Tigray - BBC",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 15:24:43 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 45,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: BBC (A-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 3. Article credibility score: 45/100."
+    },
+    {
+     "outlet": "Yahoo News Australia",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcTg2RHdNUk5YUkRBMi1XaEQ2Tnc3TjU0RHNENHBJamVhaFk2ZlFHUm1Mdi1qZXhpUjBpU1g4ekVvMzB6b2xMZkF0OHRkS21FN0c2RUpTb1JwYnpSQ3RFaHZLcWMweUthMGRjeHdITGdlUE5MZ3VWVTN0X1BOY0s1UHBFOA?oc=5",
+     "title": "Ethiopia warns Eritrea it will defend itself after troops cross border - Yahoo News Australia",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 14:13:59 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 28,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: Yahoo News Australia (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 3. Article credibility score: 28/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-09",
+   "kind": "other",
+   "summary": "After Its Soldiers Crossed the Border, Ethiopia Warns Eritrea It Will Defend Itself - Nacionale News",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 44,
+   "source_count": 3,
+   "news_source_count": 3,
+   "source_tier": "A",
+   "best_source": "BBC",
+   "independent_source_count": 3,
+   "high_quality_source_count": 1,
+   "evidence_explanation": "Best source: BBC (A-tier). 3 independent source records; 1 A-tier, 0 B-tier, 2 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-09-af8d2c3c",
+   "sources": [
+    {
+     "outlet": "جريدة القدس",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZURic2pmM2NZSHhkTXR6dHlSSU9KVUN5WlhPY2pYbzJKRlh1Z0xWUGNtOGlSRllYVGVUbFZ1ckpiOWMyd1B1cW5BanZDZ2VpRnF2VGl3Ni03NDVvbmVqLUlVUDNmRmFGWXFoX1BHMFhWa1RDQmpxZ2xQY09pdXlLZ3B1ZWRqSkFsMEFzNlpnSDVkcjNiM2lwRnptb3N6SDF4SmYyVmcyQzg4cU0?oc=5",
+     "title": "Military Escalation Between Ethiopia and Eritrea in Tigray R - جريدة القدس",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 16:56:47 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: جريدة القدس (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-09",
+   "kind": "other",
+   "summary": "Military Escalation Between Ethiopia and Eritrea in Tigray R - جريدة القدس",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "جريدة القدس",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: جريدة القدس (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-09-81991c30",
+   "sources": [
+    {
+     "outlet": "African Arguments",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxORWZTQ2ctN3JtRUgtSk9uWDR2RU9EdlJIUlJlU1QyRDhSX0t2RHdNNU8wdVNPQUZoSWFITk1RN1czOWV2M1hKMUZwS0hNQV8tOHhJV3EyUHRIZU52YTlHd1RpNUFTQ05wS1pDRmpqX2t1bmcwSnBSeW9KM1R3bVZHT2lpZHhSTy0tVGd5NUdCaVdmeVlrTDcyTTJQT0djbmc3bjRFaEJnQ0JYRkp3U1VsQTlXcGNWTzJwY2RXTTY4NDJhWEY3UjlyVEFvbw?oc=5",
+     "title": "Enemies of Convenience: Ethiopia’s New Opposition Alignment and the Question of What Comes Next - African Arguments",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 16:49:46 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: African Arguments (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-09",
+   "kind": "other",
+   "summary": "Enemies of Convenience: Ethiopia’s New Opposition Alignment and the Question of What Comes Next - African Arguments",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "African Arguments",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: African Arguments (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-09-6f727c9d",
+   "sources": [
+    {
+     "outlet": "OCHA",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOU1QtVktCVEJncmtvNExjMEhLVXpsejZfQkdzVWduWTVidkM4cU9uYmlYVTNmMXBBSzRfZWg2dlVlYk1RbnFCWkxNcWNfTnZpTXptVWpMZi1NRWNoVkVFdDZXTHZRamFpSVNYZWNPdmFKYmVwbEhWNUl2c1FuTm9HWV92M2M5bk9kUS1nXzBiQmhDRno3ODhFLXp4cmphZlk?oc=5",
+     "title": "Today's top news: Ethiopia, Sudan, Democratic Republic of the Congo, Yemen, Ukraine - OCHA",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 16:49:24 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: OCHA (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-09",
+   "kind": "other",
+   "summary": "Today's top news: Ethiopia, Sudan, Democratic Republic of the Congo, Yemen, Ukraine - OCHA",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "OCHA",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: OCHA (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-09-718cfe38",
+   "sources": [
+    {
+     "outlet": "Modern Diplomacy",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUW44UElWWi1DLWxOZnpWWlR0dEVKX2ZvSGF6QW1VWGtna3ZlYnJZaTMtR2dhUmVHRE5tS1JsTlNOVmRiNWlzWE1SZVg4T0VQZVkwSXdYUk5RaFdYN29DWkxfTERzZjNjaTZfVWRzNi14TzhZV0RHWTRqMlFQMGRPYnVRaE5SNUdVRjRqQXJaUndMYWhOTGxFUVhTYUNDS3FWZkw4NW4yY2VQcFNlV0VRUnBiRmZ6QQ?oc=5",
+     "title": "Ethiopia Warns of Eritrea ‘Invasion’ as Fears of a New Horn of Africa War Grow - Modern Diplomacy",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 15:45:00 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: Modern Diplomacy (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-09",
+   "kind": "other",
+   "summary": "Ethiopia Warns of Eritrea ‘Invasion’ as Fears of a New Horn of Africa War Grow - Modern Diplomacy",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "Modern Diplomacy",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Modern Diplomacy (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-09-054cb4c2",
+   "sources": [
+    {
+     "outlet": "KMVU FOX 26 Medford",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxObnRjUEhBclFWN2V1LVhvV2szYm11RFRoS29HbHltb29iZWJEYkh2R2xMeWJXWV83aUtZSDhicVVGRTZaUEJOaUZwN29Xak1aVnBHcVZSY2F0T21tNGJUM183R1VMcFdhZWhvdUNUajVkeVRWOEZJZ21WOVZuQXZKUGhidTBoc1BsVjd1VTJqZW90X09UT3RKR0cwSmdIRlJDQjJoU0V2N0pjQng1aF95b25SaGxKRy1YY2pwU2h4R2lEY1JTU1R5RmNwbVJ0b3NYNzdjZU9GMDA1clJleXhz?oc=5",
+     "title": "Eritrea, Ethiopia trade barbs as Tigray rebels retreat - KMVU FOX 26 Medford",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 15:30:00 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 21,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: KMVU FOX 26 Medford (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 2. Article credibility score: 21/100."
+    },
+    {
+     "outlet": "RFI",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTmttdmdWMTNHZlFzZFRUZkg1MG00UzVvSzE0NmdQU1hvYURGVzltZXRkaDBPdDlDZ2F6RDZxaDVnV241V2lqb2lCbWgwS2tlT3RsakdoT0xoYTUzZ0NubnBxeGUzb25qVVEySjhfSWVpd1RCN2s1WXlzV1k3OFNrdlEzRnFibWktblpVek5MYmQ5TEhpeGJwSUZMS1J2bktEQ29lYkR3?oc=5",
+     "title": "Eritrea, Ethiopia trade barbs as Tigray rebels retreat - RFI",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 11:37:06 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 21,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: RFI (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 2. Article credibility score: 21/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-09",
+   "kind": "other",
+   "summary": "Eritrea, Ethiopia trade barbs as Tigray rebels retreat - KMVU FOX 26 Medford",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 22,
+   "source_count": 2,
+   "news_source_count": 2,
+   "source_tier": "C",
+   "best_source": "KMVU FOX 26 Medford",
+   "independent_source_count": 2,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: KMVU FOX 26 Medford (C-tier). 2 independent source records; 0 A-tier, 0 B-tier, 2 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "mekelle-2026-10-09-2ddcb415",
+   "sources": [
+    {
+     "outlet": "Yahoo",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZHo1Zy02Z2lWeExNcVBWRjFCTV9XaTdWOVZRUzYxM1NfNUZ5MURvUm5pcHZLYU0yMmYtTnhWSzJzZlctYjJfUXlycHNrX0N0UXpDUnNsQ09wOGE0S2FPNGJLNXJFekMwYV9aQzJkZ3dLVFhMdC1RVDFlQWx5SlZiUmxJdS1tVTBRZ0Ftc0Nn?oc=5",
+     "title": "Images depicting Ethiopia’s army on the streets of Mekelle are AI-generated - Yahoo",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 15:00:05 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: Yahoo (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    }
+   ],
+   "manual": false,
+   "place": "Mekelle",
+   "region": "",
+   "lat": 13.5,
+   "lon": 39.47,
+   "date": "2026-10-09",
+   "kind": "other",
+   "summary": "Images depicting Ethiopia’s army on the streets of Mekelle are AI-generated - Yahoo",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "Yahoo",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Yahoo (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-09-8565d4ff",
+   "sources": [
+    {
+     "outlet": "The New Humanitarian",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNd21OVXFWZDlYU1VIeEVkMHdqQmdDbjBhdWhIUzV5ZWZWWkxqZi1LSHEwUF9DVFNfb2Y2VENCUE92T0xzcUl6Qm9IMzRHSnVNRjlBbU96ZThkWk1zRHhXRkZfeG9NVUFnUG9hQjVIMHUyUnNFUElPdDVDMUJZcUdjSWk3NTV5S2UzUFJmdVh1QWFvNU9zLURWUllWZEFBUHNPRDBiZmpELXZodFBHRFFNZ0FKUW84ZFJCMFcweGdPTTVFMXU5UVpzSw?oc=5",
+     "title": "Three years of genocide in Gaza, Tigray escalation, and a murky race for the UN’s top job: The Cheat Sheet - The New Humanitarian",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 14:48:08 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: The New Humanitarian (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-09",
+   "kind": "humanitarian",
+   "summary": "Three years of genocide in Gaza, Tigray escalation, and a murky race for the UN’s top job: The Cheat Sheet - The New Humanitarian",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "The New Humanitarian",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: The New Humanitarian (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-09-a70a962a",
+   "sources": [
+    {
+     "outlet": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSkdNby1FMlo2c3NpVVhLZzAwMFRObEJwdVMwemgyeUNCZTl3SW1UemZjN29CNVIxZkt4eEk1ejQ2U3NjM19YcVJ5dDhPWTZkNXRLXzlHa0drampvR1ZSODM4bzJrem5RUHpydHlpcm9meUNzUXhSbWVWMFFwM2JfOEt1dzl0Mlp5MTRHd0lfMUxRMTJUMU5BTHhydjBWd2Q0NFVnYlQxRG9lS2dL?oc=5",
+     "title": "Ethiopia Vows to Defend Itself Against Eritrean Incursion - Bloomberg.com",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 10:14:02 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: Bloomberg.com (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-09",
+   "kind": "other",
+   "summary": "Ethiopia Vows to Defend Itself Against Eritrean Incursion - Bloomberg.com",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "Bloomberg.com",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Bloomberg.com (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-09-166d176f",
+   "sources": [
+    {
+     "outlet": "Devdiscourse",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSkYtUUFuZjFCR0VFS1dUS18tRnl5U1B5d0UtaDkxZG85UVA1Ui1BN2xRYWRNRXFrWmhLV0JaTXVkeXRFWlBnZkJTYXVVN2dzZ2kzZzlHaXItenEwSVc1bk0wdE4tYXhicjhVVXA5end1aGN0UXBPeVVONExrWkU1TkZTdHFjVVpjNXlkVjFSUmV4d0tIMlZkSDh5dnZjOHQ4Sk5WVERZUEhaV0hVNURoSjhGOEFTNEpiTzBnUDdyX3JqRjB5SFA40gHMAUFVX3lxTE1TSXNzbV9GcnRJbWVGUloyLWxTUFl2VVpHMTJVTnVZM3lFQUg1YkhUb2Z0VGhaU1pUc1lGbC0yV1F4c1l2QkRtNmRiNDhGcUlCd0s1TTJyWHNHMU1WQzRLOXZOUUhCZkFZQWgtNl9OcXl4Ti1zMnBJcEI2RWd6RDZKUjJBR1gxamtGMk1PZXNZeG1SY0RKTGdOckpmZ3NsdDBZV21peXhqWVNmNEVrV2ZUSExiRmZzQzVNcDRoS2ZrUEZzYUFjSHppWnVvcw?oc=5",
+     "title": "Ethiopia says it must defend itself against Eritrea's 'all-out invasion' - Devdiscourse",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 09:10:16 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: Devdiscourse (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-09",
+   "kind": "other",
+   "summary": "Ethiopia says it must defend itself against Eritrea's 'all-out invasion' - Devdiscourse",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "Devdiscourse",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Devdiscourse (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-09-8c2eb890",
+   "sources": [
+    {
+     "outlet": "GazetteXtra",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONWs2b05ENk9WMV9HM1RWRGZfUjdDZGwxbFhuVTN5YWtNM0REOGpyRlcxRFRDZ2xSR2pjbl9BTmZLQlVUVzI4V1AwaVJqWkRvRmwxbTJBVUgwV3pnV0MycDN5d0thdXR3bWdORlRINmZkQU9HN2pFTGxzdHZKcGFCSzlMdUJEbDhwRHVQb19EamxQaHcwb1J5U28yYkNDUGFta3pJQjZGWU1ZRGFNOGlXSzQ4R01xSklhZ3c?oc=5",
+     "title": "Ethiopia Tigray Fighting - GazetteXtra",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 07:15:21 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 14,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: GazetteXtra (C-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 14/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-09",
+   "kind": "clash",
+   "summary": "Ethiopia Tigray Fighting - GazetteXtra",
+   "attribution": "independent",
+   "last_seen": "2026-10-09",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "GazetteXtra",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: GazetteXtra (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
   },
   {
    "key": "unknown-2026-10-08-e4de503b",
