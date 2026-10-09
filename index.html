@@ -105,18 +105,74 @@ function draw(){
  });
 }
 function renderForecast(){
- const status=document.getElementById("forecastStatus"),summary=document.getElementById("forecastSummary"),sc=document.getElementById("scenarios"),regions=document.getElementById("regionForecasts");
- summary.replaceChildren();sc.replaceChildren();regions.replaceChildren();
- if(!forecastData){status.textContent="Forecast data will appear after the next successful processing run.";return;}
- status.replaceChildren(el("b","",forecastData.status||"EXPERIMENTAL"));
- status.append(el("div","", "Generated: "+(forecastData.generated_at?new Date(forecastData.generated_at).toLocaleString():"unknown")+" · Lookback: "+forecastData.lookback_days+" days · Horizon: "+forecastData.horizon_days+" days));
- status.append(el("p","",forecastData.disclaimer||"Experimental outlook; not validated."));
- const sm=forecastData.summary||{};
- [[sm.recent_event_records||0,"RECENT RECORDS"],[sm.regions_with_located_evidence||0,"LOCATED REGIONS"],[sm.overall_evidence_uncertainty||0,"% UNCERTAINTY"]].forEach(v=>{const d=el("div","stat");d.append(el("b","",String(v[0])),el("span","",v[1]));summary.append(d)});
- (forecastData.scenarios||[]).forEach(s=>{const c=el("div","forecast-card");c.append(el("h4","",s.name),el("div","weight",s.weight+"% relative weight"));const bar=el("div","bar"),fill=el("span","");fill.style.width=Math.max(0,Math.min(100,s.weight))+"%";bar.append(fill);c.append(bar,el("p","",s.rationale));sc.append(c)});
- if(!(forecastData.regions||[]).length)regions.append(el("p","src","No recent events with usable explicit location evidence were found."));
- (forecastData.regions||[]).forEach(r=>{const c=el("div","forecast-card"),head=el("div","risk-head");head.append(el("h4","",r.region),el("span","risk-index risk-"+r.level,r.risk_index+"/100"));c.append(head,el("span","badge",r.level+" · "+r.event_count+" event records"));const bar=el("div","bar"),fill=el("span","");fill.style.width=Math.max(0,Math.min(100,r.risk_index))+"%";bar.append(fill);c.append(bar,el("p","",r.explanation),el("p","", "Evidence uncertainty: "+r.uncertainty+"/100; this is uncertainty in reporting, not probability of violence."));
- (r.examples||[]).forEach(x=>{c.append(el("p","",x.date+" · ["+x.grade+"] "+x.title));const links=el("div","src");(x.sources||[]).forEach(s=>{if(!s.url)return;const a=el("a","",s.outlet||"Source");a.href=s.url;a.target="_blank";a.rel="noopener";a.style.marginRight="8px";links.append(a)});c.append(links)});regions.append(c)});
+ const status = document.getElementById("forecastStatus");
+ const summary = document.getElementById("forecastSummary");
+ const scenarios = document.getElementById("scenarios");
+ const regions = document.getElementById("regionForecasts");
+ summary.replaceChildren();
+ scenarios.replaceChildren();
+ regions.replaceChildren();
+ if (!forecastData) {
+   status.textContent = "Forecast data will appear after the next successful processing run.";
+   return;
+ }
+ status.replaceChildren(el("b", "", forecastData.status || "EXPERIMENTAL"));
+ const generated = forecastData.generated_at ? new Date(forecastData.generated_at).toLocaleString() : "unknown";
+ status.append(el("div", "", "Generated: " + generated + " · Lookback: " + forecastData.lookback_days + " days · Horizon: " + forecastData.horizon_days + " days"));
+ status.append(el("p", "", forecastData.disclaimer || "Experimental outlook; not validated."));
+ const sm = forecastData.summary || {};
+ const summaryItems = [
+   [sm.recent_event_records || 0, "RECENT RECORDS"],
+   [sm.regions_with_located_evidence || 0, "LOCATED REGIONS"],
+   [sm.overall_evidence_uncertainty || 0, "% UNCERTAINTY"]
+ ];
+ summaryItems.forEach(function(item) {
+   const d = el("div", "stat");
+   d.append(el("b", "", String(item[0])), el("span", "", item[1]));
+   summary.append(d);
+ });
+ (forecastData.scenarios || []).forEach(function(s) {
+   const card = el("div", "forecast-card");
+   card.append(el("h4", "", s.name), el("div", "weight", s.weight + "% relative weight"));
+   const bar = el("div", "bar");
+   const fill = el("span", "");
+   fill.style.width = Math.max(0, Math.min(100, s.weight)) + "%";
+   bar.append(fill);
+   card.append(bar, el("p", "", s.rationale));
+   scenarios.append(card);
+ });
+ const regionList = forecastData.regions || [];
+ if (!regionList.length) {
+   regions.append(el("p", "src", "No recent events with usable explicit location evidence were found."));
+ }
+ regionList.forEach(function(r) {
+   const card = el("div", "forecast-card");
+   const head = el("div", "risk-head");
+   head.append(el("h4", "", r.region), el("span", "risk-index risk-" + r.level, r.risk_index + "/100"));
+   card.append(head, el("span", "badge", r.level + " · " + r.event_count + " event records"));
+   const bar = el("div", "bar");
+   const fill = el("span", "");
+   fill.style.width = Math.max(0, Math.min(100, r.risk_index)) + "%";
+   bar.append(fill);
+   card.append(bar);
+   card.append(el("p", "", r.explanation));
+   card.append(el("p", "", "Evidence uncertainty: " + r.uncertainty + "/100; this is uncertainty in reporting, not probability of violence."));
+   (r.examples || []).forEach(function(x) {
+     card.append(el("p", "", x.date + " · [" + x.grade + "] " + x.title));
+     const links = el("div", "src");
+     (x.sources || []).forEach(function(source) {
+       if (!source.url) return;
+       const a = el("a", "", source.outlet || "Source");
+       a.href = source.url;
+       a.target = "_blank";
+       a.rel = "noopener";
+       a.style.marginRight = "8px";
+       links.append(a);
+     });
+     card.append(links);
+   });
+   regions.append(card);
+ });
 }
 function button(parent,label,key,store){const b=el("button","on",label);b.onclick=()=>{store[key]=!store[key];b.classList.toggle("on");draw()};parent.append(b)}
 function renderControls(){
