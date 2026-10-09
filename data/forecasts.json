@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T18:40:27.198Z",
+  "generated_at": "2026-10-09T18:41:27.026Z",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
@@ -9,9 +9,10 @@
     "recent_event_records": 229,
     "regions_with_located_evidence": 5,
     "control_change_records": 5,
-    "contested_or_early_records": 229,
+    "contested_or_early_records": 0,
     "duplicate_records_ignored": 112,
-    "overall_evidence_uncertainty": 100
+    "overall_evidence_uncertainty": 55,
+    "reported_records": 229
   },
   "scenarios": [
     {
@@ -35,11 +36,11 @@
       "region": "Central Tigray",
       "risk_index": 63,
       "level": "GUARDED",
-      "uncertainty": 38,
+      "uncertainty": 55,
       "event_count": 19,
       "weighted_signal": 3.22,
       "control_change_signal": 0,
-      "explanation": "19 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 19 records are reported/developing/claim-grade; source uncertainty is material.",
+      "explanation": "19 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-07",
@@ -84,11 +85,11 @@
       "region": "Addis Ababa",
       "risk_index": 37,
       "level": "WATCH",
-      "uncertainty": 38,
+      "uncertainty": 55,
       "event_count": 3,
       "weighted_signal": 0.9,
       "control_change_signal": 0,
-      "explanation": "3 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 3 records are reported/developing/claim-grade; source uncertainty is material.",
+      "explanation": "3 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-09",
@@ -129,11 +130,11 @@
       "region": "Northern Tigray",
       "risk_index": 34,
       "level": "WATCH",
-      "uncertainty": 38,
+      "uncertainty": 55,
       "event_count": 4,
       "weighted_signal": 0.91,
       "control_change_signal": 0,
-      "explanation": "4 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 4 records are reported/developing/claim-grade; source uncertainty is material.",
+      "explanation": "4 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-08",
@@ -178,11 +179,11 @@
       "region": "Eastern Tigray",
       "risk_index": 23,
       "level": "WATCH",
-      "uncertainty": 38,
+      "uncertainty": 55,
       "event_count": 4,
       "weighted_signal": 0.73,
       "control_change_signal": 0,
-      "explanation": "4 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 4 records are reported/developing/claim-grade; source uncertainty is material.",
+      "explanation": "4 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-08",
@@ -223,11 +224,11 @@
       "region": "Northwestern Tigray",
       "risk_index": 2,
       "level": "WATCH",
-      "uncertainty": 38,
+      "uncertainty": 55,
       "event_count": 1,
       "weighted_signal": 0.13,
       "control_change_signal": 0,
-      "explanation": "1 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 1 records are reported/developing/claim-grade; source uncertainty is material.",
+      "explanation": "1 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-08",
