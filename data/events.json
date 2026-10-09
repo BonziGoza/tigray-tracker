@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T20:24:51.144374+00:00",
+ "updated": "2026-10-09T20:59:14.290806+00:00",
  "events": [
   {
    "key": "unknown-2026-10-09-4456f303",
@@ -1797,6 +1797,20 @@
      "credibility_score": 28,
      "credibility_label": "LIMITED",
      "credibility_explanation": "Publisher profile: DW (A-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 28/100."
+    },
+    {
+     "outlet": "DW.com",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWXgwVER5R3NsTE5jZnNacXZkRDliM0UzQXZQOVBKeXhCLV84ZGRPSnQ4V2JacXF5OTlYeHZYVkJBS1pTM0tNblh6MmpPdkZsa3FPeFVqa1BDd1RLeDc4QUVPaEJ6a0o1aHJ3aGo1eWxTY1BId2FSeWF1V19qYk9OTWZrWWo5ZGZfRkNrU1VzZUtfZFM30gGUAUFVX3lxTFBZeDBURHlHc2xMTmNmc1pxdmREOWIzRTNBdlA5UEp5eEItXzhkZE9KdDhXYlpxcXk5OVh4dlhWQkFLWlMzS01uWHoyak92RmxrcU94VWprUEN3VEt4NzhBRU9oQnprSjVocndoajV5bFNjUEh3YVJ5YXVXX2piT05NZmtZajlkZl9GQ2tTVXNlS19kUzc?oc=5",
+     "title": "Eritrean troops in Ethiopia raise fears of a regional war - DW.com",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 09 Oct 2026 15:29:44 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 28,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher profile: DW (A-tier). Article-specific sourcing: 0/25. Independent reports counted after duplicate filtering: 1. Article credibility score: 28/100."
     }
    ],
    "manual": false,
@@ -1814,7 +1828,7 @@
    "grade": "REPORTED",
    "confidence": 36,
    "source_count": 1,
-   "news_source_count": 1,
+   "news_source_count": 2,
    "source_tier": "A",
    "best_source": "DW",
    "independent_source_count": 1,

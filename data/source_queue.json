@@ -4424,6 +4424,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 09 Oct 2026 15:29:44 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-09T20:59:14.290511+00:00"
  }
 ]
