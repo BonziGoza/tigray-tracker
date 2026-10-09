@@ -306,15 +306,36 @@ def source_profile(source):
 def source_quality(source):
     return source_profile(source)["base"]
 
+def _title_key(source):
+    title=str(source.get("title") or source.get("original_title") or "").lower()
+    title=re.sub(r"\b(Reuters|Associated Press|AP News|AFP|BBC|CNN)\b", " ", title)
+    return re.sub(r"[^a-z0-9]+", " ", title).strip()
+
 def independent_sources(sources):
+    """Collapse explicit repost fingerprints and near-identical syndicated headlines."""
     seen_fingerprints=set()
+    seen_titles=[]
     out=[]
     for source in sources:
         fp=source.get("repost_of_fingerprint") or source.get("fingerprint")
         if fp and fp in seen_fingerprints:
             continue
+        title=_title_key(source)
+        duplicate_title=False
+        if len(title)>=32:
+            words=set(title.split())
+            for prior in seen_titles:
+                prior_words=set(prior.split())
+                overlap=len(words & prior_words)/max(1,len(words | prior_words))
+                if overlap>=0.82:
+                    duplicate_title=True
+                    break
+        if duplicate_title:
+            continue
         if fp:
             seen_fingerprints.add(fp)
+        if title:
+            seen_titles.append(title)
         out.append(source)
     return out
 
@@ -341,6 +362,57 @@ def reporting_quality(source):
     if e["visual"]: score+=2
     score=max(0,score-min(4,e["anonymous"]))
     return min(25,score)
+
+def article_credibility(source, related_sources=None):
+    """Article-level score: publisher profile + article evidence + independent corroboration."""
+    profile=source_profile(source)
+    publisher=round(profile["base"]/45*35)
+    reporting=round(reporting_quality(source)/25*45)
+    evidence=_source_assessment(source)
+    evidence_bonus=0
+    if evidence["contested"]: evidence_bonus-=8
+    if evidence["party"] and not evidence["attributed"]: evidence_bonus-=8
+    if evidence["attributed"] and not evidence["named"] and not evidence["official"]:
+        evidence_bonus-=5
+    if evidence["direct"]: evidence_bonus+=4
+    if evidence["documentary"]: evidence_bonus+=5
+    if evidence["visual"]: evidence_bonus+=2
+    others=[]
+    for other in (related_sources or []):
+        if other is source or other.get("url")==source.get("url"):
+            continue
+        if other.get("source_type")=="news":
+            others.append(other)
+    independent=independent_sources([source]+others)
+    independent_others=[x for x in independent if x is not source]
+    corroboration=min(20, len(independent_others)*7)
+    score=max(0,min(100,publisher+reporting+corroboration+evidence_bonus))
+    if len(independent)==1:
+        score=min(score,84)
+    if profile["tier"]=="C":
+        score=min(score,79)
+    return score
+
+def article_credibility_label(score):
+    if score>=75: return "STRONG"
+    if score>=50: return "MODERATE"
+    return "LIMITED"
+
+def article_credibility_explanation(source, related_sources=None):
+    profile=source_profile(source)
+    evidence=_source_assessment(source)
+    score=article_credibility(source,related_sources)
+    parts=[f"Publisher profile: {profile['label']} ({profile['tier']}-tier)."]
+    parts.append(f"Article-specific sourcing: {reporting_quality(source)}/25.")
+    if evidence["direct"]: parts.append("Direct observation reported.")
+    if evidence["documentary"]: parts.append("Documentary evidence cited.")
+    if evidence["visual"]: parts.append("Visual evidence cited.")
+    if evidence["party"]: parts.append("Originates from a conflict party.")
+    if evidence["contested"]: parts.append("Materially disputed.")
+    unique=len(independent_sources([source]+[x for x in (related_sources or []) if x.get("source_type")=="news"]))
+    parts.append(f"Independent reports counted after duplicate filtering: {unique}.")
+    parts.append(f"Article credibility score: {score}/100.")
+    return " ".join(parts)
 
 def corroboration_score(sources):
     src=independent_sources(sources)
@@ -477,6 +549,12 @@ def finalize_event(db,key,n,items):
                     if existing_source.get("url")==s["url"]:
                         existing_source["evidence"]=assessments[i]
                         break
+    # Score each article using publisher profile, its own sourcing, and
+    # corroboration from distinct reports after syndication checks.
+    for source in ev["sources"]:
+        source["credibility_score"]=article_credibility(source,ev["sources"])
+        source["credibility_label"]=article_credibility_label(source["credibility_score"])
+        source["credibility_explanation"]=article_credibility_explanation(source,ev["sources"])
     if contains_ethio_script(ev.get("summary","")):
         translated_for_event=[x.get("english_translation") for x in ev.get("translations",[]) if x.get("english_translation")]
         if translated_for_event:
@@ -502,6 +580,10 @@ def rescore_event(ev):
         return ev
     sources=ev.get("sources") or []
     event_evidence=ev.get("evidence") if isinstance(ev.get("evidence"),dict) else {}
+    for source in sources:
+        source["credibility_score"]=article_credibility(source,sources)
+        source["credibility_label"]=article_credibility_label(source["credibility_score"])
+        source["credibility_explanation"]=article_credibility_explanation(source,sources)
     ev["grade"]=grade(sources,ev.get("attribution","independent"),event_evidence)
     ev["confidence"]=confidence(sources,ev.get("attribution","independent"),event_evidence)
     profiles=[source_profile(s) for s in independent_sources(sources)]
