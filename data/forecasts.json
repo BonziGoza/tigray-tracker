@@ -1,0 +1,245 @@
+{
+  "generated_at": "2026-10-09T18:39:49.302Z",
+  "horizon_days": 7,
+  "lookback_days": 21,
+  "method": "experimental_heuristic_v1",
+  "status": "EXPERIMENTAL — NOT CALIBRATED",
+  "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
+  "summary": {
+    "recent_event_records": 341,
+    "regions_with_located_evidence": 5,
+    "control_change_records": 9,
+    "contested_or_early_records": 341,
+    "overall_evidence_uncertainty": 100
+  },
+  "scenarios": [
+    {
+      "name": "Continued localized conflict and shifting control",
+      "weight": 47,
+      "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
+    },
+    {
+      "name": "Wider cross-border escalation",
+      "weight": 45,
+      "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
+    },
+    {
+      "name": "Relative stabilization or a temporary pause",
+      "weight": 8,
+      "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
+    }
+  ],
+  "regions": [
+    {
+      "region": "Central Tigray",
+      "risk_index": 71,
+      "level": "ELEVATED",
+      "uncertainty": 38,
+      "event_count": 27,
+      "weighted_signal": 4.19,
+      "control_change_signal": 0,
+      "explanation": "27 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 27 records are reported/developing/claim-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-07",
+          "title": "Ethiopia’s forces retake Mekelle amid renewed Tigray fighting - Al Jazeera",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Al Jazeera",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcU5YbjVUUnNodzJYQkliQUZseHNPWE9xbUVmaVA0WWhfZ3pza1pmMEdqSTloajlTcUdSeWZ5SWlGdmZPOTQ5bjBrMDhuRkZTZWFmcUlTVEs2b0ZIWGY4TGxJcDZhSl9ETTZEMjZtZktpU2tEVWVDNUNjMV9Cd0huZ18xQjJkZ21SSXh1SkM0dndtaDVZZVdrcDdYai1pREtHXy000gGoAUFVX3lxTE9yTEJUZ1V5cE45LWVQYmRnT3pRZDdKWjRra01DZHlVWVFTZkVmeFAyR0hBWnhWcUtCeWpzUW5CTUo2N3NKVUUwUEZIZjhZUG8zNVRVc05kTVVBSG1KYjdKUTN1cDZRVUZlUFVQbU1IN1pKQnZJanNwbDZ1QmtNWXFPelBOVzZvZmw3Ym5iUWRCd1FZRXRsRm5WcWlpaTg4aWEwTEh1VVhDVQ?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-07",
+          "title": "Tigray drone strikes continue as life resumes in Mekelle - Africanews",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Africanews",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVS1SaVowaFFpal9GNE5iNVk2MXhSVXp5R0kxTU16RGVnWS1xdzctR1ZCR1ZoQzB1NVVxWDdZN1MySHQ2d010T3BlOUdJME1uOUZSM2pMNEZfakpJeWdiUnRJX3dsN1AwWVlxbXZISXpGcGV6TzkzR1FfYThfT3hfc0ZoZWZwMjVuei1wNzBfQXN2cmtBVFIzYkpHbnNzNzFP0gGgAUFVX3lxTE1VLVJpWjBoUWlqX0Y0TmI1WTYxeFJVenlHSTFNTXpEZWdZLXF3Ny1HVkJHVmhDMHU1VXFYN1k3UzJIdDZ3TXRPcGU5R0kwTW45RlIzakw0Rl9qSkl5Z2JSdElfd2w3UDBZWXFtdkhJekZwZXpPOTNHUV9hOF9PeF9zRmhlZnAyNW56LXA3MF9Bc3Zya0FUUjNiSkduc3M3MU8?oc=5"
+            },
+            {
+              "outlet": "Africanews",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTHlEeGZkOFQ1c3h3Q01aTG5uaGhLaXRCbF9Gb3NPRnVmTlVyaHpHb3FBY0s5OWRib0pSR1BtUXJVa1lpNzJzb0R5Q3kxQW1HUEpCSVc0RVB0VzVmb0FGeXhPOG5PdDk3a25WblJyLWdVb3ExRWUxY2RhWHhkRVBrMThoOVNONmxVcXJWbWF5bkE0dmNVR29GV0JvWdIBoAFBVV95cUxNVS1SaVowaFFpal9GNE5iNVk2MXhSVXp5R0kxTU16RGVnWS1xdzctR1ZCR1ZoQzB1NVVxWDdZN1MySHQ2d010T3BlOUdJME1uOUZSM2pMNEZfakpJeWdiUnRJX3dsN1AwWVlxbXZISXpGcGV6TzkzR1FfYThfT3hfc0ZoZWZwMjVuei1wNzBfQXN2cmtBVFIzYkpHbnNzNzFP?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-07",
+          "title": "Ethiopia: Drone Strikes Kill Civilians Including IDPs in Tigray's Shiraro and Adwa, Residents Say - allAfrica.com",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "allAfrica.com",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB4TFltR3JoNlFPNVRaMERVeTQ0dENaLXVqdDVnUlkyd05iOXVqRlBIeTJrc0tCOGctTl84NU9WQ1ktdXVfMzdtUG1rNktKNTFqSUR5YWl0M2VpeWc?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Addis Ababa",
+      "risk_index": 37,
+      "level": "WATCH",
+      "uncertainty": 38,
+      "event_count": 3,
+      "weighted_signal": 0.9,
+      "control_change_signal": 0,
+      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 3 records are reported/developing/claim-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-09",
+          "title": "Will Ethiopia’s neighbours intervene as Tigray war escalates?",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/9/will-ethiopias-neighbours-intervene-as-tigray-war-escalates?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-09",
+          "title": "Ethiopia and Eritrea accuse one another of launching war",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/9/ethiopia-and-eritrea-accuse-one-another-of-launching-war?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-08",
+          "title": "Security Alert: U.S. Embassy Addis Ababa, Ethiopia (October 7, 2026) - U.S. Embassy in Ethiopia (.gov)",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "U.S. Embassy in Ethiopia (.gov)",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQREJSOERMZHJ2c0t6Q21GNUtlOUdZQkdDZmxNMG9NY1gxTDh4U3NHM3M1cnNKWTdlS3M5eW5kM3QxQklUNkFqMF9xSDhhRnkxSVd3YUtFU1dqMzBReklOTjBSLTlFaE5RLWJoRTliUDg5SjJMbnd0cnkzR2RQRV9JWXptM0x4Ync2UFZ5X3ZiQkRRZw?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Northern Tigray",
+      "risk_index": 34,
+      "level": "WATCH",
+      "uncertainty": 38,
+      "event_count": 4,
+      "weighted_signal": 0.91,
+      "control_change_signal": 0,
+      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 4 records are reported/developing/claim-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-08",
+          "title": "Ethiopia drone strikes against Eritrean troops in northern Tigray - News24",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "News24",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMUw3UUxPOE9YWnc1SlR1dnhKY3k3Y3Fzb3p0eXQ2cmxoM3FMM2ZkZ05kMVBlVENIb3V0TV9qZTlpRlN3LWd5bVk5WlFKT1dhUlFMcHBpaEl0cTAtdEk3NUtZeE96al9jUmpyYm9WZ0lJaTAxT0RnN2dvdkVHSlk5ekpOWE9henRrMzFpUDlTS3gxUEhBOXZYRFJiWUV3TzVENWdiZXRpV0NuSjVx?oc=5"
+            },
+            {
+              "outlet": "Ahram Online",
+              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9jSjdGazQ4QUNsV1lCZ0R6UncxTVZTeTNtb3FzakNkVUluSFhXU1dnRTBBQVBuUERJdmtJMm9iRWltdDNTMkRxS0FtWHRHZzBqTS1HYm9KRHY?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-08",
+          "title": "Ethiopian drone strikes hit Eritrean forces in northern Tigray city - RFI",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "RFI",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU0pvcWdnMFhlNnpKS3g3SFR4MWlDaVFjVEZkb3ZiTjBCc2U5T3dvSWl0dkFSZmNZejVEd1R2ZFJBNDJtQmNQMjhhcVd2aHZpNlRRU0NuckZBLUs2d0xIaDhvTWswbDVHTlNYSE5TUjBEdDJNdGV6cUdvdnRRSmF5U3M1N2hxTFZfY2N1QnpERWJLb1VUZUJBUzZjc3ZSbE9KbmJyaEZ5bUs?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-08",
+          "title": "Eritrean troops deploy in Ethiopia's northern Tigray region: local official, residents - CGTN",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "CGTN",
+              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9veUQ0cTVUcVNza3FybVNpejFobGFtNnlDNHFPT0d1Y0U2dHV2QmhyZjBuRjJtcV9LM3VJbTZCQ3p1SzNuTTUwNVc4RDA2eUc0TlJVWnA1WXhtdjlIbmZmUWlNUWNkY1o5bUh1ZGdn?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Eastern Tigray",
+      "risk_index": 23,
+      "level": "WATCH",
+      "uncertainty": 38,
+      "event_count": 4,
+      "weighted_signal": 0.73,
+      "control_change_signal": 0,
+      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 4 records are reported/developing/claim-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-08",
+          "title": "Ethiopian drones strike Eritrean forces near Adigrat - Africanews English",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Africanews English",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQT3Buei1jV1ZRVkppZ09fcnF4R3QtZTVTZ09YUVFNT25SWW5sbzg2SjJkU191WWt2VTlrd2lNc1NzYUtxOTVFZHM4REJkd2xLTGEydGJtSXlJVk13U1pUSW13Y0psN1V1ZjI2ZHRzNlhJVHpHSVhUQmlNcmZYYWEydm1TX0h1Uk82NzU3VGhYNkd2TVFmSEE?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-08",
+          "title": "EEPA reports on Eritrean forces seen in Adigrat, Tigray - IDN-InDepthNews",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "IDN-InDepthNews",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWk5GWENVWW9TX1F4ZXlEZWh2a1NJUHB1NkliUzcxaVdTc0ExWFlpNDRnZzlBMlVfclU1amlLVktwTnRfMXMzUkpDSkZaQlJzUjN0QWlqT2FDVEdPamVXaEgzNmFDQ2d0amlwa0l2QmEtSlJnMU1VdDhMQkNSbEpsSjNDWEJ0QQ?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-07",
+          "title": "Residents Report Eritrean Troops Movement in Adigrat as Federal Forces Advance in Tigray - Borkena",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Borkena",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQVJuZGR3emhBNVdaaW1jNXoxdjJFeEl5R3JzbEJLLWVrVEN1amR6QWN0VVNGOFg5UTJtTVJSQy1QeWVpUUVDelJfRVpxY0ZFUVBkcGRxeU9XTUJBMFBaS2tacUVZYzBndUVHM0d5dF9ZZWhUbTBKWC1UdnVRNmxFVE1uLXZrb0lCNng0QkJsSGFMRFV3WVlLRkNwUU1XWlZobnYzNnY5bVlmeVkyTHc?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Northwestern Tigray",
+      "risk_index": 2,
+      "level": "WATCH",
+      "uncertainty": 38,
+      "event_count": 1,
+      "weighted_signal": 0.13,
+      "control_change_signal": 0,
+      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 1 records are reported/developing/claim-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-08",
+          "title": "TPLF Fighters Withdraw From Shire, Residents Say - https://kulu-media.com/",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "https://kulu-media.com/",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE51eVp3YmktaW8tU3RGYnJhMzRyRG55YllIMDRINWpnTjN3bnFFMUQ4SExaQXRDNFA5X3Q5dS1QTXpIMkwtMTJnR0xXd1dqbE93bFd5YXhJbV9hcHNhMmNwS0V0SG1fTDZX?oc=5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
