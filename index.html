@@ -89,7 +89,7 @@ function draw(){
   const translated=(e.translations||[]).map(x=>x.english_translation).filter(Boolean)[0];
   if(translated && translated!==e.summary){const t=el("p","",translated);t.style.marginTop="6px";t.style.fontWeight="600";d.append(t);}
   const s=el("div","src");
-  (e.sources||[]).slice(0,8).forEach(x=>{
+  (e.sources||[]).filter(x=>credOn[x.credibility_label||"LIMITED"]).slice(0,8).forEach(x=>{
     const row=el("div","article-row cred-"+String(x.credibility_label||"LIMITED").toLowerCase());
     const a=el("a","",sourceLabel(x));a.href=x.url;a.target="_blank";a.rel="noopener";
     const cs=el("span","badge",(x.credibility_score??0)+"/100 · "+(x.credibility_label||"LIMITED"));
