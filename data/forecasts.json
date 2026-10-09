@@ -1,44 +1,45 @@
 {
-  "generated_at": "2026-10-09T18:39:49.302Z",
+  "generated_at": "2026-10-09T18:40:27.198Z",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 341,
+    "recent_event_records": 229,
     "regions_with_located_evidence": 5,
-    "control_change_records": 9,
-    "contested_or_early_records": 341,
+    "control_change_records": 5,
+    "contested_or_early_records": 229,
+    "duplicate_records_ignored": 112,
     "overall_evidence_uncertainty": 100
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 47,
+      "weight": 44,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 45,
+      "weight": 46,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 8,
+      "weight": 10,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 71,
-      "level": "ELEVATED",
+      "risk_index": 63,
+      "level": "GUARDED",
       "uncertainty": 38,
-      "event_count": 27,
-      "weighted_signal": 4.19,
+      "event_count": 19,
+      "weighted_signal": 3.22,
       "control_change_signal": 0,
-      "explanation": "27 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 27 records are reported/developing/claim-grade; source uncertainty is material.",
+      "explanation": "19 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 19 records are reported/developing/claim-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-07",
@@ -87,7 +88,7 @@
       "event_count": 3,
       "weighted_signal": 0.9,
       "control_change_signal": 0,
-      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 3 records are reported/developing/claim-grade; source uncertainty is material.",
+      "explanation": "3 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 3 records are reported/developing/claim-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-09",
@@ -132,7 +133,7 @@
       "event_count": 4,
       "weighted_signal": 0.91,
       "control_change_signal": 0,
-      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 4 records are reported/developing/claim-grade; source uncertainty is material.",
+      "explanation": "4 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 4 records are reported/developing/claim-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-08",
@@ -181,7 +182,7 @@
       "event_count": 4,
       "weighted_signal": 0.73,
       "control_change_signal": 0,
-      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 4 records are reported/developing/claim-grade; source uncertainty is material.",
+      "explanation": "4 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 4 records are reported/developing/claim-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-08",
@@ -226,7 +227,7 @@
       "event_count": 1,
       "weighted_signal": 0.13,
       "control_change_signal": 0,
-      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 1 records are reported/developing/claim-grade; source uncertainty is material.",
+      "explanation": "1 recent event records after near-duplicate suppression, weighted by recency, event type, evidence grade, and article credibility. 1 records are reported/developing/claim-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-08",
