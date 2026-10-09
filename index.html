@@ -11,7 +11,7 @@ main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 68px)}
 #map{height:100%}#side{overflow:auto;background:#fff;border-left:1px solid #d5d9de;padding:10px}
 .f{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}.f button{border:1px solid #9aa4ae;background:#fff;border-radius:14px;padding:4px 10px;cursor:pointer}.f button.on{background:#1b2733;color:#fff}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}.stat{background:#f2f4f6;border-radius:8px;padding:7px;text-align:center}.stat b{display:block;font-size:18px}
-.ev{border-top:1px solid #e3e6e9;padding:9px 0;cursor:pointer}.ev p{margin:3px 0}.src{font-size:12px;color:#5a6672}.src a{margin-right:7px}
+.ev{border-top:1px solid #e3e6e9;padding:9px 0;cursor:pointer}.ev p{margin:3px 0}.src{font-size:12px;color:#5a6672}.src a{margin-right:7px}.article-row{padding:5px 7px;margin:5px 0;border-radius:7px;background:#f7f8fa;font-size:12px}.cred-strong{border-left:3px solid #1f7a3d}.cred-moderate{border-left:3px solid #b7791f}.cred-limited{border-left:3px solid #b42318}.cred-btn{font-size:12px}.why{display:none;margin-top:3px;color:#5a6672}.article-row.open .why{display:block}
 .g{font-size:11px;font-weight:700;padding:2px 7px;border-radius:10px;color:#fff;margin-right:6px}
 .CONFIRMED{background:#1f7a3d}.STRONGLY-CORROBORATED{background:#18794e}.CORROBORATED{background:#2563a6}.REPORTED{background:#b7791f}.DEVELOPING{background:#9a6700}.CLAIM{background:#b42318}
 .badge{font-size:11px;padding:2px 6px;border-radius:8px;background:#eef1f4;margin-left:4px}.early{background:#fff8e1;border:1px solid #f0d78c;border-radius:8px;padding:8px;margin-bottom:9px}.early b{display:block}
@@ -28,13 +28,13 @@ main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 68px)}
 const COL={CONFIRMED:"#1f7a3d","STRONGLY CORROBORATED":"#18794e",CORROBORATED:"#2563a6",REPORTED:"#b7791f",DEVELOPING:"#9a6700",CLAIM:"#b42318"};
 const map=L.map("map").setView([13,39.5],6);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:12,attribution:"© OpenStreetMap"}).addTo(map);
-let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},layer=L.layerGroup().addTo(map),markers={};
+let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},credOn={STRONG:1,MODERATE:1,LIMITED:1},layer=L.layerGroup().addTo(map),markers={};
 let baseMapLayer=null;
 const baseMapStyle={color:"#5b6470",weight:1.5,fillColor:"#9aa4ae",fillOpacity:.28,opacity:.95};
 const baseMapPointStyle={radius:5,color:"#46515c",fillColor:"#fff",fillOpacity:.9,weight:1.5};
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
 function sourceLabel(s){if(s.platform==="reddit")return "Reddit";if(s.platform==="gdelt")return "GDELT";return s.outlet||"Source"}
-function visible(e){return !!gradeOn[e.grade]}
+function visible(e){return !!gradeOn[e.grade] && (e.sources||[]).some(s=>credOn[s.credibility_label||"LIMITED"])}
 function addBaseMap(data){
   if(baseMapLayer){map.removeLayer(baseMapLayer);}
   baseMapLayer=L.geoJSON(data,{
@@ -89,7 +89,17 @@ function draw(){
   const translated=(e.translations||[]).map(x=>x.english_translation).filter(Boolean)[0];
   if(translated && translated!==e.summary){const t=el("p","",translated);t.style.marginTop="6px";t.style.fontWeight="600";d.append(t);}
   const s=el("div","src");
-  (e.sources||[]).slice(0,6).forEach(x=>{const a=el("a","",sourceLabel(x));a.href=x.url;a.target="_blank";a.rel="noopener";s.append(a)});d.append(s);
+  (e.sources||[]).slice(0,8).forEach(x=>{
+    const row=el("div","article-row cred-"+String(x.credibility_label||"LIMITED").toLowerCase());
+    const a=el("a","",sourceLabel(x));a.href=x.url;a.target="_blank";a.rel="noopener";
+    const cs=el("span","badge",(x.credibility_score??0)+"/100 · "+(x.credibility_label||"LIMITED"));
+    const headline=el("div","",x.title||"Open original article");
+    headline.style.marginTop="3px";
+    const why=el("div","why",x.credibility_explanation||"Score based on publisher profile and available article-level evidence.");
+    row.append(a,cs,headline,why);
+    row.onclick=(ev)=>{if(ev.target.tagName!=="A"){ev.stopPropagation();row.classList.toggle("open")}};
+    s.append(row);
+  });d.append(s);
   d.onclick=()=>{if(markers[e.key]&&e.lat!=null){map.setView([e.lat,e.lon],8);markers[e.key].openPopup()}};list.append(d);
  });
 }
@@ -97,6 +107,9 @@ function button(parent,label,key,store){const b=el("button","on",label);b.onclic
 function renderControls(){
  const gf=document.getElementById("gradeFilters");gf.replaceChildren();
  ["CONFIRMED","STRONGLY CORROBORATED","CORROBORATED","REPORTED","DEVELOPING","CLAIM"].forEach(k=>button(gf,k,k,gradeOn));
+ const cf=document.getElementById("sourceFilters");cf.replaceChildren();
+ cf.append(el("b","","Article credibility:"));
+ ["STRONG","MODERATE","LIMITED"].forEach(k=>{const b=el("button","on cred-btn",k);b.onclick=()=>{credOn[k]=!credOn[k];b.classList.toggle("on");draw()};cf.append(b)});
 }
 function renderStats(){
  const stats=document.getElementById("stats");stats.replaceChildren();
