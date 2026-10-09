@@ -1,5 +1,5 @@
 """Experimental, transparent, non-operational regional conflict outlook."""
-import json, math, os, datetime as dt
+import json, math, os, re, datetime as dt
 from collections import defaultdict
 EVENTS="data/events.json"; OUT="data/forecasts.json"; HISTORY="data/forecast_history.json"
 LOOKBACK_DAYS=21; HORIZON_DAYS=7; HALF_LIFE_DAYS=4.0
@@ -34,11 +34,35 @@ def weight(e,today):
     return decay*KIND.get(e.get("kind","other"),.4)*(.35+.35*GRADE.get(e.get("grade","REPORTED"),.55)+.30*quality(e))*(.55+.45*conf)
 def region_for(e):
     return (e.get("region") or "").strip() or PLACE_REGION.get((e.get("place") or "").strip())
+def event_text(e):
+    text=str(e.get("summary") or "").lower()
+    text=re.sub(r"\s[-|–—]\s[^-|–—]{1,45}$","",text)
+    return set(re.findall(r"[a-z0-9]{3,}",text))
+def deduplicate(rows):
+    """Collapse near-identical event records before regional scoring."""
+    kept=[]; duplicate_count=0; tokens=[]
+    for e,w in sorted(rows,key=lambda pair:pair[1],reverse=True):
+        words=event_text(e); d=date_of(e.get("date")) or date_of(e.get("last_seen"))
+        region=region_for(e) or (e.get("place") or "").strip() or "unlocated"
+        duplicate=False
+        for prior,prior_w,prior_words,prior_date,prior_region in tokens:
+            if region!=prior_region or e.get("kind","other")!=prior.get("kind","other") or not words or not prior_words:
+                continue
+            if d and prior_date and abs((d-prior_date).days)>2: continue
+            overlap=len(words & prior_words)/max(1,len(words | prior_words))
+            if overlap>=0.80:
+                duplicate=True; break
+        if duplicate:
+            duplicate_count+=1
+        else:
+            kept.append((e,w));tokens.append((e,w,words,d,region))
+    return kept,duplicate_count
 def main():
     today=dt.datetime.now(dt.timezone.utc).date()
     with open(EVENTS,encoding="utf-8") as f: db=json.load(f)
     recent=[(e,weight(e,today)) for e in db.get("events",[])]
     recent=[(e,w) for e,w in recent if w>0]
+    recent,duplicate_records_ignored=deduplicate(recent)
     grouped=defaultdict(list)
     for e,w in recent:
         r=region_for(e)
@@ -82,7 +106,7 @@ def main():
       "method":"experimental_heuristic_v1","status":"EXPERIMENTAL — NOT CALIBRATED",
       "disclaimer":"Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
       "summary":{"recent_event_records":len(recent),"regions_with_located_evidence":len(regions),"control_change_records":sum(1 for e,_ in recent if e.get("kind")=="control_change"),
-        "contested_or_early_records":sum(1 for e,_ in recent if e.get("grade") in ("CLAIM","DEVELOPING","REPORTED")),"overall_evidence_uncertainty":round(100*min(1,early))},
+        "contested_or_early_records":sum(1 for e,_ in recent if e.get("grade") in ("CLAIM","DEVELOPING","REPORTED")),"duplicate_records_ignored":duplicate_records_ignored,"overall_evidence_uncertainty":round(100*min(1,early))},
       "scenarios":scenarios,"regions":regions}
     os.makedirs("data",exist_ok=True)
     with open(OUT,"w",encoding="utf-8") as f:json.dump(payload,f,ensure_ascii=False,indent=2)
