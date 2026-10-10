@@ -4436,7 +4436,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 09 Oct 2026 16:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-10T00:54:01.867000+00:00"
  },
  {
   "title": "Ethiopia Accuses Eritrea of Troop Incursion Into Tigray - اسلام تايمز",
@@ -4447,7 +4448,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 09 Oct 2026 21:54:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-10T00:54:01.867000+00:00"
  },
  {
   "title": "Ethiopian police ask residents in Tigray regional capital to help restore order after rebel pullout - News-Press NOW",
@@ -4458,7 +4460,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 09 Oct 2026 11:21:44 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-10T00:54:01.867000+00:00"
  },
  {
   "title": "THE TIGRAY PEOPLE’S NAME, ASMARA’S GAME, CAIRO’S GAIN - Fana Media Corporation S.C",
@@ -4469,7 +4472,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 09 Oct 2026 16:44:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-10T00:54:01.867000+00:00"
  },
  {
   "title": "Why fighting in Tigray matters far beyond northern Ethiopia | DW News - Modern Ghana",
@@ -4480,7 +4484,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 09 Oct 2026 18:23:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-10T00:54:01.867000+00:00"
  },
  {
   "title": "A CURSE ON ETHIOPIA, A TRAGEDY FOR THE TIGRAY PEOPLE, A CANKER EATING AT THE HORN OF AFRICA - Fana Media Corporation S.C",
@@ -4491,7 +4496,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 09 Oct 2026 17:09:25 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-10T00:54:01.867000+00:00"
  },
  {
   "title": "From Peace Prize to Proxy War: How Ethiopia’s Old Enemies Changed Sides - The Times of Israel",
@@ -4502,7 +4508,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 09 Oct 2026 22:33:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-10T00:54:01.867000+00:00"
  },
  {
   "title": "Ethiopian police ask residents in Tigray regional capital to help restore order after rebel pullout - Manistee News Advocate",
@@ -4513,6 +4520,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 09 Oct 2026 07:48:08 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-10T00:54:01.867000+00:00"
  }
 ]

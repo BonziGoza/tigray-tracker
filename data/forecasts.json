@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-09T20:59:14.405399+00:00",
+  "generated_at": "2026-10-10T00:54:02.016941+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 237,
-    "regions_with_located_evidence": 5,
+    "recent_event_records": 242,
+    "regions_with_located_evidence": 6,
     "control_change_records": 5,
     "contested_or_early_records": 0,
-    "reported_records": 237,
-    "duplicate_records_ignored": 116,
+    "reported_records": 242,
+    "duplicate_records_ignored": 118,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -22,23 +22,23 @@
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 47,
+      "weight": 46,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 9,
+      "weight": 10,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 63,
+      "risk_index": 56,
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 19,
-      "weighted_signal": 3.22,
+      "weighted_signal": 2.71,
       "control_change_signal": 0,
       "explanation": "19 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -83,11 +83,11 @@
     },
     {
       "region": "Addis Ababa",
-      "risk_index": 37,
+      "risk_index": 32,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 3,
-      "weighted_signal": 0.9,
+      "weighted_signal": 0.75,
       "control_change_signal": 0,
       "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -128,11 +128,11 @@
     },
     {
       "region": "Northern Tigray",
-      "risk_index": 34,
+      "risk_index": 29,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 4,
-      "weighted_signal": 0.91,
+      "weighted_signal": 0.76,
       "control_change_signal": 0,
       "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -177,11 +177,11 @@
     },
     {
       "region": "Eastern Tigray",
-      "risk_index": 23,
+      "risk_index": 20,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 4,
-      "weighted_signal": 0.73,
+      "weighted_signal": 0.61,
       "control_change_signal": 0,
       "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -221,12 +221,35 @@
       ]
     },
     {
+      "region": "Eritrea",
+      "risk_index": 2,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 1,
+      "weighted_signal": 0.17,
+      "control_change_signal": 0,
+      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-10",
+          "title": "THE TIGRAY PEOPLE’S NAME, ASMARA’S GAME, CAIRO’S GAIN - Fana Media Corporation S.C",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNa0hrZ2VLVGpacXY3bF9pcEF0M3NPX1h1aHBOZjMwcVZSMnRqaXBQWjk4R2gyWkNtUlFPeHFaMlN1WFhZdFZwNHoxNDc3QTA1LW83N1JYaFNPa2FTTnVNRnZXR2JseUVwc2RpU2Z2WFVuU2xrdmZ0bU44aXd1anVCVnBWVDhRWGs?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "region": "Northwestern Tigray",
       "risk_index": 2,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 1,
-      "weighted_signal": 0.13,
+      "weighted_signal": 0.11,
       "control_change_signal": 0,
       "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
