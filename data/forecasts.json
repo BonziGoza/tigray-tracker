@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-10T13:45:26.492804+00:00",
+  "generated_at": "2026-10-10T18:38:28.447291+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 262,
+    "recent_event_records": 270,
     "regions_with_located_evidence": 6,
-    "control_change_records": 7,
+    "control_change_records": 8,
     "contested_or_early_records": 0,
-    "reported_records": 262,
-    "duplicate_records_ignored": 124,
+    "reported_records": 270,
+    "duplicate_records_ignored": 126,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -22,25 +22,25 @@
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 46,
+      "weight": 47,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 10,
+      "weight": 9,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 60,
+      "risk_index": 61,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 22,
-      "weighted_signal": 3.26,
+      "event_count": 23,
+      "weighted_signal": 3.41,
       "control_change_signal": 0,
-      "explanation": "22 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "23 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-07",
@@ -83,13 +83,13 @@
     },
     {
       "region": "Eastern Tigray",
-      "risk_index": 34,
-      "level": "WATCH",
+      "risk_index": 47,
+      "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 5,
-      "weighted_signal": 0.96,
-      "control_change_signal": 0.35,
-      "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "event_count": 7,
+      "weighted_signal": 1.46,
+      "control_change_signal": 0.69,
+      "explanation": "7 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-10",
@@ -103,6 +103,17 @@
           ]
         },
         {
+          "date": "2026-10-10",
+          "title": "Celebrations in Ethiopian city after reported Eritrean ‘incursion’",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/celebrations-in-ethiopian-city-after-reported-eritrean?traffic_source=rss"
+            }
+          ]
+        },
+        {
           "date": "2026-10-08",
           "title": "Ethiopian drones strike Eritrean forces near Adigrat - Africanews English",
           "grade": "REPORTED",
@@ -112,30 +123,30 @@
               "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQT3Buei1jV1ZRVkppZ09fcnF4R3QtZTVTZ09YUVFNT25SWW5sbzg2SjJkU191WWt2VTlrd2lNc1NzYUtxOTVFZHM4REJkd2xLTGEydGJtSXlJVk13U1pUSW13Y0psN1V1ZjI2ZHRzNlhJVHpHSVhUQmlNcmZYYWEydm1TX0h1Uk82NzU3VGhYNkd2TVFmSEE?oc=5"
             }
           ]
-        },
-        {
-          "date": "2026-10-08",
-          "title": "EEPA reports on Eritrean forces seen in Adigrat, Tigray - IDN-InDepthNews",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "IDN-InDepthNews",
-              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWk5GWENVWW9TX1F4ZXlEZWh2a1NJUHB1NkliUzcxaVdTc0ExWFlpNDRnZzlBMlVfclU1amlLVktwTnRfMXMzUkpDSkZaQlJzUjN0QWlqT2FDVEdPamVXaEgzNmFDQ2d0amlwa0l2QmEtSlJnMU1VdDhMQkNSbEpsSjNDWEJ0QQ?oc=5"
-            }
-          ]
         }
       ]
     },
     {
       "region": "Addis Ababa",
-      "risk_index": 32,
-      "level": "WATCH",
+      "risk_index": 45,
+      "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 3,
-      "weighted_signal": 0.75,
+      "event_count": 4,
+      "weighted_signal": 1.14,
       "control_change_signal": 0,
-      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-10",
+          "title": "Eritrea urges UN to intervene in standoff with Ethiopia",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/10/eritrea-urges-un-to-intervene-in-standoff-with?traffic_source=rss"
+            }
+          ]
+        },
         {
           "date": "2026-10-09",
           "title": "Will Ethiopia’s neighbours intervene as Tigray war escalates?",
@@ -155,17 +166,6 @@
             {
               "outlet": "aljazeera.com",
               "url": "https://www.aljazeera.com/news/2026/10/9/ethiopia-and-eritrea-accuse-one-another-of-launching-war?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-08",
-          "title": "Security Alert: U.S. Embassy Addis Ababa, Ethiopia (October 7, 2026) - U.S. Embassy in Ethiopia (.gov)",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "U.S. Embassy in Ethiopia (.gov)",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQREJSOERMZHJ2c0t6Q21GNUtlOUdZQkdDZmxNMG9NY1gxTDh4U3NHM3M1cnNKWTdlS3M5eW5kM3QxQklUNkFqMF9xSDhhRnkxSVd3YUtFU1dqMzBReklOTjBSLTlFaE5RLWJoRTliUDg5SjJMbnd0cnkzR2RQRV9JWXptM0x4Ync2UFZ5X3ZiQkRRZw?oc=5"
             }
           ]
         }
