@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-10T07:11:13.055420+00:00",
+  "generated_at": "2026-10-10T13:45:26.492804+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 246,
+    "recent_event_records": 262,
     "regions_with_located_evidence": 6,
-    "control_change_records": 5,
+    "control_change_records": 7,
     "contested_or_early_records": 0,
-    "reported_records": 246,
-    "duplicate_records_ignored": 120,
+    "reported_records": 262,
+    "duplicate_records_ignored": 124,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -34,13 +34,13 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 56,
+      "risk_index": 60,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 19,
-      "weighted_signal": 2.71,
+      "event_count": 22,
+      "weighted_signal": 3.26,
       "control_change_signal": 0,
-      "explanation": "19 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "22 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-07",
@@ -76,6 +76,51 @@
             {
               "outlet": "allAfrica.com",
               "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB4TFltR3JoNlFPNVRaMERVeTQ0dENaLXVqdDVnUlkyd05iOXVqRlBIeTJrc0tCOGctTl84NU9WQ1ktdXVfMzdtUG1rNktKNTFqSUR5YWl0M2VpeWc?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Eastern Tigray",
+      "risk_index": 34,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 5,
+      "weighted_signal": 0.96,
+      "control_change_signal": 0.35,
+      "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-10",
+          "title": "ACLED: Eritrean troops withdrew from Adigrat in Ethiopia — Jerusalem Post - UA.NEWS",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "UA.NEWS",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeVNUVktPVUZtNmwtTmlMc3E0aWpOMUE4VjRWN21qOVVjNG5RX3ZqcW5zTUNEQjc3dmt6LXpyYVFCX19IYzVNeVRiUnNFQTdMRVNCUkNGZGVXd2pjaFFUa1ZNNHNicWtHSllvcFN4Sk4xQWJfcjV3WDRFOGVqaUtDczVNZHVib1l2Vjh4TE9kNGtJZkNHaXlrUUZDNA?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-08",
+          "title": "Ethiopian drones strike Eritrean forces near Adigrat - Africanews English",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Africanews English",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQT3Buei1jV1ZRVkppZ09fcnF4R3QtZTVTZ09YUVFNT25SWW5sbzg2SjJkU191WWt2VTlrd2lNc1NzYUtxOTVFZHM4REJkd2xLTGEydGJtSXlJVk13U1pUSW13Y0psN1V1ZjI2ZHRzNlhJVHpHSVhUQmlNcmZYYWEydm1TX0h1Uk82NzU3VGhYNkd2TVFmSEE?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-08",
+          "title": "EEPA reports on Eritrean forces seen in Adigrat, Tigray - IDN-InDepthNews",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "IDN-InDepthNews",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWk5GWENVWW9TX1F4ZXlEZWh2a1NJUHB1NkliUzcxaVdTc0ExWFlpNDRnZzlBMlVfclU1amlLVktwTnRfMXMzUkpDSkZaQlJzUjN0QWlqT2FDVEdPamVXaEgzNmFDQ2d0amlwa0l2QmEtSlJnMU1VdDhMQkNSbEpsSjNDWEJ0QQ?oc=5"
             }
           ]
         }
@@ -176,51 +221,6 @@
       ]
     },
     {
-      "region": "Eastern Tigray",
-      "risk_index": 20,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 4,
-      "weighted_signal": 0.61,
-      "control_change_signal": 0,
-      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-10-08",
-          "title": "Ethiopian drones strike Eritrean forces near Adigrat - Africanews English",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Africanews English",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQT3Buei1jV1ZRVkppZ09fcnF4R3QtZTVTZ09YUVFNT25SWW5sbzg2SjJkU191WWt2VTlrd2lNc1NzYUtxOTVFZHM4REJkd2xLTGEydGJtSXlJVk13U1pUSW13Y0psN1V1ZjI2ZHRzNlhJVHpHSVhUQmlNcmZYYWEydm1TX0h1Uk82NzU3VGhYNkd2TVFmSEE?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-08",
-          "title": "EEPA reports on Eritrean forces seen in Adigrat, Tigray - IDN-InDepthNews",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "IDN-InDepthNews",
-              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWk5GWENVWW9TX1F4ZXlEZWh2a1NJUHB1NkliUzcxaVdTc0ExWFlpNDRnZzlBMlVfclU1amlLVktwTnRfMXMzUkpDSkZaQlJzUjN0QWlqT2FDVEdPamVXaEgzNmFDQ2d0amlwa0l2QmEtSlJnMU1VdDhMQkNSbEpsSjNDWEJ0QQ?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-07",
-          "title": "Residents Report Eritrean Troops Movement in Adigrat as Federal Forces Advance in Tigray - Borkena",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Borkena",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQVJuZGR3emhBNVdaaW1jNXoxdjJFeEl5R3JzbEJLLWVrVEN1amR6QWN0VVNGOFg5UTJtTVJSQy1QeWVpUUVDelJfRVpxY0ZFUVBkcGRxeU9XTUJBMFBaS2tacUVZYzBndUVHM0d5dF9ZZWhUbTBKWC1UdnVRNmxFVE1uLXZrb0lCNng0QkJsSGFMRFV3WVlLRkNwUU1XWlZobnYzNnY5bVlmeVkyTHc?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "region": "Eritrea",
       "risk_index": 2,
       "level": "WATCH",
@@ -238,6 +238,10 @@
             {
               "outlet": "Fana Media Corporation S.C",
               "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNa0hrZ2VLVGpacXY3bF9pcEF0M3NPX1h1aHBOZjMwcVZSMnRqaXBQWjk4R2gyWkNtUlFPeHFaMlN1WFhZdFZwNHoxNDc3QTA1LW83N1JYaFNPa2FTTnVNRnZXR2JseUVwc2RpU2Z2WFVuU2xrdmZ0bU44aXd1anVCVnBWVDhRWGs?oc=5"
+            },
+            {
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUXE1d05EbVExV0pMeDlSbjRzQjA0YXFSd3RLX0hhRTBZeUoycXZPRi1GbU9vdFNYY0ZLSW14OTd5UHBOQ1lHXzI5cXVNVWlJUUdwTjZGVkZGMGJ6VHFPYXNOell6eUlqb3FISTc1WmF3Y1BvUjV4dUYwLUphVThvTndrZjRCVmtlNk1SMA?oc=5"
             }
           ]
         }
