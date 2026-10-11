@@ -5396,7 +5396,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 10 Oct 2026 20:48:55 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-11T01:56:21.838592+00:00"
  },
  {
   "title": "Ethiopia tells UN it is acting in self-defense against Eritrea - Santa Fe New Mexican",
@@ -5407,7 +5408,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 10 Oct 2026 20:48:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-11T01:56:21.838592+00:00"
  },
  {
   "title": "Eritrea urges UN deterrence measures against Ethiopia - DW.com",
@@ -5418,7 +5420,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 10 Oct 2026 18:35:57 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-11T01:56:21.838592+00:00"
  },
  {
   "title": "Eritrea urges UN Security Council to act against Ethiopia over alleged declaration of war - A News",
@@ -5429,7 +5432,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 10 Oct 2026 16:29:40 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-11T01:56:21.838592+00:00"
  },
  {
   "title": "Ethiopian forces regain control of border city after reported Eritrean incursion - Arab News PK",
@@ -5440,7 +5444,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 10 Oct 2026 15:11:50 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-11T01:56:21.838592+00:00"
  },
  {
   "title": "Four African leaders issue joint declaration as Ethiopia war escalates - Hiiraan Online",
@@ -5451,7 +5456,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 10 Oct 2026 21:49:20 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-11T01:56:21.838592+00:00"
  },
  {
   "title": "Eritrea calls on the Security Council to condemn what it describes as Ethiopia's \"declaration of war\". - صوت الإمارات",
@@ -5462,7 +5468,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 10 Oct 2026 15:37:19 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-11T01:56:21.838592+00:00"
  },
  {
   "title": "Ethiopia Tigray Fighting - The Herald Journal",
@@ -5473,7 +5480,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 09 Oct 2026 07:19:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-11T01:56:21.838592+00:00"
  },
  {
   "title": "Eritrea urges UN to act against Ethiopia's 'declaration of war' - Bangladesh Sangbad Sangstha (BSS)",
@@ -5484,6 +5492,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 10 Oct 2026 15:23:47 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-11T01:56:21.838592+00:00"
  }
 ]
