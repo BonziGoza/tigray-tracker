@@ -472,7 +472,7 @@ def article_credibility_explanation(source, related_sources=None):
     others=[x for x in (related_sources or []) if x is not source and x.get("url")!=source.get("url") and x.get("source_type")=="news"]
     unique=len(independent_sources([source]+others))
     parts.append(f"Independent reports counted after duplicate filtering: {unique}; corroboration contributes up to 20 points.")
-    if not evidence_available and profile.get("publisher_score",0)>=65:
+    if not evidence_available and (profile.get("publisher_score") or 0)>=65:
         parts.append("Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed.")
     parts.append(f"Article credibility score: {score}/100.")
     return " ".join(parts)
