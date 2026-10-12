@@ -15,7 +15,7 @@ main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 68px)}
 .g{font-size:11px;font-weight:700;padding:2px 7px;border-radius:10px;color:#fff;margin-right:6px}
 .CONFIRMED{background:#1f7a3d}.STRONGLY-CORROBORATED{background:#18794e}.CORROBORATED{background:#2563a6}.REPORTED{background:#b7791f}.DEVELOPING{background:#9a6700}.CLAIM{background:#b42318}
 .badge{font-size:11px;padding:2px 6px;border-radius:8px;background:#eef1f4;margin-left:4px}.early{background:#fff8e1;border:1px solid #f0d78c;border-radius:8px;padding:8px;margin-bottom:9px}.view-tabs{border-bottom:1px solid #d5d9de;padding-bottom:8px}.experimental{font-size:9px;background:#fff1c2;color:#7a4c00;border-radius:4px;padding:2px 4px}.forecast-card{border:1px solid #dfe3e8;border-radius:9px;padding:10px;margin:8px 0;background:#fff}.forecast-card h4{margin:0 0 5px;font-size:14px}.forecast-card p{margin:5px 0;font-size:12px;color:#4b5563}.weight{font-size:22px;font-weight:750}.bar{height:7px;background:#e8edf1;border-radius:8px;overflow:hidden;margin:7px 0}.bar span{display:block;height:100%;background:#647b8f}.risk-head{display:flex;justify-content:space-between;gap:8px;align-items:center}.risk-index{font-size:18px;font-weight:750}.risk-ELEVATED{color:#b42318}.risk-GUARDED{color:#9a6700}.risk-WATCH{color:#1f7a3d}.method{font-size:12px;border-top:1px solid #dfe3e8;margin-top:12px;padding-top:10px;color:#4b5563}.early b{display:block}
-@media(max-width:760px){main{grid-template-columns:1fr;grid-template-rows:50vh auto;height:auto}}
+.map-legend{background:rgba(5,16,29,.94);color:#eaf3ff;border:1px solid #34536f;border-radius:10px;padding:10px 12px;box-shadow:0 8px 25px #0006;font:12px/1.35 system-ui,sans-serif;min-width:210px}.map-legend strong{display:block;letter-spacing:1px;font-size:10px;color:#9bb0c5;margin-bottom:7px}.map-legend>div{display:flex;gap:8px;align-items:center;margin:6px 0}.map-legend small{color:#ffcf9e}.map-legend .legend-line{display:inline-block;flex:0 0 24px;height:7px;border:1px solid #ffffff66;border-radius:2px}@media(max-width:760px){main{grid-template-columns:1fr;grid-template-rows:50vh auto;height:auto}}
 </style></head>
 <body>
 <header><h1>Tigray OSINT Tracker</h1><div id="up">Loading…</div></header>
@@ -29,6 +29,14 @@ const map=L.map("map").setView([13,39.5],6);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:12,attribution:"© OpenStreetMap"}).addTo(map);
 let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},credOn={STRONG:1,MODERATE:1,LIMITED:1},layer=L.layerGroup().addTo(map),markers={};
 let baseMapLayer=null, forecastData=null;
+const mapLegend=L.control({position:"bottomleft"});
+mapLegend.onAdd=function(){
+  const box=L.DomUtil.create("div","map-legend");
+  box.innerHTML="<strong>MAP LAYERS</strong><div><span class='legend-line' style='background:#ff5252'></span><span><b>TPLF/TDF</b><br><small>Archived outline · date unverified</small></span></div><div><span class='legend-line' style='background:#9aa4ae'></span><span><b>Reference geography</b><br><small>Roads and boundaries</small></span></div>";
+  L.DomEvent.disableClickPropagation(box);
+  return box;
+};
+mapLegend.addTo(map);
 const baseMapStyle={color:"#5b6470",weight:1.5,fillColor:"#9aa4ae",fillOpacity:.28,opacity:.95};
 const baseMapPointStyle={radius:5,color:"#46515c",fillColor:"#fff",fillOpacity:.9,weight:1.5};
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
