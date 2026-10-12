@@ -61,7 +61,9 @@ function addBaseMap(data){
       const p=feature.properties||{};
       const title=p.name||p.folder||"Map feature";
       if(title||p.description){
-        layer.bindPopup("<b>"+title+"</b>"+(p.description?"<br><small>"+p.description+"</small>":""));
+        const archived = p.archived || /archived map outline/i.test(title);
+        const warning = archived ? "<br><b style='color:#b42318'>ARCHIVED / UNVERIFIED — NOT A CURRENT FRONT LINE</b>" : "";
+        layer.bindPopup("<b>"+title+"</b>"+warning+(p.description?"<br><small>"+p.description+"</small>":""));
       }
     }
   }).addTo(map);
