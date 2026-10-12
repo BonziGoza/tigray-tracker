@@ -268,40 +268,63 @@ def event_key(item,place,date):
     return f"{place.lower().replace(' ','-') or 'unknown'}-{date}-"+hashlib.sha1(" ".join(words).encode()).hexdigest()[:8]
 
 
-SOURCE_PROFILES = [
-    ("reuters", "A", 45, "Reuters"),
-    ("associated press", "A", 44, "Associated Press"),
-    ("ap news", "A", 44, "AP News"),
-    ("apnews", "A", 44, "AP News"),
-    ("afp", "A", 42, "AFP"),
-    ("bbc", "A", 40, "BBC"),
-    ("cnn", "A", 38, "CNN"),
-    ("al jazeera", "A", 37, "Al Jazeera"),
-    ("france 24", "A", 36, "France 24"),
-    ("dw", "A", 36, "DW"),
-    ("new york times", "A", 35, "The New York Times"),
-    ("the guardian", "A", 34, "The Guardian"),
-    ("africanews", "B", 31, "Africanews"),
-    ("addis standard", "B", 30, "Addis Standard"),
-    ("allafrica", "B", 29, "AllAfrica"),
-    ("semafor", "B", 29, "Semafor"),
-    ("al-monitor", "B", 29, "Al-Monitor"),
-    ("foreign policy", "B", 29, "Foreign Policy"),
-    ("voa", "B", 29, "VOA"),
-    ("borkena", "B", 27, "Borkena"),
-    ("fana", "B", 26, "Fana"),
-    ("tigrai television", "B", 26, "Tigrai Television"),
-    ("tikvah", "B", 25, "TIKVAH"),
-    ("tikvahethiopia", "B", 25, "TIKVAH Ethiopia"),
-    ("axumawian", "C", 22, "Axumawian"),
-]
+REGISTRY_PATH="data/publisher_registry.json"
+
+def _normalize_publisher(value):
+    value=str(value or "").lower().strip()
+    value=re.sub(r"^https?://","",value)
+    value=re.sub(r"^www\\.","",value)
+    value=re.sub(r"[^a-z0-9]+"," ",value)
+    return re.sub(r"\\s+"," ",value).strip()
+
+def load_publisher_registry():
+    try:
+        with open(REGISTRY_PATH,encoding="utf-8") as f:
+            data=json.load(f)
+        rows=data.get("publishers",[])
+        return sorted((p for p in rows if isinstance(p,dict)),key=lambda p:max(
+            [len(_normalize_publisher(x)) for x in [p.get("name","")]+p.get("aliases",[])] or [0]),reverse=True)
+    except (OSError,ValueError,TypeError) as ex:
+        print("publisher registry unavailable; using neutral fallback:",type(ex).__name__)
+        return []
+
+PUBLISHER_REGISTRY=load_publisher_registry()
 
 def source_profile(source):
-    outlet=(source.get("outlet") or "").lower().strip()
-    for needle,tier,base,label in sorted(SOURCE_PROFILES,key=lambda x:len(x[0]),reverse=True):
-        if needle in outlet:
-            return {"tier":tier,"base":base,"label":label}
-    return {"tier":"C","base":18,"label":source.get("outlet") or "Unknown source"}
+    outlet=str(source.get("outlet") or source.get("publisher") or "").strip()
+    normalized=_normalize_publisher(outlet)
+    url=str(source.get("url") or "")
+    try:
+        host=_normalize_publisher(urlparse(url).hostname or "")
+    except Exception:
+        host=""
+    match=None
+    # Exact names/aliases first, then longer whole-phrase aliases. This avoids
+    # accidental matches such as "AP" inside unrelated outlet names.
+    for p in PUBLISHER_REGISTRY:
+        names=[p.get("name","")]+list(p.get("aliases",[]) or [])
+        aliases=[_normalize_publisher(x) for x in names if _normalize_publisher(x)]
+        if normalized and normalized in aliases:
+            match=p; break
+    if match is None:
+        for p in PUBLISHER_REGISTRY:
+            names=[p.get("name","")]+list(p.get("aliases",[]) or [])
+            aliases=sorted({_normalize_publisher(x) for x in names if len(_normalize_publisher(x))>=6},key=len,reverse=True)
+            if any(re.search(r"(^| )"+re.escape(alias)+r"( |$)",normalized) for alias in aliases if normalized):
+                match=p; break
+            if host and any(host==alias or host.endswith(" "+alias) for alias in aliases):
+                match=p; break
+    if match:
+        score=max(0,min(100,int(match.get("publisher_score",50))))
+        tier="A" if score>=80 else ("B" if score>=65 else "C")
+        base=round(score*0.45)
+        return {"tier":tier,"base":base,"label":match.get("name") or outlet or "Unknown source",
+                "publisher_score":score,"registry_status":match.get("status","provisional_manual_assessment"),
+                "registry_confidence":match.get("confidence","low"),"source_role":match.get("source_role","news_org"),
+                "registry_notes":match.get("notes","")}
+    return {"tier":"U","base":18,"label":outlet or "Unknown source","publisher_score":None,
+            "registry_status":"unassessed","registry_confidence":"none","source_role":"unknown",
+            "registry_notes":"No reviewed publisher profile matched. Unassessed does not mean unreliable."}
 
 def source_quality(source):
     return source_profile(source)["base"]
@@ -364,19 +387,30 @@ def reporting_quality(source):
     return min(25,score)
 
 def article_credibility(source, related_sources=None):
-    """Article-level score: publisher profile + article evidence + independent corroboration."""
+    """Publisher registry + article evidence + deduplicated corroboration, 0-100."""
     profile=source_profile(source)
-    publisher=round(profile["base"]/45*35)
-    reporting=round(reporting_quality(source)/25*45)
-    evidence=_source_assessment(source)
-    evidence_bonus=0
-    if evidence["contested"]: evidence_bonus-=8
-    if evidence["party"] and not evidence["attributed"]: evidence_bonus-=8
-    if evidence["attributed"] and not evidence["named"] and not evidence["official"]:
-        evidence_bonus-=5
-    if evidence["direct"]: evidence_bonus+=4
-    if evidence["documentary"]: evidence_bonus+=5
-    if evidence["visual"]: evidence_bonus+=2
+    # Publisher-level score is a baseline, not a verdict on this article.
+    publisher_score=profile.get("publisher_score")
+    if publisher_score is None:
+        publisher_score=50  # neutral until the publisher is assessed
+    publisher_component=round(publisher_score*0.30)
+
+    evidence_obj=source.get("evidence")
+    evidence_available=isinstance(evidence_obj,dict) and any(
+        key in evidence_obj for key in (
+            "named_sources","anonymous_sources","direct_observation","official_sources",
+            "documentary_evidence","visual_evidence","attributed_claim","source_is_party","contested"
+        )
+    )
+    # Missing extraction is not treated as proof of bad sourcing. Once an article
+    # has actually been assessed, its reported evidence quality can move the score
+    # substantially up or down.
+    reporting_component=round((reporting_quality(source)/25*100 if evidence_available else 50)*0.50)
+    evidence=_source_assessment(source) if evidence_available else {
+        "named":0,"anonymous":0,"direct":False,"official":0,"documentary":False,
+        "visual":False,"attributed":False,"party":False,"contested":False
+    }
+
     others=[]
     for other in (related_sources or []):
         if other is source or other.get("url")==source.get("url"):
@@ -385,13 +419,63 @@ def article_credibility(source, related_sources=None):
             others.append(other)
     independent=independent_sources([source]+others)
     independent_others=[x for x in independent if x is not source]
-    corroboration=min(20, len(independent_others)*7)
-    score=max(0,min(100,publisher+reporting+corroboration+evidence_bonus))
-    if len(independent)==1:
-        score=min(score,84)
-    if profile["tier"]=="C":
-        score=min(score,79)
-    return score
+    corroboration_component=min(20,len(independent_others)*7)
+
+    adjustment=0
+    if evidence_available:
+        if evidence["contested"]: adjustment-=10
+        if evidence["party"] and not evidence["attributed"]: adjustment-=12
+        if evidence["attributed"] and not evidence["named"] and not evidence["official"]:
+            adjustment-=6
+        if evidence["direct"]: adjustment+=4
+        if evidence["documentary"]: adjustment+=7
+        if evidence["visual"]: adjustment+=3
+
+    score=max(0,min(100,publisher_component+reporting_component+corroboration_component+adjustment))
+    # A publisher with an established baseline should not be penalized below
+    # 50 merely because extraction supplied no article-level evidence. Explicitly
+    # assessed weak/contested evidence can still outweigh the publisher baseline.
+    if not evidence_available and profile.get("publisher_score",0)>=65:
+        score=max(50,score)
+    return int(round(score))
+
+def article_credibility_label(score):
+    if score>=75: return "STRONG"
+    if score>=50: return "MODERATE"
+    return "LIMITED"
+
+def article_credibility_explanation(source, related_sources=None):
+    profile=source_profile(source)
+    evidence_obj=source.get("evidence")
+    evidence_available=isinstance(evidence_obj,dict) and any(
+        key in evidence_obj for key in (
+            "named_sources","anonymous_sources","direct_observation","official_sources",
+            "documentary_evidence","visual_evidence","attributed_claim","source_is_party","contested"
+        )
+    )
+    evidence=_source_assessment(source) if evidence_available else {}
+    score=article_credibility(source,related_sources)
+    parts=[f"Publisher registry: {profile['label']} ({profile['registry_status']}; confidence {profile['registry_confidence']})."]
+    if profile.get("publisher_score") is None:
+        parts.append("Publisher reputation is unassessed; neutral baseline used, not a negative judgment.")
+    else:
+        parts.append(f"Publisher reputation component: {profile['publisher_score']}/100 (30% of score).")
+    if evidence_available:
+        parts.append(f"Article-specific sourcing: {reporting_quality(source)}/25 (50% of score).")
+        if evidence.get("direct"): parts.append("Direct observation reported.")
+        if evidence.get("documentary"): parts.append("Documentary evidence cited.")
+        if evidence.get("visual"): parts.append("Visual evidence cited.")
+        if evidence.get("party"): parts.append("Claim originates from a conflict party.")
+        if evidence.get("contested"): parts.append("Materially disputed.")
+    else:
+        parts.append("Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty.")
+    others=[x for x in (related_sources or []) if x is not source and x.get("url")!=source.get("url") and x.get("source_type")=="news"]
+    unique=len(independent_sources([source]+others))
+    parts.append(f"Independent reports counted after duplicate filtering: {unique}; corroboration contributes up to 20 points.")
+    if not evidence_available and profile.get("publisher_score",0)>=65:
+        parts.append("Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed.")
+    parts.append(f"Article credibility score: {score}/100.")
+    return " ".join(parts)
 
 def article_credibility_label(score):
     if score>=75: return "STRONG"
