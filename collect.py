@@ -273,9 +273,9 @@ REGISTRY_PATH="data/publisher_registry.json"
 def _normalize_publisher(value):
     value=str(value or "").lower().strip()
     value=re.sub(r"^https?://","",value)
-    value=re.sub(r"^www\\.","",value)
+    value=re.sub(r"^www\.","",value)
     value=re.sub(r"[^a-z0-9]+"," ",value)
-    return re.sub(r"\\s+"," ",value).strip()
+    return re.sub(r"\s+"," ",value).strip()
 
 def load_publisher_registry():
     try:
