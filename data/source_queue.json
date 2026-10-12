@@ -5900,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 11 Oct 2026 14:57:27 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-12T00:34:47.010537+00:00"
  },
  {
   "title": "Eritrean troops in Ethiopia raise fears of a regional war - Inquirer.net",
@@ -5911,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 11 Oct 2026 07:23:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-12T00:34:47.010537+00:00"
  },
  {
   "title": "Getachew Reda Declares Tigray War Over, Says Federal Command Post to Remain for Six Months - https://kulu-media.com/",
@@ -5922,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 11 Oct 2026 20:19:17 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-12T00:34:47.010537+00:00"
  },
  {
   "title": "Ethiopia’s Oromo celebrate Irreecha and call for peace as federal forces enter Mekelle - Africanews English",
@@ -5933,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 10 Oct 2026 07:10:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-12T00:34:47.010537+00:00"
  },
  {
   "title": "Ethiopian official promises change in Tigray after troops retake regional capital - The Washington Post",
@@ -5944,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 11 Oct 2026 20:55:33 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-12T00:34:47.010537+00:00"
  },
  {
   "title": "Ethiopia intel chief visits flashpoint Tigray region - Modern Ghana",
@@ -5955,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 11 Oct 2026 19:10:44 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-12T00:34:47.010537+00:00"
  },
  {
   "title": "Ethiopian official promises change in Tigray after troops retake regional capital - Daily Gate City",
@@ -5966,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 11 Oct 2026 17:44:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-12T00:34:47.010537+00:00"
  },
  {
   "title": "Ethiopian Police Ask Residents in Tigray Regional Capital to Help Restore Order after Rebels Pullout - ASHARQ AL-AWSAT English",
@@ -5977,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 10 Oct 2026 07:26:43 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-12T00:34:47.010537+00:00"
  },
  {
   "title": "CCTV shows moment of deadly Houthi strike on Riyadh airport",
@@ -5988,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 11 Oct 2026 22:24:07 +0000",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-12T00:34:47.010537+00:00"
  }
 ]
