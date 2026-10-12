@@ -457,7 +457,7 @@ def article_credibility_explanation(source, related_sources=None):
     score=article_credibility(source,related_sources)
     parts=[f"Publisher registry: {profile['label']} ({profile['registry_status']}; confidence {profile['registry_confidence']})."]
     if profile.get("publisher_score") is None:
-        parts.append("Publisher reputation is unassessed; neutral baseline used, not a negative judgment.")
+        parts.append("Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment.")
     else:
         parts.append(f"Publisher reputation component: {profile['publisher_score']}/100 (30% of score).")
     if evidence_available:
@@ -474,27 +474,6 @@ def article_credibility_explanation(source, related_sources=None):
     parts.append(f"Independent reports counted after duplicate filtering: {unique}; corroboration contributes up to 20 points.")
     if not evidence_available and (profile.get("publisher_score") or 0)>=65:
         parts.append("Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed.")
-    parts.append(f"Article credibility score: {score}/100.")
-    return " ".join(parts)
-
-def article_credibility_label(score):
-    if score>=75: return "STRONG"
-    if score>=50: return "MODERATE"
-    return "LIMITED"
-
-def article_credibility_explanation(source, related_sources=None):
-    profile=source_profile(source)
-    evidence=_source_assessment(source)
-    score=article_credibility(source,related_sources)
-    parts=[f"Publisher profile: {profile['label']} ({profile['tier']}-tier)."]
-    parts.append(f"Article-specific sourcing: {reporting_quality(source)}/25.")
-    if evidence["direct"]: parts.append("Direct observation reported.")
-    if evidence["documentary"]: parts.append("Documentary evidence cited.")
-    if evidence["visual"]: parts.append("Visual evidence cited.")
-    if evidence["party"]: parts.append("Originates from a conflict party.")
-    if evidence["contested"]: parts.append("Materially disputed.")
-    unique=len(independent_sources([source]+[x for x in (related_sources or []) if x.get("source_type")=="news"]))
-    parts.append(f"Independent reports counted after duplicate filtering: {unique}.")
     parts.append(f"Article credibility score: {score}/100.")
     return " ".join(parts)
 
