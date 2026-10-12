@@ -63,6 +63,8 @@ jobs:
           cache: "pip"
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Test publisher registry and credibility scoring
+        run: python -m unittest discover -s tests -v
       - name: Process queued OSINT with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
