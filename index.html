@@ -25,7 +25,7 @@ main{display:grid;grid-template-columns:2fr 1fr;height:calc(100vh - 68px)}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 const COL={CONFIRMED:"#1f7a3d","STRONGLY CORROBORATED":"#18794e",CORROBORATED:"#2563a6",REPORTED:"#b7791f",DEVELOPING:"#9a6700",CLAIM:"#b42318"};
-const map=L.map("map").setView([13,39.5],6);
+const map=L.map("map").setView([13.6,39.5],7);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:12,attribution:"© OpenStreetMap"}).addTo(map);
 let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},credOn={STRONG:1,MODERATE:1,LIMITED:1},layer=L.layerGroup().addTo(map),markers={};
 let baseMapLayer=null, forecastData=null;
@@ -75,9 +75,9 @@ function addBaseMap(data){
       }
     }
   }).addTo(map);
-  baseMapLayer.bringToBack();
-  const bounds=baseMapLayer.getBounds();
-  if(bounds.isValid()) map.fitBounds(bounds.pad(.08));
+  // Keep geographic overlays above the tile layer. Do not fit to all features:
+  // imported roads can span Ethiopia and zoom the map far outside Tigray.
+  map.setView([13.6,39.5],7);
 }
 function setView(view){document.getElementById("feedView").hidden=view!=="feed";document.getElementById("forecastView").hidden=view!=="forecast";document.querySelectorAll("#viewTabs button").forEach(b=>b.classList.toggle("on",b.dataset.view===view));if(view==="forecast")renderForecast();setTimeout(()=>map.invalidateSize(),80)}
 document.querySelectorAll("#viewTabs button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
