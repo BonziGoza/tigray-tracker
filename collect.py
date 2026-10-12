@@ -435,7 +435,7 @@ def article_credibility(source, related_sources=None):
     # A publisher with an established baseline should not be penalized below
     # 50 merely because extraction supplied no article-level evidence. Explicitly
     # assessed weak/contested evidence can still outweigh the publisher baseline.
-    if not evidence_available and profile.get("publisher_score",0)>=65:
+    if not evidence_available and (profile.get("publisher_score") or 0)>=65:
         score=max(50,score)
     return int(round(score))
 
