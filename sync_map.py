@@ -164,7 +164,25 @@ def main():
 
         root = ET.fromstring(data)
         styles = parse_styles(root)
-        fc = {"type": "FeatureCollection", "features": placemarks(root, styles)}
+        features = placemarks(root, styles)
+        # The public My Maps export lost the TPLF/TDF layer. Preserve the last
+        # available outline as explicitly archived reference data, never as a
+        # claim of current control. A live layer from My Maps always takes precedence.
+        if not any("tplf/tdf" in (f.get("properties", {}).get("name", "") + " " + f.get("properties", {}).get("folder", "")).lower()
+                   for f in features):
+            fallback_path = Path("data/territorial_control_fallback.geojson")
+            if fallback_path.exists():
+                try:
+                    fallback = json.loads(fallback_path.read_text(encoding="utf-8"))
+                    for feature in fallback.get("features", []):
+                        props = feature.setdefault("properties", {})
+                        props["archived"] = True
+                        props["source_note"] = "Recovered from prior Google My Maps export; date and current validity unverified."
+                        features.append(feature)
+                    print("Restored archived TPLF/TDF outline; clearly marked as historical/unverified")
+                except (ValueError, OSError) as fallback_exc:
+                    print(f"WARNING: could not load archived control outline: {fallback_exc}", file=sys.stderr)
+        fc = {"type": "FeatureCollection", "features": features}
         OUT.parent.mkdir(parents=True, exist_ok=True)
 
         new = json.dumps(fc, ensure_ascii=False, separators=(",", ":")) + "\n"
