@@ -1,6 +1,13 @@
 name: Update Tigray OSINT Tracker
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'collect.py'
+      - 'data/publisher_registry.json'
+      - 'tests/**'
+      - '.github/workflows/update.yml'
   schedule:
     - cron: "7,22,37,52 * * * *"
     - cron: "17 * * * *"
@@ -14,6 +21,24 @@ permissions:
   contents: write
 
 jobs:
+  registry-tests:
+    if: ${{ github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run publisher registry and scoring tests
+        run: python -m unittest discover -s tests -v
   collect:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '7,22,37,52 * * * *' || github.event.schedule == '17 * * * *' }}
     runs-on: ubuntu-latest
