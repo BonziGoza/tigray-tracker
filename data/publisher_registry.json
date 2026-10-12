@@ -1,0 +1,836 @@
+{
+  "schema_version": 1,
+  "registry_name": "Tigray Tracker Publisher Registry",
+  "last_updated": "2026-10-11",
+  "purpose": "A transparent, editable baseline for publisher-level newsroom practices. It is not a verdict on any individual article and does not measure political alignment.",
+  "methodology": {
+    "dimensions": [
+      {
+        "name": "accuracy_and_corrections",
+        "weight": 30,
+        "signals": [
+          "published correction policy",
+          "clear and timely correction practice"
+        ]
+      },
+      {
+        "name": "sourcing_and_verification",
+        "weight": 25,
+        "signals": [
+          "verification standards",
+          "clear attribution",
+          "original reporting and diverse sources"
+        ]
+      },
+      {
+        "name": "editorial_transparency",
+        "weight": 20,
+        "signals": [
+          "bylines and contact details",
+          "published editorial standards",
+          "ownership and funding disclosure"
+        ]
+      },
+      {
+        "name": "editorial_independence",
+        "weight": 15,
+        "signals": [
+          "disclosed ownership/government relationships",
+          "editorial safeguards",
+          "conflict-of-interest policy"
+        ]
+      },
+      {
+        "name": "track_record",
+        "weight": 10,
+        "signals": [
+          "documented original reporting",
+          "demonstrated accountability over time"
+        ]
+      }
+    ],
+    "interpretation": {
+      "80-100": "Strong documented publisher-level practices",
+      "65-79": "Generally established publisher-level practices",
+      "50-64": "Mixed, provisional, or incompletely documented",
+      "0-49": "Documented concerns or significant unresolved questions; explain the evidence",
+      "unassessed": "Insufficient information; not automatically unreliable"
+    },
+    "safeguards": [
+      "Apply the same criteria across international, regional, local, and conflict-party media.",
+      "A publisher score is not an article truth probability and must not replace article-level evidence.",
+      "Do not reduce a score solely for geography, political viewpoint, or language.",
+      "Treat ownership and public funding as context requiring disclosure, not automatic proof of unreliability.",
+      "Aggregators and syndicated copies are not independent corroboration; identify the original report.",
+      "Profiles are provisional until outlet-specific evidence is documented and reviewed."
+    ],
+    "reference_standards": [
+      {
+        "name": "Journalism Trust Initiative standard",
+        "url": "https://journalismtrustinitiative.org/jti-the-standard/"
+      },
+      {
+        "name": "IPTC trust and credibility indicators",
+        "url": "https://iptc.org/std/guidelines/trust-and-credibility/"
+      }
+    ]
+  },
+  "publishers": [
+    {
+      "name": "Reuters",
+      "aliases": [
+        "reuters"
+      ],
+      "about_url": "https://www.reuters.com/about/",
+      "publisher_score": 95,
+      "confidence": "high",
+      "source_role": "wire_service",
+      "status": "provisional_manual_assessment",
+      "notes": "International wire service with published Trust Principles.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.reuters.com/about/"
+      ]
+    },
+    {
+      "name": "Associated Press",
+      "aliases": [
+        "associated press",
+        "ap news",
+        "apnews",
+        "the associated press"
+      ],
+      "about_url": "https://www.ap.org/about/",
+      "publisher_score": 94,
+      "confidence": "high",
+      "source_role": "wire_service",
+      "status": "provisional_manual_assessment",
+      "notes": "International wire service with published news values and principles.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.ap.org/about/"
+      ]
+    },
+    {
+      "name": "Agence France-Presse",
+      "aliases": [
+        "afp",
+        "afp.com",
+        "agence france-presse"
+      ],
+      "about_url": "https://www.afp.com/en/agency",
+      "publisher_score": 91,
+      "confidence": "high",
+      "source_role": "wire_service",
+      "status": "provisional_manual_assessment",
+      "notes": "International wire service; use original AFP reporting rather than republications where possible.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.afp.com/en/agency"
+      ]
+    },
+    {
+      "name": "BBC",
+      "aliases": [
+        "bbc",
+        "bbc news",
+        "bbc.com",
+        "bbc.co.uk"
+      ],
+      "about_url": "https://www.bbc.com/editorialguidelines",
+      "publisher_score": 90,
+      "confidence": "high",
+      "source_role": "public_service_broadcaster",
+      "status": "provisional_manual_assessment",
+      "notes": "Public-service broadcaster with published editorial guidelines.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.bbc.com/editorialguidelines"
+      ]
+    },
+    {
+      "name": "The New York Times",
+      "aliases": [
+        "the new york times",
+        "new york times",
+        "nytimes"
+      ],
+      "about_url": "https://www.nytco.com/company/",
+      "publisher_score": 88,
+      "confidence": "high",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Established newsroom; evaluate each article and its sourcing separately.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.nytco.com/company/"
+      ]
+    },
+    {
+      "name": "The Washington Post",
+      "aliases": [
+        "the washington post",
+        "washington post",
+        "washingtonpost"
+      ],
+      "about_url": "https://www.washingtonpost.com/policies-and-standards/",
+      "publisher_score": 88,
+      "confidence": "high",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Established newsroom; evaluate each article and its sourcing separately.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.washingtonpost.com/policies-and-standards/"
+      ]
+    },
+    {
+      "name": "Financial Times",
+      "aliases": [
+        "financial times",
+        "ft.com"
+      ],
+      "about_url": "https://aboutus.ft.com/",
+      "publisher_score": 88,
+      "confidence": "high",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Established international newsroom with editorial standards.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://aboutus.ft.com/"
+      ]
+    },
+    {
+      "name": "Bloomberg",
+      "aliases": [
+        "bloomberg",
+        "bloomberg.com"
+      ],
+      "about_url": "https://www.bloomberg.com/company/",
+      "publisher_score": 88,
+      "confidence": "high",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Established business and international newsroom; article type and sourcing still matter.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.bloomberg.com/company/"
+      ]
+    },
+    {
+      "name": "CNN",
+      "aliases": [
+        "cnn",
+        "cnn.com"
+      ],
+      "about_url": "https://www.cnn.com",
+      "publisher_score": 85,
+      "confidence": "high",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Established international newsroom; article-level verification remains decisive.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.cnn.com"
+      ]
+    },
+    {
+      "name": "ABC News",
+      "aliases": [
+        "abc news",
+        "abcnews"
+      ],
+      "about_url": "https://abcnews.go.com",
+      "publisher_score": 84,
+      "confidence": "high",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Established broadcaster/newsroom; disambiguate from other ABC-branded outlets where possible.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://abcnews.go.com"
+      ]
+    },
+    {
+      "name": "Al Jazeera",
+      "aliases": [
+        "al jazeera",
+        "aljazeera.com"
+      ],
+      "about_url": "https://www.aljazeera.com/about-us",
+      "publisher_score": 84,
+      "confidence": "high",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "International newsroom; distinguish news reports, analysis, and opinion.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.aljazeera.com/about-us"
+      ]
+    },
+    {
+      "name": "France 24",
+      "aliases": [
+        "france 24",
+        "france24"
+      ],
+      "about_url": "https://www.france24.com/en/",
+      "publisher_score": 84,
+      "confidence": "high",
+      "source_role": "public_service_broadcaster",
+      "status": "provisional_manual_assessment",
+      "notes": "International public-service news broadcaster.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.france24.com/en/"
+      ]
+    },
+    {
+      "name": "Deutsche Welle",
+      "aliases": [
+        "dw",
+        "dw.com",
+        "deutsche welle"
+      ],
+      "about_url": "https://corporate.dw.com",
+      "publisher_score": 84,
+      "confidence": "high",
+      "source_role": "public_service_broadcaster",
+      "status": "provisional_manual_assessment",
+      "notes": "German international public-service broadcaster.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://corporate.dw.com"
+      ]
+    },
+    {
+      "name": "The Guardian",
+      "aliases": [
+        "the guardian",
+        "guardian"
+      ],
+      "about_url": "https://www.theguardian.com/about",
+      "publisher_score": 84,
+      "confidence": "high",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Established newsroom; article-level sourcing remains decisive.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.theguardian.com/about"
+      ]
+    },
+    {
+      "name": "NPR",
+      "aliases": [
+        "npr",
+        "national public radio"
+      ],
+      "about_url": "https://www.npr.org/about-npr/",
+      "publisher_score": 84,
+      "confidence": "high",
+      "source_role": "public_service_broadcaster",
+      "status": "provisional_manual_assessment",
+      "notes": "Public-service newsroom with published editorial practices.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.npr.org/about-npr/"
+      ]
+    },
+    {
+      "name": "PBS NewsHour",
+      "aliases": [
+        "pbs newshour",
+        "pbs"
+      ],
+      "about_url": "https://www.pbs.org/newshour/about",
+      "publisher_score": 84,
+      "confidence": "high",
+      "source_role": "public_service_broadcaster",
+      "status": "provisional_manual_assessment",
+      "notes": "Public-service news organization; generic PBS aliases require domain confirmation.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.pbs.org/newshour/about"
+      ]
+    },
+    {
+      "name": "The New Humanitarian",
+      "aliases": [
+        "the new humanitarian",
+        "thenewhumanitarian"
+      ],
+      "about_url": "https://www.thenewhumanitarian.org/about-us",
+      "publisher_score": 87,
+      "confidence": "high",
+      "source_role": "nonprofit_news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Humanitarian-focused independent newsroom; strong relevance for conflict and displacement reporting.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.thenewhumanitarian.org/about-us"
+      ]
+    },
+    {
+      "name": "Radio France Internationale",
+      "aliases": [
+        "rfi",
+        "radio france internationale"
+      ],
+      "about_url": "https://www.rfi.fr/en/",
+      "publisher_score": 82,
+      "confidence": "high",
+      "source_role": "public_service_broadcaster",
+      "status": "provisional_manual_assessment",
+      "notes": "International public-service broadcaster.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.rfi.fr/en/"
+      ]
+    },
+    {
+      "name": "The Associated Press",
+      "aliases": [
+        "associated press"
+      ],
+      "about_url": "https://www.ap.org/about/",
+      "publisher_score": 94,
+      "confidence": "high",
+      "source_role": "wire_service",
+      "status": "provisional_manual_assessment",
+      "notes": "Alias for AP; do not count AP and AP News as separate corroborating publishers.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.ap.org/about/"
+      ]
+    },
+    {
+      "name": "Voice of America",
+      "aliases": [
+        "voice of america",
+        "voa"
+      ],
+      "about_url": "https://www.voanews.com",
+      "publisher_score": 78,
+      "confidence": "medium",
+      "source_role": "publicly_funded_broadcaster",
+      "status": "provisional_manual_assessment",
+      "notes": "Publicly funded broadcaster; assess governance and editorial independence in context.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.voanews.com"
+      ]
+    },
+    {
+      "name": "Semafor",
+      "aliases": [
+        "semafor"
+      ],
+      "about_url": "https://www.semafor.com",
+      "publisher_score": 76,
+      "confidence": "medium",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Established digital newsroom; score individual reports by evidence and sourcing.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.semafor.com"
+      ]
+    },
+    {
+      "name": "Africanews",
+      "aliases": [
+        "africanews",
+        "africanews english"
+      ],
+      "about_url": "https://www.africanews.com",
+      "publisher_score": 76,
+      "confidence": "medium",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Pan-African news outlet; article sourcing and original reporting should be checked.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.africanews.com"
+      ]
+    },
+    {
+      "name": "The Africa Report",
+      "aliases": [
+        "the africa report",
+        "africa report"
+      ],
+      "about_url": "https://www.theafricareport.com",
+      "publisher_score": 77,
+      "confidence": "medium",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Africa-focused publication; distinguish reporting from analysis and commentary.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.theafricareport.com"
+      ]
+    },
+    {
+      "name": "Addis Standard",
+      "aliases": [
+        "addis standard",
+        "addisstandard"
+      ],
+      "about_url": "https://addisstandard.com",
+      "publisher_score": 78,
+      "confidence": "medium",
+      "source_role": "regional_news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Ethiopian newsroom relevant to regional reporting; article-level sourcing remains decisive.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://addisstandard.com"
+      ]
+    },
+    {
+      "name": "The Reporter Ethiopia",
+      "aliases": [
+        "the reporter ethiopia",
+        "the reporter"
+      ],
+      "about_url": "https://www.thereporterethiopia.com",
+      "publisher_score": 74,
+      "confidence": "medium",
+      "source_role": "regional_news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Ethiopian newsroom; generic title alias should only match exact outlet metadata.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.thereporterethiopia.com"
+      ]
+    },
+    {
+      "name": "Hiiraan Online",
+      "aliases": [
+        "hiiraan online",
+        "hiiraanonline"
+      ],
+      "about_url": "https://www.hiiraan.com",
+      "publisher_score": 72,
+      "confidence": "medium",
+      "source_role": "regional_news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Regional Somali news outlet; assess original sourcing and independence article by article.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.hiiraan.com"
+      ]
+    },
+    {
+      "name": "The EastAfrican",
+      "aliases": [
+        "the eastafrican",
+        "the east african"
+      ],
+      "about_url": "https://www.theeastafrican.co.ke",
+      "publisher_score": 75,
+      "confidence": "medium",
+      "source_role": "regional_news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Regional East African newsroom.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.theeastafrican.co.ke"
+      ]
+    },
+    {
+      "name": "AllAfrica",
+      "aliases": [
+        "allafrica",
+        "allafrica.com"
+      ],
+      "about_url": "https://allafrica.com",
+      "publisher_score": 70,
+      "confidence": "medium",
+      "source_role": "aggregator",
+      "status": "provisional_manual_assessment",
+      "notes": "Often republishes or aggregates partner content; identify the original reporting outlet before counting corroboration.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://allafrica.com"
+      ]
+    },
+    {
+      "name": "Yahoo News",
+      "aliases": [
+        "yahoo",
+        "yahoo news",
+        "yahoo news singapore",
+        "yahoo news uk"
+      ],
+      "about_url": "https://news.yahoo.com",
+      "publisher_score": 50,
+      "confidence": "low",
+      "source_role": "aggregator",
+      "status": "provisional_manual_assessment",
+      "notes": "Aggregator/distributor; use the original publisher credited in the article rather than treating Yahoo as an independent newsroom.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://news.yahoo.com"
+      ]
+    },
+    {
+      "name": "Devdiscourse",
+      "aliases": [
+        "devdiscourse"
+      ],
+      "about_url": "https://www.devdiscourse.com",
+      "publisher_score": 58,
+      "confidence": "low",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Treat as a provisional profile; prioritize transparent bylines and original sourcing.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.devdiscourse.com"
+      ]
+    },
+    {
+      "name": "Borkena",
+      "aliases": [
+        "borkena"
+      ],
+      "about_url": "https://borkena.com",
+      "publisher_score": 60,
+      "confidence": "low",
+      "source_role": "regional_news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Provisional assessment; review ownership, sourcing, corrections, and original reporting before increasing score.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://borkena.com"
+      ]
+    },
+    {
+      "name": "Fana Media Corporation",
+      "aliases": [
+        "fana media corporation",
+        "fana"
+      ],
+      "about_url": "https://www.fanamc.com",
+      "publisher_score": 55,
+      "confidence": "low",
+      "source_role": "regional_news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Provisional profile; ownership and institutional relationships should be reviewed and disclosed, not inferred from name alone.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.fanamc.com"
+      ]
+    },
+    {
+      "name": "Tigrai Television",
+      "aliases": [
+        "tigrai television",
+        "tigrai tv"
+      ],
+      "about_url": "https://www.youtube.com",
+      "publisher_score": 52,
+      "confidence": "low",
+      "source_role": "regional_broadcaster",
+      "status": "provisional_manual_assessment",
+      "notes": "Provisional regional broadcaster profile; report-specific sourcing is especially important.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.youtube.com"
+      ]
+    },
+    {
+      "name": "ENA",
+      "aliases": [
+        "ena english",
+        "ethiopian news agency",
+        "ena"
+      ],
+      "about_url": "https://www.ena.et",
+      "publisher_score": 45,
+      "confidence": "low",
+      "source_role": "state_news_agency",
+      "status": "provisional_manual_assessment",
+      "notes": "State news agency; official statements are valuable evidence of what officials said, not independent verification of contested claims.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.ena.et"
+      ]
+    },
+    {
+      "name": "CGTN",
+      "aliases": [
+        "cgtn",
+        "china global television network"
+      ],
+      "about_url": "https://www.cgtn.com",
+      "publisher_score": 55,
+      "confidence": "low",
+      "source_role": "state_owned_broadcaster",
+      "status": "provisional_manual_assessment",
+      "notes": "State-owned international broadcaster; attribute official positions and independently verify contested factual claims.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.cgtn.com"
+      ]
+    },
+    {
+      "name": "TRT World",
+      "aliases": [
+        "trt world",
+        "trtworld",
+        "trt afrika"
+      ],
+      "about_url": "https://www.trtworld.com",
+      "publisher_score": 62,
+      "confidence": "low",
+      "source_role": "state_owned_broadcaster",
+      "status": "provisional_manual_assessment",
+      "notes": "State-owned broadcaster; disclose ownership context and assess article-specific evidence.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.trtworld.com"
+      ]
+    },
+    {
+      "name": "Al Arabiya",
+      "aliases": [
+        "al arabiya",
+        "alarabiya"
+      ],
+      "about_url": "https://english.alarabiya.net",
+      "publisher_score": 68,
+      "confidence": "medium",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Established regional broadcaster; assess sourcing and editorial context article by article.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://english.alarabiya.net"
+      ]
+    },
+    {
+      "name": "Anadolu Agency",
+      "aliases": [
+        "anadolu ajansı",
+        "anadolu agency",
+        "aa.com.tr"
+      ],
+      "about_url": "https://www.aa.com.tr/en",
+      "publisher_score": 72,
+      "confidence": "medium",
+      "source_role": "state_linked_news_agency",
+      "status": "provisional_manual_assessment",
+      "notes": "Turkish state-owned news agency; useful for attributed official statements, with independent verification for disputed claims.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.aa.com.tr/en"
+      ]
+    },
+    {
+      "name": "The Brussels Times",
+      "aliases": [
+        "the brussels times",
+        "brusselstimes"
+      ],
+      "about_url": "https://www.brusselstimes.com",
+      "publisher_score": 72,
+      "confidence": "medium",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Regional European newsroom; check original reporting and attribution.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.brusselstimes.com"
+      ]
+    },
+    {
+      "name": "India Today",
+      "aliases": [
+        "india today",
+        "indiatoday"
+      ],
+      "about_url": "https://www.indiatoday.in",
+      "publisher_score": 72,
+      "confidence": "medium",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Established Indian news organization; article sourcing and correction history still matter.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.indiatoday.in"
+      ]
+    },
+    {
+      "name": "The Jerusalem Post",
+      "aliases": [
+        "the jerusalem post",
+        "jpost"
+      ],
+      "about_url": "https://www.jpost.com",
+      "publisher_score": 72,
+      "confidence": "medium",
+      "source_role": "news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Established regional/international newsroom; apply article-level verification, especially to conflict claims.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.jpost.com"
+      ]
+    },
+    {
+      "name": "Ahram Online",
+      "aliases": [
+        "ahram online",
+        "ahramonline"
+      ],
+      "about_url": "https://english.ahram.org.eg",
+      "publisher_score": 60,
+      "confidence": "low",
+      "source_role": "state_linked_news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "State-linked context should be considered; verify contested claims with independent reporting.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://english.ahram.org.eg"
+      ]
+    },
+    {
+      "name": "Modern Ghana",
+      "aliases": [
+        "modern ghana",
+        "modernghana"
+      ],
+      "about_url": "https://www.modernghana.com",
+      "publisher_score": 58,
+      "confidence": "low",
+      "source_role": "digital_news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Provisional profile; evaluate whether each item is original reporting, republished material, or commentary.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://www.modernghana.com"
+      ]
+    },
+    {
+      "name": "The Horn Review",
+      "aliases": [
+        "horn review",
+        "the horn review"
+      ],
+      "about_url": "https://hornreview.org",
+      "publisher_score": 50,
+      "confidence": "low",
+      "source_role": "digital_news_org",
+      "status": "provisional_manual_assessment",
+      "notes": "Unverified baseline pending review of ownership, editorial standards, corrections, and original sourcing.",
+      "reviewed_at": "2026-10-11",
+      "evidence_urls": [
+        "https://hornreview.org"
+      ]
+    }
+  ]
+}
