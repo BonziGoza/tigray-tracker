@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T00:34:47.191104+00:00",
+  "generated_at": "2026-10-12T03:25:04.335048+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
@@ -11,7 +11,7 @@
     "control_change_records": 9,
     "contested_or_early_records": 0,
     "reported_records": 315,
-    "duplicate_records_ignored": 149,
+    "duplicate_records_ignored": 150,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -34,11 +34,11 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 52,
+      "risk_index": 57,
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 26,
-      "weighted_signal": 2.87,
+      "weighted_signal": 3.29,
       "control_change_signal": 0,
       "explanation": "26 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -55,6 +55,17 @@
         },
         {
           "date": "2026-10-07",
+          "title": "War returns to Tigray as Ethiopian forces take Mekelle and airstrikes hit the north - Tamil Guardian",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Tamil Guardian",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVW5IMDhYQmlmZ2h6amRZMFBnQjZRY3p1LXNFVGx5bGgzV0xPYnZfdGN1dGZCTS1MdTI4WkU3TlE5VnJiLUpIS1p0U3Q0djNNMDVqLUQ4dnhtR1pqREpsaGlqMHBRc3VXRHF4Ym95SjhKTFdieEMwWEZfSjVsRjZ4ek03NEY2NEhsa3J5TmpOWUE3NVZEaDh5SDc3MVVRNl9LQUV5Y01VTU53VS1ncnMtLQ?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-07",
           "title": "Ethiopia’s forces retake Mekelle amid renewed Tigray fighting - Al Jazeera",
           "grade": "REPORTED",
           "sources": [
@@ -63,31 +74,16 @@
               "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcU5YbjVUUnNodzJYQkliQUZseHNPWE9xbUVmaVA0WWhfZ3pza1pmMEdqSTloajlTcUdSeWZ5SWlGdmZPOTQ5bjBrMDhuRkZTZWFmcUlTVEs2b0ZIWGY4TGxJcDZhSl9ETTZEMjZtZktpU2tEVWVDNUNjMV9Cd0huZ18xQjJkZ21SSXh1SkM0dndtaDVZZVdrcDdYai1pREtHXy000gGoAUFVX3lxTE9yTEJUZ1V5cE45LWVQYmRnT3pRZDdKWjRra01DZHlVWVFTZkVmeFAyR0hBWnhWcUtCeWpzUW5CTUo2N3NKVUUwUEZIZjhZUG8zNVRVc05kTVVBSG1KYjdKUTN1cDZRVUZlUFVQbU1IN1pKQnZJanNwbDZ1QmtNWXFPelBOVzZvZmw3Ym5iUWRCd1FZRXRsRm5WcWlpaTg4aWEwTEh1VVhDVQ?oc=5"
             }
           ]
-        },
-        {
-          "date": "2026-10-07",
-          "title": "Tigray drone strikes continue as life resumes in Mekelle - Africanews",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Africanews",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVS1SaVowaFFpal9GNE5iNVk2MXhSVXp5R0kxTU16RGVnWS1xdzctR1ZCR1ZoQzB1NVVxWDdZN1MySHQ2d010T3BlOUdJME1uOUZSM2pMNEZfakpJeWdiUnRJX3dsN1AwWVlxbXZISXpGcGV6TzkzR1FfYThfT3hfc0ZoZWZwMjVuei1wNzBfQXN2cmtBVFIzYkpHbnNzNzFP0gGgAUFVX3lxTE1VLVJpWjBoUWlqX0Y0TmI1WTYxeFJVenlHSTFNTXpEZWdZLXF3Ny1HVkJHVmhDMHU1VXFYN1k3UzJIdDZ3TXRPcGU5R0kwTW45RlIzakw0Rl9qSkl5Z2JSdElfd2w3UDBZWXFtdkhJekZwZXpPOTNHUV9hOF9PeF9zRmhlZnAyNW56LXA3MF9Bc3Zya0FUUjNiSkduc3M3MU8?oc=5"
-            },
-            {
-              "outlet": "Africanews",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTHlEeGZkOFQ1c3h3Q01aTG5uaGhLaXRCbF9Gb3NPRnVmTlVyaHpHb3FBY0s5OWRib0pSR1BtUXJVa1lpNzJzb0R5Q3kxQW1HUEpCSVc0RVB0VzVmb0FGeXhPOG5PdDk3a25WblJyLWdVb3ExRWUxY2RhWHhkRVBrMThoOVNONmxVcXJWbWF5bkE0dmNVR29GV0JvWdIBoAFBVV95cUxNVS1SaVowaFFpal9GNE5iNVk2MXhSVXp5R0kxTU16RGVnWS1xdzctR1ZCR1ZoQzB1NVVxWDdZN1MySHQ2d010T3BlOUdJME1uOUZSM2pMNEZfakpJeWdiUnRJX3dsN1AwWVlxbXZISXpGcGV6TzkzR1FfYThfT3hfc0ZoZWZwMjVuei1wNzBfQXN2cmtBVFIzYkpHbnNzNzFP?oc=5"
-            }
-          ]
         }
       ]
     },
     {
       "region": "Addis Ababa",
-      "risk_index": 46,
+      "risk_index": 56,
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 5,
-      "weighted_signal": 1.13,
+      "weighted_signal": 1.5,
       "control_change_signal": 0,
       "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -128,25 +124,14 @@
     },
     {
       "region": "Eastern Tigray",
-      "risk_index": 37,
-      "level": "WATCH",
+      "risk_index": 43,
+      "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 8,
-      "weighted_signal": 1.16,
-      "control_change_signal": 0.49,
+      "weighted_signal": 1.38,
+      "control_change_signal": 0.6,
       "explanation": "8 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
-        {
-          "date": "2026-10-10",
-          "title": "ACLED: Eritrean troops withdrew from Adigrat in Ethiopia — Jerusalem Post - UA.NEWS",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "UA.NEWS",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeVNUVktPVUZtNmwtTmlMc3E0aWpOMUE4VjRWN21qOVVjNG5RX3ZqcW5zTUNEQjc3dmt6LXpyYVFCX19IYzVNeVRiUnNFQTdMRVNCUkNGZGVXd2pjaFFUa1ZNNHNicWtHSllvcFN4Sk4xQWJfcjV3WDRFOGVqaUtDczVNZHVib1l2Vjh4TE9kNGtJZkNHaXlrUUZDNA?oc=5"
-            }
-          ]
-        },
         {
           "date": "2026-10-10",
           "title": "Celebrations in Ethiopian city after reported Eritrean ‘incursion’",
@@ -155,6 +140,17 @@
             {
               "outlet": "aljazeera.com",
               "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/celebrations-in-ethiopian-city-after-reported-eritrean?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-10",
+          "title": "ACLED: Eritrean troops withdrew from Adigrat in Ethiopia — Jerusalem Post - UA.NEWS",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "UA.NEWS",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeVNUVktPVUZtNmwtTmlMc3E0aWpOMUE4VjRWN21qOVVjNG5RX3ZqcW5zTUNEQjc3dmt6LXpyYVFCX19IYzVNeVRiUnNFQTdMRVNCUkNGZGVXd2pjaFFUa1ZNNHNicWtHSllvcFN4Sk4xQWJfcjV3WDRFOGVqaUtDczVNZHVib1l2Vjh4TE9kNGtJZkNHaXlrUUZDNA?oc=5"
             }
           ]
         },
@@ -173,14 +169,25 @@
     },
     {
       "region": "Northern Tigray",
-      "risk_index": 22,
+      "risk_index": 27,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 4,
-      "weighted_signal": 0.54,
+      "weighted_signal": 0.67,
       "control_change_signal": 0,
       "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-08",
+          "title": "Ethiopian drone strikes hit Eritrean forces in northern Tigray city - RFI",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "RFI",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU0pvcWdnMFhlNnpKS3g3SFR4MWlDaVFjVEZkb3ZiTjBCc2U5T3dvSWl0dkFSZmNZejVEd1R2ZFJBNDJtQmNQMjhhcVd2aHZpNlRRU0NuckZBLUs2d0xIaDhvTWswbDVHTlNYSE5TUjBEdDJNdGV6cUdvdnRRSmF5U3M1N2hxTFZfY2N1QnpERWJLb1VUZUJBUzZjc3ZSbE9KbmJyaEZ5bUs?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-10-08",
           "title": "Ethiopia drone strikes against Eritrean troops in northern Tigray - News24",
@@ -193,17 +200,6 @@
             {
               "outlet": "Ahram Online",
               "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9jSjdGazQ4QUNsV1lCZ0R6UncxTVZTeTNtb3FzakNkVUluSFhXU1dnRTBBQVBuUERJdmtJMm9iRWltdDNTMkRxS0FtWHRHZzBqTS1HYm9KRHY?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-08",
-          "title": "Ethiopian drone strikes hit Eritrean forces in northern Tigray city - RFI",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "RFI",
-              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU0pvcWdnMFhlNnpKS3g3SFR4MWlDaVFjVEZkb3ZiTjBCc2U5T3dvSWl0dkFSZmNZejVEd1R2ZFJBNDJtQmNQMjhhcVd2aHZpNlRRU0NuckZBLUs2d0xIaDhvTWswbDVHTlNYSE5TUjBEdDJNdGV6cUdvdnRRSmF5U3M1N2hxTFZfY2N1QnpERWJLb1VUZUJBUzZjc3ZSbE9KbmJyaEZ5bUs?oc=5"
             }
           ]
         },
@@ -226,7 +222,7 @@
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 1,
-      "weighted_signal": 0.12,
+      "weighted_signal": 0.13,
       "control_change_signal": 0,
       "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -253,7 +249,7 @@
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 1,
-      "weighted_signal": 0.08,
+      "weighted_signal": 0.09,
       "control_change_signal": 0,
       "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
