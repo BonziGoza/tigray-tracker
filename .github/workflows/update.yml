@@ -73,7 +73,7 @@ jobs:
           git push
   process:
     needs: collect
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '17 * * * *' }}
+    if: ${{ always() && (github.event_name == 'workflow_dispatch' || github.event.schedule == '17 * * * *' || github.event_name == 'push') }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
