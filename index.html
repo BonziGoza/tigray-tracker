@@ -39,7 +39,7 @@ main{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(390px,1fr);gap:1
 <script>
 const COL={CONFIRMED:"#1f7a3d","STRONGLY CORROBORATED":"#18794e",CORROBORATED:"#2563a6",REPORTED:"#b7791f",DEVELOPING:"#9a6700",CLAIM:"#b42318"};
 const map=L.map("map").setView([13.6,39.5],7);
-L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{subdomains:"abcd",maxZoom:19,attribution:"© OpenStreetMap contributors · © CARTO"}).addTo(map);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{subdomains:"abc",maxZoom:19,attribution:"© OpenStreetMap contributors"}).addTo(map);
 let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},credOn={STRONG:1,MODERATE:1,LIMITED:1},layer=L.layerGroup().addTo(map),markers={};
 let baseMapLayer=null,historicalLayer=null,forecastData=null;
 const mapLegend=L.control({position:"bottomleft"});
