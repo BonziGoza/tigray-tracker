@@ -22,7 +22,8 @@ main{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(390px,1fr);gap:1
 .forecast-card{border:1px solid #293d53;border-radius:12px;padding:14px;margin:10px 0;background:linear-gradient(140deg,#152438,#111d2d);box-shadow:0 6px 16px #0002}.forecast-card h4{margin:0 0 7px;font-size:14px;color:#eaf3ff}.forecast-card p{margin:7px 0;font-size:12px;color:#aebfd2}.weight{font-size:23px;font-weight:800;letter-spacing:-.04em;color:#8dccff}.bar{height:7px;background:#26374b;border-radius:8px;overflow:hidden;margin:9px 0}.bar span{display:block;height:100%;background:linear-gradient(90deg,#398ed2,#6fc8ff);border-radius:8px}
 .risk-head{display:flex;justify-content:space-between;gap:8px;align-items:center}.risk-index{font-size:18px;font-weight:800}.risk-ELEVATED{color:var(--red)}.risk-GUARDED{color:var(--amber)}.risk-WATCH{color:var(--green)}
 .method{font-size:12px;border:1px solid #293b50;border-radius:10px;margin:12px 0;padding:11px 12px;color:#aebfd2;background:#0d1724}.method summary{color:#dce9f8;cursor:pointer;font-weight:700}.method p{line-height:1.65}.method a{color:#80c8ff}h3{font-size:15px;letter-spacing:-.015em;margin:19px 0 8px;color:#e6f0fc}
-.map-legend{background:rgba(9,19,32,.96);color:#eaf3ff;border:1px solid #38516d;border-radius:11px;padding:11px 13px;box-shadow:0 8px 25px #0007;font:12px/1.4 system-ui,sans-serif;min-width:205px;backdrop-filter:blur(8px)}.map-legend strong{display:block;letter-spacing:.12em;font-size:10px;color:#8ea8c3;margin-bottom:8px}.map-legend>div{display:flex;gap:8px;align-items:center;margin:7px 0}.map-legend small{color:#f1c68d}.map-legend .legend-line{display:inline-block;flex:0 0 24px;height:7px;border:1px solid #ffffff66;border-radius:2px}
+.map-legend{background:rgba(9,19,32,.96);color:#eaf3ff;border:1px solid #38516d;border-radius:11px;padding:11px 13px;box-shadow:0 8px 25px #0007;font:12px/1.4 system-ui,sans-serif;min-width:205px;backdrop-filter:blur(8px)}.map-legend strong{display:block;letter-spacing:.12em;font-size:10px;color:#8ea8c3;margin-bottom:8px}.map-legend>div{display:flex;gap:8px;align-items:center;margin:7px 0}.map-legend small{color:#f1c68d}.map-legend .legend-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin:0 8px 0 2px;flex:none}
+.map-legend .legend-line{display:inline-block;flex:0 0 24px;height:7px;border:1px solid #ffffff66;border-radius:2px}
 .leaflet-container{font:12px/1.5 system-ui,sans-serif;background:#101d2c}.leaflet-control-zoom a,.leaflet-bar a{background:#101d2c!important;color:#e3edf8!important;border-color:#334960!important}.leaflet-control-attribution{background:#0b1624d9!important;color:#93a8bd!important}.leaflet-control-attribution a{color:#7ec7ff!important}
 .map-actions{display:flex;gap:6px;flex-wrap:wrap;padding:7px;background:#0b1624ef;border:1px solid #38516d;border-radius:11px;box-shadow:0 6px 20px #0005}.map-actions button{background:#15283c;color:#e3edf8;border:1px solid #38516d;border-radius:7px;padding:7px 10px;font-weight:650;font-size:11px;cursor:pointer}.map-actions button:hover{background:#204464;border-color:#65b8f3}.map-actions button[aria-pressed="false"]{opacity:.65}[hidden]{display:none!important}
 @media(min-width:1500px){main{grid-template-columns:minmax(0,1.6fr) minmax(420px,.9fr)}}@media(max-width:950px){main{grid-template-columns:minmax(0,1fr) minmax(340px,.95fr);padding:10px;gap:10px}#side{padding:12px}}
@@ -40,11 +41,11 @@ const COL={CONFIRMED:"#1f7a3d","STRONGLY CORROBORATED":"#18794e",CORROBORATED:"#
 const map=L.map("map").setView([13.6,39.5],7);
 L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{subdomains:"abcd",maxZoom:19,attribution:"© OpenStreetMap contributors · © CARTO"}).addTo(map);
 let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},credOn={STRONG:1,MODERATE:1,LIMITED:1},layer=L.layerGroup().addTo(map),markers={};
-let baseMapLayer=null, forecastData=null;
+let baseMapLayer=null,historicalLayer=null,forecastData=null;
 const mapLegend=L.control({position:"bottomleft"});
 mapLegend.onAdd=function(){
   const box=L.DomUtil.create("div","map-legend");
-  box.innerHTML="<strong>MAP LAYERS</strong><div><span class='legend-line' style='background:#ff5252'></span><span><b>TPLF/TDF</b><br><small>Archived outline · date unverified</small></span></div><div><span class='legend-line' style='background:#9aa4ae'></span><span><b>Reference geography</b><br><small>Roads and boundaries</small></span></div>";
+  box.innerHTML="<strong>MAP KEY</strong><div><span class='legend-line' style='background:#55b8ff'></span><span><b>Tigray region boundary</b></span></div><div><span class='legend-line' style='background:#ff5252;border-top:2px dashed #ff5252'></span><span><b>Historical TPLF/TDF outline</b><br><small>Archived · not current control</small></span></div><div><span class='legend-dot' style='background:#18794e'></span><span><b>Corroborated event</b></span></div><small>Only explicit, geolocated reporting is plotted as event markers.</small>";
   L.DomEvent.disableClickPropagation(box);
   return box;
 };
@@ -54,51 +55,33 @@ mapActions.onAdd=function(){
  const wrap=L.DomUtil.create("div","map-actions");
  const home=el("button","","Reset Tigray view");home.type="button";
  home.onclick=()=>map.setView([13.6,39.5],7);
- const overlays=el("button","","Hide overlays");overlays.type="button";overlays.setAttribute("aria-pressed","true");
- overlays.onclick=()=>{if(!baseMapLayer)return;if(map.hasLayer(baseMapLayer)){map.removeLayer(baseMapLayer);overlays.textContent="Show overlays";overlays.setAttribute("aria-pressed","false")}else{baseMapLayer.addTo(map);overlays.textContent="Hide overlays";overlays.setAttribute("aria-pressed","true")}};
- wrap.append(home,overlays);L.DomEvent.disableClickPropagation(wrap);return wrap;
+ const history=el("button","","Show historical outline");history.type="button";history.setAttribute("aria-pressed","false");
+ history.onclick=()=>{if(!historicalLayer)return;if(map.hasLayer(historicalLayer)){map.removeLayer(historicalLayer);history.textContent="Show historical outline";history.setAttribute("aria-pressed","false")}else{historicalLayer.addTo(map);history.textContent="Hide historical outline";history.setAttribute("aria-pressed","true")}};
+ const boundary=el("button","","Hide boundary");boundary.type="button";boundary.setAttribute("aria-pressed","true");
+ boundary.onclick=()=>{if(!baseMapLayer)return;if(map.hasLayer(baseMapLayer)){map.removeLayer(baseMapLayer);boundary.textContent="Show boundary";boundary.setAttribute("aria-pressed","false")}else{baseMapLayer.addTo(map);boundary.textContent="Hide boundary";boundary.setAttribute("aria-pressed","true")}};
+ wrap.append(home,history,boundary);L.DomEvent.disableClickPropagation(wrap);return wrap;
 };
 mapActions.addTo(map);
-const baseMapStyle={color:"#5b6470",weight:1.5,fillColor:"#9aa4ae",fillOpacity:.28,opacity:.95};
+const baseMapStyle={color:"#55b8ff",weight:3,fillColor:"#55b8ff",fillOpacity:0,opacity:.95};
 const baseMapPointStyle={radius:5,color:"#46515c",fillColor:"#fff",fillOpacity:.9,weight:1.5};
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
 function sourceLabel(s){if(s.platform==="reddit")return "Reddit";if(s.platform==="gdelt")return "GDELT";return s.outlet||"Source"}
-function visible(e){return !!gradeOn[e.grade] && (e.sources||[]).some(s=>credOn[s.credibility_label||"LIMITED"])}
+function isApiKeyError(value){return /api[\s_-]*key.{0,50}(required|missing|not provided)|(?:required|missing).{0,50}api[\s_-]*key/i.test(String(value||""))}
+function visible(e){return !!gradeOn[e.grade] && (e.sources||[]).some(s=>credOn[s.credibility_label||"LIMITED"]&&!isApiKeyError(s.title)&&!isApiKeyError(s.outlet))}
 function addBaseMap(data){
-  if(baseMapLayer){map.removeLayer(baseMapLayer);}
-  baseMapLayer=L.geoJSON(data,{
-    style:(feature)=>{
-      const p=feature.properties||{};
-      return {
-        color:p.strokeColor||baseMapStyle.color,
-        weight:Number(p.strokeWeight)||baseMapStyle.weight,
-        opacity:p.strokeOpacity!=null?Number(p.strokeOpacity):baseMapStyle.opacity,
-        fillColor:p.fillColor||baseMapStyle.fillColor,
-        fillOpacity:p.fillOpacity!=null?Number(p.fillOpacity):baseMapStyle.fillOpacity
-      };
-    },
-    pointToLayer:(feature,latlng)=>{
-      const p=feature.properties||{};
-      return L.circleMarker(latlng,{
-        radius:Number(p.iconScale)||baseMapPointStyle.radius,
-        color:p.strokeColor||baseMapPointStyle.color,
-        fillColor:p.fillColor||baseMapPointStyle.fillColor,
-        fillOpacity:p.fillOpacity!=null?Number(p.fillOpacity):baseMapPointStyle.fillOpacity,
-        weight:Number(p.strokeWeight)||baseMapPointStyle.weight
-      });
-    },
-    onEachFeature:(feature,layer)=>{
-      const p=feature.properties||{};
-      const title=p.name||p.folder||"Map feature";
-      if(title||p.description){
-        const archived = p.archived || /archived map outline/i.test(title);
-        const warning = archived ? "<br><b style='color:#b42318'>ARCHIVED / UNVERIFIED — NOT A CURRENT FRONT LINE</b>" : "";
-        layer.bindPopup("<b>"+title+"</b>"+warning+(p.description?"<br><small>"+p.description+"</small>":""));
-      }
-    }
+  if(baseMapLayer)map.removeLayer(baseMapLayer);
+  if(historicalLayer)map.removeLayer(historicalLayer);
+  const features=data.features||[];
+  const isHistory=f=>{const p=f.properties||{};return !!p.archived||/tplf\s*\/\s*tdf|historical territorial-control/i.test((p.name||"")+" "+(p.folder||""))};
+  const isTigrayBoundary=f=>{const p=f.properties||{};return /tigray region border/i.test((p.name||"")+" "+(p.folder||""))&&!isHistory(f)};
+  baseMapLayer=L.geoJSON({type:"FeatureCollection",features:features.filter(isTigrayBoundary)},{
+    style:()=>baseMapStyle,
+    onEachFeature:(feature,featureLayer)=>{const p=feature.properties||{};featureLayer.bindPopup("<b>Tigray region boundary</b><br><small>Geographic reference only; not a territorial-control assessment.</small>")}
   }).addTo(map);
-  // Keep geographic overlays above the tile layer. Do not fit to all features:
-  // imported roads can span Ethiopia and zoom the map far outside Tigray.
+  historicalLayer=L.geoJSON({type:"FeatureCollection",features:features.filter(isHistory)},{
+    style:()=>({color:"#ff5252",weight:3,dashArray:"8 6",opacity:.95,fillColor:"#ff5252",fillOpacity:.12}),
+    onEachFeature:(feature,featureLayer)=>{const p=feature.properties||{};featureLayer.bindPopup("<b>"+(p.name||"Historical TPLF/TDF outline")+"</b><br><b style='color:#ff6678'>ARCHIVED / UNVERIFIED — NOT A CURRENT FRONT LINE</b><br><small>"+(p.source_note||p.description||"Original observation date and current validity are unverified.")+"</small>")}
+  });
   map.setView([13.6,39.5],7);
 }
 function setView(view){document.getElementById("feedView").hidden=view!=="feed";document.getElementById("forecastView").hidden=view!=="forecast";document.querySelectorAll("#viewTabs button").forEach(b=>b.classList.toggle("on",b.dataset.view===view));if(view==="forecast")renderForecast();setTimeout(()=>map.invalidateSize(),80)}
@@ -226,7 +209,7 @@ Promise.all([
  fetch("data/forecasts.json?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null)
  ]).then(([base,j,s,f])=>{
  if(base && base.features) addBaseMap(base);
- events=j.events||[];forecastData=f;
+ events=(j.events||[]).filter(e=>!isApiKeyError(e.summary)&&!isApiKeyError(e.place)&&!isApiKeyError(e.region)).map(e=>({...e,sources:(e.sources||[]).filter(s=>!isApiKeyError(s.title)&&!isApiKeyError(s.outlet)&&!isApiKeyError(s.summary))})).filter(e=>e.sources.length>0);forecastData=f;
  const checked=s.last_checked?new Date(s.last_checked).toLocaleString():"Waiting for first automatic check";
  const updated=j.updated?new Date(j.updated).toLocaleString():"Unknown";
  document.getElementById("up").innerHTML =
