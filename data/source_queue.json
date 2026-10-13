@@ -5876,7 +5876,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 13 Oct 2026 01:52:30 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-13T07:45:10.969240+00:00"
  },
  {
   "title": "New Rebel Pact Threatens Ethiopia’s Government - Eurasia Review",
@@ -5887,7 +5888,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 13 Oct 2026 00:10:14 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-13T07:45:10.969240+00:00"
  },
  {
   "title": "News Analysis: Tensions deepen in Southern Tigray as NaMA accuses Tigray Peace Force of abuses after clashes over local security, administrative control - Addis Standard",
@@ -5898,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 12 Oct 2026 11:44:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-13T07:45:10.969240+00:00"
  },
  {
   "title": "Ethiopian Airlines Resumes Mekelle Flights Amid Conflict - FTN news",
@@ -5909,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 12 Oct 2026 06:36:46 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-13T07:45:10.969240+00:00"
  },
  {
   "title": "Ethiopia’s Tigray war: Where do the UAE and Saudi Arabia stand?",
@@ -5920,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 13 Oct 2026 01:46:25 +0000",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-13T07:45:10.969240+00:00"
  },
  {
   "title": "Ethiopian Federal Forces Enter Adwa in Tigray - https://kulu-media.com/",
@@ -5931,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 13 Oct 2026 07:35:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-13T07:45:10.969240+00:00"
  },
  {
   "title": "Ethiopian troops enter Adigrat in Tigray, near the Eritrean border | #AJ shorts - Modern Ghana",
@@ -5942,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 12 Oct 2026 05:22:36 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-13T07:45:10.969240+00:00"
  },
  {
   "title": "Ethiopian Armed Groups Form Alliance Against Government - https://globalpost.com/",
@@ -5953,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 12 Oct 2026 20:47:57 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-13T07:45:10.969240+00:00"
  },
  {
   "title": "Daily_Brief: #UNHCR funding shortfall suspends refugee registration for tens of thousands in #Ethiopia - Addis Standard",
@@ -5964,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 13 Oct 2026 06:17:14 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-13T07:45:10.969240+00:00"
  },
  {
   "title": "Ethiopian official promises change in Tigray after troops retake regional capital - ABC News - Breaking News, Latest News and Videos",
@@ -5975,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 11 Oct 2026 14:40:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-13T07:45:10.969240+00:00"
  },
  {
   "title": "Daily_Brief: #Israel turns back Ethiopian Airlines cargo flight after identifying #Indonesian pilot - Addis Standard",
@@ -5986,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 13 Oct 2026 06:17:09 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-13T07:45:10.969240+00:00"
  }
 ]

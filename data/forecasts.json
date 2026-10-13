@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-10-13T00:43:33.022819+00:00",
+  "generated_at": "2026-10-13T07:45:11.167307+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 372,
-    "regions_with_located_evidence": 6,
+    "recent_event_records": 382,
+    "regions_with_located_evidence": 7,
     "control_change_records": 13,
     "contested_or_early_records": 0,
-    "reported_records": 372,
+    "reported_records": 382,
     "duplicate_records_ignored": 160,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 41,
+      "weight": 42,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
@@ -27,20 +27,20 @@
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 10,
+      "weight": 9,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 74,
+      "risk_index": 75,
       "level": "ELEVATED",
       "uncertainty": 55,
-      "event_count": 33,
-      "weighted_signal": 4.51,
+      "event_count": 35,
+      "weighted_signal": 4.86,
       "control_change_signal": 0.38,
-      "explanation": "33 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "35 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-13",
@@ -72,6 +72,51 @@
             {
               "outlet": "Africanews English",
               "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOai1jMjFqSk9hRFlHZHh2X2UtZTZVOW90WktPSGVKYk1RWHNkOVNIM21lbkRPcU5yRnNMcFJlM0JTSzhMcjZOSDQ1ekZhZFhIYnhRUHdEQnAyclljU2UxS001YXhrWkt3MklZTnFXdTBBU1dXcl9RakRmaWsxbklUZHhUdEw3VjBVVXpUcU1FX2NKU08zdkZ0TV9za3FpdW0wOGJCcHBaUjlid2V4M2M2NWtHcWhpVWc2dURoNmlLX1NCUQ?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Addis Ababa",
+      "risk_index": 63,
+      "level": "GUARDED",
+      "uncertainty": 55,
+      "event_count": 7,
+      "weighted_signal": 1.93,
+      "control_change_signal": 0,
+      "explanation": "7 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-13",
+          "title": "Ethiopia’s Tigray war: Where do the UAE and Saudi Arabia stand?",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/13/ethiopias-tigray-war-where-do-the-uae-and-saudi-arabia-stand?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-11",
+          "title": "Ethiopia, Eritrea ramp up rhetoric: Are they inching towards war?",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/11/ethiopia-eritrea-ramp-up-rhetoric-are-they-inching-towards-war?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-10",
+          "title": "Eritrea urges UN to intervene in standoff with Ethiopia",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/10/eritrea-urges-un-to-intervene-in-standoff-with?traffic_source=rss"
             }
           ]
         }
@@ -123,45 +168,23 @@
       ]
     },
     {
-      "region": "Addis Ababa",
-      "risk_index": 51,
-      "level": "GUARDED",
+      "region": "Southern Tigray",
+      "risk_index": 25,
+      "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 6,
-      "weighted_signal": 1.42,
+      "event_count": 1,
+      "weighted_signal": 0.51,
       "control_change_signal": 0,
-      "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
-          "date": "2026-10-11",
-          "title": "Ethiopia, Eritrea ramp up rhetoric: Are they inching towards war?",
+          "date": "2026-10-13",
+          "title": "News Analysis: Tensions deepen in Southern Tigray as NaMA accuses Tigray Peace Force of abuses after clashes over local security, administrative control - Addis Standard",
           "grade": "REPORTED",
           "sources": [
             {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/10/11/ethiopia-eritrea-ramp-up-rhetoric-are-they-inching-towards-war?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-10",
-          "title": "Eritrea urges UN to intervene in standoff with Ethiopia",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/10/10/eritrea-urges-un-to-intervene-in-standoff-with?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-09",
-          "title": "Will Ethiopia’s neighbours intervene as Tigray war escalates?",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/10/9/will-ethiopias-neighbours-intervene-as-tigray-war-escalates?traffic_source=rss"
+              "outlet": "Addis Standard",
+              "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdmtEMGtNR1ROMEN3ZTNNeEpJWWhwOFlnSEZfclFwWG1HTkUtRlFhN0pNOF93N1NtbEtnRWxMZ1JRa1U5NnZVcVltanhjcmtLY1VzdGRTcVk0TWJvMXkxOFExaS1UWHdBUEhBT054YW1zVjRmWkJQSk9rRm5BQmdrQktYcFoyblNMVjg5LXRyd1dhVnRzamlLbVBhWnVWSnhZeFNfWFNOc29kdTF1ZHpLbnlLRDFCZWVtNU9LMkhTajdrazY5QUZ4dEpvbmZHZDhRei1jWUh5Y2pIS0t1RkxwTmlRbkVjNGYtQjJvTkNHYURLbUF6NWp5T0ZPUUtDcjVHdjdNSlZmSWM?oc=5"
             }
           ]
         }
