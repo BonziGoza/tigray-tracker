@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-13T16:02:19.063646+00:00",
+  "generated_at": "2026-10-13T21:18:02.017333+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 402,
+    "recent_event_records": 414,
     "regions_with_located_evidence": 7,
     "control_change_records": 13,
     "contested_or_early_records": 0,
-    "reported_records": 402,
-    "duplicate_records_ignored": 161,
+    "reported_records": 414,
+    "duplicate_records_ignored": 164,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -124,13 +124,13 @@
     },
     {
       "region": "Eastern Tigray",
-      "risk_index": 51,
+      "risk_index": 54,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 11,
-      "weighted_signal": 1.92,
+      "event_count": 13,
+      "weighted_signal": 2.27,
       "control_change_signal": 0.84,
-      "explanation": "11 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "13 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-12",
