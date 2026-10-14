@@ -5960,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 14 Oct 2026 04:09:28 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-14T06:12:48.819298+00:00"
  },
  {
   "title": "From Allies to Enemies: Ethiopia and Eritrea Edge Toward War - The New York Times",
@@ -5971,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 14 Oct 2026 04:01:07 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-14T06:12:48.819298+00:00"
  },
  {
   "title": "#Daily_Brief: #Ethiopian Airlines to resume Addis–Mekelle flights on Sunday - Addis Standard",
@@ -5982,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 12 Oct 2026 15:52:31 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-14T06:12:48.819298+00:00"
  },
  {
   "title": "Ethiopia War Security Review, October 13, 2026 - Critical Threats",
@@ -5993,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 13 Oct 2026 22:50:46 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-14T06:12:48.819298+00:00"
  }
 ]
