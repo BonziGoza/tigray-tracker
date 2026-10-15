@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-10-15T09:58:17.812135+00:00",
+  "generated_at": "2026-10-15T15:04:14.365356+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 483,
+    "recent_event_records": 500,
     "regions_with_located_evidence": 7,
     "control_change_records": 17,
     "contested_or_early_records": 0,
-    "reported_records": 483,
-    "duplicate_records_ignored": 175,
+    "reported_records": 500,
+    "duplicate_records_ignored": 177,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 40,
+      "weight": 39,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
@@ -27,20 +27,20 @@
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 10,
+      "weight": 11,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 74,
+      "risk_index": 76,
       "level": "ELEVATED",
       "uncertainty": 55,
-      "event_count": 44,
-      "weighted_signal": 5.06,
+      "event_count": 47,
+      "weighted_signal": 5.68,
       "control_change_signal": 0.27,
-      "explanation": "44 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "47 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-13",
