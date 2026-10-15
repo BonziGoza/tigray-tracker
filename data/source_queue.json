@@ -5924,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 19:08:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T22:22:12.591071+00:00"
  },
  {
   "title": "‘Step Back Now’: US Demands Peace as Ethiopia & Eritrea Tensions Escalate | Firstpost Africa - Firstpost",
@@ -5935,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 18:36:59 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T22:22:12.591071+00:00"
  },
  {
   "title": "Hospitals in Ethiopia's Tigray resume operations as supplies arrive: UN - Xinhua",
@@ -5946,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 21:02:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T22:22:12.591071+00:00"
  },
  {
   "title": "Ethiopian Forces Enter Aksum as Eritrea Denies Heavy Military Losses - https://kulu-media.com/",
@@ -5957,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 20:24:06 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T22:22:12.591071+00:00"
  },
  {
   "title": "EEPA reports on ENDF controls key towns in northwestern and central Tigray - IDN-InDepthNews",
@@ -5968,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 13:37:52 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T22:22:12.591071+00:00"
  },
  {
   "title": "TPLF-Aligned Tigray Fighters Claim Recapture of Abiy Adi and Two Other Towns - kulu-media.com",
@@ -5979,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 22:10:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T22:22:12.591071+00:00"
  },
  {
   "title": "Rubio urges restraint over Ethiopia-Eritrea tensions as rights group reports civilians killed - Temple Daily Telegram",
@@ -5990,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 09:29:22 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T22:22:12.591071+00:00"
  }
 ]

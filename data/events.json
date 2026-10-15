@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T19:11:23.745753+00:00",
+ "updated": "2026-10-15T22:22:12.591719+00:00",
  "events": [
   {
    "key": "unknown-2026-10-15-78de3701",
@@ -496,7 +496,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 60,
      "credibility_label": "MODERATE",
-     "credibility_explanation": "Publisher registry: The Batesville Daily Guard (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 10; corroboration contributes up to 20 points. Article credibility score: 60/100."
+     "credibility_explanation": "Publisher registry: The Batesville Daily Guard (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 11; corroboration contributes up to 20 points. Article credibility score: 60/100."
     },
     {
      "outlet": "AP News",
@@ -510,7 +510,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 73,
      "credibility_label": "MODERATE",
-     "credibility_explanation": "Publisher registry: Associated Press (provisional_manual_assessment; confidence high). Publisher reputation component: 94/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 10; corroboration contributes up to 20 points. Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed. Article credibility score: 73/100."
+     "credibility_explanation": "Publisher registry: Associated Press (provisional_manual_assessment; confidence high). Publisher reputation component: 94/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 11; corroboration contributes up to 20 points. Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed. Article credibility score: 73/100."
     },
     {
      "outlet": "Audacy",
@@ -524,7 +524,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 60,
      "credibility_label": "MODERATE",
-     "credibility_explanation": "Publisher registry: Audacy (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 10; corroboration contributes up to 20 points. Article credibility score: 60/100."
+     "credibility_explanation": "Publisher registry: Audacy (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 11; corroboration contributes up to 20 points. Article credibility score: 60/100."
     },
     {
      "outlet": "ABC News - Breaking News, Latest News and Videos",
@@ -538,7 +538,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 70,
      "credibility_label": "MODERATE",
-     "credibility_explanation": "Publisher registry: ABC News (provisional_manual_assessment; confidence high). Publisher reputation component: 84/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 10; corroboration contributes up to 20 points. Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed. Article credibility score: 70/100."
+     "credibility_explanation": "Publisher registry: ABC News (provisional_manual_assessment; confidence high). Publisher reputation component: 84/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 11; corroboration contributes up to 20 points. Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed. Article credibility score: 70/100."
     },
     {
      "outlet": "Ahram Online",
@@ -552,7 +552,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 63,
      "credibility_label": "MODERATE",
-     "credibility_explanation": "Publisher registry: Ahram Online (provisional_manual_assessment; confidence low). Publisher reputation component: 60/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 10; corroboration contributes up to 20 points. Article credibility score: 63/100."
+     "credibility_explanation": "Publisher registry: Ahram Online (provisional_manual_assessment; confidence low). Publisher reputation component: 60/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 11; corroboration contributes up to 20 points. Article credibility score: 63/100."
     },
     {
      "outlet": "The Spec",
@@ -566,7 +566,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 60,
      "credibility_label": "MODERATE",
-     "credibility_explanation": "Publisher registry: The Spec (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 10; corroboration contributes up to 20 points. Article credibility score: 60/100."
+     "credibility_explanation": "Publisher registry: The Spec (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 11; corroboration contributes up to 20 points. Article credibility score: 60/100."
     },
     {
      "outlet": "Bozeman Daily Chronicle",
@@ -580,7 +580,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 60,
      "credibility_label": "MODERATE",
-     "credibility_explanation": "Publisher registry: Bozeman Daily Chronicle (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 10; corroboration contributes up to 20 points. Article credibility score: 60/100."
+     "credibility_explanation": "Publisher registry: Bozeman Daily Chronicle (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 11; corroboration contributes up to 20 points. Article credibility score: 60/100."
     },
     {
      "outlet": "Ottumwa Courier",
@@ -594,7 +594,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 60,
      "credibility_label": "MODERATE",
-     "credibility_explanation": "Publisher registry: Ottumwa Courier (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 10; corroboration contributes up to 20 points. Article credibility score: 60/100."
+     "credibility_explanation": "Publisher registry: Ottumwa Courier (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 11; corroboration contributes up to 20 points. Article credibility score: 60/100."
     },
     {
      "outlet": "Santa Cruz Sentinel",
@@ -608,7 +608,7 @@
      "repost_of_fingerprint": "",
      "credibility_score": 60,
      "credibility_label": "MODERATE",
-     "credibility_explanation": "Publisher registry: Santa Cruz Sentinel (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 10; corroboration contributes up to 20 points. Article credibility score: 60/100."
+     "credibility_explanation": "Publisher registry: Santa Cruz Sentinel (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 11; corroboration contributes up to 20 points. Article credibility score: 60/100."
     },
     {
      "outlet": "The Killeen Daily Herald",
@@ -622,7 +622,21 @@
      "repost_of_fingerprint": "",
      "credibility_score": 60,
      "credibility_label": "MODERATE",
-     "credibility_explanation": "Publisher registry: The Killeen Daily Herald (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 10; corroboration contributes up to 20 points. Article credibility score: 60/100."
+     "credibility_explanation": "Publisher registry: The Killeen Daily Herald (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 11; corroboration contributes up to 20 points. Article credibility score: 60/100."
+    },
+    {
+     "outlet": "Temple Daily Telegram",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOHdnSmxVNFU2b3JQZjBxUDhtbUY4SEhrMndHODczcEdVN1A0RTc3VXotZ09zaHBlY3dHa01ydV9uSW9mTHhITXFGbnF0dFc5OHoyandYZVVDNDFYMHVjR1N0T2pVbkw4WXJkank0R2JRTFQyZTlFTW1FT28zRExBYjZTTTBTaGNCX1BXa3dzVU1PN3lRM0E?oc=5",
+     "title": "Rubio urges restraint over Ethiopia-Eritrea tensions as rights group reports civilians killed - Temple Daily Telegram",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Thu, 15 Oct 2026 09:29:22 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 60,
+     "credibility_label": "MODERATE",
+     "credibility_explanation": "Publisher registry: Temple Daily Telegram (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 11; corroboration contributes up to 20 points. Article credibility score: 60/100."
     }
    ],
    "manual": false,
@@ -632,20 +646,20 @@
    "lon": null,
    "date": "2026-10-15",
    "kind": "clash",
-   "summary": "Rubio urges restraint over Ethiopia-Eritrea tensions as rights group reports civilians killed - Santa Cruz Sentinel",
+   "summary": "Rubio urges restraint over Ethiopia-Eritrea tensions as rights group reports civilians killed - Temple Daily Telegram",
    "attribution": "independent",
    "last_seen": "2026-10-15",
    "translations": [],
    "evidence": {},
    "grade": "REPORTED",
    "confidence": 52,
-   "source_count": 10,
-   "news_source_count": 10,
+   "source_count": 11,
+   "news_source_count": 11,
    "source_tier": "A",
    "best_source": "Associated Press",
-   "independent_source_count": 10,
+   "independent_source_count": 11,
    "high_quality_source_count": 2,
-   "evidence_explanation": "Best source: Associated Press (A-tier). 10 independent source records; 2 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+   "evidence_explanation": "Best source: Associated Press (A-tier). 11 independent source records; 2 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
   },
   {
    "key": "unknown-2026-10-15-ed8976fc",
@@ -2720,6 +2734,246 @@
    "independent_source_count": 1,
    "high_quality_source_count": 1,
    "evidence_explanation": "Best source: Al Jazeera (A-tier). 1 independent source record; 1 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-15-61b288e1",
+   "sources": [
+    {
+     "outlet": "kulu-media.com",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9NekZkaDVaYkxQSjhvZjVRQV9NNG5WMU1tVVdGOGpQSHljU1F4TXJIU0V1SGFQX1ZVdjJPUmNHVFhtSzNWNm10Mmhsc1lQb0VfNF9iUHZCYlVZZjUxNDFSaE1KMTRRZDZkRTgzcUsyUFdNcnc?oc=5",
+     "title": "TPLF-Aligned Tigray Fighters Claim Recapture of Abiy Adi and Two Other Towns - kulu-media.com",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Thu, 15 Oct 2026 22:10:42 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: kulu-media.com (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-15",
+   "kind": "claim",
+   "summary": "TPLF-Aligned Tigray Fighters Claim Recapture of Abiy Adi and Two Other Towns - kulu-media.com",
+   "attribution": "independent",
+   "last_seen": "2026-10-15",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "kulu-media.com",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: kulu-media.com (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-15-052180f2",
+   "sources": [
+    {
+     "outlet": "Xinhua",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4yeDhXZ2ZTUnRkMkhyWjhyNm85blVLT3VTempoWGotMFBQX3lwZE84ZzAzVkhtdFZhbU9JbllpYXhNbTRldzRSUlhRcy1hNW14VWh0NmY1c0lLTElMSW92YTJONnVFVG1FM2JuejF5bFdGaXcwbDhoSTc0UUo?oc=5",
+     "title": "Hospitals in Ethiopia's Tigray resume operations as supplies arrive: UN - Xinhua",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Thu, 15 Oct 2026 21:02:15 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: Xinhua (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-15",
+   "kind": "other",
+   "summary": "Hospitals in Ethiopia's Tigray resume operations as supplies arrive: UN - Xinhua",
+   "attribution": "independent",
+   "last_seen": "2026-10-15",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "Xinhua",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Xinhua (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-15-c99faad9",
+   "sources": [
+    {
+     "outlet": "https://kulu-media.com/",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Obk9Cci1KQURMTWhoeTByUWFkLU04VTlGWWNaYUVMeEVOVnJBbkc1WGhpbFFXUGJOdUVoZWFHUmQ1RUVNdmtWTXBpNHppU1czMjh5LXFITXpkM2FZLVd5N2JB?oc=5",
+     "title": "Ethiopian Forces Enter Aksum as Eritrea Denies Heavy Military Losses - https://kulu-media.com/",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Thu, 15 Oct 2026 20:24:06 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: https://kulu-media.com/ (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-15",
+   "kind": "other",
+   "summary": "Ethiopian Forces Enter Aksum as Eritrea Denies Heavy Military Losses - https://kulu-media.com/",
+   "attribution": "independent",
+   "last_seen": "2026-10-15",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "https://kulu-media.com/",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: https://kulu-media.com/ (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-15-294d38fb",
+   "sources": [
+    {
+     "outlet": "RANE Worldview",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbTZnc291clo3UVZQSjFFVEVVY3J1aE8xWGRWU2hkdldGLVVhOXZHUUdYVzJCTmdrX1VEc1pXcjlpMkVfQ2dzQXdCMHI2UnN3ZjJBY0pNT0c2TnFxdUtOaHhfOXZkR0daOFNZcXF5SXROUUU3ZzR6a3VJNnkyR2NkUldxTXlKQ0J2NjZMVGs4WGpUbnJLdVpQWUdjZ3ZoZzFjZ0gtTXZCYnhpLWpXZlY1RXlHdS1DY25rOXNHbmN4d3hFU3dRckRNZlFR?oc=5",
+     "title": "Will Ethiopia Invade Eritrea Before the End of 2026? - RANE Worldview",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Thu, 15 Oct 2026 19:08:00 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: RANE Worldview (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-15",
+   "kind": "other",
+   "summary": "Will Ethiopia Invade Eritrea Before the End of 2026? - RANE Worldview",
+   "attribution": "independent",
+   "last_seen": "2026-10-15",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "RANE Worldview",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: RANE Worldview (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-15-e4caa71e",
+   "sources": [
+    {
+     "outlet": "Firstpost",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbm9xUnV6T1lNUl9aSkpGYnhtcjlyeWtXZHJlcXZ5YlRuRHNZR1BvY3V2TU1uMnJzdF8zRmVxbUF2Mi00ZHU1TTRoU0ZPZUNRZGwtWDlmcG9qLWsxa0J1QWR5OElnX2ZtTE9xU2NoUkYzMnVQUG9ITGlZWnVVSXpiU2JhQ2FrbndtQ3JoRE5LdDUtalhjdVdGU1V6WnlQekRYMkhRWW5WTDE2Y2w1dmxYMjlTU1hOaWNLVU0xMnBZdm9DcXNBN0FEZ25YZG1aVXVmemRmcVo5Q0VXYU5yN1FsajExZ9IB6AFBVV95cUxPWDFVUlhGRkFIZURuSnhhd3EtQkxfMjhtdVJvaHBva2JnZzJyZXhtTGxRSW1FTExhcElhZ1RUbjA0QUd0SXBGTDRDdzczQkJJeDNJRlZhcEFVcmhKS2V4WS10RFhGTmpHR1FnX0EzYTJHLUxUMUFDZjhxV3dST0NDZnVUNTZ6UlN4cmRPZm9XRmxuLVNnOTNIaEw4NUYxWVhWLXVaN3VPdHB5dlpHblBHeVE0NF9yRFYxTHhnS0szb0NVMkJGLVRpOXlLN0JYMUZmeHA4bXRlQVdKTjc1UXRKRGJPalRDVEdn?oc=5",
+     "title": "‘Step Back Now’: US Demands Peace as Ethiopia & Eritrea Tensions Escalate | Firstpost Africa - Firstpost",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Thu, 15 Oct 2026 18:36:59 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: Firstpost (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-15",
+   "kind": "diplomatic",
+   "summary": "‘Step Back Now’: US Demands Peace as Ethiopia & Eritrea Tensions Escalate | Firstpost Africa - Firstpost",
+   "attribution": "independent",
+   "last_seen": "2026-10-15",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "Firstpost",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Firstpost (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "central-tigray-2026-10-15-70edf614",
+   "sources": [
+    {
+     "outlet": "IDN-InDepthNews",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRnF3RkQwSmpiSm9yQnJvckpIeUNBdjlwc3Qzd3pkOHpXb2Y2MkMzX0dtckN6V2xJc1FjeEFJeFhZa29KUk12Vm9NcUV6MGJ3X1hOTTlBcGxKdTRqRWpocEFvcEFEaUpSVTZMVG0tOHV3aHdRWG5QUlpNbTVSbTczc0xBZVVSOXlySU5XRXp5TTFCT1RUMDNacnFoS2F5cW5N?oc=5",
+     "title": "EEPA reports on ENDF controls key towns in northwestern and central Tigray - IDN-InDepthNews",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Thu, 15 Oct 2026 13:37:52 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: IDN-InDepthNews (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "Central Tigray",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-15",
+   "kind": "control_change",
+   "summary": "EEPA reports on ENDF controls key towns in northwestern and central Tigray - IDN-InDepthNews",
+   "attribution": "independent",
+   "last_seen": "2026-10-15",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "IDN-InDepthNews",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: IDN-InDepthNews (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
   },
   {
    "key": "unknown-2026-10-14-d6205403",

@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-15T19:11:23.967403+00:00",
+  "generated_at": "2026-10-15T22:22:12.797797+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 512,
+    "recent_event_records": 518,
     "regions_with_located_evidence": 7,
-    "control_change_records": 18,
+    "control_change_records": 19,
     "contested_or_early_records": 0,
-    "reported_records": 512,
+    "reported_records": 518,
     "duplicate_records_ignored": 180,
     "overall_evidence_uncertainty": 55
   },
@@ -34,14 +34,25 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 76,
+      "risk_index": 81,
       "level": "ELEVATED",
       "uncertainty": 55,
-      "event_count": 47,
-      "weighted_signal": 5.68,
-      "control_change_signal": 0.27,
-      "explanation": "47 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "event_count": 48,
+      "weighted_signal": 6.07,
+      "control_change_signal": 0.66,
+      "explanation": "48 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-15",
+          "title": "EEPA reports on ENDF controls key towns in northwestern and central Tigray - IDN-InDepthNews",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "IDN-InDepthNews",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRnF3RkQwSmpiSm9yQnJvckpIeUNBdjlwc3Qzd3pkOHpXb2Y2MkMzX0dtckN6V2xJc1FjeEFJeFhZa29KUk12Vm9NcUV6MGJ3X1hOTTlBcGxKdTRqRWpocEFvcEFEaUpSVTZMVG0tOHV3aHdRWG5QUlpNbTVSbTczc0xBZVVSOXlySU5XRXp5TTFCT1RUMDNacnFoS2F5cW5N?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-10-13",
           "title": "Ethiopian forces enter strategic Tigray town of Adwa, witnesses say",
@@ -61,17 +72,6 @@
             {
               "outlet": "ebc.et",
               "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1xVGU3bzJIWDVOajM0WHo3eDRYdWRiaHl3ZnhUeGNoZWFpc1lCVGtGM2U1UVpDSWRaQjA5X3pkZWxRNlFCVXdJdF9iOWNraWxPQWlodURlRjl1ZG1TN29nT3V0RnhvUQ?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-12",
-          "title": "Ethiopia: Adwa recaptured amid tensions with Eritrea [Africanews Today] - Africanews English",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Africanews English",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd001WnRTRElFeGpxNGJkOHVIVWRIVmZEQzRDdjlSN1R5RlktRmVGVE1ZSkR2Ni1hNG5YM3VMenRVV0pWOWJ6U2JRZ2FzZm9HY1hoMUttcG5CcnBRYUZkNUJzU29TTXFmbUkwN2otQnJvTHhRSjVvYnVGdGI0Z2dWd09MN1JSVTdBdzZlMVJRZGxnbnVmMFl0Zk9xbU1PWjlhUjZWVGZycWhGYm8?oc=5"
             }
           ]
         }
