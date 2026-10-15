@@ -5900,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 00:10:24 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T04:43:15.292395+00:00"
  },
  {
   "title": "Salsay Weyane Tigray Accuses TPLF, Federal Govt of Escalating Conflict - Borkena",
@@ -5911,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 00:10:35 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T04:43:15.292395+00:00"
  },
  {
   "title": "“TPLF forces Started Controlling Key Places” : Report - Borkena",
@@ -5922,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 04:18:07 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T04:43:15.292395+00:00"
  },
  {
   "title": "Ethiopian troops at the border with Eritrea, amid fears of a direct clash between the two regional rivals - Agenzia Nova",
@@ -5933,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 14 Oct 2026 11:15:26 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T04:43:15.292395+00:00"
  },
  {
   "title": "Ethiopia’s Tigray war: Where do the UAE and Saudi Arabia stand? - Jagonews24",
@@ -5944,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 13 Oct 2026 11:21:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T04:43:15.292395+00:00"
  },
  {
   "title": "News: Secretary Rubio urges respect for sovereignty, invokes 2018 #Ethiopia-#Eritrea peace framework In a telephone conversation with Ethiopian Prime Minister Abiy Ahmed, Rubio stressed that “all countries in the Horn of Africa must respect the sovereignty - Facebook",
@@ -5955,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 14 Oct 2026 21:01:41 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T04:43:15.292395+00:00"
  },
  {
   "title": "Rubio discusses Ethiopia-Eritrea tensions with Ethiopia's Abiy - Devdiscourse",
@@ -5966,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 14 Oct 2026 18:54:08 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T04:43:15.292395+00:00"
  },
  {
   "title": "US warns against border incursions in call with Ethiopia’s Abiy - Somalia Today",
@@ -5977,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 01:14:03 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T04:43:15.292395+00:00"
  },
  {
   "title": "Eritrean Troops Still Control Five kebeles in Irob district : Tigray Opposition leader - Borkena",
@@ -5988,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 04:18:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-15T04:43:15.292395+00:00"
  }
 ]
