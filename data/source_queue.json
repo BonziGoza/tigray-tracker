@@ -5912,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 23:02:20 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T01:23:35.344395+00:00"
  },
  {
   "title": "Between Ethiopia and Eritrea, a border town's residents worry - Courthouse News",
@@ -5923,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 19:28:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T01:23:35.344395+00:00"
  },
  {
   "title": "Why the world is worried about the looming danger of an all-out Ethiopia-Eritrea war - The Globe and Mail",
@@ -5934,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 23:37:52 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T01:23:35.344395+00:00"
  },
  {
   "title": "Eritrea asks AU to restore representation after Ethiopia expels diplomats watch - Facebook",
@@ -5945,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 16:00:46 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T01:23:35.344395+00:00"
  },
  {
   "title": "Ethiopia’s Sea Access Is a Shared Prosperity Opportunity, Not a Threat to Eritrea, Says Blue Revolution Movement - Fana Media Corporation S.C",
@@ -5956,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 17:29:20 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T01:23:35.344395+00:00"
  },
  {
   "title": "Rubio urges restraint over Ethiopia-Eritrea tensions as rights group reports civilians killed - Audacy",
@@ -5967,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 09:29:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T01:23:35.344395+00:00"
  },
  {
   "title": "Containing the New War in Northern Ethiopia - International Crisis Group",
@@ -5978,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 09:12:30 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T01:23:35.344395+00:00"
  },
  {
   "title": "Why The New Fighting In Tigray Threatens The Fragile Peace - ИФЗ РАН",
@@ -5989,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 23:32:33 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T01:23:35.344395+00:00"
  }
 ]
