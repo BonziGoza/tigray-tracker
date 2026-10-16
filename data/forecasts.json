@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-16T12:28:37.750645+00:00",
+  "generated_at": "2026-10-16T17:27:13.184993+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 547,
+    "recent_event_records": 572,
     "regions_with_located_evidence": 8,
     "control_change_records": 19,
     "contested_or_early_records": 0,
-    "reported_records": 547,
-    "duplicate_records_ignored": 186,
+    "reported_records": 572,
+    "duplicate_records_ignored": 188,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -34,14 +34,25 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 75,
+      "risk_index": 82,
       "level": "ELEVATED",
       "uncertainty": 55,
-      "event_count": 48,
-      "weighted_signal": 5.1,
+      "event_count": 49,
+      "weighted_signal": 5.62,
       "control_change_signal": 0.55,
-      "explanation": "48 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "49 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-16",
+          "title": "Ethiopia announces instalment of interim government in Tigray",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/16/ethiopia-announces-instalment-of-interim-government-in-tigray?traffic_source=rss"
+            }
+          ]
+        },
         {
           "date": "2026-10-15",
           "title": "EEPA reports on ENDF controls key towns in northwestern and central Tigray - IDN-InDepthNews",
@@ -61,17 +72,6 @@
             {
               "outlet": "aljazeera.com",
               "url": "https://www.aljazeera.com/news/2026/10/12/ethiopian-troops-capture-adwa-without-a-fight-witnesses-say?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-13",
-          "title": "Tigray Peace Process Resumes as Combatants Disarm, Daily Life Returns to Mekelle - ebc.et",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "ebc.et",
-              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1xVGU3bzJIWDVOajM0WHo3eDRYdWRiaHl3ZnhUeGNoZWFpc1lCVGtGM2U1UVpDSWRaQjA5X3pkZWxRNlFCVXdJdF9iOWNraWxPQWlodURlRjl1ZG1TN29nT3V0RnhvUQ?oc=5"
             }
           ]
         }
@@ -241,13 +241,13 @@
     },
     {
       "region": "Amhara",
-      "risk_index": 3,
+      "risk_index": 5,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 1,
-      "weighted_signal": 0.2,
+      "event_count": 2,
+      "weighted_signal": 0.38,
       "control_change_signal": 0,
-      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-16",
@@ -257,6 +257,17 @@
             {
               "outlet": "Addis Standard",
               "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSGVmVDd4VUdtZXFGY3FoR2pDbUdZVVZ6QXdQaVpFcWZVRDB1amN1bU9FS0J1Szd4LWRoYnNlcTI0RVpXRWIxVzMzZjdCVmRpVmpKdzNxR3g5V2ZsSldtOGVxOHR3YjZlNmdIc3VIWmdaeEd0cE5oZmZQQkZEUHJUZDhldDF6WjVlU1ZWZkUzeXdqQmI4QWZvcXFoeE5GYXgzenVjWGhYUjFRRTM5MFVz?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-16",
+          "title": "News: Rally goers in #North_Wollo’s Kobo demand halt to provisional administration elections in #Southern_Tigray localities Addis Abeba – Residents and community representatives fr",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Facebook",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZVpnLUQ5dFdVMWl2V1djc1lqdWZjV2lveUZkallWcWZ5c0swSXZ0UzRwMFNtUUVTUmlhd0xWQVJYd0c2R3VtbjFSTmJFenU3eG94NHBuZnM2M3cxelNWNmZEckFXZ3pfUWhoQnpMalVOQWtTOXZyMkE3YnBRdGh5QUFtYnBWVXdJSFdQYUZIM2hWaV81QVE5UndlTGMxaWV5eUw0LWUwbXhhSjdrTl96eC1DZ1Q5TkxJenpEOVk3R2Y2VV8zbGRodTBPVFJSN3VRSlp6R0I3NXpjUkZXMmVZ?oc=5"
             }
           ]
         }
