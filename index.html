@@ -25,7 +25,7 @@ main{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(390px,1fr);gap:1
 .map-legend{background:rgba(9,19,32,.96);color:#eaf3ff;border:1px solid #38516d;border-radius:11px;padding:11px 13px;box-shadow:0 8px 25px #0007;font:12px/1.4 system-ui,sans-serif;min-width:205px;backdrop-filter:blur(8px)}.map-legend strong{display:block;letter-spacing:.12em;font-size:10px;color:#8ea8c3;margin-bottom:8px}.map-legend>div{display:flex;gap:8px;align-items:center;margin:7px 0}.map-legend small{color:#f1c68d}.map-legend .legend-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin:0 8px 0 2px;flex:none}
 .map-legend .legend-line{display:inline-block;flex:0 0 24px;height:7px;border:1px solid #ffffff66;border-radius:2px}
 .leaflet-container{font:12px/1.5 system-ui,sans-serif;background:#101d2c}.leaflet-control-zoom a,.leaflet-bar a{background:#101d2c!important;color:#e3edf8!important;border-color:#334960!important}.leaflet-control-attribution{background:#0b1624d9!important;color:#93a8bd!important}.leaflet-control-attribution a{color:#7ec7ff!important}
-.map-actions{display:flex;gap:6px;flex-wrap:wrap;padding:7px;background:#0b1624ef;border:1px solid #38516d;border-radius:11px;box-shadow:0 6px 20px #0005}.map-actions button{background:#15283c;color:#e3edf8;border:1px solid #38516d;border-radius:7px;padding:7px 10px;font-weight:650;font-size:11px;cursor:pointer}.map-actions button:hover{background:#204464;border-color:#65b8f3}.map-actions button[aria-pressed="false"]{opacity:.65}[hidden]{display:none!important}
+.map-actions{display:flex;gap:6px;flex-wrap:wrap;padding:7px;background:#0b1624ef;border:1px solid #38516d;border-radius:11px;box-shadow:0 6px 20px #0005}.map-actions button{background:#15283c;color:#e3edf8;border:1px solid #38516d;border-radius:7px;padding:7px 10px;font-weight:650;font-size:11px;cursor:pointer}.map-actions button:hover{background:#204464;border-color:#65b8f3}.map-actions button[aria-pressed="false"]{opacity:.65}[hidden]{display:none!important}.map-controls{display:flex;gap:5px;padding:6px;background:#0b1624ed;border:1px solid #38516d;border-radius:10px;box-shadow:0 7px 20px #0005}.map-controls button{background:#15283c;color:#e3edf8;border:1px solid #38516d;border-radius:7px;padding:7px 10px;font-weight:700;font-size:11px;cursor:pointer}.map-controls button:hover:not(:disabled){background:#204464;border-color:#65b8f3}.map-controls button:disabled{opacity:.45;cursor:not-allowed}.map-status{display:flex;flex-direction:column;gap:2px;padding:8px 10px;background:#0b1624ed;border:1px solid #38516d;border-radius:10px;color:#dce9f8;box-shadow:0 7px 20px #0005;font-size:11px}.map-status b{font-size:9px;letter-spacing:.12em;color:#70c5ff}.map-status span{color:#9fb2c7}.map-legend .legend-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;background:#64748b}.map-legend .legend-dot.corroborated{background:#18794e}.map-legend .legend-dot.claim{background:#b42318}[hidden]{display:none!important}
 @media(min-width:1500px){main{grid-template-columns:minmax(0,1.6fr) minmax(420px,.9fr)}}@media(max-width:950px){main{grid-template-columns:minmax(0,1fr) minmax(340px,.95fr);padding:10px;gap:10px}#side{padding:12px}}
 @media(max-width:760px){header{padding:15px 17px}main{display:flex;flex-direction:column;height:auto;min-height:0;padding:9px;gap:10px}#map{height:53vh;min-height:350px;flex:none}#side{overflow:visible;padding:12px}.view-tabs{top:0}.stats{gap:6px}.stat{padding:10px 5px}.f button{padding:7px 8px}.map-legend{min-width:175px;padding:8px 10px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
@@ -38,51 +38,93 @@ main{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(390px,1fr);gap:1
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 const COL={CONFIRMED:"#1f7a3d","STRONGLY CORROBORATED":"#18794e",CORROBORATED:"#2563a6",REPORTED:"#b7791f",DEVELOPING:"#9a6700",CLAIM:"#b42318"};
-const map=L.map("map").setView([13.6,39.5],7);
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{subdomains:"abc",maxZoom:19,attribution:"© OpenStreetMap contributors"}).addTo(map);
-let events=[],gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1},credOn={STRONG:1,MODERATE:1,LIMITED:1},layer=L.layerGroup().addTo(map),markers={};
-let baseMapLayer=null,historicalLayer=null,forecastData=null;
-const mapLegend=L.control({position:"bottomleft"});
-mapLegend.onAdd=function(){
-  const box=L.DomUtil.create("div","map-legend");
-  box.innerHTML="<strong>MAP KEY</strong><div><span class='legend-line' style='background:#55b8ff'></span><span><b>Tigray region boundary</b></span></div><div><span class='legend-line' style='background:#ff5252;border-top:2px dashed #ff5252'></span><span><b>Historical TPLF/TDF outline</b><br><small>Archived · not current control</small></span></div><div><span class='legend-dot' style='background:#18794e'></span><span><b>Corroborated event</b></span></div><small>Only explicit, geolocated reporting is plotted as event markers.</small>";
-  L.DomEvent.disableClickPropagation(box);
-  return box;
-};
-mapLegend.addTo(map);
-const mapActions=L.control({position:"topright"});
-mapActions.onAdd=function(){
- const wrap=L.DomUtil.create("div","map-actions");
- const home=el("button","","Reset Tigray view");home.type="button";
- home.onclick=()=>map.setView([13.6,39.5],7);
- const history=el("button","","Show historical outline");history.type="button";history.setAttribute("aria-pressed","false");
- history.onclick=()=>{if(!historicalLayer)return;if(map.hasLayer(historicalLayer)){map.removeLayer(historicalLayer);history.textContent="Show historical outline";history.setAttribute("aria-pressed","false")}else{historicalLayer.addTo(map);history.textContent="Hide historical outline";history.setAttribute("aria-pressed","true")}};
- const boundary=el("button","","Hide boundary");boundary.type="button";boundary.setAttribute("aria-pressed","true");
- boundary.onclick=()=>{if(!baseMapLayer)return;if(map.hasLayer(baseMapLayer)){map.removeLayer(baseMapLayer);boundary.textContent="Show boundary";boundary.setAttribute("aria-pressed","false")}else{baseMapLayer.addTo(map);boundary.textContent="Hide boundary";boundary.setAttribute("aria-pressed","true")}};
- wrap.append(home,history,boundary);L.DomEvent.disableClickPropagation(wrap);return wrap;
-};
-mapActions.addTo(map);
-const baseMapStyle={color:"#55b8ff",weight:3,fillColor:"#55b8ff",fillOpacity:0,opacity:.95};
-const baseMapPointStyle={radius:5,color:"#46515c",fillColor:"#fff",fillOpacity:.9,weight:1.5};
+
+/* MAP V2: deliberately independent from the old mixed GeoJSON/base-map pipeline. */
+const MAP_CENTER=[13.817438300695837,38.79537860244431];
+const MAP_ZOOM=8;
+const map=L.map("map",{zoomControl:false,preferCanvas:true,worldCopyJump:false}).setView(MAP_CENTER,MAP_ZOOM);
+L.control.zoom({position:"bottomright"}).addTo(map);
+const osm=L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{
+  subdomains:"abc",maxZoom:19,crossOrigin:true,attribution:"© OpenStreetMap contributors"
+}).addTo(map);
+
+let events=[];
+let gradeOn={CONFIRMED:1,"STRONGLY CORROBORATED":1,CORROBORATED:1,REPORTED:1,DEVELOPING:1,CLAIM:1};
+let credOn={STRONG:1,MODERATE:1,LIMITED:1};
+let layer=L.layerGroup().addTo(map),markers={};
+let forecastData=null;
+let referenceLayer=null;
+
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
 function sourceLabel(s){if(s.platform==="reddit")return "Reddit";if(s.platform==="gdelt")return "GDELT";return s.outlet||"Source"}
 function isApiKeyError(value){return /api[\s_-]*key.{0,50}(required|missing|not provided)|(?:required|missing).{0,50}api[\s_-]*key/i.test(String(value||""))}
 function visible(e){return !!gradeOn[e.grade] && (e.sources||[]).some(s=>credOn[s.credibility_label||"LIMITED"]&&!isApiKeyError(s.title)&&!isApiKeyError(s.outlet))}
-function addBaseMap(data){
-  if(baseMapLayer)map.removeLayer(baseMapLayer);
-  if(historicalLayer)map.removeLayer(historicalLayer);
-  const features=data.features||[];
-  const isHistory=f=>{const p=f.properties||{};return !!p.archived||/tplf\s*\/\s*tdf|historical territorial-control/i.test((p.name||"")+" "+(p.folder||""))};
-  const isTigrayBoundary=f=>{const p=f.properties||{};return /tigray region border/i.test((p.name||"")+" "+(p.folder||""))&&!isHistory(f)};
-  baseMapLayer=L.geoJSON({type:"FeatureCollection",features:features.filter(isTigrayBoundary)},{
-    style:()=>baseMapStyle,
-    onEachFeature:(feature,featureLayer)=>{const p=feature.properties||{};featureLayer.bindPopup("<b>Tigray region boundary</b><br><small>Geographic reference only; not a territorial-control assessment.</small>")}
-  }).addTo(map);
-  historicalLayer=L.geoJSON({type:"FeatureCollection",features:features.filter(isHistory)},{
-    style:()=>({color:"#ff5252",weight:3,dashArray:"8 6",opacity:.95,fillColor:"#ff5252",fillOpacity:.12}),
-    onEachFeature:(feature,featureLayer)=>{const p=feature.properties||{};featureLayer.bindPopup("<b>"+(p.name||"Historical TPLF/TDF outline")+"</b><br><b style='color:#ff6678'>ARCHIVED / UNVERIFIED — NOT A CURRENT FRONT LINE</b><br><small>"+(p.source_note||p.description||"Original observation date and current validity are unverified.")+"</small>")}
-  });
-  map.setView([13.6,39.5],7);
+
+const mapStatus=L.control({position:"topright"});
+mapStatus.onAdd=function(){
+  const box=L.DomUtil.create("div","map-status");
+  box.innerHTML='<b>MAP V2</b><span id="mapStatusText">Basemap ready · reference layer not loaded</span>';
+  L.DomEvent.disableClickPropagation(box);return box;
+};
+mapStatus.addTo(map);
+
+const mapControls=L.control({position:"topleft"});
+mapControls.onAdd=function(){
+  const wrap=L.DomUtil.create("div","map-controls");
+  const home=el("button","","Tigray");
+  home.onclick=()=>map.setView(MAP_CENTER,MAP_ZOOM);
+  const fit=el("button","","Fit events");
+  fit.onclick=()=>fitEventBounds();
+  const ref=el("button","","Reference layer");
+  ref.disabled=true;ref.title="Import the supplied Google My Maps KML/KMZ before enabling this layer.";
+  wrap.append(home,fit,ref);L.DomEvent.disableClickPropagation(wrap);return wrap;
+};
+mapControls.addTo(map);
+
+const legend=L.control({position:"bottomleft"});
+legend.onAdd=function(){
+ const box=L.DomUtil.create("div","map-legend");
+ box.innerHTML='<strong>MAP KEY</strong><div><i class="legend-dot event"></i><span>Reported event</span></div><div><i class="legend-dot corroborated"></i><span>Corroborated / confirmed</span></div><div><i class="legend-dot claim"></i><span>Claim / developing</span></div><small>Event locations are plotted only when coordinates are present in the event record.</small>';
+ L.DomEvent.disableClickPropagation(box);return box;
+};
+legend.addTo(map);
+
+function fitEventBounds(){
+ const pts=events.filter(e=>visible(e)&&Number.isFinite(Number(e.lat))&&Number.isFinite(Number(e.lon)));
+ if(!pts.length){map.setView(MAP_CENTER,MAP_ZOOM);return}
+ const b=L.latLngBounds(pts.map(e=>[Number(e.lat),Number(e.lon)]));
+ map.fitBounds(b.pad(.12),{maxZoom:10,animate:false});
+}
+
+function addBaseMap(){
+ // Intentionally empty. The previous mixed base_map.geojson implementation is removed.
+ // The supplied Google My Maps layer will be imported here once its KML/KMZ is available.
+ referenceLayer=null;
+ const s=document.getElementById("mapStatusText");
+ if(s)s.textContent="Basemap ready · reference layer awaiting import";
+}
+
+function draw(){
+ layer.clearLayers();markers={};
+ const list=document.getElementById("list");list.replaceChildren();
+ events.filter(visible).forEach(e=>{
+   if(e.lat!=null&&e.lon!=null){
+     const color=COL[e.grade]||"#64748b";
+     const m=L.circleMarker([Number(e.lat),Number(e.lon)],{radius:8,color,fillColor:color,fillOpacity:e.grade==="CLAIM"?.25:.82,weight:2,dashArray:e.grade==="CONFIRMED"?null:"3 3"}).addTo(layer);
+     const source=(e.sources||[]).filter(s=>!isApiKeyError(s.title)&&!isApiKeyError(s.outlet)).map(sourceLabel).join(", ");
+     m.bindPopup("<b>"+String(e.place||e.region||"Reported event")+"</b><br>"+String(e.summary||"")+"<br><small>"+(e.date||"")+" · "+(e.confidence??0)+"% evidence · "+source+"</small>");
+     markers[e.key]=m;
+   }
+   const d=el("div","ev"),g=el("span","g "+String(e.grade||"").replaceAll(" ","-"),e.grade||"UNGRADED");
+   const loc=e.place||e.region||"";const b=el("b","",loc?(e.date+" · "+loc):e.date||"");
+   const score=el("span","badge",(e.confidence??0)+"%"),tier=el("span","badge",(e.source_tier||"D")+"-tier"+(e.best_source?" · "+e.best_source:""));
+   d.append(g,b,score,tier,el("p","",e.summary||""));
+   if(e.evidence_explanation){const x=el("div","src",e.evidence_explanation);d.append(x)}
+   list.append(d);
+ });
+ const stats=document.getElementById("stats");stats.replaceChildren();
+ const total=events.length,early=events.filter(e=>["CLAIM","DEVELOPING"].includes(e.grade)).length;
+ [[total,"EVENTS"],[early,"EARLY REPORTS"]].forEach(x=>{const d=el("div","stat");d.append(el("b","",String(x[0])),el("span","",x[1]));stats.append(d)});
 }
 function setView(view){document.getElementById("feedView").hidden=view!=="feed";document.getElementById("forecastView").hidden=view!=="forecast";document.querySelectorAll("#viewTabs button").forEach(b=>b.classList.toggle("on",b.dataset.view===view));if(view==="forecast")renderForecast();setTimeout(()=>map.invalidateSize(),80)}
 document.querySelectorAll("#viewTabs button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
@@ -203,12 +245,11 @@ function renderStats(){
  [[total,"EVENTS"],[early,"EARLY REPORTS"]].forEach(x=>{const d=el("div","stat");d.append(el("b","",String(x[0])),el("span","",x[1]));stats.append(d)});
 }
 Promise.all([
- fetch("data/base_map.geojson?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null),
  fetch("data/events.json?"+Date.now()).then(r=>r.json()),
  fetch("data/status.json?"+Date.now()).then(r=>r.ok?r.json():{}),
  fetch("data/forecasts.json?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null)
- ]).then(([base,j,s,f])=>{
- if(base && base.features) addBaseMap(base);
+ ]).then(([j,s,f])=>{
+ addBaseMap();
  events=(j.events||[]).filter(e=>!isApiKeyError(e.summary)&&!isApiKeyError(e.place)&&!isApiKeyError(e.region)).map(e=>({...e,sources:(e.sources||[]).filter(s=>!isApiKeyError(s.title)&&!isApiKeyError(s.outlet)&&!isApiKeyError(s.summary))})).filter(e=>e.sources.length>0);forecastData=f;
  const checked=s.last_checked?new Date(s.last_checked).toLocaleString():"Waiting for first automatic check";
  const updated=j.updated?new Date(j.updated).toLocaleString():"Unknown";
