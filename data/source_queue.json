@@ -5900,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 14:45:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T07:13:16.321298+00:00"
  },
  {
   "title": "Between Ethiopia and Eritrea, a border town's residents worry - Courthouse News",
@@ -5911,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 19:28:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T07:13:16.321298+00:00"
  },
  {
   "title": "Rubio urges restraint over Ethiopia-Eritrea tensions as rights group reports civilians killed - Reporter-Herald",
@@ -5922,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 23:26:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T07:13:16.321298+00:00"
  },
  {
   "title": "Ethiopia Reaches Eritrean Border; M23 Rebrands With Kabila: Africa File, October 15, 2026 - Critical Threats",
@@ -5933,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 15 Oct 2026 18:06:43 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T07:13:16.321298+00:00"
  },
  {
   "title": "UK and US Urge Immediate De-escalation of Ethiopia-Eritrea Tensions - Borkena",
@@ -5944,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 16 Oct 2026 03:59:07 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T07:13:16.321298+00:00"
  },
  {
   "title": "Ethiopia’s military escalation threatens a new front in the Red Sea crisis - Decode39",
@@ -5955,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 16 Oct 2026 07:01:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T07:13:16.321298+00:00"
  },
  {
   "title": "Hospitals in Ethiopia's Tigray resume operations as supplies arrive - The Eastleigh Voice",
@@ -5966,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 16 Oct 2026 05:07:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T07:13:16.321298+00:00"
  },
  {
   "title": "Eritrea Briefs Diplomats on Ethiopian Threat to Seize Sea Access - ChimpReports",
@@ -5977,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 16 Oct 2026 05:09:53 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T07:13:16.321298+00:00"
  },
  {
   "title": "Hospitals in Ethiopia's Tigray resume operations as supplies arrive - The Eastleigh Voice",
@@ -5988,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 16 Oct 2026 05:07:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-16T07:13:16.321298+00:00"
  }
 ]
