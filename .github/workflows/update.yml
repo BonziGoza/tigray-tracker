@@ -5,7 +5,10 @@ on:
     branches: [main]
     paths:
       - 'collect.py'
+      - 'forecast.py'
       - 'data/publisher_registry.json'
+      - 'scripts/rebuild_map.py'
+      - 'index.html'
       - 'tests/**'
       - '.github/workflows/update.yml'
   schedule:
@@ -39,6 +42,30 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run publisher registry and scoring tests
         run: python -m unittest discover -s tests -v
+
+  map-rebuild:
+    if: ${{ github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild Map V2
+        run: python scripts/rebuild_map.py
+      - name: Commit Map V2
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Rebuild tracker map foundation"
+          git push
+
   collect:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '7,22,37,52 * * * *' || github.event.schedule == '17 * * * *' }}
     runs-on: ubuntu-latest
@@ -55,8 +82,6 @@ jobs:
           cache: "pip"
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Refresh Google My Maps geographic layer
-        run: python sync_map.py
       - name: Collect and process OSINT
         env:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
@@ -68,9 +93,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/source_queue.json data/status.json data/base_map.geojson
+          git add data/source_queue.json data/status.json
           git diff --cached --quiet || git commit -m "Collect new OSINT sources"
           git push
+
   process:
     needs: collect
     if: ${{ always() && (github.event_name == 'workflow_dispatch' || github.event.schedule == '17 * * * *' || github.event_name == 'push') }}
@@ -93,7 +119,6 @@ jobs:
       - name: Process queued OSINT with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          # Leave MODEL unset so collect.py uses its safe default model.
           RUN_MODE: process
         run: python collect.py
       - name: Generate regional forecast and daily snapshot
