@@ -5960,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 17 Oct 2026 19:40:56 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-17T22:22:02.116427+00:00"
  },
  {
   "title": "Ethiopia sets up Tigray caretaker government as ex-fighters seek return to civilian life - KIRO 7 News Seattle",
@@ -5971,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 16 Oct 2026 18:06:40 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-17T22:22:02.116427+00:00"
  },
  {
   "title": "Ethiopia sets up Tigray caretaker government as ex-fighters seek return to civilian life - The Daily Reporter - Greenfield Indiana",
@@ -5982,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 16 Oct 2026 16:24:37 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-17T22:22:02.116427+00:00"
  },
  {
   "title": "News: #Canada urges de-escalation of hostile rhetoric, #UK says it opposes cross-border violations amid Ethiopia-Eritrea tensions Addis Abeba – Canada has urged parties to de-escalate hostile cross-border rhetoric and return to diplomatic dialogue amid es - Facebook",
@@ -5993,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 16 Oct 2026 10:00:41 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-17T22:22:02.116427+00:00"
  }
 ]
