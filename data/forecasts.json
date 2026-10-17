@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-17T13:45:26.850252+00:00",
+  "generated_at": "2026-10-17T17:13:35.577328+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 600,
+    "recent_event_records": 606,
     "regions_with_located_evidence": 8,
     "control_change_records": 19,
     "contested_or_early_records": 0,
-    "reported_records": 600,
-    "duplicate_records_ignored": 198,
+    "reported_records": 606,
+    "duplicate_records_ignored": 200,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -34,13 +34,13 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 76,
+      "risk_index": 77,
       "level": "ELEVATED",
       "uncertainty": 55,
-      "event_count": 49,
-      "weighted_signal": 4.73,
+      "event_count": 50,
+      "weighted_signal": 4.9,
       "control_change_signal": 0.47,
-      "explanation": "49 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "50 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-16",
@@ -79,13 +79,13 @@
     },
     {
       "region": "Addis Ababa",
-      "risk_index": 51,
+      "risk_index": 52,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 8,
-      "weighted_signal": 1.33,
+      "event_count": 9,
+      "weighted_signal": 1.57,
       "control_change_signal": 0,
-      "explanation": "8 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "9 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-15",
@@ -110,13 +110,13 @@
           ]
         },
         {
-          "date": "2026-10-11",
-          "title": "Ethiopia, Eritrea ramp up rhetoric: Are they inching towards war?",
+          "date": "2026-10-17",
+          "title": "News: #Russia offers to host #Ethiopia–#Eritrea talks amid rising tensions Addis Ababa - Russia has offered to facilitate dialogue between Ethiopia and Eritrea amid escalating tens",
           "grade": "REPORTED",
           "sources": [
             {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/10/11/ethiopia-eritrea-ramp-up-rhetoric-are-they-inching-towards-war?traffic_source=rss"
+              "outlet": "Facebook",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPV0VnTzB4eVdkbkxNeXNxU3NIczVILS1sdXQxVWhLWjVYT2FacGN0bGVFeUtDQnVBSm9XNU5XTVgxdUV4UllBMUVUZUgxWXloVzlkYTFwZTZILWJ3VXNHTC1kX3EtMXU4U1pmUGpKRHo3d281VWEtZXk3LU5aLTRwZnpwVkN6Nnpza0pVQ0t2c2lQUFVrSURoNm80WmM1cXo4YTFTYTloSl9MdnA3RFdYbzl4Y0oySnZHNXdQR0sxVGdEWU9uS1N2QTF0MFk1SmR2VnpUNEVialYyejFTQzlV?oc=5"
             }
           ]
         }
@@ -240,6 +240,55 @@
       ]
     },
     {
+      "region": "Eritrea",
+      "risk_index": 5,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 3,
+      "weighted_signal": 0.33,
+      "control_change_signal": 0,
+      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-17",
+          "title": "Ethiopia posing ‘serious’ threat to Eritrean sovereignty – Asmara - APAnews - Agence de Presse Africaine",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "APAnews - Agence de Presse Africaine",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT09LV0o4TzF3WUVIR21xdEdTVXZXOHFDaFdWbDhIbFZaNUZOaXNSQTc3Uk9kQTBBVzRqcmZHSUhZZUdySFhBTkF0RlZIbUFZd2Q2WW1yVWV0WGUzRWxKTngwQWFmTXhxTDdCc0tqUVJlVldZbHBZWXNtZE9BdVMzMV8wM1h2ZmtDU2c?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-14",
+          "title": "Asmara appeals to UN as Ethiopian troops reach border - Daily Nation",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Daily Nation",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZGNCcTVxLVp5R0hHMThRcmJiOVpybi1BaVZKYU1VZ3Y4NTlVdTZaTlY2LXFmVTdNNmhBTFJPWXV4WS1xX3UwV1pYYmpRZXk5WmZsUVh2Znd1Q2hzbzBHZzdrS2NuX0p3NHM0LTIwVVhrSXg2T3hFaDkyWEs1b2ZxWkJCaEk0N2VNRGpXZ0pOX3BCbTVhMUxUeGRoQWNlU2d5OFByeA?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-10",
+          "title": "THE TIGRAY PEOPLE’S NAME, ASMARA’S GAME, CAIRO’S GAIN - Fana Media Corporation S.C",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNa0hrZ2VLVGpacXY3bF9pcEF0M3NPX1h1aHBOZjMwcVZSMnRqaXBQWjk4R2gyWkNtUlFPeHFaMlN1WFhZdFZwNHoxNDc3QTA1LW83N1JYaFNPa2FTTnVNRnZXR2JseUVwc2RpU2Z2WFVuU2xrdmZ0bU44aXd1anVCVnBWVDhRWGs?oc=5"
+            },
+            {
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUXE1d05EbVExV0pMeDlSbjRzQjA0YXFSd3RLX0hhRTBZeUoycXZPRi1GbU9vdFNYY0ZLSW14OTd5UHBOQ1lHXzI5cXVNVWlJUUdwTjZGVkZGMGJ6VHFPYXNOell6eUlqb3FISTc1WmF3Y1BvUjV4dUYwLUphVThvTndrZjRCVmtlNk1SMA?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "region": "Amhara",
       "risk_index": 5,
       "level": "WATCH",
@@ -268,44 +317,6 @@
             {
               "outlet": "Facebook",
               "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZVpnLUQ5dFdVMWl2V1djc1lqdWZjV2lveUZkallWcWZ5c0swSXZ0UzRwMFNtUUVTUmlhd0xWQVJYd0c2R3VtbjFSTmJFenU3eG94NHBuZnM2M3cxelNWNmZEckFXZ3pfUWhoQnpMalVOQWtTOXZyMkE3YnBRdGh5QUFtYnBWVXdJSFdQYUZIM2hWaV81QVE5UndlTGMxaWV5eUw0LWUwbXhhSjdrTl96eC1DZ1Q5TkxJenpEOVk3R2Y2VV8zbGRodTBPVFJSN3VRSlp6R0I3NXpjUkZXMmVZ?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Eritrea",
-      "risk_index": 2,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 2,
-      "weighted_signal": 0.16,
-      "control_change_signal": 0,
-      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-10-14",
-          "title": "Asmara appeals to UN as Ethiopian troops reach border - Daily Nation",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Daily Nation",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZGNCcTVxLVp5R0hHMThRcmJiOVpybi1BaVZKYU1VZ3Y4NTlVdTZaTlY2LXFmVTdNNmhBTFJPWXV4WS1xX3UwV1pYYmpRZXk5WmZsUVh2Znd1Q2hzbzBHZzdrS2NuX0p3NHM0LTIwVVhrSXg2T3hFaDkyWEs1b2ZxWkJCaEk0N2VNRGpXZ0pOX3BCbTVhMUxUeGRoQWNlU2d5OFByeA?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-10",
-          "title": "THE TIGRAY PEOPLE’S NAME, ASMARA’S GAME, CAIRO’S GAIN - Fana Media Corporation S.C",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Fana Media Corporation S.C",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNa0hrZ2VLVGpacXY3bF9pcEF0M3NPX1h1aHBOZjMwcVZSMnRqaXBQWjk4R2gyWkNtUlFPeHFaMlN1WFhZdFZwNHoxNDc3QTA1LW83N1JYaFNPa2FTTnVNRnZXR2JseUVwc2RpU2Z2WFVuU2xrdmZ0bU44aXd1anVCVnBWVDhRWGs?oc=5"
-            },
-            {
-              "outlet": "Fana Media Corporation S.C",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUXE1d05EbVExV0pMeDlSbjRzQjA0YXFSd3RLX0hhRTBZeUoycXZPRi1GbU9vdFNYY0ZLSW14OTd5UHBOQ1lHXzI5cXVNVWlJUUdwTjZGVkZGMGJ6VHFPYXNOell6eUlqb3FISTc1WmF3Y1BvUjV4dUYwLUphVThvTndrZjRCVmtlNk1SMA?oc=5"
             }
           ]
         }
