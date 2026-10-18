@@ -1,6 +1,86 @@
 {
- "updated": "2026-10-17T22:22:02.117166+00:00",
+ "updated": "2026-10-18T01:05:19.140111+00:00",
  "events": [
+  {
+   "key": "unknown-2026-10-18-80cc8e9d",
+   "sources": [
+    {
+     "outlet": "Hiiraan Online",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9VWFd3aUxtRTd0eldrR3BlTjcwVFp1UzNCM1l4RHBIN1pHaEpaNVdMVG9yWFVaSktaa01udC0yejVOdEstbDk0TDdyMm1sQ09OYlh6VGxTWUc4eTFLS2hULWZTWUtPQWJrcUQ4cGYxQTExQnc?oc=5",
+     "title": "Itoobiya oo Ereteriya ku eedaysay inay ciidamo gelisay gudaha Tigray, dalbatayna inay si degdeg ah uga baxaan - Hiiraan Online",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Sat, 17 Oct 2026 20:46:59 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 50,
+     "credibility_label": "MODERATE",
+     "credibility_explanation": "Publisher registry: Hiiraan Online (provisional_manual_assessment; confidence medium). Publisher reputation component: 72/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed. Article credibility score: 50/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-18",
+   "kind": "other",
+   "summary": "Itoobiya oo Ereteriya ku eedaysay inay ciidamo gelisay gudaha Tigray, dalbatayna inay si degdeg ah uga baxaan - Hiiraan Online",
+   "attribution": "independent",
+   "last_seen": "2026-10-18",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 32,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "B",
+   "best_source": "Hiiraan Online",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Hiiraan Online (B-tier). 1 independent source record; 0 A-tier, 1 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-18-6f479e66",
+   "sources": [
+    {
+     "outlet": "CGTN",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9BQ3B2UmFIZW5sRmdWd1dadkx5SG5hRnJHc2kyQkVQTXZDOHcybUcyTUdqUi1GX2hpR1pGVXdxQnZLQ3BMLWtjYTNySmttSmRldnhIRG5HZ2VLWXhGMjNxNXlNUTNlMjdsUk5PQUxR?oc=5",
+     "title": "Ethiopian Prime Minister's Office: Appointment of a new administration for the Tigray region for 6 months to fill the vacuum left by the Tigray People's Liberation Front - reports - CGTN",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 16 Oct 2026 08:58:01 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 41,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: CGTN (provisional_manual_assessment; confidence low). Publisher reputation component: 55/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 41/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-18",
+   "kind": "other",
+   "summary": "Ethiopian Prime Minister's Office: Appointment of a new administration for the Tigray region for 6 months to fill the vacuum left by the Tigray People's Liberation Front - reports - CGTN",
+   "attribution": "independent",
+   "last_seen": "2026-10-18",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 25,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "CGTN",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: CGTN (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
   {
    "key": "unknown-2026-10-17-384e1ebd",
    "sources": [

@@ -5984,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 16 Oct 2026 08:58:01 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-18T01:05:19.139450+00:00"
  },
  {
   "title": "Itoobiya oo Ereteriya ku eedaysay inay ciidamo gelisay gudaha Tigray, dalbatayna inay si degdeg ah uga baxaan - Hiiraan Online",
@@ -5995,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 17 Oct 2026 20:46:59 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-18T01:05:19.139450+00:00"
  }
 ]
