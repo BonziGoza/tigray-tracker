@@ -5948,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 16 Oct 2026 04:55:28 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-18T05:57:03.510920+00:00"
  },
  {
   "title": "Tigray war: Why peace talks may fail before they even begin {Africanews Debates} - Africanews English",
@@ -5959,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 17 Oct 2026 07:15:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-18T05:57:03.510920+00:00"
  },
  {
   "title": "The Legal Paradoxes in Eritrea’s AU Complaint to ReInstate its Mission - horn review",
@@ -5970,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 18 Oct 2026 05:36:34 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-18T05:57:03.510920+00:00"
  },
  {
   "title": "Russia Offers to Mediate Between Ethiopia and Eritrea Amid Rising Tensions - Borkena",
@@ -5981,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 18 Oct 2026 02:55:50 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-18T05:57:03.510920+00:00"
  },
  {
   "title": "Ethiopia sets up Tigray caretaker government as ex-fighters seek return to civilian life - Oskaloosa Herald",
@@ -5992,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 16 Oct 2026 18:21:01 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-18T05:57:03.510920+00:00"
  }
 ]
