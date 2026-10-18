@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-18T14:37:23.391081+00:00",
+  "generated_at": "2026-10-18T18:08:24.959498+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 628,
+    "recent_event_records": 638,
     "regions_with_located_evidence": 8,
     "control_change_records": 19,
     "contested_or_early_records": 0,
-    "reported_records": 628,
-    "duplicate_records_ignored": 205,
+    "reported_records": 638,
+    "duplicate_records_ignored": 210,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -22,25 +22,25 @@
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 50,
+      "weight": 49,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 11,
+      "weight": 12,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 71,
+      "risk_index": 72,
       "level": "ELEVATED",
       "uncertainty": 55,
-      "event_count": 51,
-      "weighted_signal": 4.32,
+      "event_count": 52,
+      "weighted_signal": 4.52,
       "control_change_signal": 0.39,
-      "explanation": "51 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "52 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-16",
@@ -72,6 +72,51 @@
             {
               "outlet": "aljazeera.com",
               "url": "https://www.aljazeera.com/news/2026/10/12/ethiopian-troops-capture-adwa-without-a-fight-witnesses-say?traffic_source=rss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Eastern Tigray",
+      "risk_index": 53,
+      "level": "GUARDED",
+      "uncertainty": 55,
+      "event_count": 16,
+      "weighted_signal": 1.78,
+      "control_change_signal": 0.35,
+      "explanation": "16 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-18",
+          "title": "Residents recount drone strikes in Ethiopia’s northern Tigray region",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/residents-recount-drone-strikes-in-ethiopias-northern-tigray-region?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-14",
+          "title": "News: #Ethiopia-#Eritrea tensions deepen as federal troops advance toward border, reports indicate Addis Abeba — Ethiopian federal forces have advanced toward #Zalambessa, a border",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Facebook",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQVWwzSjNfaU1oS2tmcnlBV18wR1VSeGcyWG4ydmhWN1BSZW9KMUptVlU2dkVFa25BOEtlX0VnZHZHblF2V20xVGhXd2Rib3R3QnlKbWs5aFBTT0NUTmZ0emI3X3dFR09wVjd4cGJYNjBNMTVwZU1lcl9VOXROd2JEQWZSd3pxS1Jua2I2bllGT2Q2SlEtUkVUZjJ3Y0lOSGJMMnFMQUtzeG1oOFN1Z29VenI2QVVCb0tYMG9YZkFlamJCMzFTQ3hzdXpZRDN6emwtQTFtYklmUVRrNl9XVXFv?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-12",
+          "title": "Ethiopian federal forces regain control of Scirè and Adigrat, as Eritrean forces retreat from Tigray - Agenzia Nova",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Agenzia Nova",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTHhCVDlNR2UxTERWZldjYkpRZHFwME5ORlpXbnluRkxxanZWel9iWUIxTjZuSWx6aG9Jdlp4SkFUcGNpWWVSREJXWVJOWHM4SFV3MDNvVGFET2NlZzhZVG80cUdubVd1V0tLVFBlQTBGbHZlODBXNEs1UXZYQ2dyUFZJX04tdVZCR1dxaUt1Q3Y4M0R6cUpwNU9CMzdZaVlqWWhaVkhPZllObGx4MlBoYlNVN0VTT2NrRVRJN1NiNXQ2V0tZTl91X1hMdkFLc0RycXc?oc=5"
             }
           ]
         }
@@ -123,60 +168,26 @@
       ]
     },
     {
-      "region": "Eastern Tigray",
-      "risk_index": 37,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 15,
-      "weighted_signal": 1.26,
-      "control_change_signal": 0.35,
-      "explanation": "15 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-10-14",
-          "title": "News: #Ethiopia-#Eritrea tensions deepen as federal troops advance toward border, reports indicate Addis Abeba — Ethiopian federal forces have advanced toward #Zalambessa, a border",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Facebook",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQVWwzSjNfaU1oS2tmcnlBV18wR1VSeGcyWG4ydmhWN1BSZW9KMUptVlU2dkVFa25BOEtlX0VnZHZHblF2V20xVGhXd2Rib3R3QnlKbWs5aFBTT0NUTmZ0emI3X3dFR09wVjd4cGJYNjBNMTVwZU1lcl9VOXROd2JEQWZSd3pxS1Jua2I2bllGT2Q2SlEtUkVUZjJ3Y0lOSGJMMnFMQUtzeG1oOFN1Z29VenI2QVVCb0tYMG9YZkFlamJCMzFTQ3hzdXpZRDN6emwtQTFtYklmUVRrNl9XVXFv?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-12",
-          "title": "Ethiopian federal forces regain control of Scirè and Adigrat, as Eritrean forces retreat from Tigray - Agenzia Nova",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Agenzia Nova",
-              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTHhCVDlNR2UxTERWZldjYkpRZHFwME5ORlpXbnluRkxxanZWel9iWUIxTjZuSWx6aG9Jdlp4SkFUcGNpWWVSREJXWVJOWHM4SFV3MDNvVGFET2NlZzhZVG80cUdubVd1V0tLVFBlQTBGbHZlODBXNEs1UXZYQ2dyUFZJX04tdVZCR1dxaUt1Q3Y4M0R6cUpwNU9CMzdZaVlqWWhaVkhPZllObGx4MlBoYlNVN0VTT2NrRVRJN1NiNXQ2V0tZTl91X1hMdkFLc0RycXc?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-10",
-          "title": "Celebrations in Ethiopian city after reported Eritrean ‘incursion’",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/celebrations-in-ethiopian-city-after-reported-eritrean?traffic_source=rss"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "region": "Northern Tigray",
-      "risk_index": 25,
-      "level": "WATCH",
+      "risk_index": 44,
+      "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 5,
-      "weighted_signal": 0.54,
+      "event_count": 6,
+      "weighted_signal": 1.06,
       "control_change_signal": 0,
-      "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-18",
+          "title": "Residents recount drone strikes in Ethiopia’s northern Tigray region - Al Jazeera",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Al Jazeera",
+              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObGstVENjTXhLQXk5NGR4WkxMTUxKa0k1WVAtckFxbk5jY0Nuc28tbm9WWXU3TW1LckRKUk1JM19MR0pMNkUzbkVrNnhuT2FWSDVLWnB1WDRtNUNxNk9HUS1RajFiYllheUVZeWROYml2U2pCQ0JoYUN4UGFtTHY0VXFOR3pTTHRZOEFXc2dOdENUak5MeWxrbFFaUXJCNVQ1OUNmS1ZxSWtLZy1Pa09rRW5YQlBNM0pRak1j0gHAAUFVX3lxTE9QUm9zdTQ2bVVyWEZKRWh6U3prUEw2Q29XSDR0SFRCUzExNmhVdUpVbEZDVGlDZGZlZjlzUlg0YXRVNTFRMXJLQUpPeWZfaS1xei1qU29BMmdsX0tpYjRhb0R3VmFOaGpqZVRzdnVFREFtN1BIcndDaWluc3lBQVdPZVZJalZIZXduTS14a1Z5aHZXVzU4ZFJuLV93N1RXWnlVSzBPWW1NRjRoM3dvMEw2N3VmZEtWNlRLRkFNMG9PTA?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-10-16",
           "title": "Drone Strike Damage Reported in Rama as Fighting Continues in Northern Tigray - https://kulu-media.com/",
@@ -196,21 +207,6 @@
             {
               "outlet": "RFI",
               "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU0pvcWdnMFhlNnpKS3g3SFR4MWlDaVFjVEZkb3ZiTjBCc2U5T3dvSWl0dkFSZmNZejVEd1R2ZFJBNDJtQmNQMjhhcVd2aHZpNlRRU0NuckZBLUs2d0xIaDhvTWswbDVHTlNYSE5TUjBEdDJNdGV6cUdvdnRRSmF5U3M1N2hxTFZfY2N1QnpERWJLb1VUZUJBUzZjc3ZSbE9KbmJyaEZ5bUs?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-08",
-          "title": "Ethiopia drone strikes against Eritrean troops in northern Tigray - News24",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "News24",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMUw3UUxPOE9YWnc1SlR1dnhKY3k3Y3Fzb3p0eXQ2cmxoM3FMM2ZkZ05kMVBlVENIb3V0TV9qZTlpRlN3LWd5bVk5WlFKT1dhUlFMcHBpaEl0cTAtdEk3NUtZeE96al9jUmpyYm9WZ0lJaTAxT0RnN2dvdkVHSlk5ekpOWE9henRrMzFpUDlTS3gxUEhBOXZYRFJiWUV3TzVENWdiZXRpV0NuSjVx?oc=5"
-            },
-            {
-              "outlet": "Ahram Online",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9jSjdGazQ4QUNsV1lCZ0R6UncxTVZTeTNtb3FzakNkVUluSFhXU1dnRTBBQVBuUERJdmtJMm9iRWltdDNTMkRxS0FtWHRHZzBqTS1HYm9KRHY?oc=5"
             }
           ]
         }
@@ -234,6 +230,51 @@
             {
               "outlet": "Addis Standard",
               "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdmtEMGtNR1ROMEN3ZTNNeEpJWWhwOFlnSEZfclFwWG1HTkUtRlFhN0pNOF93N1NtbEtnRWxMZ1JRa1U5NnZVcVltanhjcmtLY1VzdGRTcVk0TWJvMXkxOFExaS1UWHdBUEhBT054YW1zVjRmWkJQSk9rRm5BQmdrQktYcFoyblNMVjg5LXRyd1dhVnRzamlLbVBhWnVWSnhZeFNfWFNOc29kdTF1ZHpLbnlLRDFCZWVtNU9LMkhTajdrazY5QUZ4dEpvbmZHZDhRei1jWUh5Y2pIS0t1RkxwTmlRbkVjNGYtQjJvTkNHYURLbUF6NWp5T0ZPUUtDcjVHdjdNSlZmSWM?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Amhara",
+      "risk_index": 7,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 3,
+      "weighted_signal": 0.47,
+      "control_change_signal": 0,
+      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-18",
+          "title": "#Daily_Brief: 36 #Israelis evacuated from conflict-hit #Ethiopia, four remain in Lalibela - Addis Standard",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Addis Standard",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DWFR1b1FicmxqdGRkMHNBTmJWUUtJMzhlci1ZeWtrNVBjVjdLRWROVWVEaW1mckxKbVl3NFE5Y2x1OVBJbDdqSWY5TWR3NDkxUEE?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-16",
+          "title": "News: Rally goers in Southern Tigray’s Kobo demand halt to Raya provisional admin election - Addis Standard",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Addis Standard",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSGVmVDd4VUdtZXFGY3FoR2pDbUdZVVZ6QXdQaVpFcWZVRDB1amN1bU9FS0J1Szd4LWRoYnNlcTI0RVpXRWIxVzMzZjdCVmRpVmpKdzNxR3g5V2ZsSldtOGVxOHR3YjZlNmdIc3VIWmdaeEd0cE5oZmZQQkZEUHJUZDhldDF6WjVlU1ZWZkUzeXdqQmI4QWZvcXFoeE5GYXgzenVjWGhYUjFRRTM5MFVz?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-16",
+          "title": "News: Rally goers in #North_Wollo’s Kobo demand halt to provisional administration elections in #Southern_Tigray localities Addis Abeba – Residents and community representatives fr",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Facebook",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZVpnLUQ5dFdVMWl2V1djc1lqdWZjV2lveUZkallWcWZ5c0swSXZ0UzRwMFNtUUVTUmlhd0xWQVJYd0c2R3VtbjFSTmJFenU3eG94NHBuZnM2M3cxelNWNmZEckFXZ3pfUWhoQnpMalVOQWtTOXZyMkE3YnBRdGh5QUFtYnBWVXdJSFdQYUZIM2hWaV81QVE5UndlTGMxaWV5eUw0LWUwbXhhSjdrTl96eC1DZ1Q5TkxJenpEOVk3R2Y2VV8zbGRodTBPVFJSN3VRSlp6R0I3NXpjUkZXMmVZ?oc=5"
             }
           ]
         }
@@ -283,40 +324,6 @@
             {
               "outlet": "Fana Media Corporation S.C",
               "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUXE1d05EbVExV0pMeDlSbjRzQjA0YXFSd3RLX0hhRTBZeUoycXZPRi1GbU9vdFNYY0ZLSW14OTd5UHBOQ1lHXzI5cXVNVWlJUUdwTjZGVkZGMGJ6VHFPYXNOell6eUlqb3FISTc1WmF3Y1BvUjV4dUYwLUphVThvTndrZjRCVmtlNk1SMA?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Amhara",
-      "risk_index": 4,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 2,
-      "weighted_signal": 0.27,
-      "control_change_signal": 0,
-      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-10-16",
-          "title": "News: Rally goers in Southern Tigray’s Kobo demand halt to Raya provisional admin election - Addis Standard",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Addis Standard",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSGVmVDd4VUdtZXFGY3FoR2pDbUdZVVZ6QXdQaVpFcWZVRDB1amN1bU9FS0J1Szd4LWRoYnNlcTI0RVpXRWIxVzMzZjdCVmRpVmpKdzNxR3g5V2ZsSldtOGVxOHR3YjZlNmdIc3VIWmdaeEd0cE5oZmZQQkZEUHJUZDhldDF6WjVlU1ZWZkUzeXdqQmI4QWZvcXFoeE5GYXgzenVjWGhYUjFRRTM5MFVz?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-16",
-          "title": "News: Rally goers in #North_Wollo’s Kobo demand halt to provisional administration elections in #Southern_Tigray localities Addis Abeba – Residents and community representatives fr",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Facebook",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZVpnLUQ5dFdVMWl2V1djc1lqdWZjV2lveUZkallWcWZ5c0swSXZ0UzRwMFNtUUVTUmlhd0xWQVJYd0c2R3VtbjFSTmJFenU3eG94NHBuZnM2M3cxelNWNmZEckFXZ3pfUWhoQnpMalVOQWtTOXZyMkE3YnBRdGh5QUFtYnBWVXdJSFdQYUZIM2hWaV81QVE5UndlTGMxaWV5eUw0LWUwbXhhSjdrTl96eC1DZ1Q5TkxJenpEOVk3R2Y2VV8zbGRodTBPVFJSN3VRSlp6R0I3NXpjUkZXMmVZ?oc=5"
             }
           ]
         }

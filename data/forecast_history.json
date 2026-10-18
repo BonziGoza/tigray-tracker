@@ -517,7 +517,7 @@
   },
   {
     "date": "2026-10-18",
-    "generated_at": "2026-10-18T14:37:23.391081+00:00",
+    "generated_at": "2026-10-18T18:08:24.959498+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
@@ -527,20 +527,25 @@
       },
       {
         "name": "Wider cross-border escalation",
-        "weight": 50,
+        "weight": 49,
         "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
       },
       {
         "name": "Relative stabilization or a temporary pause",
-        "weight": 11,
+        "weight": 12,
         "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
       }
     ],
     "regions": [
       {
         "region": "Central Tigray",
-        "risk_index": 71,
+        "risk_index": 72,
         "level": "ELEVATED"
+      },
+      {
+        "region": "Eastern Tigray",
+        "risk_index": 53,
+        "level": "GUARDED"
       },
       {
         "region": "Addis Ababa",
@@ -548,14 +553,9 @@
         "level": "GUARDED"
       },
       {
-        "region": "Eastern Tigray",
-        "risk_index": 37,
-        "level": "WATCH"
-      },
-      {
         "region": "Northern Tigray",
-        "risk_index": 25,
-        "level": "WATCH"
+        "risk_index": 44,
+        "level": "GUARDED"
       },
       {
         "region": "Southern Tigray",
@@ -563,12 +563,12 @@
         "level": "WATCH"
       },
       {
-        "region": "Eritrea",
-        "risk_index": 4,
+        "region": "Amhara",
+        "risk_index": 7,
         "level": "WATCH"
       },
       {
-        "region": "Amhara",
+        "region": "Eritrea",
         "risk_index": 4,
         "level": "WATCH"
       },
