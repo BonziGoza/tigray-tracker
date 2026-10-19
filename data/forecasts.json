@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-19T07:50:02.850848+00:00",
+  "generated_at": "2026-10-19T15:39:19.255452+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 668,
+    "recent_event_records": 694,
     "regions_with_located_evidence": 8,
-    "control_change_records": 19,
+    "control_change_records": 21,
     "contested_or_early_records": 0,
-    "reported_records": 668,
-    "duplicate_records_ignored": 214,
+    "reported_records": 694,
+    "duplicate_records_ignored": 215,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 40,
+      "weight": 41,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 49,
+      "weight": 48,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
@@ -34,14 +34,25 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 70,
+      "risk_index": 77,
       "level": "ELEVATED",
       "uncertainty": 55,
-      "event_count": 58,
-      "weighted_signal": 4.78,
-      "control_change_signal": 0.33,
-      "explanation": "58 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "event_count": 59,
+      "weighted_signal": 5.23,
+      "control_change_signal": 0.79,
+      "explanation": "59 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-19",
+          "title": "From Military Victory to Political Settlement: Why Ethiopia’s real test lies beyond controlling Mekelle - Addis Standard",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Addis Standard",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSjRET0NVN09jVGtweV9GNHltVDYwVVFjSmVuRXJaTGpVbzd3dU1sV1FueGZUWjF4Vm5KY3FSRFhSQ3YzX01MS3VBWDRXVHZnbTdGMVl5Q1dPZUNXd0ZTMC1weWE0eHlYcEF5bkswdDVseW82TllhdGlBUTFnb3dhb0tLaUtuSWJnc2tGemtlNXR2LVlRbWNwQjJoNmpwTWZtOXM2VEpyQnhlVjB3Q3hWUWFINmRBRHR0QkRiR0tIOHl0Umd6UHlF?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-10-16",
           "title": "Ethiopia announces instalment of interim government in Tigray",
@@ -61,17 +72,6 @@
             {
               "outlet": "Mereja",
               "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0xazRuTThHTjdGZHQtdWJZdm55YWhpMDVlNnpGQjB5UkNVWUt3R2VJVVNERGMyMTJWdXVoclpUOFFZVW90Tnc?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-15",
-          "title": "EEPA reports on ENDF controls key towns in northwestern and central Tigray - IDN-InDepthNews",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "IDN-InDepthNews",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRnF3RkQwSmpiSm9yQnJvckpIeUNBdjlwc3Qzd3pkOHpXb2Y2MkMzX0dtckN6V2xJc1FjeEFJeFhZa29KUk12Vm9NcUV6MGJ3X1hOTTlBcGxKdTRqRWpocEFvcEFEaUpSVTZMVG0tOHV3aHdRWG5QUlpNbTVSbTczc0xBZVVSOXlySU5XRXp5TTFCT1RUMDNacnFoS2F5cW5N?oc=5"
             }
           ]
         }
@@ -124,14 +124,25 @@
     },
     {
       "region": "Addis Ababa",
-      "risk_index": 41,
+      "risk_index": 57,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 9,
-      "weighted_signal": 1.11,
+      "event_count": 11,
+      "weighted_signal": 1.8,
       "control_change_signal": 0,
-      "explanation": "9 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "11 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-19",
+          "title": "‘Weight of responsibility’: Promise and perils of covering Ethiopia’s war",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/19/weight-of-responsibility-promise-and-perils-of-covering-ethiopias-war?traffic_source=rss"
+            }
+          ]
+        },
         {
           "date": "2026-10-15",
           "title": "Ethiopian forces expand control in Tigray as militia claims Eritrean losses",
@@ -153,27 +164,16 @@
               "url": "https://www.aljazeera.com/news/2026/10/13/ethiopias-tigray-war-where-do-the-uae-and-saudi-arabia-stand?traffic_source=rss"
             }
           ]
-        },
-        {
-          "date": "2026-10-17",
-          "title": "News: #Russia offers to host #Ethiopia–#Eritrea talks amid rising tensions Addis Ababa - Russia has offered to facilitate dialogue between Ethiopia and Eritrea amid escalating tens",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Facebook",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPV0VnTzB4eVdkbkxNeXNxU3NIczVILS1sdXQxVWhLWjVYT2FacGN0bGVFeUtDQnVBSm9XNU5XTVgxdUV4UllBMUVUZUgxWXloVzlkYTFwZTZILWJ3VXNHTC1kX3EtMXU4U1pmUGpKRHo3d281VWEtZXk3LU5aLTRwZnpwVkN6Nnpza0pVQ0t2c2lQUFVrSURoNm80WmM1cXo4YTFTYTloSl9MdnA3RFdYbzl4Y0oySnZHNXdQR0sxVGdEWU9uS1N2QTF0MFk1SmR2VnpUNEVialYyejFTQzlV?oc=5"
-            }
-          ]
         }
       ]
     },
     {
       "region": "Northern Tigray",
-      "risk_index": 39,
+      "risk_index": 40,
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 6,
-      "weighted_signal": 0.92,
+      "weighted_signal": 0.94,
       "control_change_signal": 0,
       "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -185,6 +185,10 @@
             {
               "outlet": "Modern Ghana",
               "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBKZF8wOVNBZmhiY1lNZVdEZTdTTHUxd1FYQk41V0Jpanc1VlpjSWdQUVI5VXg1LU8xQnhScjg0R2RraGV1WGZhNXN3Yl9ILTNmRzg3Rng4czhnallQ0gFcQVVfeXFMUEpkXzA5U0FmaGJjWU1lV0RlN1NMdTF3UVhCTjVXQmlqdzVWWmNJZ1BRUjlVeDUtTzFCeFJyODRHZGtoZXVYZmE1c3diX0gtM2ZHODdGeDhzOGdqWVA?oc=5"
+            },
+            {
+              "outlet": "Modern Ghana",
+              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBpajBBM3VoOHJSUG9vYlBWVmcxdDdURElhSlFSQ1RVa0ttRFVxU2s2RHEwS0JsQk9SOWZIRmRfT2E3eWYwZHEzajJyN0xuVzM5bFVTR1hiMmN1dk9vREFDQlp2amNNcGfSAVxBVV95cUxQSmRfMDlTQWZoYmNZTWVXRGU3U0x1MXdRWEJONVdCaWp3NVZaY0lnUFFSOVV4NS1PMUJ4UnI4NEdka2hldVhmYTVzd2JfSC0zZkc4N0Z4OHM4Z2pZUA?oc=5"
             }
           ]
         },
