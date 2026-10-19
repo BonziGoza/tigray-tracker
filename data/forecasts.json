@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-19T15:39:19.255452+00:00",
+  "generated_at": "2026-10-19T21:06:06.869386+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 694,
+    "recent_event_records": 702,
     "regions_with_located_evidence": 8,
     "control_change_records": 21,
     "contested_or_early_records": 0,
-    "reported_records": 694,
-    "duplicate_records_ignored": 215,
+    "reported_records": 702,
+    "duplicate_records_ignored": 217,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -34,13 +34,13 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 77,
+      "risk_index": 78,
       "level": "ELEVATED",
       "uncertainty": 55,
-      "event_count": 59,
-      "weighted_signal": 5.23,
+      "event_count": 60,
+      "weighted_signal": 5.41,
       "control_change_signal": 0.79,
-      "explanation": "59 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "60 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-19",
@@ -218,14 +218,25 @@
     },
     {
       "region": "Southern Tigray",
-      "risk_index": 10,
+      "risk_index": 12,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 1,
-      "weighted_signal": 0.18,
+      "event_count": 2,
+      "weighted_signal": 0.37,
       "control_change_signal": 0,
-      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-19",
+          "title": "Ethiopia : Contested Local Elections in Raya Alamata Ignite Tensions - Borkena",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Borkena",
+              "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVlp6MU83YnZrVFF5WGt2SjBWV2pfRDl6ZzlNMk5TSVJ1Y0I0YVpSZnVBdVpvTWJ2M0V0dmlBUkxDM1pYdG90c3VlRVR3Q193VFVlQTR0bWpJa20wMGw1WUhXak9qS1ZhOVh6LXdYMG1IX3JUemEtVmhKWjY3SmpFNlZqanpEOHU1b3Y3WWdsYUhEd0ZzSUo2cVpxU2pqYzRsTFdlYk5Mbk91V3lGdFU1Wi1hc3RFQ1lrbi15aF80TkJmOW1EQU95U1JtNFdzS25qY216VF9XbDVFcDRsaG5QVUt5c0R3Zw?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-10-13",
           "title": "News Analysis: Tensions deepen in Southern Tigray as NaMA accuses Tigray Peace Force of abuses after clashes over local security, administrative control - Addis Standard",
