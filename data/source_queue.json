@@ -5936,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 19 Oct 2026 13:41:58 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T23:54:57.742038+00:00"
  },
  {
   "title": "Abiy Ahmed Warns Eritrea of “Very, Very, Very Severe Consequences” in Tigrigna Interview and Tells Tigray’s Armed Youth to Lay Down Their Guns - Zegabi",
@@ -5947,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 19:39:06 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T23:54:57.742038+00:00"
  },
  {
   "title": "PM Abiy appoints TPLF’s Getachew to lead Tigray interim govt - Eye Radio",
@@ -5958,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 19:16:11 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T23:54:57.742038+00:00"
  },
  {
   "title": "Eritrea denies Ethiopian militia claims of rebels in country - The Peninsula Qatar",
@@ -5969,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 22:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T23:54:57.742038+00:00"
  },
  {
   "title": "Daily_Brief: #US says no new long-range weapons incident in Ethiopia since last security alert - Addis Standard",
@@ -5980,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 08:26:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T23:54:57.742038+00:00"
  },
  {
   "title": "#Daily_Brief: #Sudanese army reports shooting down drone it claims entered from #Ethiopia - Addis Standard",
@@ -5991,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 12:19:12 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T23:54:57.742038+00:00"
  }
 ]
