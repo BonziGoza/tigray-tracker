@@ -5948,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 19 Oct 2026 20:45:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T00:23:14.408214+00:00"
  },
  {
   "title": "New Mekelle Mayor Shishay Amare Tells AFP Tigray Will Hold Elections Within Six Months and Says Western Tigray Will Be Settled Through “Constitutional Processes” - Zegabi",
@@ -5959,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 19 Oct 2026 19:39:04 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T00:23:14.408214+00:00"
  },
  {
   "title": "Four senior TPLF officials have reported to security forces in Mekelle, according to a list attributed to the Tigray Peace Force, as Tigrayan forces claim to cut the Aksum to Shire road - Mereja",
@@ -5970,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 19 Oct 2026 18:10:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T00:23:14.408214+00:00"
  },
  {
   "title": "#Daily_Brief: #Somalia says it remains neutral as #Ethiopia-#Eritrea tensions escalate - Addis Standard",
@@ -5981,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 19 Oct 2026 06:37:56 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T00:23:14.408214+00:00"
  },
  {
   "title": "#Daily_Brief: #Eritrea, #US advance bilateral relations following sanctions removal - Addis Standard",
@@ -5992,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 19 Oct 2026 13:44:06 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T00:23:14.408214+00:00"
  }
 ]
