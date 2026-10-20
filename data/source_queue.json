@@ -5984,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 19 Oct 2026 23:28:31 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T06:04:04.269225+00:00"
  },
  {
   "title": "Concerns rise over impact of Ethiopia conflict on Red Sea - NHKニュース",
@@ -5995,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 00:45:50 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-20T06:04:04.269225+00:00"
  }
 ]
