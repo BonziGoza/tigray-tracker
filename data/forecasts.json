@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-20T11:41:38.931977+00:00",
+  "generated_at": "2026-10-20T17:11:21.997574+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 724,
+    "recent_event_records": 740,
     "regions_with_located_evidence": 8,
     "control_change_records": 21,
     "contested_or_early_records": 0,
-    "reported_records": 724,
-    "duplicate_records_ignored": 219,
+    "reported_records": 740,
+    "duplicate_records_ignored": 221,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -34,13 +34,13 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 73,
+      "risk_index": 74,
       "level": "ELEVATED",
       "uncertainty": 55,
-      "event_count": 62,
-      "weighted_signal": 4.96,
+      "event_count": 63,
+      "weighted_signal": 5.22,
       "control_change_signal": 0.66,
-      "explanation": "62 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "63 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-19",
@@ -66,12 +66,12 @@
         },
         {
           "date": "2026-10-20",
-          "title": "Four senior TPLF officials have reported to security forces in Mekelle, according to a list attributed to the Tigray Peace Force, as Tigrayan forces claim to cut the Aksum to Shire",
+          "title": "Ethiopia : FEAR to go to Mekelle in peacetime but COURAGE to fly to Dubai in wartime? - Borkena",
           "grade": "REPORTED",
           "sources": [
             {
-              "outlet": "Mereja",
-              "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBET1FaSTVONXRlSFJSQmNmbkdVYk1WMWFtR3ZrTW44MXZybS1mRnNzM2M3Vkcyd3JXQjFic2dVc0FvZUZzc2c?oc=5"
+              "outlet": "Borkena",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZ2dXY3NSWnIyOXotRUlSb3ZrMC1lWGp6RXkydjJZSXczRjVpNk81ZXdwQVFNRjRhaElYMjlLR1FJcjVZUVBIeWJxRVJuQmhoRmlHYjUtaE9FREt6WGd2blhtam9JT29yZTctYjdjZl9vcEU0bFg5X3hlaXE2VnBrT3dVOEhpeS1yaTl3VnZuYlprRVZURkJiR2p5NGt3TXdOcXIwX2ZB?oc=5"
             }
           ]
         }
