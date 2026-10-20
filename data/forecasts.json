@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-10-20T17:11:21.997574+00:00",
+  "generated_at": "2026-10-20T20:38:14.760443+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 740,
+    "recent_event_records": 747,
     "regions_with_located_evidence": 8,
     "control_change_records": 21,
     "contested_or_early_records": 0,
-    "reported_records": 740,
-    "duplicate_records_ignored": 221,
+    "reported_records": 747,
+    "duplicate_records_ignored": 223,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 40,
+      "weight": 39,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 11,
+      "weight": 12,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
@@ -169,26 +169,22 @@
     },
     {
       "region": "Northern Tigray",
-      "risk_index": 35,
+      "risk_index": 37,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 6,
-      "weighted_signal": 0.79,
+      "weighted_signal": 0.85,
       "control_change_signal": 0,
       "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
-          "date": "2026-10-19",
+          "date": "2026-10-20",
           "title": "Residents recount drone strikes in Ethiopia’s northern Tigray region - Modern Ghana",
           "grade": "REPORTED",
           "sources": [
             {
               "outlet": "Modern Ghana",
-              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBKZF8wOVNBZmhiY1lNZVdEZTdTTHUxd1FYQk41V0Jpanc1VlpjSWdQUVI5VXg1LU8xQnhScjg0R2RraGV1WGZhNXN3Yl9ILTNmRzg3Rng4czhnallQ0gFcQVVfeXFMUEpkXzA5U0FmaGJjWU1lV0RlN1NMdTF3UVhCTjVXQmlqdzVWWmNJZ1BRUjlVeDUtTzFCeFJyODRHZGtoZXVYZmE1c3diX0gtM2ZHODdGeDhzOGdqWVA?oc=5"
-            },
-            {
-              "outlet": "Modern Ghana",
-              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBpajBBM3VoOHJSUG9vYlBWVmcxdDdURElhSlFSQ1RVa0ttRFVxU2s2RHEwS0JsQk9SOWZIRmRfT2E3eWYwZHEzajJyN0xuVzM5bFVTR1hiMmN1dk9vREFDQlp2amNNcGfSAVxBVV95cUxQSmRfMDlTQWZoYmNZTWVXRGU3U0x1MXdRWEJONVdCaWp3NVZaY0lnUFFSOVV4NS1PMUJ4UnI4NEdka2hldVhmYTVzd2JfSC0zZkc4N0Z4OHM4Z2pZUA?oc=5"
+              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9NaFFwWkpNRW1Da3dNOXMycGZ5Q3hvVWpHODNBUC1QN2NnVkw2c3EwZXZNekFxQ1o4VEZSSlQzdXQ1YUVBZm5wWXZ3S1dmTHFZcEM1RUN2RDBSazBFaHFGZlk5elQ3dWvSAVxBVV95cUxQSmRfMDlTQWZoYmNZTWVXRGU3U0x1MXdRWEJONVdCaWp3NVZaY0lnUFFSOVV4NS1PMUJ4UnI4NEdka2hldVhmYTVzd2JfSC0zZkc4N0Z4OHM4Z2pZUA?oc=5"
             }
           ]
         },
@@ -251,6 +247,51 @@
       ]
     },
     {
+      "region": "Eritrea",
+      "risk_index": 5,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 4,
+      "weighted_signal": 0.35,
+      "control_change_signal": 0,
+      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-20",
+          "title": "Ethiopian militia claims rebels in Eritrea, denied by Asmara - www.standardmedia.co.ke",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "www.standardmedia.co.ke",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdTFkOHZ5bGlFbk1aMy01SkhmOUEyMTEtSWcxbXBON1NLZDFYb0FBX1pwbHh1OTJlZi1FYm5Na3ZqNWVGdXc2anpJcGRKUzF0c2tjYXB5eXlWUmRkXzNzbU9tc1YySWsxNTJBbVZCY1dvSzdJWmdtRWJkUHRGNlYxT1pjbWxjc3UyVVFsaXV3cG1zWXdyamhPa2RoUXBaTUF3dWJyZVRnNmVrRWZYVDJ6ak9sQVV4VHVJYWdycVdR?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-17",
+          "title": "Ethiopia posing ‘serious’ threat to Eritrean sovereignty – Asmara - APAnews - Agence de Presse Africaine",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "APAnews - Agence de Presse Africaine",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT09LV0o4TzF3WUVIR21xdEdTVXZXOHFDaFdWbDhIbFZaNUZOaXNSQTc3Uk9kQTBBVzRqcmZHSUhZZUdySFhBTkF0RlZIbUFZd2Q2WW1yVWV0WGUzRWxKTngwQWFmTXhxTDdCc0tqUVJlVldZbHBZWXNtZE9BdVMzMV8wM1h2ZmtDU2c?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-14",
+          "title": "Asmara appeals to UN as Ethiopian troops reach border - Daily Nation",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Daily Nation",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZGNCcTVxLVp5R0hHMThRcmJiOVpybi1BaVZKYU1VZ3Y4NTlVdTZaTlY2LXFmVTdNNmhBTFJPWXV4WS1xX3UwV1pYYmpRZXk5WmZsUVh2Znd1Q2hzbzBHZzdrS2NuX0p3NHM0LTIwVVhrSXg2T3hFaDkyWEs1b2ZxWkJCaEk0N2VNRGpXZ0pOX3BCbTVhMUxUeGRoQWNlU2d5OFByeA?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "region": "Amhara",
       "risk_index": 5,
       "level": "WATCH",
@@ -290,55 +331,6 @@
             {
               "outlet": "Facebook",
               "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZVpnLUQ5dFdVMWl2V1djc1lqdWZjV2lveUZkallWcWZ5c0swSXZ0UzRwMFNtUUVTUmlhd0xWQVJYd0c2R3VtbjFSTmJFenU3eG94NHBuZnM2M3cxelNWNmZEckFXZ3pfUWhoQnpMalVOQWtTOXZyMkE3YnBRdGh5QUFtYnBWVXdJSFdQYUZIM2hWaV81QVE5UndlTGMxaWV5eUw0LWUwbXhhSjdrTl96eC1DZ1Q5TkxJenpEOVk3R2Y2VV8zbGRodTBPVFJSN3VRSlp6R0I3NXpjUkZXMmVZ?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Eritrea",
-      "risk_index": 3,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 3,
-      "weighted_signal": 0.2,
-      "control_change_signal": 0,
-      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-10-17",
-          "title": "Ethiopia posing ‘serious’ threat to Eritrean sovereignty – Asmara - APAnews - Agence de Presse Africaine",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "APAnews - Agence de Presse Africaine",
-              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT09LV0o4TzF3WUVIR21xdEdTVXZXOHFDaFdWbDhIbFZaNUZOaXNSQTc3Uk9kQTBBVzRqcmZHSUhZZUdySFhBTkF0RlZIbUFZd2Q2WW1yVWV0WGUzRWxKTngwQWFmTXhxTDdCc0tqUVJlVldZbHBZWXNtZE9BdVMzMV8wM1h2ZmtDU2c?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-14",
-          "title": "Asmara appeals to UN as Ethiopian troops reach border - Daily Nation",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Daily Nation",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZGNCcTVxLVp5R0hHMThRcmJiOVpybi1BaVZKYU1VZ3Y4NTlVdTZaTlY2LXFmVTdNNmhBTFJPWXV4WS1xX3UwV1pYYmpRZXk5WmZsUVh2Znd1Q2hzbzBHZzdrS2NuX0p3NHM0LTIwVVhrSXg2T3hFaDkyWEs1b2ZxWkJCaEk0N2VNRGpXZ0pOX3BCbTVhMUxUeGRoQWNlU2d5OFByeA?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-10",
-          "title": "THE TIGRAY PEOPLE’S NAME, ASMARA’S GAME, CAIRO’S GAIN - Fana Media Corporation S.C",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Fana Media Corporation S.C",
-              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNa0hrZ2VLVGpacXY3bF9pcEF0M3NPX1h1aHBOZjMwcVZSMnRqaXBQWjk4R2gyWkNtUlFPeHFaMlN1WFhZdFZwNHoxNDc3QTA1LW83N1JYaFNPa2FTTnVNRnZXR2JseUVwc2RpU2Z2WFVuU2xrdmZ0bU44aXd1anVCVnBWVDhRWGs?oc=5"
-            },
-            {
-              "outlet": "Fana Media Corporation S.C",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUXE1d05EbVExV0pMeDlSbjRzQjA0YXFSd3RLX0hhRTBZeUoycXZPRi1GbU9vdFNYY0ZLSW14OTd5UHBOQ1lHXzI5cXVNVWlJUUdwTjZGVkZGMGJ6VHFPYXNOell6eUlqb3FISTc1WmF3Y1BvUjV4dUYwLUphVThvTndrZjRCVmtlNk1SMA?oc=5"
             }
           ]
         }
