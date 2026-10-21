@@ -709,7 +709,7 @@
   },
   {
     "date": "2026-10-21",
-    "generated_at": "2026-10-21T15:18:26.929862+00:00",
+    "generated_at": "2026-10-21T20:11:56.798940+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
@@ -731,7 +731,7 @@
     "regions": [
       {
         "region": "Central Tigray",
-        "risk_index": 69,
+        "risk_index": 70,
         "level": "ELEVATED"
       },
       {
