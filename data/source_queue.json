@@ -5876,7 +5876,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 09:39:46 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T10:12:53.976255+00:00"
  },
  {
   "title": "Abiy Ahmed Warns Eritrea Of ‘Severe Consequences’ Over Support For Tigray Rebels - Trendsnafrica",
@@ -5887,7 +5888,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 03:06:43 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T10:12:53.976255+00:00"
  },
  {
   "title": "WHO's Emergency Response in Northern Ethiopia - WHO | Regional Office for Africa",
@@ -5898,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 09:14:35 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T10:12:53.976255+00:00"
  },
  {
   "title": "News: Eritrea tells US there is no “crisis” between Ethiopia and Eritrea - Addis Standard",
@@ -5909,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 09:28:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T10:12:53.976255+00:00"
  },
  {
   "title": "News: Funding shortfalls threaten health services in Ethiopia’s conflict-hit regions, UN warns - Addis Standard",
@@ -5920,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 08:45:28 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T10:12:53.976255+00:00"
  },
  {
   "title": "World: Ethiopian troops mobilise on Tigray border - NewVision.co.ug",
@@ -5931,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 19 Oct 2026 14:00:05 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T10:12:53.976255+00:00"
  },
  {
   "title": "Tigray rebels claim to have killed over 1,500 Ethiopian soldiers as PM Abiy Ahmed warns Eritrea - Garowe Online",
@@ -5942,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 06:04:30 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T10:12:53.976255+00:00"
  },
  {
   "title": "Daily_Brief: #UNHCR funding shortfall suspends refugee registration for tens of thousands in #Ethiopia - Addis Standard",
@@ -5953,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 05:55:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T10:12:53.976255+00:00"
  },
  {
   "title": "Daily_Brief: #Canadian exploration company Sun Peak raises over 11 million Canadian dollars for #Ethiopia, #Saudi_Arabia projects - Addis Standard",
@@ -5964,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 07:49:09 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T10:12:53.976255+00:00"
  },
  {
   "title": "#Daily_Brief: #Ethiopian Airlines to resume Addis–Mekelle flights on Sunday - Addis Standard",
@@ -5975,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 09:48:28 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T10:12:53.976255+00:00"
  },
  {
   "title": "News: #Ethiopia reportedly plans troop withdrawal from #Somalia as fighting intensifies at home - Addis Standard",
@@ -5986,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 07:49:06 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T10:12:53.976255+00:00"
  }
 ]
