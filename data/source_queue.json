@@ -5972,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 12:50:22 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T23:22:58.598187+00:00"
  },
  {
   "title": "Kenya can try Ethiopia hate posts case against Meta: Court - Africa - World - Ahram Online",
@@ -5983,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 12:09:52 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T23:22:58.598187+00:00"
  },
  {
   "title": "World News in Brief: Aid for Ethiopia, Abyei drone strikes condemned, extreme heat and newborn health - Global Issues.org",
@@ -5994,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 12:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T23:22:58.598187+00:00"
  }
 ]
