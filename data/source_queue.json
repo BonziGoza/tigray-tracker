@@ -5948,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 20:02:44 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T04:52:09.180400+00:00"
  },
  {
   "title": "Daily_Brief: #Egypt, #Eritrea, #Sudan, #Somalia agree to coordinate security operations if #Ethiopia conflict spills across borders - Addis Standard",
@@ -5959,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 13:45:22 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T04:52:09.180400+00:00"
  },
  {
   "title": "Daily_Brief: #Eritrea seeks renewed engagement as #Red_Sea tensions raise its strategic importance - Addis Standard",
@@ -5970,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 12:44:08 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T04:52:09.180400+00:00"
  },
  {
   "title": "PM Abiy: The Defunct TPLF Is Utterly Alien to the Identity of the People of Tigray Region - Fana Media Corporation S.C",
@@ -5981,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 20 Oct 2026 06:57:50 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T04:52:09.180400+00:00"
  },
  {
   "title": "Ethiopian PM Threatens “Severe Consequence” if Eritrea fails to \"negotiate\" - Borkena",
@@ -5992,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 03:03:45 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-21T04:52:09.180400+00:00"
  }
 ]
