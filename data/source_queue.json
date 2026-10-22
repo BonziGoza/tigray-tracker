@@ -5948,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 17:22:37 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T23:25:20.937256+00:00"
  },
  {
   "title": "Ethiopia: Drone Strikes Kill Schoolchildren in Amhara, Civilians in Tigray Regions As Conflicts Show No Sign of Abating - allAfrica.com",
@@ -5959,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 15:29:29 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T23:25:20.937256+00:00"
  },
  {
   "title": "Ethiopian troops enter town on border with Eritrea, stoking war fears - Hiiraan Online",
@@ -5970,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 19:34:44 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T23:25:20.937256+00:00"
  },
  {
   "title": "Tigray Region Has a New Opening for Peace and Development as Banned TPLF Group’s Conflict Agenda Fades Away - Fana Media Corporation S.C",
@@ -5981,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 16:27:31 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T23:25:20.937256+00:00"
  },
  {
   "title": "Hundreds of Ethiopians cross into Kenya to flee regional fighting",
@@ -5992,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 22:52:35 +0000",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T23:25:20.937256+00:00"
  }
 ]

@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-22T20:09:49.779794+00:00",
+  "generated_at": "2026-10-22T23:25:21.273705+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 817,
+    "recent_event_records": 820,
     "regions_with_located_evidence": 8,
     "control_change_records": 22,
     "contested_or_early_records": 0,
-    "reported_records": 817,
-    "duplicate_records_ignored": 229,
+    "reported_records": 820,
+    "duplicate_records_ignored": 230,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -169,14 +169,25 @@
     },
     {
       "region": "Northern Tigray",
-      "risk_index": 28,
-      "level": "WATCH",
+      "risk_index": 46,
+      "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 6,
-      "weighted_signal": 0.6,
+      "event_count": 7,
+      "weighted_signal": 1.12,
       "control_change_signal": 0,
-      "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "7 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-22",
+          "title": "Hundreds of Ethiopians cross into Kenya to flee regional fighting",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/22/hundreds-of-ethiopians-cross-into-kenya-to-flee-regional-fighting?traffic_source=rss"
+            }
+          ]
+        },
         {
           "date": "2026-10-20",
           "title": "Residents recount drone strikes in Ethiopia’s northern Tigray region - Modern Ghana",
@@ -196,17 +207,6 @@
             {
               "outlet": "https://kulu-media.com/",
               "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53T1paRjFEb0VHNloydnp4by0xUG04VU1yRzYzckY0dlRxTWJiRnBORDhUSUs3XzBQRW1ZeDFUbzhpMjYtQU5uYVVsWml1Ui1FR1liTVJWcW92Z2tZLV9JanhhUEVBMU95UVE?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-08",
-          "title": "Ethiopian drone strikes hit Eritrean forces in northern Tigray city - RFI",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "RFI",
-              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU0pvcWdnMFhlNnpKS3g3SFR4MWlDaVFjVEZkb3ZiTjBCc2U5T3dvSWl0dkFSZmNZejVEd1R2ZFJBNDJtQmNQMjhhcVd2aHZpNlRRU0NuckZBLUs2d0xIaDhvTWswbDVHTlNYSE5TUjBEdDJNdGV6cUdvdnRRSmF5U3M1N2hxTFZfY2N1QnpERWJLb1VUZUJBUzZjc3ZSbE9KbmJyaEZ5bUs?oc=5"
             }
           ]
         }
