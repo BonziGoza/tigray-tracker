@@ -1,17 +1,5 @@
 [
  {
-  "title": "US Tells Ethiopia to Respect Neighbors’ Sovereignty as Somalia Watches Regional Crisis Unfold - FTL Somalia",
-  "outlet": "FTL Somalia",
-  "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNVB2S0FvMm1mWUJaSUo3ZFF4a2N3NW1IZ3NJemRzRF9IUVFJd3NnYmpMX3J2SW1abXhSSm0wTzhVcXlMSjg2NkM4OFRuNjZpSmVkWUZ5Z0dnb3ZuSlVua0Jlc2o3SW8tUzRWYnFlcTAxT2NRTng0MkEzamFyOXZGQlZtRlBKS1YtWGN2bnRFdVlWSVRWT0M2Wmg2M08wV3hSYjRzQUZYcEVqT3hWU2FTUjc4UFRIdGZoVWx3Rg?oc=5",
-  "summary": "US Tells Ethiopia to Respect Neighbors’ Sovereignty as Somalia Watches Regional Crisis Unfold &nbsp;&nbsp; FTL Somalia",
-  "source_type": "news",
-  "platform": "rss",
-  "author": "",
-  "published": "Thu, 15 Oct 2026 08:38:36 GMT",
-  "processed": true,
-  "processed_at": "2026-10-15T09:58:17.589975+00:00"
- },
- {
   "title": "#Daily_Brief: #UK threatens visa ban on #Eritreans over migrant returns dispute - Addis Standard",
   "outlet": "Addis Standard",
   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE54SHRMLWVmYndFVnZiYWxMbFpsLTRub3BsSUgwNFQ1Z245T3ZwcEQtTVVmbkp2cDZNX2F0cXVGeGZtQ3l5eFFRbVgtNjFGMjZTVWc?oc=5",
@@ -5993,6 +5981,17 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 16:27:31 GMT",
+  "processed": false
+ },
+ {
+  "title": "Hundreds of Ethiopians cross into Kenya to flee regional fighting",
+  "outlet": "aljazeera.com",
+  "url": "https://www.aljazeera.com/news/2026/10/22/hundreds-of-ethiopians-cross-into-kenya-to-flee-regional-fighting?traffic_source=rss",
+  "summary": "Dispute over raising flag of Somali Regional State devolves into fighting between regional forces.",
+  "source_type": "news",
+  "platform": "rss",
+  "author": "",
+  "published": "Thu, 22 Oct 2026 22:52:35 +0000",
   "processed": false
  }
 ]
