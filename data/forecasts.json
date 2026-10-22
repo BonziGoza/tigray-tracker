@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-10-22T15:20:35.366639+00:00",
+  "generated_at": "2026-10-22T20:09:49.779794+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 810,
+    "recent_event_records": 817,
     "regions_with_located_evidence": 8,
-    "control_change_records": 21,
+    "control_change_records": 22,
     "contested_or_early_records": 0,
-    "reported_records": 810,
-    "duplicate_records_ignored": 228,
+    "reported_records": 817,
+    "duplicate_records_ignored": 229,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 41,
+      "weight": 42,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 12,
+      "weight": 11,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
@@ -124,14 +124,25 @@
     },
     {
       "region": "Eastern Tigray",
-      "risk_index": 39,
+      "risk_index": 51,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 17,
-      "weighted_signal": 1.1,
-      "control_change_signal": 0.18,
-      "explanation": "17 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "event_count": 18,
+      "weighted_signal": 1.49,
+      "control_change_signal": 0.57,
+      "explanation": "18 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-22",
+          "title": "Ethiopia takes control of Zalambessa on the border with Eritrea — France 24 - UA.NEWS",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "UA.NEWS",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPakZRQ0VQczM1ZFNUejJBQWpHeV9YeEVVaU9od0xxOUNTa012UDg0WldSMkhWWnZMUzE5OEQ5UEE1ZWdUd010TExlZ2V4OXFGQ1NUaU1GQlFiMEFMRWNaM3pvOS1lNUpzTEs1dHRCZndDRUNsRFNHNHc2dHowNFFVV2FRUzcweU16U1R3am00SmhZbDc3LVlPRkpFVlZtaWw0bkloOTZ2LWs?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-10-18",
           "title": "Residents recount drone strikes in Ethiopia’s northern Tigray region",
@@ -151,17 +162,6 @@
             {
               "outlet": "Zegabi",
               "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE45WFBDaEdkVUwtdHhYTmw0U3BDU083cmY5TGVjTnhnOF9JRURldUZKclo4MDlFQ1h4NkpUOUI1QzNxY0hhTnA4S1B1TDVJdw?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-14",
-          "title": "News: #Ethiopia-#Eritrea tensions deepen as federal troops advance toward border, reports indicate Addis Abeba — Ethiopian federal forces have advanced toward #Zalambessa, a border",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Facebook",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQVWwzSjNfaU1oS2tmcnlBV18wR1VSeGcyWG4ydmhWN1BSZW9KMUptVlU2dkVFa25BOEtlX0VnZHZHblF2V20xVGhXd2Rib3R3QnlKbWs5aFBTT0NUTmZ0emI3X3dFR09wVjd4cGJYNjBNMTVwZU1lcl9VOXROd2JEQWZSd3pxS1Jua2I2bllGT2Q2SlEtUkVUZjJ3Y0lOSGJMMnFMQUtzeG1oOFN1Z29VenI2QVVCb0tYMG9YZkFlamJCMzFTQ3hzdXpZRDN6emwtQTFtYklmUVRrNl9XVXFv?oc=5"
             }
           ]
         }

@@ -5900,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 13:19:20 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T20:09:49.496862+00:00"
  },
  {
   "title": "Tigray rebels claim to have killed over 1,500 Ethiopian soldiers as PM Abiy Ahmed warns Eritrea - Garowe Online",
@@ -5911,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 06:04:30 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T20:09:49.496862+00:00"
  },
  {
   "title": "#Daily_Brief: #Ethiopia targets 70.3% reduction in greenhouse gas emissions by 2035 - Addis Standard",
@@ -5922,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 06:37:40 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T20:09:49.496862+00:00"
  },
  {
   "title": "Ethiopia-Eritrea: Is there a risk of a wider conflict? - Perspective - France 24",
@@ -5933,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 15:40:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T20:09:49.496862+00:00"
  },
  {
   "title": "Drone Strike Reportedly Kills Four Civilians, Including Two Children, in Tigray - https://kulu-media.com/",
@@ -5944,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 16:30:02 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T20:09:49.496862+00:00"
  },
  {
   "title": "Border town clashes force hundreds of Ethiopians to flee into Kenya - TimesLIVE",
@@ -5955,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 16:36:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T20:09:49.496862+00:00"
  },
  {
   "title": "Ethiopia takes control of Zalambessa on the border with Eritrea — France 24 - UA.NEWS",
@@ -5966,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 15:49:24 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T20:09:49.496862+00:00"
  },
  {
   "title": "News Analysis: Drone strikes kill schoolchildren in #Amhara, civilians in #Tigray regions as conflicts show no sign of abating Addis Abeba – Drone strikes in #Ethiopia’s Amhara and Tigray regions killed schoolchildren and other civilians on Tuesday, 20 Octob - Facebook",
@@ -5977,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 19:23:03 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T20:09:49.496862+00:00"
  },
  {
   "title": "Tigray Fighting Continues as Federal Forces Retake Nirak - https://kulu-media.com/",
@@ -5988,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 19:40:12 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T20:09:49.496862+00:00"
  }
 ]
