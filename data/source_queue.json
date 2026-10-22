@@ -5948,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 12:11:26 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T15:20:35.088437+00:00"
  },
  {
   "title": "Drone strikes kill schoolchildren in Amhara, civilians in Tigray regions as conflicts show no sign of abating - Addis Standard",
@@ -5959,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 13:35:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T15:20:35.088437+00:00"
  },
  {
   "title": "WHO scales up emergency health response in northern Ethiopia - Channel Africa",
@@ -5970,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 14:48:51 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T15:20:35.088437+00:00"
  },
  {
   "title": "Tigray university lecturers unpaid for 12 to 14 months - Temari.et",
@@ -5981,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 07:33:01 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T15:20:35.088437+00:00"
  },
  {
   "title": "Eritrea’s Antagonistic Policy Threatens Regional Stability, Says Prof. Alemayehu - ENA English",
@@ -5992,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 14:35:13 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T15:20:35.088437+00:00"
  }
 ]
