@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-21T23:22:58.915193+00:00",
+  "generated_at": "2026-10-22T04:51:57.076409+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 790,
+    "recent_event_records": 795,
     "regions_with_located_evidence": 8,
     "control_change_records": 21,
     "contested_or_early_records": 0,
-    "reported_records": 790,
+    "reported_records": 795,
     "duplicate_records_ignored": 228,
     "overall_evidence_uncertainty": 55
   },
@@ -22,24 +22,24 @@
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 49,
+      "weight": 48,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 11,
+      "weight": 12,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 70,
-      "level": "ELEVATED",
+      "risk_index": 64,
+      "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 65,
-      "weighted_signal": 4.79,
-      "control_change_signal": 0.56,
+      "weighted_signal": 4.03,
+      "control_change_signal": 0.47,
       "explanation": "65 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
@@ -78,13 +78,58 @@
       ]
     },
     {
+      "region": "Addis Ababa",
+      "risk_index": 55,
+      "level": "GUARDED",
+      "uncertainty": 55,
+      "event_count": 12,
+      "weighted_signal": 1.59,
+      "control_change_signal": 0,
+      "explanation": "12 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-22",
+          "title": "Tigray resumes daily life amid fears of wider war",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/22/tigray-resumes-daily-life-amid-fears-of-wider-war?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-19",
+          "title": "‘Weight of responsibility’: Promise and perils of covering Ethiopia’s war",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/19/weight-of-responsibility-promise-and-perils-of-covering-ethiopias-war?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-15",
+          "title": "Ethiopian forces expand control in Tigray as militia claims Eritrean losses",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/15/ethiopian-forces-expand-control-in-tigray-as-militia-claims-eritrean-losses?traffic_source=rss"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "region": "Eastern Tigray",
-      "risk_index": 45,
+      "risk_index": 39,
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 17,
-      "weighted_signal": 1.31,
-      "control_change_signal": 0.21,
+      "weighted_signal": 1.1,
+      "control_change_signal": 0.18,
       "explanation": "17 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
@@ -123,57 +168,12 @@
       ]
     },
     {
-      "region": "Addis Ababa",
-      "risk_index": 45,
-      "level": "GUARDED",
-      "uncertainty": 55,
-      "event_count": 11,
-      "weighted_signal": 1.27,
-      "control_change_signal": 0,
-      "explanation": "11 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-10-19",
-          "title": "‘Weight of responsibility’: Promise and perils of covering Ethiopia’s war",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/10/19/weight-of-responsibility-promise-and-perils-of-covering-ethiopias-war?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-15",
-          "title": "Ethiopian forces expand control in Tigray as militia claims Eritrean losses",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/10/15/ethiopian-forces-expand-control-in-tigray-as-militia-claims-eritrean-losses?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-13",
-          "title": "Ethiopia’s Tigray war: Where do the UAE and Saudi Arabia stand?",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/10/13/ethiopias-tigray-war-where-do-the-uae-and-saudi-arabia-stand?traffic_source=rss"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "region": "Northern Tigray",
-      "risk_index": 32,
+      "risk_index": 28,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 6,
-      "weighted_signal": 0.71,
+      "weighted_signal": 0.6,
       "control_change_signal": 0,
       "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -214,11 +214,11 @@
     },
     {
       "region": "Southern Tigray",
-      "risk_index": 9,
+      "risk_index": 7,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 2,
-      "weighted_signal": 0.26,
+      "weighted_signal": 0.22,
       "control_change_signal": 0,
       "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -252,7 +252,7 @@
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 4,
-      "weighted_signal": 0.29,
+      "weighted_signal": 0.25,
       "control_change_signal": 0,
       "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -293,11 +293,11 @@
     },
     {
       "region": "Amhara",
-      "risk_index": 4,
+      "risk_index": 3,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 3,
-      "weighted_signal": 0.28,
+      "weighted_signal": 0.23,
       "control_change_signal": 0,
       "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [

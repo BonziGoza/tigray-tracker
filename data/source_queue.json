@@ -5936,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 00:01:27 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T04:51:56.759299+00:00"
  },
  {
   "title": "Daily_Brief: Three #Indian relatives reported missing in #Ethiopia while travelling to #US - Addis Standard",
@@ -5947,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 14:08:09 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T04:51:56.759299+00:00"
  },
  {
   "title": "Tigray resumes daily life amid fears of wider war - Al Jazeera",
@@ -5958,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 02:10:33 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T04:51:56.759299+00:00"
  },
  {
   "title": "Tigray resumes daily life amid fears of wider war - Al Jazeera",
@@ -5969,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 02:08:38 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T04:51:56.759299+00:00"
  },
  {
   "title": "Khartoum's Conditional Peace Offer and the Egyptian Shadow over Ethiopia-Sudan Relations - horn review",
@@ -5980,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 15:11:09 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T04:51:56.759299+00:00"
  },
  {
   "title": "Tigray resumes daily life amid fears of wider war",
@@ -5991,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 02:08:05 +0000",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-22T04:51:56.759299+00:00"
  }
 ]
