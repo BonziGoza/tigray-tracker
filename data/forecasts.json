@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-23T04:53:44.912001+00:00",
+  "generated_at": "2026-10-23T10:07:00.215417+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 826,
+    "recent_event_records": 831,
     "regions_with_located_evidence": 8,
-    "control_change_records": 22,
+    "control_change_records": 23,
     "contested_or_early_records": 0,
-    "reported_records": 826,
+    "reported_records": 831,
     "duplicate_records_ignored": 231,
     "overall_evidence_uncertainty": 55
   },
@@ -34,14 +34,29 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 57,
-      "level": "GUARDED",
+      "risk_index": 66,
+      "level": "ELEVATED",
       "uncertainty": 55,
-      "event_count": 65,
-      "weighted_signal": 3.39,
-      "control_change_signal": 0.39,
-      "explanation": "65 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "event_count": 66,
+      "weighted_signal": 3.79,
+      "control_change_signal": 0.8,
+      "explanation": "66 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-23",
+          "title": "Mekelle reopens after Ethiopian forces take control, but Tigray residents face hardship - The Eastleigh Voice",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "The Eastleigh Voice",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdWVPX2NwZVpzTW5OYjJ3c1JjaVNNTllsb1V5eUx4RUlmRGw0amhsaUV5ZjI5Y3Q4Mk5WSkN4Vml5ZjRsRm1tUExIX281S0UwNWNhelUxdl9IY21ST1gteE9CR01aQkROZG10YWVWRUE5NWlabm1WdGZSeTdLdElHR0ZCdjBBb2lyWGRkRVFxaUhLTU1XaUNpWjIyelNFa0c5a1lfMWtXeUJfSmRld2JSTjFqOWt3eEhZNDJDMk5UYlduZ1hvbHN3VE51eTU?oc=5"
+            },
+            {
+              "outlet": "The Eastleigh Voice",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNM0NoRHQ5UzgxN2hBdDdFekV6eU5tQTViWEhOenJCQkhoT1RkTjVYT01WWDZCQmc3dUE5cWE1emxRYVVJaVp6UjlrVDdreXp0eGlUVFAwQXp2X0tBdEVISVJSUHd6emp6T3I5WWdjMEJ3ZGFPSmJxV3pZQ01HWkhVcmJPX19MNk1kRWdGOXVtcXQ3NlZDN1JvSW5UcDZlaGVkRXFoTktKSVRVMHNjdWxpZXBhdVJIRFVJczBwUnV6X0Z0QUszb0U3blRDOA?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-10-19",
           "title": "From Military Victory to Political Settlement: Why Ethiopia’s real test lies beyond controlling Mekelle - Addis Standard",
@@ -61,17 +76,6 @@
             {
               "outlet": "aljazeera.com",
               "url": "https://www.aljazeera.com/news/2026/10/16/ethiopia-announces-instalment-of-interim-government-in-tigray?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-20",
-          "title": "Ethiopia : FEAR to go to Mekelle in peacetime but COURAGE to fly to Dubai in wartime? - Borkena",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Borkena",
-              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZ2dXY3NSWnIyOXotRUlSb3ZrMC1lWGp6RXkydjJZSXczRjVpNk81ZXdwQVFNRjRhaElYMjlLR1FJcjVZUVBIeWJxRVJuQmhoRmlHYjUtaE9FREt6WGd2blhtam9JT29yZTctYjdjZl9vcEU0bFg5X3hlaXE2VnBrT3dVOEhpeS1yaTl3VnZuYlprRVZURkJiR2p5NGt3TXdOcXIwX2ZB?oc=5"
             }
           ]
         }

@@ -837,7 +837,7 @@
   },
   {
     "date": "2026-10-23",
-    "generated_at": "2026-10-23T04:53:44.912001+00:00",
+    "generated_at": "2026-10-23T10:07:00.215417+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
@@ -859,8 +859,8 @@
     "regions": [
       {
         "region": "Central Tigray",
-        "risk_index": 57,
-        "level": "GUARDED"
+        "risk_index": 66,
+        "level": "ELEVATED"
       },
       {
         "region": "Addis Ababa",
