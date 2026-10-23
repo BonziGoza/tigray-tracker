@@ -5840,7 +5840,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 10:29:59 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "Ethiopia’s Tigray rebels urged to disarm as commander vows to fight on - AP News",
@@ -5851,7 +5852,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 14:38:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - Ottumwa Courier",
@@ -5862,7 +5864,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 14:38:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - Temple Daily Telegram",
@@ -5873,7 +5876,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 14:38:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "Tigray rebel leader vows to continue war against Ethiopian forces despite territorial losses - Anadolu Ajansı",
@@ -5884,7 +5888,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 12:02:35 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - Corsicana Daily Sun",
@@ -5895,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 14:38:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "Ethiopia’s Tigray Region to Resume Regular Schooling on October 26 as Caretaker Administration Advances Education Recovery - Fana Media Corporation S.C",
@@ -5906,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 12:01:58 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "Schoolchildren Killed in Northern Ethiopia Drone Attacks - allAfrica.com",
@@ -5917,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 13:40:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "Accounts on X say drone strike killed four at Finarwa in Tigray as fighter jets fly low over Mekelle - Mereja",
@@ -5928,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 18:10:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - Laredo Morning Times",
@@ -5939,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 14:45:48 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - The Killeen Daily Herald",
@@ -5950,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 14:38:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - Oskaloosa Herald",
@@ -5961,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 14:38:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "News: 12 dead, more than 80 injured following violence in #Ethiopia’s #Gambella, MSF reports - Addis Standard",
@@ -5972,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 10:58:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  },
  {
   "title": "CAS clears Japan’s Olympic silver medallist Ikeda of doping, overturns ban",
@@ -5983,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 12:34:10 +0000",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T15:07:20.779310+00:00"
  }
 ]
