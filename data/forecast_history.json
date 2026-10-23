@@ -837,7 +837,7 @@
   },
   {
     "date": "2026-10-23",
-    "generated_at": "2026-10-23T15:07:21.098057+00:00",
+    "generated_at": "2026-10-23T19:17:02.246493+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
@@ -847,24 +847,24 @@
       },
       {
         "name": "Wider cross-border escalation",
-        "weight": 46,
+        "weight": 45,
         "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
       },
       {
         "name": "Relative stabilization or a temporary pause",
-        "weight": 11,
+        "weight": 12,
         "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
       }
     ],
     "regions": [
       {
         "region": "Central Tigray",
-        "risk_index": 74,
+        "risk_index": 79,
         "level": "ELEVATED"
       },
       {
         "region": "Addis Ababa",
-        "risk_index": 49,
+        "risk_index": 50,
         "level": "GUARDED"
       },
       {
