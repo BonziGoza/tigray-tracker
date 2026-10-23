@@ -5924,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 22:53:12 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T04:53:44.445001+00:00"
  },
  {
   "title": "U.S. Ambassador Massinga says armed alliance “has only called for more conflict,” urges return to Pretoria principles in Tigray - Mereja",
@@ -5935,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 21 Oct 2026 01:40:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T04:53:44.445001+00:00"
  },
  {
   "title": "Tigray lecturers say they have gone unpaid for months - Temari.et",
@@ -5946,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 23:33:21 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T04:53:44.445001+00:00"
  },
  {
   "title": "Tensions Along Eritrea-Ethiopia Border Risk Erupting Into War - Eurasia Review",
@@ -5957,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 01:30:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T04:53:44.445001+00:00"
  },
  {
   "title": "Eritrea Rejects Regional Restraint Calls, Accuses Ethiopia of Endangering African Borders - Borkena",
@@ -5968,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 01:26:17 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T04:53:44.445001+00:00"
  },
  {
   "title": "Ethiopia-Eritrea: Is there a risk of a wider conflict? - inkl",
@@ -5979,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 15:40:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T04:53:44.445001+00:00"
  },
  {
   "title": "#Daily_Brief: #UK threatens visa ban on #Eritreans over migrant returns dispute - Addis Standard",
@@ -5990,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 08:56:29 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-23T04:53:44.445001+00:00"
  }
 ]
