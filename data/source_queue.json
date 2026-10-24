@@ -5912,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 02:53:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T12:42:41.924784+00:00"
  },
  {
   "title": "Local Elections Underway in Tigray as Caretaker Administration Call for Stability in Border Zones - The Reporter Ethiopia",
@@ -5923,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 06:15:41 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T12:42:41.924784+00:00"
  },
  {
   "title": "TPLF Leadership Set to Join DDR Process Amid Tigray Service Restoration - Borkena",
@@ -5934,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 04:39:13 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T12:42:41.924784+00:00"
  },
  {
   "title": "TPLF Forces Reportedly Reenter Rama After ENDF Withdrawal - https://kulu-media.com/",
@@ -5945,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 09:20:18 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T12:42:41.924784+00:00"
  },
  {
   "title": "Getachew Reda Tana Forum Remarks on TPLF and Eritrea - https://kulu-media.com/",
@@ -5956,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 09:30:52 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T12:42:41.924784+00:00"
  },
  {
   "title": "Ethiopia Intelligence Chief Warns of Red Sea Militarisation, Foreign Rivalries - ChimpReports",
@@ -5967,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 05:17:57 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T12:42:41.924784+00:00"
  },
  {
   "title": "Ethiopian PM’s advisor: Tigrayan forces and others hinder stability",
@@ -5978,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 09:32:22 +0000",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T12:42:41.924784+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - Star Beacon",
@@ -5989,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 16:15:58 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T12:42:41.924784+00:00"
  }
 ]
