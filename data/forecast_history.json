@@ -901,12 +901,12 @@
   },
   {
     "date": "2026-10-24",
-    "generated_at": "2026-10-24T01:37:30.387080+00:00",
+    "generated_at": "2026-10-24T07:20:15.609731+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
         "name": "Continued localized conflict and shifting control",
-        "weight": 44,
+        "weight": 43,
         "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
       },
       {
@@ -916,7 +916,7 @@
       },
       {
         "name": "Relative stabilization or a temporary pause",
-        "weight": 11,
+        "weight": 12,
         "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
       }
     ],

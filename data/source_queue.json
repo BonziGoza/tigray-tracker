@@ -5924,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 23:57:48 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T07:20:15.245769+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - KSAT",
@@ -5935,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 16:17:39 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T07:20:15.245769+00:00"
  },
  {
   "title": "Tigray Region’s Caretaker Administration Accelerating Efforts to Restore Disrupted Services Through Federal and Public Cooperation - Fana Media Corporation S.C",
@@ -5946,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 13:09:29 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T07:20:15.245769+00:00"
  },
  {
   "title": "Ethiopia’s Tigray rebels urged to disarm as commander vows to fight on - Breitbart",
@@ -5957,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 01:15:40 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T07:20:15.245769+00:00"
  },
  {
   "title": "The War No One in Eritrea Believes Will Happen: “It’s Just Bluster” - Blankspot",
@@ -5968,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 16:06:32 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T07:20:15.245769+00:00"
  },
  {
   "title": "One Red Sea, Multiple Fault Lines: Ethiopia’s Escalation Amid Regional Rivalries - ISPI",
@@ -5979,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 22 Oct 2026 18:33:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T07:20:15.245769+00:00"
  },
  {
   "title": "Ethiopia’s fragile peace deal falters as civil war looms - IOL",
@@ -5990,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 03:11:30 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T07:20:15.245769+00:00"
  }
 ]
