@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-24T16:37:32.170756+00:00",
+  "generated_at": "2026-10-24T19:30:51.718899+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 869,
+    "recent_event_records": 870,
     "regions_with_located_evidence": 8,
     "control_change_records": 24,
     "contested_or_early_records": 0,
-    "reported_records": 869,
-    "duplicate_records_ignored": 239,
+    "reported_records": 870,
+    "duplicate_records_ignored": 240,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -34,11 +34,11 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 79,
+      "risk_index": 80,
       "level": "ELEVATED",
       "uncertainty": 55,
       "event_count": 69,
-      "weighted_signal": 4.36,
+      "weighted_signal": 4.42,
       "control_change_signal": 0.67,
       "explanation": "69 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -54,17 +54,13 @@
           ]
         },
         {
-          "date": "2026-10-23",
+          "date": "2026-10-24",
           "title": "ethiopia-tigray-mekelle-rebels-disarmament-drone-strike-abiy-ahmed-tplf: Latest Updates - Audacy",
           "grade": "REPORTED",
           "sources": [
             {
               "outlet": "Audacy",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOanZZZmpIN1ZnNk95Z2dDcHRjWFVLRW9hQlFHcTF2MVZ2bl9oVldxYnlQVTZGYmJuaTZTUkxkNmFuZ240LTc0b011aGVqR0xqLXdZSTFRd1lfa0FKUGt4MzJ2S1RveG5oS29EVVc2UXB0d2MwcG5iR0s3WERqdnhleS1RMk1jQ2h1OFhPQXFHV3pDc0U?oc=5"
-            },
-            {
-              "outlet": "Audacy",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZlpCM1hYcW82Q1NseW9RVHBIVXdwc1B5b1d0Z3JLZU5GVG5PVnQyUVRzd3JTQU5TYU0zeV9pVG4ybmNsa1BXeGh2ZjBSdFlPNElSbFNCd09wRWF3RWszT3ZxamM2ZFU2UWhjMnl3c2kzSUtibF9FeGxyLWo5SzB1eUQ5QWJ0VzhvS0VPSVFXOHNWUEZTTDYtcw?oc=5"
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSWNqQk5wTkhiRDhwNFB4T3ZTUVg1YnJKU2U2ajVpaExPRFNfMEY4SkdhUDJlNktuT1Iwb3hKTWtwX0w5TFlkRTlsRlcyaFc2QlVtX1ZWeFBkc0R4QjMybkJYVlZONW5HUkJTSEZXTWJ3M0hLTGRnd3k5Q0ExWWxqbnA3bElYNVZCSFhkcQ?oc=5"
             }
           ]
         },

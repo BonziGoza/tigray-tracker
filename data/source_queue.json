@@ -5984,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 16:35:07 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T19:30:51.375472+00:00"
  },
  {
   "title": "Several dead in clashes between rival Ethiopia regional armies - Africa - World - Ahram Online",
@@ -5995,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 12:41:19 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T19:30:51.375472+00:00"
  }
 ]
