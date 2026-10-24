@@ -5936,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 20:43:48 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T01:37:30.103428+00:00"
  },
  {
   "title": "Tigray rebel leader vows to continue war against Ethiopian forces despite territorial losses - Anadolu Ajansı",
@@ -5947,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 12:02:35 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T01:37:30.103428+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - Clinton Herald",
@@ -5958,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 16:15:58 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T01:37:30.103428+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - CT Insider",
@@ -5969,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 14:48:17 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T01:37:30.103428+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - The New Arab",
@@ -5980,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 17:38:24 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T01:37:30.103428+00:00"
  },
  {
   "title": "#Daily_Brief: Government dispatches emergency aid to drought-hit #Afar communities - Addis Standard",
@@ -5991,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 06:45:14 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-24T01:37:30.103428+00:00"
  }
 ]
