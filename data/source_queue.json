@@ -5972,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 25 Oct 2026 07:48:48 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T11:34:41.073527+00:00"
  },
  {
   "title": "Abiy Ahmed Calls Sea Access an Existential Issue for Ethiopia’s 130 Million People - FTL Somalia",
@@ -5983,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 25 Oct 2026 07:31:21 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T11:34:41.073527+00:00"
  },
  {
   "title": "Eritrean Troops Reportedly Cross the Border into Ethiopia, Raising Fears of Regional War - https://globalpost.com/",
@@ -5994,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 25 Oct 2026 10:01:04 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T11:34:41.073527+00:00"
  }
 ]
