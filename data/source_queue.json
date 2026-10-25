@@ -5984,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 20:57:04 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T06:10:42.502284+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - thetimestribune.com",
@@ -5995,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 23 Oct 2026 16:15:58 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T06:10:42.502284+00:00"
  }
 ]
