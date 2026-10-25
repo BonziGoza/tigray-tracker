@@ -1,6 +1,46 @@
 {
- "updated": "2026-10-24T22:30:30.881671+00:00",
+ "updated": "2026-10-25T01:13:03.467982+00:00",
  "events": [
+  {
+   "key": "unknown-2026-10-25-9d2154dc",
+   "sources": [
+    {
+     "outlet": "The Daily Independent",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQU1lLVXl3blZQVDdQQk45QXVTQ2lXQjJhNmpOMkJKOUxKcklRTm5NNWlRaGNlOW1FLVU5bTA3R0plR2l1MVA5bWZEaDZTYlM5V2ZhN01XamdpaHRHcnlVRk5rb0NiNWtpZ3JKSnpOdzcxc2czOVBQV3Fxemh3dTVMTnNjOVFEbU4tbDZ5RkYtWHdEdzdPUnBMdVVDanF0Y0NsUjZlckRhMTR1eUZyd0ZhMDk2ZXZTNXJ1Mmxodm1iazAtSHFBSGFSREc5VzdfbnNXY0h6emh2VVJzSUVsMmhuNjN3YVhIVHJHS1kwMzRnLTh5Q0E?oc=5",
+     "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - The Daily Independent",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 23 Oct 2026 16:15:58 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: The Daily Independent (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-25",
+   "kind": "other",
+   "summary": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - The Daily Independent",
+   "attribution": "independent",
+   "last_seen": "2026-10-25",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "The Daily Independent",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: The Daily Independent (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
   {
    "key": "unknown-2026-10-24-57f01b1a",
    "sources": [
