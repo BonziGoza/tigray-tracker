@@ -5936,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 10:34:21 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T19:40:07.541877+00:00"
  },
  {
   "title": "Several Dead in Ethiopian Border Clashes - Howl.Link",
@@ -5947,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 16:58:32 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T19:40:07.541877+00:00"
  },
  {
   "title": "ENDF Chief of Staff Vows to Defend Ethiopia’s Sovereignty, Says No Force Can Break Its Defense Army - Fana Media Corporation S.C",
@@ -5958,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 25 Oct 2026 11:50:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T19:40:07.541877+00:00"
  },
  {
   "title": "#Video_News: #Ethiopia warns of #Red_Sea militarization as Horn of Africa conflicts and foreign rivalries deepen Watch - Facebook",
@@ -5969,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 16:01:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T19:40:07.541877+00:00"
  },
  {
   "title": "Ethiopia: A Country Where Citizens Cannot Travel or Live in Peace - Borkena",
@@ -5980,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 25 Oct 2026 18:23:23 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T19:40:07.541877+00:00"
  },
  {
   "title": "Ethiopia's Tigray rebels urged to disarm as commander vows to fight on - Manila Bulletin",
@@ -5991,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 01:02:52 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T19:40:07.541877+00:00"
  }
 ]

@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-25T16:25:14.147387+00:00",
+  "generated_at": "2026-10-25T19:40:07.773966+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 882,
+    "recent_event_records": 886,
     "regions_with_located_evidence": 8,
     "control_change_records": 24,
     "contested_or_early_records": 0,
-    "reported_records": 882,
-    "duplicate_records_ignored": 244,
+    "reported_records": 886,
+    "duplicate_records_ignored": 246,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
