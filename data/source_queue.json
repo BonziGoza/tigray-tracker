@@ -5960,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 25 Oct 2026 20:54:32 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T22:35:44.513416+00:00"
  },
  {
   "title": "Simret Drops Lawsuit Citing Deception in Ethiopia Election Dispute - kulu-media.com",
@@ -5971,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 24 Oct 2026 03:26:18 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T22:35:44.513416+00:00"
  },
  {
   "title": "Ethiopia Eritrea TPLF Accusations Escalate - kulu-media.com",
@@ -5982,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 25 Oct 2026 20:37:24 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T22:35:44.513416+00:00"
  },
  {
   "title": "Ethiopia Issues Ultimatum to Eritrea: Withdraw Troops or Face War - kulu-media.com",
@@ -5993,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 25 Oct 2026 07:09:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-25T22:35:44.513416+00:00"
  }
 ]
