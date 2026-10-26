@@ -1029,17 +1029,17 @@
   },
   {
     "date": "2026-10-26",
-    "generated_at": "2026-10-26T14:19:11.470607+00:00",
+    "generated_at": "2026-10-26T20:31:30.751323+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
         "name": "Continued localized conflict and shifting control",
-        "weight": 44,
+        "weight": 45,
         "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
       },
       {
         "name": "Wider cross-border escalation",
-        "weight": 44,
+        "weight": 43,
         "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
       },
       {
@@ -1051,7 +1051,7 @@
     "regions": [
       {
         "region": "Central Tigray",
-        "risk_index": 68,
+        "risk_index": 74,
         "level": "ELEVATED"
       },
       {
