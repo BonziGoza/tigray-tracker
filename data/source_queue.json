@@ -5984,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 25 Oct 2026 19:39:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-26T06:18:28.257856+00:00"
  },
  {
   "title": "#Daily_Brief: #Ethiopia ranks third among #Russian fertilizer importers - Addis Standard",
@@ -5995,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 26 Oct 2026 05:35:21 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-26T06:18:28.257856+00:00"
  }
 ]

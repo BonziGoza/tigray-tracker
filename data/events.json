@@ -1,6 +1,86 @@
 {
- "updated": "2026-10-26T01:13:55.462338+00:00",
+ "updated": "2026-10-26T06:18:28.258786+00:00",
  "events": [
+  {
+   "key": "unknown-2026-10-26-139df776",
+   "sources": [
+    {
+     "outlet": "Addis Standard",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8yNkh5eHMzVnhfRkFid1FSUnllREhZRGMzUEc0NkdFTTYxYmNzRjREeDFuRjdySHp1bzFUMENGM25EbHRMTEZ4cjJ3ZnVSdlU2TlE?oc=5",
+     "title": "#Daily_Brief: #Ethiopia ranks third among #Russian fertilizer importers - Addis Standard",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Mon, 26 Oct 2026 05:35:21 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 50,
+     "credibility_label": "MODERATE",
+     "credibility_explanation": "Publisher registry: Addis Standard (provisional_manual_assessment; confidence medium). Publisher reputation component: 78/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed. Article credibility score: 50/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-26",
+   "kind": "other",
+   "summary": "#Daily_Brief: #Ethiopia ranks third among #Russian fertilizer importers - Addis Standard",
+   "attribution": "independent",
+   "last_seen": "2026-10-26",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 35,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "B",
+   "best_source": "Addis Standard",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Addis Standard (B-tier). 1 independent source record; 0 A-tier, 1 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-10-26-00d84746",
+   "sources": [
+    {
+     "outlet": "Zegabi",
+     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4tc3VUOGNBRW9pU1dacmtjcnE1UlNTTG8taUJGWGoxYms1V3pIdUlwRkNvRDJXQjA0YkNZdUkySjcwU0NTM3dLUXB3RWVvUQ?oc=5",
+     "title": "Ethiopia’s Army Chief Claims the Army Has Defeated the Rebel Alliance That Includes Fano - Zegabi",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Sun, 25 Oct 2026 19:39:16 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: Zegabi (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-26",
+   "kind": "claim",
+   "summary": "Ethiopia’s Army Chief Claims the Army Has Defeated the Rebel Alliance That Includes Fano - Zegabi",
+   "attribution": "independent",
+   "last_seen": "2026-10-26",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "Zegabi",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Zegabi (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
   {
    "key": "unknown-2026-10-25-9d2154dc",
    "sources": [
