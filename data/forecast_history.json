@@ -1093,17 +1093,17 @@
   },
   {
     "date": "2026-10-27",
-    "generated_at": "2026-10-27T00:28:11.155429+00:00",
+    "generated_at": "2026-10-27T06:19:13.101427+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
         "name": "Continued localized conflict and shifting control",
-        "weight": 45,
+        "weight": 46,
         "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
       },
       {
         "name": "Wider cross-border escalation",
-        "weight": 43,
+        "weight": 42,
         "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
       },
       {

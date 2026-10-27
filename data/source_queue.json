@@ -5972,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 26 Oct 2026 14:39:02 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T06:19:12.869704+00:00"
  },
  {
   "title": "Over 40 Killed In Armed Attacks On Orthodox Churches In Ethiopia - NDTV",
@@ -5983,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 26 Oct 2026 14:54:23 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T06:19:12.869704+00:00"
  },
  {
   "title": "Abiy Ahmed Begins a Second Term With a Country at War - IOL",
@@ -5994,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 03:40:21 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T06:19:12.869704+00:00"
  }
 ]

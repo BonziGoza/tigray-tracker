@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-27T00:28:11.155429+00:00",
+  "generated_at": "2026-10-27T06:19:13.101427+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 913,
+    "recent_event_records": 916,
     "regions_with_located_evidence": 8,
     "control_change_records": 26,
     "contested_or_early_records": 0,
-    "reported_records": 913,
+    "reported_records": 916,
     "duplicate_records_ignored": 247,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 45,
+      "weight": 46,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 43,
+      "weight": 42,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
