@@ -1093,17 +1093,17 @@
   },
   {
     "date": "2026-10-27",
-    "generated_at": "2026-10-27T13:14:45.262071+00:00",
+    "generated_at": "2026-10-27T18:44:49.912223+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
         "name": "Continued localized conflict and shifting control",
-        "weight": 46,
+        "weight": 47,
         "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
       },
       {
         "name": "Wider cross-border escalation",
-        "weight": 42,
+        "weight": 41,
         "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
       },
       {
@@ -1134,13 +1134,13 @@
         "level": "WATCH"
       },
       {
-        "region": "Southern Tigray",
-        "risk_index": 3,
+        "region": "Eritrea",
+        "risk_index": 4,
         "level": "WATCH"
       },
       {
-        "region": "Eritrea",
-        "risk_index": 2,
+        "region": "Southern Tigray",
+        "risk_index": 3,
         "level": "WATCH"
       },
       {

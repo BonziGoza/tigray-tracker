@@ -5840,7 +5840,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 12:45:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "#Video_News: Drought, food shortages and child malnutrition deepen humanitarian needs in Afar, Amhara and Tigray watch - Facebook",
@@ -5851,7 +5852,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 15:00:19 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "Defunct TPLF Group’s Destruction Leaves Former ENDF Northern Command Headquarters in Ruins in Ethiopia’s Tigray Region - Fana Media Corporation S.C",
@@ -5862,7 +5864,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 12:24:39 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "Ethiopia: Drought, Food Shortages and Child Malnutrition Deepen Humanitarian Needs in Afar, Amhara and Tigray - allAfrica.com",
@@ -5873,7 +5876,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 10:29:03 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "#Video_News: Drought, food shortages and child malnutrition deepen humanitarian needs in Afar, Amhara and Tigray watch - Facebook",
@@ -5884,7 +5888,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 15:00:11 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "Attacks kill at least 60 Orthodox Christians in Ethiopia, church says - TribLIVE.com",
@@ -5895,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 16:10:37 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "News: Drone strikes kill couple fleeing clinic, father with four children, in Tigray’s Medebay Terer - Addis Standard",
@@ -5906,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 14:14:33 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "Ethiopia’s transitional justice should resume, but not where it left off - Polity.org.za",
@@ -5917,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 12:39:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "Putin’s Africa Summit Raises Prospect of Ethiopia-Eritrea Talks Amid Rising Tensions - https://etbusinessview.com/",
@@ -5928,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 13:14:01 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "Assab’s Stagnation, Eritrea’s Broken “Africa’s Singapore” Dream, and the TPLF’s Conspiracy with External Adversaries to Strip Ethiopia of Its Red Sea Coastline - Fana Media Corporation S.C",
@@ -5939,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 11:55:43 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "#Daily_Brief: #Eritrea’s President heads to #Moscow for #Russia-#Africa summit The visit comes days after #Moscow reiterated its willingness to facilitate dialogue between #Addis_Abeba and #Asmara, whose relations have deteriorated amid growing region - Facebook",
@@ -5950,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 13:15:12 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "Daily_Brief: #Sudan reports power outages across #Khartoum following drone attacks, with reports linking launches to #Ethiopia - Addis Standard",
@@ -5961,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 12:21:22 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "Church demands protection as 60 Orthodox Christians killed in Ethiopia - Angelus News",
@@ -5972,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 18:13:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  },
  {
   "title": "Russia-Africa: Leaders of Ethiopia and Eritrea in Moscow, Kremlin offers mediation - Agenzia Nova",
@@ -5983,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 14:00:03 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-27T18:44:49.617645+00:00"
  }
 ]

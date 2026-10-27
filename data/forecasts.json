@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-27T13:14:45.262071+00:00",
+  "generated_at": "2026-10-27T18:44:49.912223+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 930,
+    "recent_event_records": 940,
     "regions_with_located_evidence": 8,
     "control_change_records": 26,
     "contested_or_early_records": 0,
-    "reported_records": 930,
-    "duplicate_records_ignored": 248,
+    "reported_records": 940,
+    "duplicate_records_ignored": 249,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 46,
+      "weight": 47,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 42,
+      "weight": 41,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
@@ -213,6 +213,51 @@
       ]
     },
     {
+      "region": "Eritrea",
+      "risk_index": 4,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 5,
+      "weighted_signal": 0.28,
+      "control_change_signal": 0,
+      "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-27",
+          "title": "#Daily_Brief: #Eritrea’s President heads to #Moscow for #Russia-#Africa summit The visit comes days after #Moscow reiterated its willingness to facilitate dialogue between #Addis_A",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Facebook",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQUHlIM3h2QU11b2RQWTEyd1pCZks2cHpTRk91a0ljbDRraUVxdDhobjgzOFJoTm8xTncyem9XM2NnSTROaWo5NUhqb3NlU3ZLdE5NN3lqOFEzanZSVG1lUWF4RFVmeWVYX0VDUnlPRi11QWJuZ0I1SVNLM2RHaFpTZHZLbnE5ZWxZOUpWV3RqMWxwT2x1eE9HZERrVF9UYVhrQlA1WkV1RktIVlNMUXZXZDFVMk5kalJrU0I2MnUwa3JYekhZcGpfUEczTW5CUXhvN0U0WFd4RmJRSXRZd2tn?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-20",
+          "title": "Ethiopian militia claims rebels in Eritrea, denied by Asmara - www.standardmedia.co.ke",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "www.standardmedia.co.ke",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdTFkOHZ5bGlFbk1aMy01SkhmOUEyMTEtSWcxbXBON1NLZDFYb0FBX1pwbHh1OTJlZi1FYm5Na3ZqNWVGdXc2anpJcGRKUzF0c2tjYXB5eXlWUmRkXzNzbU9tc1YySWsxNTJBbVZCY1dvSzdJWmdtRWJkUHRGNlYxT1pjbWxjc3UyVVFsaXV3cG1zWXdyamhPa2RoUXBaTUF3dWJyZVRnNmVrRWZYVDJ6ak9sQVV4VHVJYWdycVdR?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-17",
+          "title": "Ethiopia posing ‘serious’ threat to Eritrean sovereignty – Asmara - APAnews - Agence de Presse Africaine",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "APAnews - Agence de Presse Africaine",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT09LV0o4TzF3WUVIR21xdEdTVXZXOHFDaFdWbDhIbFZaNUZOaXNSQTc3Uk9kQTBBVzRqcmZHSUhZZUdySFhBTkF0RlZIbUFZd2Q2WW1yVWV0WGUzRWxKTngwQWFmTXhxTDdCc0tqUVJlVldZbHBZWXNtZE9BdVMzMV8wM1h2ZmtDU2c?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "region": "Southern Tigray",
       "risk_index": 3,
       "level": "WATCH",
@@ -241,51 +286,6 @@
             {
               "outlet": "Addis Standard",
               "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdmtEMGtNR1ROMEN3ZTNNeEpJWWhwOFlnSEZfclFwWG1HTkUtRlFhN0pNOF93N1NtbEtnRWxMZ1JRa1U5NnZVcVltanhjcmtLY1VzdGRTcVk0TWJvMXkxOFExaS1UWHdBUEhBT054YW1zVjRmWkJQSk9rRm5BQmdrQktYcFoyblNMVjg5LXRyd1dhVnRzamlLbVBhWnVWSnhZeFNfWFNOc29kdTF1ZHpLbnlLRDFCZWVtNU9LMkhTajdrazY5QUZ4dEpvbmZHZDhRei1jWUh5Y2pIS0t1RkxwTmlRbkVjNGYtQjJvTkNHYURLbUF6NWp5T0ZPUUtDcjVHdjdNSlZmSWM?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Eritrea",
-      "risk_index": 2,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 4,
-      "weighted_signal": 0.1,
-      "control_change_signal": 0,
-      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-10-20",
-          "title": "Ethiopian militia claims rebels in Eritrea, denied by Asmara - www.standardmedia.co.ke",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "www.standardmedia.co.ke",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdTFkOHZ5bGlFbk1aMy01SkhmOUEyMTEtSWcxbXBON1NLZDFYb0FBX1pwbHh1OTJlZi1FYm5Na3ZqNWVGdXc2anpJcGRKUzF0c2tjYXB5eXlWUmRkXzNzbU9tc1YySWsxNTJBbVZCY1dvSzdJWmdtRWJkUHRGNlYxT1pjbWxjc3UyVVFsaXV3cG1zWXdyamhPa2RoUXBaTUF3dWJyZVRnNmVrRWZYVDJ6ak9sQVV4VHVJYWdycVdR?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-17",
-          "title": "Ethiopia posing ‘serious’ threat to Eritrean sovereignty – Asmara - APAnews - Agence de Presse Africaine",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "APAnews - Agence de Presse Africaine",
-              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT09LV0o4TzF3WUVIR21xdEdTVXZXOHFDaFdWbDhIbFZaNUZOaXNSQTc3Uk9kQTBBVzRqcmZHSUhZZUdySFhBTkF0RlZIbUFZd2Q2WW1yVWV0WGUzRWxKTngwQWFmTXhxTDdCc0tqUVJlVldZbHBZWXNtZE9BdVMzMV8wM1h2ZmtDU2c?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-14",
-          "title": "Asmara appeals to UN as Ethiopian troops reach border - Daily Nation",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Daily Nation",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZGNCcTVxLVp5R0hHMThRcmJiOVpybi1BaVZKYU1VZ3Y4NTlVdTZaTlY2LXFmVTdNNmhBTFJPWXV4WS1xX3UwV1pYYmpRZXk5WmZsUVh2Znd1Q2hzbzBHZzdrS2NuX0p3NHM0LTIwVVhrSXg2T3hFaDkyWEs1b2ZxWkJCaEk0N2VNRGpXZ0pOX3BCbTVhMUxUeGRoQWNlU2d5OFByeA?oc=5"
             }
           ]
         }
