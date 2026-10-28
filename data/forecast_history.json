@@ -1157,7 +1157,7 @@
   },
   {
     "date": "2026-10-28",
-    "generated_at": "2026-10-28T16:40:15.925354+00:00",
+    "generated_at": "2026-10-28T21:40:52.645022+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
@@ -1184,8 +1184,8 @@
       },
       {
         "region": "Addis Ababa",
-        "risk_index": 27,
-        "level": "WATCH"
+        "risk_index": 46,
+        "level": "GUARDED"
       },
       {
         "region": "Eastern Tigray",

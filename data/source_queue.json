@@ -5900,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 17:10:48 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T21:40:52.247748+00:00"
  },
  {
   "title": "Drone strikes kill couple fleeing clinic, father with four children, in Tigray - The Eastleigh Voice",
@@ -5911,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 16:40:37 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T21:40:52.247748+00:00"
  },
  {
   "title": "Influencers urge Ethiopia to begin Eritrea invasion - Taipei Times",
@@ -5922,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 16:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T21:40:52.247748+00:00"
  },
  {
   "title": "Ethiopia receives 12 Russian Su-35 fighter jets, plans to acquire S-400 air defenses - Anadolu Ajansı",
@@ -5933,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 18:00:26 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T21:40:52.247748+00:00"
  },
  {
   "title": "Russia Offers to Mediate Ethiopia-Eritrea Talks at Moscow Summit - Borkena",
@@ -5944,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 17:10:51 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T21:40:52.247748+00:00"
  },
  {
   "title": "Russia delivers 12 Su-35 fighter jets to Ethiopia and offers to mediate in the Eritrea conflict - صوت الإمارات",
@@ -5955,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 17:21:37 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T21:40:52.247748+00:00"
  },
  {
   "title": "Ethiopia receives 12 Russian Su-35 jets, plans S-400 acquisition",
@@ -5966,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 16:35:30 +0000",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T21:40:52.247748+00:00"
  },
  {
   "title": "Ethiopia: Tigray Catholics Trapped by War - FSSPX Actualités",
@@ -5977,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 12:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T21:40:52.247748+00:00"
  },
  {
   "title": "Ethiopia receives 12 Russian Su-35 jets, plans S-400 acquisition - Al Jazeera",
@@ -5988,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 16:47:26 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T21:40:52.247748+00:00"
  }
 ]
