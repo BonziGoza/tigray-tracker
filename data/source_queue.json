@@ -5996,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 27 Oct 2026 20:28:26 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T02:18:31.744910+00:00"
  }
 ]

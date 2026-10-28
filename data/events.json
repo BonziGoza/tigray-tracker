@@ -1,6 +1,46 @@
 {
- "updated": "2026-10-27T22:58:22.678607+00:00",
+ "updated": "2026-10-28T02:18:31.745887+00:00",
  "events": [
+  {
+   "key": "unknown-2026-10-28-de5dad3d",
+   "sources": [
+    {
+     "outlet": "Fana Media Corporation S.C",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNGZBbVExLXZBYzlWLUlkbG15LUgyN3k4OEFqdDByWEZURkl6QThSSDdIOHljenM0STZnemtiV2FqdXRfSFBuSVJ0MWZQYzV6UXFXU2NOS0FLUU1YZzRaeEJfSVJjbmp1UTkzM1h6YmhFakY4ZzJoMlI3a0d4V2h5bzVGVjI5MmJEbTBzOC1NRGEzbS1fNmdCOEtMRV9tR1poY0R1UlVKRF9LTXlwR0YzTVhmcUhnN1U0amdCZ3B1elhNNXBuSVNwT09lSVJzemJlWFpv?oc=5",
+     "title": "Tigray Region Caretaker Administration Intensifying Efforts to Revitalize Trade and Stabilize Markets - Fana Media Corporation S.C",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Tue, 27 Oct 2026 20:28:26 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 41,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: Fana Media Corporation (provisional_manual_assessment; confidence low). Publisher reputation component: 55/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 41/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-10-28",
+   "kind": "other",
+   "summary": "Tigray Region Caretaker Administration Intensifying Efforts to Revitalize Trade and Stabilize Markets - Fana Media Corporation S.C",
+   "attribution": "independent",
+   "last_seen": "2026-10-28",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 25,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "Fana Media Corporation",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Fana Media Corporation (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
   {
    "key": "unknown-2026-10-27-9a219ffc",
    "sources": [
