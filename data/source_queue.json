@@ -5936,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 05:42:06 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T09:42:44.827624+00:00"
  },
  {
   "title": "'Now or Never': Ethiopia influencers push for Eritrea invasion - Bangkok Post",
@@ -5947,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 06:45:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T09:42:44.827624+00:00"
  },
  {
   "title": "Tigray students to report at Haramaya from 31 October - Temari.et",
@@ -5958,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 01:24:57 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T09:42:44.827624+00:00"
  },
  {
   "title": "Russia repeats offer to host Ethiopia-Eritrea dialogue, PM Abiy arrives in Moscow for Africa summit - Addis Standard",
@@ -5969,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 07:27:23 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T09:42:44.827624+00:00"
  },
  {
   "title": "'Now or Never': Ethiopia influencers push for Eritrea invasion - Modern Ghana",
@@ -5980,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 06:37:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T09:42:44.827624+00:00"
  },
  {
   "title": "News: #Russia repeats offer to host #Ethiopia-#Eritrea dialogue, PM Abiy arrives in #Moscow for Africa summit Russian Foreign Minister Sergey Lavrov said on October 28 that Moscow was prepared to contribute to restoring relations between the neighboring - Facebook",
@@ -5991,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 08:49:47 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-28T09:42:44.827624+00:00"
  }
 ]
