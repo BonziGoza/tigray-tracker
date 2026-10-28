@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-10-28T09:42:45.077146+00:00",
+  "generated_at": "2026-10-28T16:40:15.925354+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 944,
+    "recent_event_records": 952,
     "regions_with_located_evidence": 8,
     "control_change_records": 28,
     "contested_or_early_records": 0,
-    "reported_records": 944,
-    "duplicate_records_ignored": 185,
+    "reported_records": 952,
+    "duplicate_records_ignored": 187,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 47,
+      "weight": 48,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 12,
+      "weight": 11,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
@@ -79,13 +79,13 @@
     },
     {
       "region": "Addis Ababa",
-      "risk_index": 25,
+      "risk_index": 27,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 13,
-      "weighted_signal": 0.63,
+      "event_count": 14,
+      "weighted_signal": 0.81,
       "control_change_signal": 0,
-      "explanation": "13 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "14 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-22",
@@ -99,6 +99,17 @@
           ]
         },
         {
+          "date": "2026-10-28",
+          "title": "Moderate mag. 4.5 earthquake - 14 km southwest of Awash, Afar Region, Ethiopia, on Wednesday, Oct 28, 2026, at 04:31 pm (Addis Ababa time) - Volcano Discovery",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Volcano Discovery",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbnVpR1lDY3VxaHJtOXN2RFNHMW12XzJNQmhHT2htZEFjY3JnUmtveFh0aGkyc1N6ZDNqdm5fMkxpQVJKdlIxWVhTWXVFQnBBaVI1RWxmQ2V6ck5TME9RaXdxOXdYQWhRUGVtODZhRk9lTzRudVVYbmdUMVZWLUZDU0FqN2pSdDNzQU4ybC1TOFpXXzlUYmdBZHE1ZHlIVkhia3c?oc=5"
+            }
+          ]
+        },
+        {
           "date": "2026-10-19",
           "title": "‘Weight of responsibility’: Promise and perils of covering Ethiopia’s war",
           "grade": "REPORTED",
@@ -106,17 +117,6 @@
             {
               "outlet": "aljazeera.com",
               "url": "https://www.aljazeera.com/news/2026/10/19/weight-of-responsibility-promise-and-perils-of-covering-ethiopias-war?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-23",
-          "title": "U.S. Embassy Addis Ababa Security Alert – Oct. 23 - U.S. Embassy in Ethiopia (.gov)",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "U.S. Embassy in Ethiopia (.gov)",
-              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3YVI0YWFFeTZxTFNRSXZ5ZGR1NlJ1aENiSjl3RVhMZWZ6TkxmS3NqZTZFYldReHRLYUl1QS1CNVNZcXZMWEs5MS0tWGladDFPSmZNNndUUE9aN3dfbWJWV3lkMVMxWFkyYlk1NGpONlY5a3FHTjB1ODZTNA?oc=5"
             }
           ]
         }
