@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-10-29T16:10:16.060552+00:00",
+  "generated_at": "2026-10-29T21:09:49.233333+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 876,
+    "recent_event_records": 887,
     "regions_with_located_evidence": 8,
     "control_change_records": 26,
     "contested_or_early_records": 0,
-    "reported_records": 876,
-    "duplicate_records_ignored": 160,
+    "reported_records": 887,
+    "duplicate_records_ignored": 163,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 47,
+      "weight": 48,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
@@ -27,20 +27,20 @@
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 12,
+      "weight": 11,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 56,
+      "risk_index": 59,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 58,
-      "weighted_signal": 2.35,
+      "event_count": 60,
+      "weighted_signal": 2.73,
       "control_change_signal": 0.51,
-      "explanation": "58 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "60 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-26",
@@ -54,24 +54,24 @@
           ]
         },
         {
-          "date": "2026-10-23",
-          "title": "Tigray rebels urged to disarm as commander vows to fight Ethiopia’s gov’t",
+          "date": "2026-10-29",
+          "title": "Ciidamada Itoobiya oo qarka u saaran in ay qabsadaan Mekelle, dagaalka oo sii xoogaysanaya - Hiiraan Online",
           "grade": "REPORTED",
           "sources": [
             {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/10/23/tigray-official-urges-rebels-to-disarm?traffic_source=rss"
+              "outlet": "Hiiraan Online",
+              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBHc0lyMmhhV1FSOUswdGlTVmFQWlhocU9oMFUxd0pqMmozR0FrN2hyVmE5c1d2WGktaXhPMW9EcTFvampvMWRiWmtOckVueng2eFBLZDdUUGloSk05N3pLR1BnTjJWUndEMHhIUUhTWFJiRjg?oc=5"
             }
           ]
         },
         {
-          "date": "2026-10-24",
-          "title": "ethiopia-tigray-mekelle-rebels-disarmament-drone-strike-abiy-ahmed-tplf: Latest Updates - Audacy",
+          "date": "2026-10-29",
+          "title": "Illegal TPLF Group’s Destruction and Looting of Mekelle Institutions Disrupt Public Services, Deepen Tigray’s Recovery Burden - Fana Media Corporation S.C",
           "grade": "REPORTED",
           "sources": [
             {
-              "outlet": "Audacy",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSWNqQk5wTkhiRDhwNFB4T3ZTUVg1YnJKU2U2ajVpaExPRFNfMEY4SkdhUDJlNktuT1Iwb3hKTWtwX0w5TFlkRTlsRlcyaFc2QlVtX1ZWeFBkc0R4QjMybkJYVlZONW5HUkJTSEZXTWJ3M0hLTGRnd3k5Q0ExWWxqbnA3bElYNVZCSFhkcQ?oc=5"
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQQkFtTDM2MVR4Y2JtLVI2cE15MUFfRl90X3lGSHpJZ083T0JOc3RyZzdRX2hxSjVMeVhOVDZ5RWw1aWhidEJrU1ZNdlVPZnk1R0tNeGwtTTFkWUZoSzVFT3hXdWoyRzBxOHlLR19Dc1dkOEF6SVJmNVRfQk9sRmVoNDJLLW5JaVJiVW90aDN0NVpzMjJvZmtzVkZobkpiSF9CUjU3MjFSMUVlSzVPcXpySklNT0hiN3ZBNzVodXdYZUJmVl9KT3dkWWtKZl9FZ2QySnRmOFJ1a1FSc0NKZmJNVzNfUEN2U0Yzbi1sX2E2dw?oc=5"
             }
           ]
         }
@@ -79,13 +79,13 @@
     },
     {
       "region": "Addis Ababa",
-      "risk_index": 55,
+      "risk_index": 56,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 16,
-      "weighted_signal": 1.63,
+      "event_count": 17,
+      "weighted_signal": 1.8,
       "control_change_signal": 0,
-      "explanation": "16 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "17 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-29",
@@ -110,13 +110,13 @@
           ]
         },
         {
-          "date": "2026-10-22",
-          "title": "Tigray resumes daily life amid fears of wider war",
+          "date": "2026-10-29",
+          "title": "Security Alert – U.S. Embassy Addis Ababa, Ethiopia (October 28, 2026) - U.S. Embassy in Ethiopia (.gov)",
           "grade": "REPORTED",
           "sources": [
             {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/10/22/tigray-resumes-daily-life-amid-fears-of-wider-war?traffic_source=rss"
+              "outlet": "U.S. Embassy in Ethiopia (.gov)",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcFlVaUZpeFd2WlJ0cHRlZnU3TnlvNlhlUURWZHhITjNrTHBRWW9NOHpLUi00RlB2cTRHZC1OLWY4a0JDZjRtTk0xNl9sSktzOVR4Q1AxdzljU0t2c2xodjRvQUFVanA4czVEVkpLR1JtVllrcTJ2ZGFIV2x0U1VucTJxa1RnYjFLeFZJbjl2TG96S0U?oc=5"
             }
           ]
         }
@@ -214,14 +214,25 @@
     },
     {
       "region": "Eritrea",
-      "risk_index": 3,
+      "risk_index": 5,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 5,
-      "weighted_signal": 0.2,
+      "event_count": 6,
+      "weighted_signal": 0.37,
       "control_change_signal": 0,
-      "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-29",
+          "title": "FALSE: This photo does not show an explosion in Asmara, Eritrea, in 2026 - PesaCheck",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "PesaCheck",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObnhmT1hFRWY4TFU2bUZwcVNhZUZIYkQ1ZUZTR3hmSWZ5Vkw1LUw3cW9DOHZhRDF4WlF4ajNtY1h0al9JTjh0S3k3MnBUcWgyQjg2QklVV3U4WVY5ajZMRDRqcXc3WEVNV1V6UjNxZXVfczhqWVRNU2RSbEo4WlZDVE8zM2dORS1HaWpGRGlsLUxSY0VZd0xZ?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-10-27",
           "title": "#Daily_Brief: #Eritrea’s President heads to #Moscow for #Russia-#Africa summit The visit comes days after #Moscow reiterated its willingness to facilitate dialogue between #Addis_A",
@@ -241,17 +252,6 @@
             {
               "outlet": "www.standardmedia.co.ke",
               "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdTFkOHZ5bGlFbk1aMy01SkhmOUEyMTEtSWcxbXBON1NLZDFYb0FBX1pwbHh1OTJlZi1FYm5Na3ZqNWVGdXc2anpJcGRKUzF0c2tjYXB5eXlWUmRkXzNzbU9tc1YySWsxNTJBbVZCY1dvSzdJWmdtRWJkUHRGNlYxT1pjbWxjc3UyVVFsaXV3cG1zWXdyamhPa2RoUXBaTUF3dWJyZVRnNmVrRWZYVDJ6ak9sQVV4VHVJYWdycVdR?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-17",
-          "title": "Ethiopia posing ‘serious’ threat to Eritrean sovereignty – Asmara - APAnews - Agence de Presse Africaine",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "APAnews - Agence de Presse Africaine",
-              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT09LV0o4TzF3WUVIR21xdEdTVXZXOHFDaFdWbDhIbFZaNUZOaXNSQTc3Uk9kQTBBVzRqcmZHSUhZZUdySFhBTkF0RlZIbUFZd2Q2WW1yVWV0WGUzRWxKTngwQWFmTXhxTDdCc0tqUVJlVldZbHBZWXNtZE9BdVMzMV8wM1h2ZmtDU2c?oc=5"
             }
           ]
         }
