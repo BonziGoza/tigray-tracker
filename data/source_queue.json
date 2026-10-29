@@ -5888,7 +5888,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 16:03:33 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-29T08:32:31.559615+00:00"
  },
  {
   "title": "UNHCR Ethiopia | PMS Report: Tigray Region | Central Zone (Abi Adi town) | March 2026 - ReliefWeb",
@@ -5899,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 16:03:13 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-29T08:32:31.559615+00:00"
  },
  {
   "title": "UNHCR Ethiopia | PMS Report Ethiopia Tigray Region | Northwestern Zone (Shire Indaselassie town) | March 2026 - ReliefWeb",
@@ -5910,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 16:03:43 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-29T08:32:31.559615+00:00"
  },
  {
   "title": "Ethiopia receives Russian fighter jets, S-400 systems to follow - Somalia Today",
@@ -5921,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 23:00:20 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-29T08:32:31.559615+00:00"
  },
  {
   "title": "SEMHAL MELES - Ethiopia: Elections, Constitutional Change, and Genocidal Violence - The Elephant",
@@ -5932,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 29 Oct 2026 08:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-29T08:32:31.559615+00:00"
  },
  {
   "title": "Ethiopia receives 12 Russian fighter jets and air defence systems as Tigray war escalates - BBC",
@@ -5943,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 29 Oct 2026 08:23:31 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-29T08:32:31.559615+00:00"
  },
  {
   "title": "UNHCR Ethiopia | PMS Report Ethiopia Tigray Region | Central Zone (Axum town) | March 2026 - ReliefWeb",
@@ -5954,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 28 Oct 2026 16:03:22 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-29T08:32:31.559615+00:00"
  },
  {
   "title": "How Is Washington Positioning Itself Amid Ethiopia’s Security Challenges? - horn review",
@@ -5965,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 29 Oct 2026 07:27:29 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-29T08:32:31.559615+00:00"
  },
  {
   "title": "Red Sea Insecurity Highlights Eritrea’s Strategic Value - Eurasia Review",
@@ -5976,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 29 Oct 2026 03:14:37 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-29T08:32:31.559615+00:00"
  },
  {
   "title": "The Moyale Crisis and the TPLF Legacy - horn review",
@@ -5987,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 29 Oct 2026 06:51:13 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-29T08:32:31.559615+00:00"
  }
 ]
