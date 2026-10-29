@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-29T08:32:31.892105+00:00",
+  "generated_at": "2026-10-29T16:10:16.060552+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 864,
+    "recent_event_records": 876,
     "regions_with_located_evidence": 8,
     "control_change_records": 26,
     "contested_or_early_records": 0,
-    "reported_records": 864,
-    "duplicate_records_ignored": 159,
+    "reported_records": 876,
+    "duplicate_records_ignored": 160,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -79,14 +79,25 @@
     },
     {
       "region": "Addis Ababa",
-      "risk_index": 40,
+      "risk_index": 55,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 15,
-      "weighted_signal": 1.11,
+      "event_count": 16,
+      "weighted_signal": 1.63,
       "control_change_signal": 0,
-      "explanation": "15 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "16 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-29",
+          "title": "Why is Russia sending fighter jets and air defences to Ethiopia?",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/10/29/why-is-russia-sending-fighter-jets-and-air-defences-to-ethiopia?traffic_source=rss"
+            }
+          ]
+        },
         {
           "date": "2026-10-28",
           "title": "Ethiopia receives 12 Russian Su-35 jets, plans S-400 acquisition",
@@ -106,17 +117,6 @@
             {
               "outlet": "aljazeera.com",
               "url": "https://www.aljazeera.com/news/2026/10/22/tigray-resumes-daily-life-amid-fears-of-wider-war?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-28",
-          "title": "Moderate mag. 4.5 earthquake - 14 km southwest of Awash, Afar Region, Ethiopia, on Wednesday, Oct 28, 2026, at 04:31 pm (Addis Ababa time) - Volcano Discovery",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Volcano Discovery",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbnVpR1lDY3VxaHJtOXN2RFNHMW12XzJNQmhHT2htZEFjY3JnUmtveFh0aGkyc1N6ZDNqdm5fMkxpQVJKdlIxWVhTWXVFQnBBaVI1RWxmQ2V6ck5TME9RaXdxOXdYQWhRUGVtODZhRk9lTzRudVVYbmdUMVZWLUZDU0FqN2pSdDNzQU4ybC1TOFpXXzlUYmdBZHE1ZHlIVkhia3c?oc=5"
             }
           ]
         }
