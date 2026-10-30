@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-30T01:03:03.305003+00:00",
+  "generated_at": "2026-10-30T07:10:17.746950+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 833,
+    "recent_event_records": 840,
     "regions_with_located_evidence": 8,
-    "control_change_records": 26,
+    "control_change_records": 27,
     "contested_or_early_records": 0,
-    "reported_records": 833,
-    "duplicate_records_ignored": 151,
+    "reported_records": 840,
+    "duplicate_records_ignored": 153,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -22,26 +22,37 @@
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 40,
+      "weight": 41,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 12,
+      "weight": 11,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 52,
+      "risk_index": 54,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 58,
-      "weighted_signal": 2.29,
+      "event_count": 59,
+      "weighted_signal": 2.49,
       "control_change_signal": 0.43,
-      "explanation": "58 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "59 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-30",
+          "title": "Ciidamada Itoobiya oo la wareegay Mekelle xilli dagaallo cusub ay ka socdaan Tigray - Hiiraan Online",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Hiiraan Online",
+              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1nQ2hMN3Zpa2drSnZHS0haYWVfRmdGRTlKTUhXZ2NTQXU3a3hDbkFxSGpVZVZkZVZJeGtQcnAtNHNBVFZWbVI0RUJHWHB3UHVkV04zbm9DUlFSMUpHeml1V0N4SWc0eTlHN29JM2dzS0ttZjA?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-10-26",
           "title": "TPLF Enior Commander John Medid Captured in Central Tigray, TPF Sources Say - https://kulu-media.com/",
@@ -61,17 +72,6 @@
             {
               "outlet": "Hiiraan Online",
               "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBHc0lyMmhhV1FSOUswdGlTVmFQWlhocU9oMFUxd0pqMmozR0FrN2hyVmE5c1d2WGktaXhPMW9EcTFvampvMWRiWmtOckVueng2eFBLZDdUUGloSk05N3pLR1BnTjJWUndEMHhIUUhTWFJiRjg?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-29",
-          "title": "Illegal TPLF Group’s Destruction and Looting of Mekelle Institutions Disrupt Public Services, Deepen Tigray’s Recovery Burden - Fana Media Corporation S.C",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Fana Media Corporation S.C",
-              "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQQkFtTDM2MVR4Y2JtLVI2cE15MUFfRl90X3lGSHpJZ083T0JOc3RyZzdRX2hxSjVMeVhOVDZ5RWw1aWhidEJrU1ZNdlVPZnk1R0tNeGwtTTFkWUZoSzVFT3hXdWoyRzBxOHlLR19Dc1dkOEF6SVJmNVRfQk9sRmVoNDJLLW5JaVJiVW90aDN0NVpzMjJvZmtzVkZobkpiSF9CUjU3MjFSMUVlSzVPcXpySklNT0hiN3ZBNzVodXdYZUJmVl9KT3dkWWtKZl9FZ2QySnRmOFJ1a1FSc0NKZmJNVzNfUEN2U0Yzbi1sX2E2dw?oc=5"
             }
           ]
         }
