@@ -1285,7 +1285,7 @@
   },
   {
     "date": "2026-10-30",
-    "generated_at": "2026-10-30T07:10:17.746950+00:00",
+    "generated_at": "2026-10-30T14:12:53.723092+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
@@ -1307,7 +1307,7 @@
     "regions": [
       {
         "region": "Central Tigray",
-        "risk_index": 54,
+        "risk_index": 56,
         "level": "GUARDED"
       },
       {
@@ -1331,6 +1331,11 @@
         "level": "WATCH"
       },
       {
+        "region": "Amhara",
+        "risk_index": 4,
+        "level": "WATCH"
+      },
+      {
         "region": "Northwestern Tigray",
         "risk_index": 2,
         "level": "WATCH"
@@ -1338,11 +1343,6 @@
       {
         "region": "Southern Tigray",
         "risk_index": 2,
-        "level": "WATCH"
-      },
-      {
-        "region": "Amhara",
-        "risk_index": 1,
         "level": "WATCH"
       }
     ]

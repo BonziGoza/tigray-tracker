@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-30T07:10:17.746950+00:00",
+  "generated_at": "2026-10-30T14:12:53.723092+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 840,
+    "recent_event_records": 854,
     "regions_with_located_evidence": 8,
     "control_change_records": 27,
     "contested_or_early_records": 0,
-    "reported_records": 840,
+    "reported_records": 854,
     "duplicate_records_ignored": 153,
     "overall_evidence_uncertainty": 55
   },
@@ -34,13 +34,13 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 54,
+      "risk_index": 56,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 59,
-      "weighted_signal": 2.49,
+      "event_count": 61,
+      "weighted_signal": 2.86,
       "control_change_signal": 0.43,
-      "explanation": "59 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "61 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-30",
@@ -54,6 +54,17 @@
           ]
         },
         {
+          "date": "2026-10-30",
+          "title": "Ciidan Itoobiya oo dib ula wareegay garoonka diyaaradaha magaalada Mekelle ee Tigray - Hiiraan Online",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Hiiraan Online",
+              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9uVDIyaTNENE00N090b2xkc3phMi1uMDM5dTRMS3lLWWVSVHBSbzh6Z3N1Nm5NMVBFUU9xOWMzbWdNbGd2QzYxMWFpVXVBTTFuUDVwU1lyYlhFT05aanFfemh0alJ2OGJWUmY0VVVlTHVCVkU?oc=5"
+            }
+          ]
+        },
+        {
           "date": "2026-10-26",
           "title": "TPLF Enior Commander John Medid Captured in Central Tigray, TPF Sources Say - https://kulu-media.com/",
           "grade": "REPORTED",
@@ -61,17 +72,6 @@
             {
               "outlet": "https://kulu-media.com/",
               "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5HUEhFbXlXMUoxSEN5QUxkTk8xRV9PMUFyWDdFTTRiTUVscjBUVm5tVEhfdGJ2TW90ZGIxaHpnR0FSVWwtUk1SSkVwUnpqc19GQmJPSGZRU2JYZkxSNFhQZVJWU0hNRWdUTHc?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-29",
-          "title": "Ciidamada Itoobiya oo qarka u saaran in ay qabsadaan Mekelle, dagaalka oo sii xoogaysanaya - Hiiraan Online",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Hiiraan Online",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBHc0lyMmhhV1FSOUswdGlTVmFQWlhocU9oMFUxd0pqMmozR0FrN2hyVmE5c1d2WGktaXhPMW9EcTFvampvMWRiWmtOckVueng2eFBLZDdUUGloSk05N3pLR1BnTjJWUndEMHhIUUhTWFJiRjg?oc=5"
             }
           ]
         }
@@ -258,6 +258,51 @@
       ]
     },
     {
+      "region": "Amhara",
+      "risk_index": 4,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 4,
+      "weighted_signal": 0.26,
+      "control_change_signal": 0,
+      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-10-30",
+          "title": "#Daily_Brief: 36 #Israelis evacuated from conflict-hit #Ethiopia, four remain in Lalibela - Addis Standard",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Addis Standard",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DWFR1b1FicmxqdGRkMHNBTmJWUUtJMzhlci1ZeWtrNVBjVjdLRWROVWVEaW1mckxKbVl3NFE5Y2x1OVBJbDdqSWY5TWR3NDkxUEE?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-16",
+          "title": "News: Rally goers in Southern Tigray’s Kobo demand halt to Raya provisional admin election - Addis Standard",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Addis Standard",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSGVmVDd4VUdtZXFGY3FoR2pDbUdZVVZ6QXdQaVpFcWZVRDB1amN1bU9FS0J1Szd4LWRoYnNlcTI0RVpXRWIxVzMzZjdCVmRpVmpKdzNxR3g5V2ZsSldtOGVxOHR3YjZlNmdIc3VIWmdaeEd0cE5oZmZQQkZEUHJUZDhldDF6WjVlU1ZWZkUzeXdqQmI4QWZvcXFoeE5GYXgzenVjWGhYUjFRRTM5MFVz?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-16",
+          "title": "News: Rally goers in #North_Wollo’s Kobo demand halt to provisional administration elections in #Southern_Tigray localities Addis Abeba – Residents and community representatives fr",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Facebook",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZVpnLUQ5dFdVMWl2V1djc1lqdWZjV2lveUZkallWcWZ5c0swSXZ0UzRwMFNtUUVTUmlhd0xWQVJYd0c2R3VtbjFSTmJFenU3eG94NHBuZnM2M3cxelNWNmZEckFXZ3pfUWhoQnpMalVOQWtTOXZyMkE3YnBRdGh5QUFtYnBWVXdJSFdQYUZIM2hWaV81QVE5UndlTGMxaWV5eUw0LWUwbXhhSjdrTl96eC1DZ1Q5TkxJenpEOVk3R2Y2VV8zbGRodTBPVFJSN3VRSlp6R0I3NXpjUkZXMmVZ?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "region": "Northwestern Tigray",
       "risk_index": 2,
       "level": "WATCH",
@@ -309,51 +354,6 @@
             {
               "outlet": "Addis Standard",
               "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdmtEMGtNR1ROMEN3ZTNNeEpJWWhwOFlnSEZfclFwWG1HTkUtRlFhN0pNOF93N1NtbEtnRWxMZ1JRa1U5NnZVcVltanhjcmtLY1VzdGRTcVk0TWJvMXkxOFExaS1UWHdBUEhBT054YW1zVjRmWkJQSk9rRm5BQmdrQktYcFoyblNMVjg5LXRyd1dhVnRzamlLbVBhWnVWSnhZeFNfWFNOc29kdTF1ZHpLbnlLRDFCZWVtNU9LMkhTajdrazY5QUZ4dEpvbmZHZDhRei1jWUh5Y2pIS0t1RkxwTmlRbkVjNGYtQjJvTkNHYURLbUF6NWp5T0ZPUUtDcjVHdjdNSlZmSWM?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Amhara",
-      "risk_index": 1,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 3,
-      "weighted_signal": 0.06,
-      "control_change_signal": 0,
-      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-10-18",
-          "title": "#Daily_Brief: 36 #Israelis evacuated from conflict-hit #Ethiopia, four remain in Lalibela - Addis Standard",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Addis Standard",
-              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DWFR1b1FicmxqdGRkMHNBTmJWUUtJMzhlci1ZeWtrNVBjVjdLRWROVWVEaW1mckxKbVl3NFE5Y2x1OVBJbDdqSWY5TWR3NDkxUEE?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-16",
-          "title": "News: Rally goers in Southern Tigray’s Kobo demand halt to Raya provisional admin election - Addis Standard",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Addis Standard",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSGVmVDd4VUdtZXFGY3FoR2pDbUdZVVZ6QXdQaVpFcWZVRDB1amN1bU9FS0J1Szd4LWRoYnNlcTI0RVpXRWIxVzMzZjdCVmRpVmpKdzNxR3g5V2ZsSldtOGVxOHR3YjZlNmdIc3VIWmdaeEd0cE5oZmZQQkZEUHJUZDhldDF6WjVlU1ZWZkUzeXdqQmI4QWZvcXFoeE5GYXgzenVjWGhYUjFRRTM5MFVz?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-16",
-          "title": "News: Rally goers in #North_Wollo’s Kobo demand halt to provisional administration elections in #Southern_Tigray localities Addis Abeba – Residents and community representatives fr",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Facebook",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZVpnLUQ5dFdVMWl2V1djc1lqdWZjV2lveUZkallWcWZ5c0swSXZ0UzRwMFNtUUVTUmlhd0xWQVJYd0c2R3VtbjFSTmJFenU3eG94NHBuZnM2M3cxelNWNmZEckFXZ3pfUWhoQnpMalVOQWtTOXZyMkE3YnBRdGh5QUFtYnBWVXdJSFdQYUZIM2hWaV81QVE5UndlTGMxaWV5eUw0LWUwbXhhSjdrTl96eC1DZ1Q5TkxJenpEOVk3R2Y2VV8zbGRodTBPVFJSN3VRSlp6R0I3NXpjUkZXMmVZ?oc=5"
             }
           ]
         }
