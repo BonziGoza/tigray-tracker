@@ -5900,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 07:14:31 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T12:36:34.351002+00:00"
  },
  {
   "title": "Ethiopia acquires Russian fighter jets and air defence systems amid war in Tigray - The Star, Kenya",
@@ -5911,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 29 Oct 2026 09:34:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T12:36:34.351002+00:00"
  },
  {
   "title": "Illegal TPLF Group’s Destruction and Looting of Mekelle Institutions Disrupt Public Services, Deepen Tigray’s Recovery Burden - Fana Media Corporation S.C",
@@ -5922,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 29 Oct 2026 19:43:37 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T12:36:34.351002+00:00"
  },
  {
   "title": "Ethiopia acquires Russian fighter jets and air defence systems amid war in Tigray - Times of Suriname",
@@ -5933,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 30 Oct 2026 05:03:40 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T12:36:34.351002+00:00"
  },
  {
   "title": "Ethiopia Welcomes UAE Candidate Lana Nusseibeh for UN Secretary-General Post - Fana Media Corporation S.C",
@@ -5944,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 29 Oct 2026 20:23:11 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T12:36:34.351002+00:00"
  },
  {
   "title": "Ethiopian Navy, Regional Maritime Forces Strengthen Cooperation on Maritime Security and Rescue Operations - Fana Media Corporation S.C",
@@ -5955,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 29 Oct 2026 20:23:11 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T12:36:34.351002+00:00"
  },
  {
   "title": "PM Abiy Says Ethiopia Ready to Host Russia–Africa Summit When It Next Comes to Africa - Fana Media Corporation S.C",
@@ -5966,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 29 Oct 2026 16:02:05 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T12:36:34.351002+00:00"
  },
  {
   "title": "Daily_Brief: #Marriott_Drilling Group to drill #Corbetti exploration wells in #Ethiopia early next year - Addis Standard",
@@ -5977,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 08:13:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T12:36:34.351002+00:00"
  },
  {
   "title": "Daily_Brief: #Kenya ranks seventh in Africa’s industrial coverage, ahead of #Ethiopia, #Tanzania - Addis Standard",
@@ -5988,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 09:14:11 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T12:36:34.351002+00:00"
  }
 ]

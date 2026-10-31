@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-31T05:46:09.676930+00:00",
+  "generated_at": "2026-10-31T12:36:34.686076+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 824,
+    "recent_event_records": 830,
     "regions_with_located_evidence": 8,
     "control_change_records": 25,
     "contested_or_early_records": 0,
-    "reported_records": 824,
-    "duplicate_records_ignored": 140,
+    "reported_records": 830,
+    "duplicate_records_ignored": 142,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -38,10 +38,21 @@
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 58,
-      "weighted_signal": 2.39,
+      "weighted_signal": 2.45,
       "control_change_signal": 0.36,
       "explanation": "58 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-10-31",
+          "title": "Illegal TPLF Group’s Destruction and Looting of Mekelle Institutions Disrupt Public Services, Deepen Tigray’s Recovery Burden - Fana Media Corporation S.C",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNzBtUFlpMFFWdnoteEEtTDNKeXRyMmZOWmhNazRLMDFtWTRQRGFnczlZeHRlVjFaM2hYS2RScjJDTFFkcWZyWEVPdVVUYlpjcllJVmN5ZTVPc3M0Nkhla3JLWWQtSE1mVThZQVdqV2d2RHQ1XzBnTk9tMTBUMV8xUVE3cmVoZVBjYWo5blFoQlhNNzN5QzFkVVFYamk1RUtCQms4MklkWS1ULWNDdHhnZEtlQ0dKcnVZVUE3bUJfM20yRVJRZnZPSS12VHZoMWdtcEtpRTdWeU5aMmtiRVVwcG1NOEdHQ09rREE?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-10-30",
           "title": "Ciidamada Itoobiya oo la wareegay Mekelle xilli dagaallo cusub ay ka socdaan Tigray - Hiiraan Online",
@@ -61,17 +72,6 @@
             {
               "outlet": "Hiiraan Online",
               "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9uVDIyaTNENE00N090b2xkc3phMi1uMDM5dTRMS3lLWWVSVHBSbzh6Z3N1Nm5NMVBFUU9xOWMzbWdNbGd2QzYxMWFpVXVBTTFuUDVwU1lyYlhFT05aanFfemh0alJ2OGJWUmY0VVVlTHVCVkU?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-26",
-          "title": "TPLF Enior Commander John Medid Captured in Central Tigray, TPF Sources Say - https://kulu-media.com/",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "https://kulu-media.com/",
-              "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5HUEhFbXlXMUoxSEN5QUxkTk8xRV9PMUFyWDdFTTRiTUVscjBUVm5tVEhfdGJ2TW90ZGIxaHpnR0FSVWwtUk1SSkVwUnpqc19GQmJPSGZRU2JYZkxSNFhQZVJWU0hNRWdUTHc?oc=5"
             }
           ]
         }
