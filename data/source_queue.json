@@ -5912,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 13:23:35 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T17:46:20.335083+00:00"
  },
  {
   "title": "Drone strike in Tigray kills at least 12 civilians — Anadolu Agency - UA.NEWS",
@@ -5923,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 13:25:20 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T17:46:20.335083+00:00"
  },
  {
   "title": "At least 12 civilians killed in drone strike in Ethiopia's Tigray region - Saudi Gazette",
@@ -5934,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 13:36:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T17:46:20.335083+00:00"
  },
  {
   "title": "Drone strike kills 12 civilians collecting grain in Ethiopia’s Tigray region - Operativ Məlumat Mərkəzi",
@@ -5945,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 13:24:14 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T17:46:20.335083+00:00"
  },
  {
   "title": "Drone strikes on Ethiopia displacement camp kill at least 15, sources say - The New Arab",
@@ -5956,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 30 Oct 2026 17:44:52 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T17:46:20.335083+00:00"
  },
  {
   "title": "Ethiopia installs six-month Tigray caretaker administration and seeks elections - The Insight International",
@@ -5967,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 06:43:40 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T17:46:20.335083+00:00"
  },
  {
   "title": "Drone Strike Kills 12 Civilians Collecting Grain in Ethiopia - News of Bahrain",
@@ -5978,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 17:15:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T17:46:20.335083+00:00"
  },
  {
   "title": "Ethiopian PM puts ministers through military training - BBC",
@@ -5989,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 14:28:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T17:46:20.335083+00:00"
  }
 ]
