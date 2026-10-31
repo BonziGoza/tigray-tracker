@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-30T23:49:55.289299+00:00",
+  "generated_at": "2026-10-31T05:46:09.676930+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 872,
+    "recent_event_records": 824,
     "regions_with_located_evidence": 8,
-    "control_change_records": 27,
+    "control_change_records": 25,
     "contested_or_early_records": 0,
-    "reported_records": 872,
-    "duplicate_records_ignored": 155,
+    "reported_records": 824,
+    "duplicate_records_ignored": 140,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 48,
+      "weight": 49,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 41,
+      "weight": 40,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
@@ -34,13 +34,13 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 56,
+      "risk_index": 50,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 61,
-      "weighted_signal": 2.86,
-      "control_change_signal": 0.43,
-      "explanation": "61 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "event_count": 58,
+      "weighted_signal": 2.39,
+      "control_change_signal": 0.36,
+      "explanation": "58 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-30",
@@ -79,13 +79,13 @@
     },
     {
       "region": "Addis Ababa",
-      "risk_index": 52,
+      "risk_index": 45,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 17,
-      "weighted_signal": 1.7,
+      "event_count": 15,
+      "weighted_signal": 1.41,
       "control_change_signal": 0,
-      "explanation": "17 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "15 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-29",
@@ -124,12 +124,12 @@
     },
     {
       "region": "Eastern Tigray",
-      "risk_index": 16,
+      "risk_index": 14,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 14,
-      "weighted_signal": 0.35,
-      "control_change_signal": 0.14,
+      "weighted_signal": 0.3,
+      "control_change_signal": 0.12,
       "explanation": "14 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
@@ -169,11 +169,11 @@
     },
     {
       "region": "Northern Tigray",
-      "risk_index": 13,
+      "risk_index": 11,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 3,
-      "weighted_signal": 0.25,
+      "weighted_signal": 0.21,
       "control_change_signal": 0,
       "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -218,7 +218,7 @@
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 6,
-      "weighted_signal": 0.31,
+      "weighted_signal": 0.26,
       "control_change_signal": 0,
       "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -259,11 +259,11 @@
     },
     {
       "region": "Amhara",
-      "risk_index": 4,
+      "risk_index": 3,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 4,
-      "weighted_signal": 0.26,
+      "weighted_signal": 0.22,
       "control_change_signal": 0,
       "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -308,7 +308,7 @@
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 1,
-      "weighted_signal": 0.15,
+      "weighted_signal": 0.12,
       "control_change_signal": 0,
       "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [

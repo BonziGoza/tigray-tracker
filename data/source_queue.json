@@ -5924,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 30 Oct 2026 14:36:28 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T05:46:09.454591+00:00"
  },
  {
   "title": "Ethiopia receives 12 Russian Su-35 jets, plans S-400 acquisition - Hiiraan Online",
@@ -5935,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 29 Oct 2026 21:50:57 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T05:46:09.454591+00:00"
  },
  {
   "title": "News: #Addis_Abeba police impose indefinite #motorcycle ban citing security, traffic concerns amid northern #Ethiopia fighting, holidays approach - Addis Standard",
@@ -5946,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 30 Oct 2026 09:51:52 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T05:46:09.454591+00:00"
  },
  {
   "title": "A drone attack causes fifteen deaths in a displaced persons camp in northern Ethiopia - Demócrata",
@@ -5957,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 30 Oct 2026 11:40:41 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T05:46:09.454591+00:00"
  },
  {
   "title": "Eritrean troops 'enter' Tigray as regional war fears grow - TRT Afrika",
@@ -5968,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 30 Oct 2026 12:32:53 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T05:46:09.454591+00:00"
  },
  {
   "title": "Ethiopia War Security Review, October 30, 2026 - Critical Threats",
@@ -5979,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 30 Oct 2026 23:14:43 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T05:46:09.454591+00:00"
  },
  {
   "title": "The port of Assab and the risk of an Ethiopia-Eritrea war - Al Majalla",
@@ -5990,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 04:27:48 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-10-31T05:46:09.454591+00:00"
  }
 ]
