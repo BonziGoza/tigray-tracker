@@ -5972,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 08:32:36 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T23:38:16.470846+00:00"
  },
  {
   "title": "Tigray’s next test: stability, democratic reform and strategic leadership – Martin Plaut - Howl.Link",
@@ -5983,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 01 Nov 2026 18:29:56 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T23:38:16.470846+00:00"
  },
  {
   "title": "Burhan, Abiy and Afwerki in Moscow: What Does Russia Want in the Horn of Africa? - Borkena",
@@ -5994,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 01 Nov 2026 19:44:03 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T23:38:16.470846+00:00"
  }
 ]
