@@ -5960,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 30 Oct 2026 14:56:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T15:13:30.077585+00:00"
  },
  {
   "title": "Drone strike kills at least 12 young laborers gathering spilled grain in Tigray’s Rama, witnesses tell BBC Amharic - Mereja",
@@ -5971,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 01 Nov 2026 09:20:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T15:13:30.077585+00:00"
  },
  {
   "title": "Security Alert: U.S. Embassy Addis Ababa, Ethiopia (October 30, 2026) - U.S. Embassy in Ethiopia (.gov)",
@@ -5982,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 30 Oct 2026 21:56:54 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T15:13:30.077585+00:00"
  },
  {
   "title": "Ethiopia’s Russian fighter jets raise stakes in Eritrea standoff – Martin Plaut - Howl.Link",
@@ -5993,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 01 Nov 2026 09:02:56 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T15:13:30.077585+00:00"
  }
 ]

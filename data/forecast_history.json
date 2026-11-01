@@ -1413,7 +1413,7 @@
   },
   {
     "date": "2026-11-01",
-    "generated_at": "2026-11-01T07:36:48.065453+00:00",
+    "generated_at": "2026-11-01T15:13:30.409407+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
@@ -1440,7 +1440,7 @@
       },
       {
         "region": "Addis Ababa",
-        "risk_index": 39,
+        "risk_index": 41,
         "level": "GUARDED"
       },
       {
