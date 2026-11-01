@@ -5960,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 01 Nov 2026 17:42:01 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T19:43:25.636806+00:00"
  },
  {
   "title": "Sudan says drone attacks from Ethiopia killed, wounded hundreds - Arab News",
@@ -5971,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 01 Nov 2026 16:07:22 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T19:43:25.636806+00:00"
  },
  {
   "title": "Ethiopia: Minisitiri w'intebe Abiy Ahmed yashyize abaminisitiri mu myitozo ya gisirikare - BBC",
@@ -5982,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 01 Nov 2026 04:45:06 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T19:43:25.636806+00:00"
  },
  {
   "title": "Daily_Brief: #Somalia’s South West State leader seeks #Ethiopian military support as tensions continue to rise in #Baidoa - Addis Standard",
@@ -5993,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 07:27:46 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T19:43:25.636806+00:00"
  }
 ]
