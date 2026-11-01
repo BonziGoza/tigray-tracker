@@ -5984,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 14:22:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T07:36:47.795650+00:00"
  },
  {
   "title": "Abiy Ahmed yitabiriye imyitozo ya gisirikare muri Ethiopia mu gihe cy'imirwano ikomeje mu karere ka Tigray - SSBCrack",
@@ -5995,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 01 Nov 2026 06:59:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T07:36:47.795650+00:00"
  }
 ]

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T01:13:48.520412+00:00",
+ "updated": "2026-11-01T07:36:47.796488+00:00",
  "events": [
   {
    "key": "unknown-2026-11-01-9bba4e1a",
@@ -120,6 +120,86 @@
    "independent_source_count": 1,
    "high_quality_source_count": 0,
    "evidence_explanation": "Best source: Latest news from Azerbaijan (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-11-01-7a2d1709",
+   "sources": [
+    {
+     "outlet": "SSBCrack",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYnlSOXc5QWd5Zmxqc19GbEtfb3hSWmlkRG8tUGZ4MnRkbFNXV3ZGNnY3MTkyWlpCcHdDLUNyaDZKTmJuNkpCQVJlZmVrRUt6RHpZVjVRT0VlNXY1SG9CbkE1SU5XWFpFYUh5dW1SYnAwSFExR2Z6VG1VeVI1QkwzaEl2WkUtb040N1RQYUN0RkM4MUMtQlRMNjBTM2Fhd1J1NjY1cXNIc0txemFLeFZOT1hHZUs2ZUZnVllMQzIza3RENGF6SjZGU3ZseUk?oc=5",
+     "title": "Abiy Ahmed yitabiriye imyitozo ya gisirikare muri Ethiopia mu gihe cy'imirwano ikomeje mu karere ka Tigray - SSBCrack",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Sun, 01 Nov 2026 06:59:15 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: SSBCrack (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-11-01",
+   "kind": "other",
+   "summary": "Abiy Ahmed yitabiriye imyitozo ya gisirikare muri Ethiopia mu gihe cy'imirwano ikomeje mu karere ka Tigray - SSBCrack",
+   "attribution": "independent",
+   "last_seen": "2026-11-01",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "SSBCrack",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: SSBCrack (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-11-01-7f8175d1",
+   "sources": [
+    {
+     "outlet": "The New York Times",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQY0RwX2VmWlJ6VjZhaGxkR2pVVWpOdEhqUl93TG56bFVPQ25lcHZQUXZtV1lvVGliQW9DbVhIWjA4ODFua0FQODRLUVVtdmdxZVg4MU9VeXRCMmVGZTI5V0pWSWljOXNzcmlQdUdqMGlJQkRXRFhDMDUxbXNwZkY2WHF6TQ?oc=5",
+     "title": "What to Know About Tensions Between Ethiopia and Eritrea - The New York Times",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Sat, 31 Oct 2026 14:22:00 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 51,
+     "credibility_label": "MODERATE",
+     "credibility_explanation": "Publisher registry: The New York Times (provisional_manual_assessment; confidence high). Publisher reputation component: 88/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed. Article credibility score: 51/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-11-01",
+   "kind": "other",
+   "summary": "What to Know About Tensions Between Ethiopia and Eritrea - The New York Times",
+   "attribution": "independent",
+   "last_seen": "2026-11-01",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 40,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "A",
+   "best_source": "The New York Times",
+   "independent_source_count": 1,
+   "high_quality_source_count": 1,
+   "evidence_explanation": "Best source: The New York Times (A-tier). 1 independent source record; 1 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
   },
   {
    "key": "unknown-2026-10-31-211fb6e1",
