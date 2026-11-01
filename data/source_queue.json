@@ -5972,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 30 Oct 2026 11:04:28 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T01:13:48.519271+00:00"
  },
  {
   "title": "Ethiopian PM puts ministers through military training - The Namibian",
@@ -5983,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 17:17:19 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T01:13:48.519271+00:00"
  },
  {
   "title": "Daily_Brief: #US condemns targeted killings of #Orthodox faithful in #Ethiopia’s #Oromia; #UK offers help investigate - Addis Standard",
@@ -5994,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 31 Oct 2026 18:10:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-01T01:13:48.519271+00:00"
  }
 ]
