@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-02T15:59:00.551563+00:00",
+  "generated_at": "2026-11-02T23:34:03.920516+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 796,
+    "recent_event_records": 807,
     "regions_with_located_evidence": 8,
     "control_change_records": 21,
     "contested_or_early_records": 0,
-    "reported_records": 796,
+    "reported_records": 807,
     "duplicate_records_ignored": 117,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 53,
+      "weight": 54,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
@@ -27,66 +27,32 @@
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 11,
+      "weight": 10,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
-      "region": "Central Tigray",
-      "risk_index": 39,
+      "region": "Addis Ababa",
+      "risk_index": 52,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 52,
-      "weighted_signal": 1.71,
-      "control_change_signal": 0.26,
-      "explanation": "52 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-10-31",
-          "title": "Illegal TPLF Group’s Destruction and Looting of Mekelle Institutions Disrupt Public Services, Deepen Tigray’s Recovery Burden - Fana Media Corporation S.C",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Fana Media Corporation S.C",
-              "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNzBtUFlpMFFWdnoteEEtTDNKeXRyMmZOWmhNazRLMDFtWTRQRGFnczlZeHRlVjFaM2hYS2RScjJDTFFkcWZyWEVPdVVUYlpjcllJVmN5ZTVPc3M0Nkhla3JLWWQtSE1mVThZQVdqV2d2RHQ1XzBnTk9tMTBUMV8xUVE3cmVoZVBjYWo5blFoQlhNNzN5QzFkVVFYamk1RUtCQms4MklkWS1ULWNDdHhnZEtlQ0dKcnVZVUE3bUJfM20yRVJRZnZPSS12VHZoMWdtcEtpRTdWeU5aMmtiRVVwcG1NOEdHQ09rREE?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-30",
-          "title": "Ciidamada Itoobiya oo la wareegay Mekelle xilli dagaallo cusub ay ka socdaan Tigray - Hiiraan Online",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Hiiraan Online",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1nQ2hMN3Zpa2drSnZHS0haYWVfRmdGRTlKTUhXZ2NTQXU3a3hDbkFxSGpVZVZkZVZJeGtQcnAtNHNBVFZWbVI0RUJHWHB3UHVkV04zbm9DUlFSMUpHeml1V0N4SWc0eTlHN29JM2dzS0ttZjA?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-30",
-          "title": "Ciidan Itoobiya oo dib ula wareegay garoonka diyaaradaha magaalada Mekelle ee Tigray - Hiiraan Online",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Hiiraan Online",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9uVDIyaTNENE00N090b2xkc3phMi1uMDM5dTRMS3lLWWVSVHBSbzh6Z3N1Nm5NMVBFUU9xOWMzbWdNbGd2QzYxMWFpVXVBTTFuUDVwU1lyYlhFT05aanFfemh0alJ2OGJWUmY0VVVlTHVCVkU?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Addis Ababa",
-      "risk_index": 35,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 14,
-      "weighted_signal": 1.12,
+      "event_count": 15,
+      "weighted_signal": 1.64,
       "control_change_signal": 0,
-      "explanation": "14 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "15 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-11-02",
+          "title": "Violence in northern Ethiopia pushing health system towards collapse: WHO",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/11/2/violence-in-northern-ethiopia-pushing-health-system-towards-collapse-who?traffic_source=rss"
+            }
+          ]
+        },
         {
           "date": "2026-10-29",
           "title": "Why is Russia sending fighter jets and air defences to Ethiopia?",
@@ -108,15 +74,49 @@
               "url": "https://www.aljazeera.com/news/2026/10/28/ethiopia-receives-12-russian-su-35-jets-plans-s-400-acquisition?traffic_source=rss"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "region": "Central Tigray",
+      "risk_index": 40,
+      "level": "GUARDED",
+      "uncertainty": 55,
+      "event_count": 53,
+      "weighted_signal": 1.86,
+      "control_change_signal": 0.26,
+      "explanation": "53 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
         {
-          "date": "2026-11-01",
-          "title": "Security Alert: U.S. Embassy Addis Ababa, Ethiopia (October 30, 2026) - U.S. Embassy in Ethiopia (.gov)",
+          "date": "2026-11-02",
+          "title": "Tigrayan fighters claim to repel offensive in Central Tigray as leaflets appear in Mekelle and phone lines go down - Mereja",
           "grade": "REPORTED",
           "sources": [
             {
-              "outlet": "U.S. Embassy in Ethiopia (.gov)",
-              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNSmxYT0pCb0NFY0JhQzh2Y3NmN1lyaHJjMjRwa05jMUxwMjdFc3BLR2NfMzM2bjk0QTBKSWlDaEstVXJmVTBoYXgxcFdrbmV2ZFdxQktSN1YydnVydEUwYWsxbGNtbnVTUTFmMDkzWXoyU3FhSFItaDNVS0tJUnZnV0E3WGpuYVczWE1KamNjaGZDT1U?oc=5"
+              "outlet": "Mereja",
+              "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE55b05VRE1oN0ZkQjZ6a1BMdU9DWC12eTd3YWFnZzcyeUE5ZG1wYWFFdXZCWkotQWxYR0s5Mld4M051QVdoWkE?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-31",
+          "title": "Illegal TPLF Group’s Destruction and Looting of Mekelle Institutions Disrupt Public Services, Deepen Tigray’s Recovery Burden - Fana Media Corporation S.C",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNzBtUFlpMFFWdnoteEEtTDNKeXRyMmZOWmhNazRLMDFtWTRQRGFnczlZeHRlVjFaM2hYS2RScjJDTFFkcWZyWEVPdVVUYlpjcllJVmN5ZTVPc3M0Nkhla3JLWWQtSE1mVThZQVdqV2d2RHQ1XzBnTk9tMTBUMV8xUVE3cmVoZVBjYWo5blFoQlhNNzN5QzFkVVFYamk1RUtCQms4MklkWS1ULWNDdHhnZEtlQ0dKcnVZVUE3bUJfM20yRVJRZnZPSS12VHZoMWdtcEtpRTdWeU5aMmtiRVVwcG1NOEdHQ09rREE?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-30",
+          "title": "Ciidamada Itoobiya oo la wareegay Mekelle xilli dagaallo cusub ay ka socdaan Tigray - Hiiraan Online",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Hiiraan Online",
+              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1nQ2hMN3Zpa2drSnZHS0haYWVfRmdGRTlKTUhXZ2NTQXU3a3hDbkFxSGpVZVZkZVZJeGtQcnAtNHNBVFZWbVI0RUJHWHB3UHVkV04zbm9DUlFSMUpHeml1V0N4SWc0eTlHN29JM2dzS0ttZjA?oc=5"
             }
           ]
         }
