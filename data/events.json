@@ -1,6 +1,46 @@
 {
- "updated": "2026-11-01T23:38:16.471815+00:00",
+ "updated": "2026-11-02T06:09:53.901772+00:00",
  "events": [
+  {
+   "key": "unknown-2026-11-02-75e70564",
+   "sources": [
+    {
+     "outlet": "Africanews",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbGFvZUs3QUpGUldsOWRtSUJYSEJ2OHVabjNKRkhrZ2JvVzEwMHlmb3JMRG5xSU5mTE4yVGhVdzVpLXczOGtZZ2dKUEVzSnNRb0lpTWgzbGZWemFtWXJoNXBQbzV4dS00SFhoQzdnWGExUG9idG9PVElORDVURVZPU0UyNGxxN0dyTXJGeGJyUXhRVEVCemQ0OUNBUdIBmwFBVV95cUxNbGFvZUs3QUpGUldsOWRtSUJYSEJ2OHVabjNKRkhrZ2JvVzEwMHlmb3JMRG5xSU5mTE4yVGhVdzVpLXczOGtZZ2dKUEVzSnNRb0lpTWgzbGZWemFtWXJoNXBQbzV4dS00SFhoQzdnWGExUG9idG9PVElORDVURVZPU0UyNGxxN0dyTXJGeGJyUXhRVEVCemQ0OUNBUQ?oc=5",
+     "title": "Drone strikes in Ethiopia kill at least 25: witnesses - Africanews",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Sat, 31 Oct 2026 09:24:03 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 50,
+     "credibility_label": "MODERATE",
+     "credibility_explanation": "Publisher registry: Africanews (provisional_manual_assessment; confidence medium). Publisher reputation component: 76/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed. Article credibility score: 50/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-11-02",
+   "kind": "strike",
+   "summary": "Drone strikes in Ethiopia kill at least 25: witnesses - Africanews",
+   "attribution": "independent",
+   "last_seen": "2026-11-02",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 34,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "B",
+   "best_source": "Africanews",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Africanews (B-tier). 1 independent source record; 0 A-tier, 1 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
   {
    "key": "unknown-2026-11-01-9bba4e1a",
    "sources": [
