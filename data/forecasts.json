@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-11-02T23:34:03.920516+00:00",
+  "generated_at": "2026-11-03T06:51:50.340331+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 807,
+    "recent_event_records": 768,
     "regions_with_located_evidence": 8,
-    "control_change_records": 21,
+    "control_change_records": 17,
     "contested_or_early_records": 0,
-    "reported_records": 807,
-    "duplicate_records_ignored": 117,
+    "reported_records": 768,
+    "duplicate_records_ignored": 112,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 54,
+      "weight": 53,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 36,
+      "weight": 35,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 10,
+      "weight": 12,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Addis Ababa",
-      "risk_index": 52,
+      "risk_index": 46,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 15,
-      "weighted_signal": 1.64,
+      "event_count": 14,
+      "weighted_signal": 1.37,
       "control_change_signal": 0,
-      "explanation": "15 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "14 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-02",
@@ -79,14 +79,25 @@
     },
     {
       "region": "Central Tigray",
-      "risk_index": 40,
-      "level": "GUARDED",
+      "risk_index": 36,
+      "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 53,
-      "weighted_signal": 1.86,
-      "control_change_signal": 0.26,
-      "explanation": "53 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "event_count": 49,
+      "weighted_signal": 1.72,
+      "control_change_signal": 0.21,
+      "explanation": "49 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-11-03",
+          "title": "Mekelle City Set to Join Ethiopia’s MESOB One-Stop Service Network as Preparations Advance - Fana Media Corporation S.C",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdjVFNWZHSzZ4VWVXQkJfRUNNLU1hTzhfRXBRSGl4dU54RnptYy1WeXdYUF9ZdjFUSHJORHhPb3VGR0tWbTVsdDZfLWx5ZC1icHVsSFlteE04RVY3dDFBakJoSUVwcnNDb09IWnJQTnZNMWZ3YkRXMnBQa1dfZi1WRW9tSm1mQ251LXpfazZtLUxPbHJ4cWFaUTczZVI4Q05yUlJPV0ItTXc5bFAxZ010eHBMOWFRY2pGX1VYTVJn?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-11-02",
           "title": "Tigrayan fighters claim to repel offensive in Central Tigray as leaflets appear in Mekelle and phone lines go down - Mereja",
@@ -108,27 +119,16 @@
               "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNzBtUFlpMFFWdnoteEEtTDNKeXRyMmZOWmhNazRLMDFtWTRQRGFnczlZeHRlVjFaM2hYS2RScjJDTFFkcWZyWEVPdVVUYlpjcllJVmN5ZTVPc3M0Nkhla3JLWWQtSE1mVThZQVdqV2d2RHQ1XzBnTk9tMTBUMV8xUVE3cmVoZVBjYWo5blFoQlhNNzN5QzFkVVFYamk1RUtCQms4MklkWS1ULWNDdHhnZEtlQ0dKcnVZVUE3bUJfM20yRVJRZnZPSS12VHZoMWdtcEtpRTdWeU5aMmtiRVVwcG1NOEdHQ09rREE?oc=5"
             }
           ]
-        },
-        {
-          "date": "2026-10-30",
-          "title": "Ciidamada Itoobiya oo la wareegay Mekelle xilli dagaallo cusub ay ka socdaan Tigray - Hiiraan Online",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Hiiraan Online",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1nQ2hMN3Zpa2drSnZHS0haYWVfRmdGRTlKTUhXZ2NTQXU3a3hDbkFxSGpVZVZkZVZJeGtQcnAtNHNBVFZWbVI0RUJHWHB3UHVkV04zbm9DUlFSMUpHeml1V0N4SWc0eTlHN29JM2dzS0ttZjA?oc=5"
-            }
-          ]
         }
       ]
     },
     {
       "region": "Amhara",
-      "risk_index": 27,
+      "risk_index": 23,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 5,
-      "weighted_signal": 0.67,
+      "weighted_signal": 0.57,
       "control_change_signal": 0,
       "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -169,13 +169,13 @@
     },
     {
       "region": "Eastern Tigray",
-      "risk_index": 11,
+      "risk_index": 9,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 11,
-      "weighted_signal": 0.37,
-      "control_change_signal": 0.07,
-      "explanation": "11 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "event_count": 9,
+      "weighted_signal": 0.3,
+      "control_change_signal": 0.05,
+      "explanation": "9 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-02",
@@ -214,11 +214,11 @@
     },
     {
       "region": "Northern Tigray",
-      "risk_index": 8,
+      "risk_index": 7,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 3,
-      "weighted_signal": 0.15,
+      "weighted_signal": 0.12,
       "control_change_signal": 0,
       "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -259,11 +259,11 @@
     },
     {
       "region": "Eritrea",
-      "risk_index": 3,
+      "risk_index": 2,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 5,
-      "weighted_signal": 0.18,
+      "weighted_signal": 0.15,
       "control_change_signal": 0,
       "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -308,7 +308,7 @@
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 1,
-      "weighted_signal": 0.09,
+      "weighted_signal": 0.07,
       "control_change_signal": 0,
       "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
