@@ -5876,7 +5876,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 08:40:12 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T09:17:46.088561+00:00"
  },
  {
   "title": "Ethiopia Retakes Rebel Stronghold in Tigray While Seeking to Stabilize Security Situation - Black Agenda Report",
@@ -5887,7 +5888,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 03 Nov 2026 18:30:04 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T09:17:46.088561+00:00"
  },
  {
   "title": "Spotlight Ethiopia Addis works to contain diplomatic pressure on Tigray - Africa Intelligence",
@@ -5898,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 05:43:22 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T09:17:46.088561+00:00"
  },
  {
   "title": "Abraham Teklu Lemma: US contractor gave Ethiopia secrets to help kill Tigray fighters - BBC",
@@ -5909,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 06:07:24 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T09:17:46.088561+00:00"
  },
  {
   "title": "Getachew Reda Warns of Renewed War in Tigray - kulu-media.com",
@@ -5920,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 07:38:30 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T09:17:46.088561+00:00"
  },
  {
   "title": "Unexploded Ordnance Detonation Kills Eight in Tigray’s Abergele Yechila Woreda - Borkena",
@@ -5931,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 04:59:25 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T09:17:46.088561+00:00"
  },
  {
   "title": "Ethiopia: WHO Chief Warns Continued Violence in Amhara, Tigray Pushing Ethiopia's Fragile Health System Toward Collapse - allAfrica.com",
@@ -5942,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 03 Nov 2026 06:39:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T09:17:46.088561+00:00"
  },
  {
   "title": "Reported Tigray Drone Strike Kills 13 in Hintalo as New Details Emerge - https://kulu-media.com/",
@@ -5953,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 03 Nov 2026 19:15:36 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T09:17:46.088561+00:00"
  },
  {
   "title": "Ethiopia–Eritrea Tensions: Is the Media Telling the Full Story? - Black Agenda Report",
@@ -5964,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 03 Nov 2026 18:30:08 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T09:17:46.088561+00:00"
  },
  {
   "title": "Daily_Brief: Invasive Prosopis trees spreads 31,127 hectares annually in #Afar, linked to $602 million in ecosystem-service losses - Addis Standard",
@@ -5975,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 05:58:35 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T09:17:46.088561+00:00"
  },
  {
   "title": "News_Alert: #US ambassador voices “disappointment” over #TPLF’s “large-scale offensive,” calls for political dialogue - Addis Standard",
@@ -5986,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 03 Nov 2026 06:21:50 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T09:17:46.088561+00:00"
  }
 ]
