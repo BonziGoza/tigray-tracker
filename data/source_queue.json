@@ -5960,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 03 Nov 2026 19:10:52 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T01:25:02.683508+00:00"
  },
  {
   "title": "Tigrayans turn against former ruling party after fresh fighting - Modern Ghana",
@@ -5971,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 02 Nov 2026 09:36:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T01:25:02.683508+00:00"
  },
  {
   "title": "“Tigray’s Territory is Not Up for Negotiation; Its Solution is Peaceful” – Mr. Getachew Reda - kulu-media.com",
@@ -5982,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 03 Nov 2026 19:26:11 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T01:25:02.683508+00:00"
  },
  {
   "title": "US pushes diplomacy, prepares sanctions as Ethiopia launches new offensive in brutal war, risking famine - ABC News - Breaking News, Latest News and Videos",
@@ -5993,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 02 Nov 2026 23:59:25 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T01:25:02.683508+00:00"
  }
 ]
