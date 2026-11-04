@@ -5840,7 +5840,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 02 Nov 2026 20:17:32 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "#Daily_Brief: #Ethiopian Airlines to resume Addis–Mekelle flights on Sunday - Addis Standard",
@@ -5851,7 +5852,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 03 Nov 2026 07:58:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "Daily_Brief: #Ethiopia urges #UN to address #Eritrea’s ‘destructive role’ in destabilizing Ethiopia, region - Addis Standard",
@@ -5862,7 +5864,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 09:28:07 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "News: #Ethiopia reportedly plans troop withdrawal from #Somalia as fighting intensifies at home - Addis Standard",
@@ -5873,7 +5876,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 09:15:27 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "Daily_Brief: #Canadian exploration company Sun Peak raises over 11 million Canadian dollars for #Ethiopia, #Saudi_Arabia projects - Addis Standard",
@@ -5884,7 +5888,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 14:49:11 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "Daily_Brief: #UNHCR funding shortfall suspends refugee registration for tens of thousands in #Ethiopia - Addis Standard",
@@ -5895,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 03 Nov 2026 14:05:44 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "WHO: Ethiopia health system near collapse - The Arkansas Democrat-Gazette",
@@ -5906,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 03 Nov 2026 10:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "Daily_Brief - #Ethiopian-born Melat Kiros wins #Colorado congressional seat, becomes first Black woman elected to represent state - Addis Standard",
@@ -5917,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 15:09:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "Ethiopia expels 6 Sudanese consular staff and orders consulate closed, officials say - The Washington Post",
@@ -5928,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 22:50:13 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "Daily_Brief: #European Peace Foundation urges #Ethiopia, #Sudan to de-escalate tensions, calls for peace talks - Addis Standard",
@@ -5939,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 14:18:09 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "Daily_Brief: #Israel turns back Ethiopian Airlines cargo flight after identifying #Indonesian pilot - Addis Standard",
@@ -5950,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 03 Nov 2026 05:54:32 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "Eritrea publishes Ethiopian generals’ words on Assab as a Chinese envoy prepares to visit Asmara - Mereja",
@@ -5961,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 15:20:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "Ethiopia: Indiscriminate airstrike in #Tigray Investigate Attack Wounding 13 Civilians as Possible War Crime - Addis Standard",
@@ -5972,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 15:08:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  },
  {
   "title": "Daily_Brief: #Sudan’s al-Burhan inspects army division in #Kassala near #Ethiopia, #Eritrea borders - Addis Standard",
@@ -5983,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 08:51:37 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-04T23:42:27.788003+00:00"
  }
 ]
