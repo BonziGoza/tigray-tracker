@@ -1669,7 +1669,7 @@
   },
   {
     "date": "2026-11-05",
-    "generated_at": "2026-11-05T06:51:12.225260+00:00",
+    "generated_at": "2026-11-05T15:30:59.755954+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
@@ -1696,8 +1696,8 @@
       },
       {
         "region": "Central Tigray",
-        "risk_index": 30,
-        "level": "WATCH"
+        "risk_index": 46,
+        "level": "GUARDED"
       },
       {
         "region": "Amhara",
