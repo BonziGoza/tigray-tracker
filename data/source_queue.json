@@ -5852,7 +5852,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 18:32:46 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "Sudan, Ethiopia order tit-for-tat diplomatic expulsions - Al Jazeera",
@@ -5863,7 +5864,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 23:43:48 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "Renewed fighting in Ethiopia forces families to flee again in Tigray - The Eastleigh Voice",
@@ -5874,7 +5876,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 05 Nov 2026 14:15:19 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "Southern Tigray Zone, Ethiopia, Earthquakes: Latest Quakes - Volcano Discovery",
@@ -5885,7 +5888,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 21:26:40 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "#Daily_Brief: #Switzerland allocates $13.5 million in additional emergency aid to #Ethiopia - Addis Standard",
@@ -5896,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 06 Nov 2026 11:17:01 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "Daily_Brief: After #Russia, #Ethiopia seeks expanded military cooperation with #France, #China - Addis Standard",
@@ -5907,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 05 Nov 2026 12:41:35 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "Security Alert: U.S. Embassy Addis Ababa, Ethiopia (November 4, 2026) - U.S. Embassy in Ethiopia (.gov)",
@@ -5918,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 04 Nov 2026 23:23:32 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "Daily_Brief: #Ethiopian #Navy ready to operate across ‘maritime, air and land’ domains, army says - Addis Standard",
@@ -5929,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 05 Nov 2026 13:25:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "Eritrea renews accusations Ethiopia planning invasion to seize Red Sea coastline amid regional tensions - People Daily",
@@ -5940,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 06 Nov 2026 15:28:27 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "EEPA reports on Ethiopia and Sudan close each other’s consulates - IDN-InDepthNews",
@@ -5951,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 05 Nov 2026 15:36:34 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "Daily_Brief: Gambella Woreda imposes indefinite curfew as Mekelle introduces nighttime security restrictions - Addis Standard",
@@ -5962,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 06 Nov 2026 13:57:38 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "Daily_Brief: #Sudanese army recaptures strategic base near #Ethiopian border from RSF-SPLM-N alliance - Addis Standard",
@@ -5973,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 05 Nov 2026 12:42:01 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  },
  {
   "title": "News: Sudan closes Ethiopian consulate in Gedaref, expels diplomats in retaliation for Assosa closure - Addis Standard",
@@ -5984,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 05 Nov 2026 08:30:14 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-06T18:00:23.440187+00:00"
  }
 ]
