@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-06T02:29:52.965701+00:00",
+  "generated_at": "2026-11-06T10:56:47.497515+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 694,
+    "recent_event_records": 702,
     "regions_with_located_evidence": 8,
     "control_change_records": 13,
     "contested_or_early_records": 0,
-    "reported_records": 694,
-    "duplicate_records_ignored": 97,
+    "reported_records": 702,
+    "duplicate_records_ignored": 99,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -168,6 +168,55 @@
       ]
     },
     {
+      "region": "Eritrea",
+      "risk_index": 7,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 6,
+      "weighted_signal": 0.5,
+      "control_change_signal": 0,
+      "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-11-06",
+          "title": "#Daily_Brief: #Chinese envoys meet #Eritrea’s Isaias, #Ethiopia’s Gedion in Asmara and Addis Abeba Addis Abeba — Chinese diplomatic envoys held separate meetings with Eritrean Pres",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Facebook",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNVUVOY3lWMzZZUWlfUDNMUW1MVmdrNGlGS2xGNXdDb2hSSE1Sb1JnQzl3LXdNSTFweldUemdVckZEWWZfeGljbnJUcS04Zlh5M0hSdC1lLWJPWXViM2JsOGhtOWduZXkyOWsxN3BFUVptNG9Ed0xSRS1UbHZha3hYS3NsUWFpRHM0dXMwRjN0M2pja2VMbWNJa2xvT1hYemZhb3NYMTlnckZyb3FDQlRPVHhIemxiN3Y5YXlTN01RTTlCQ1hEaU5COU1yUVdmMDdxUzdzTWZOYkJjZ2YyU3JZ?oc=5"
+            },
+            {
+              "outlet": "Addis Standard",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBQeVhoTmJua00tR283eDNOLUdlRG9xWG1NWEZpY1RReHJvRnp2YlNMNlVvOTU2U29tUEVYbHJpOEJpVjgwQmcyOFVrU0ZRNXFPVWc?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "title": "Eritrea publishes Ethiopian generals’ words on Assab as a Chinese envoy prepares to visit Asmara - Mereja",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Mereja",
+              "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1YX0kxTEtTUU1idGpvREd1NW10S1dBOGxJSnZESW9jX2hvZWVral9sc1VOTm9xZGszcWs3cTZuZGRQMkdYbGc?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "title": "FALSE: This photo does not show an explosion in Asmara, Eritrea, in 2026 - PesaCheck",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "PesaCheck",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObnhmT1hFRWY4TFU2bUZwcVNhZUZIYkQ1ZUZTR3hmSWZ5Vkw1LUw3cW9DOHZhRDF4WlF4ajNtY1h0al9JTjh0S3k3MnBUcWgyQjg2QklVV3U4WVY5ajZMRDRqcXc3WEVNV1V6UjNxZXVfczhqWVRNU2RSbEo4WlZDVE8zM2dORS1HaWpGRGlsLUxSY0VZd0xZ?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "region": "Eastern Tigray",
       "risk_index": 5,
       "level": "WATCH",
@@ -252,51 +301,6 @@
             {
               "outlet": "https://kulu-media.com/",
               "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53T1paRjFEb0VHNloydnp4by0xUG04VU1yRzYzckY0dlRxTWJiRnBORDhUSUs3XzBQRW1ZeDFUbzhpMjYtQU5uYVVsWml1Ui1FR1liTVJWcW92Z2tZLV9JanhhUEVBMU95UVE?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Eritrea",
-      "risk_index": 3,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 5,
-      "weighted_signal": 0.21,
-      "control_change_signal": 0,
-      "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-11-04",
-          "title": "Eritrea publishes Ethiopian generals’ words on Assab as a Chinese envoy prepares to visit Asmara - Mereja",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Mereja",
-              "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1YX0kxTEtTUU1idGpvREd1NW10S1dBOGxJSnZESW9jX2hvZWVral9sc1VOTm9xZGszcWs3cTZuZGRQMkdYbGc?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-29",
-          "title": "FALSE: This photo does not show an explosion in Asmara, Eritrea, in 2026 - PesaCheck",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "PesaCheck",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObnhmT1hFRWY4TFU2bUZwcVNhZUZIYkQ1ZUZTR3hmSWZ5Vkw1LUw3cW9DOHZhRDF4WlF4ajNtY1h0al9JTjh0S3k3MnBUcWgyQjg2QklVV3U4WVY5ajZMRDRqcXc3WEVNV1V6UjNxZXVfczhqWVRNU2RSbEo4WlZDVE8zM2dORS1HaWpGRGlsLUxSY0VZd0xZ?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-27",
-          "title": "#Daily_Brief: #Eritrea’s President heads to #Moscow for #Russia-#Africa summit The visit comes days after #Moscow reiterated its willingness to facilitate dialogue between #Addis_A",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Facebook",
-              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQUHlIM3h2QU11b2RQWTEyd1pCZks2cHpTRk91a0ljbDRraUVxdDhobjgzOFJoTm8xTncyem9XM2NnSTROaWo5NUhqb3NlU3ZLdE5NN3lqOFEzanZSVG1lUWF4RFVmeWVYX0VDUnlPRi11QWJuZ0I1SVNLM2RHaFpTZHZLbnE5ZWxZOUpWV3RqMWxwT2x1eE9HZERrVF9UYVhrQlA1WkV1RktIVlNMUXZXZDFVMk5kalJrU0I2MnUwa3JYekhZcGpfUEczTW5CUXhvN0U0WFd4RmJRSXRZd2tn?oc=5"
             }
           ]
         }
