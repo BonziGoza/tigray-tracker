@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T18:00:23.441538+00:00",
+ "updated": "2026-11-06T23:12:33.101545+00:00",
  "events": [
   {
    "key": "asmara-2026-11-06-216eab32",
@@ -845,6 +845,20 @@
      "credibility_score": 40,
      "credibility_label": "LIMITED",
      "credibility_explanation": "Publisher registry: U.S. Embassy in Ethiopia (.gov) (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    },
+    {
+     "outlet": "U.S. Embassy in Ethiopia (.gov)",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQN0k3RGEzaWdGS1NYVnhIUjBpeF9fbnViQ3g5OGNzN0hHZHJ1OURYNHNtdFN4SW5lb1ZIRS1Wdk96X0tNcFRRU0d6dTVOSF82ODB2SGdXWkp3cGZ5dEoxTjdYODR6SlRnSzQtRzNzcGhCOEMzaVdBUXU3VE5sRzc1VG8yaThoTlMzSjlZc0gzekRzS3c?oc=5",
+     "title": "Security Alert: U.S. Embassy Addis Ababa, Ethiopia (November 6, 2026) - U.S. Embassy in Ethiopia (.gov)",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 06 Nov 2026 22:20:27 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: U.S. Embassy in Ethiopia (.gov) (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
     }
    ],
    "manual": false,
@@ -854,7 +868,7 @@
    "lon": 38.74,
    "date": "2026-11-06",
    "kind": "other",
-   "summary": "Security Alert: U.S. Embassy Addis Ababa, Ethiopia (November 4, 2026) - U.S. Embassy in Ethiopia (.gov)",
+   "summary": "Security Alert: U.S. Embassy Addis Ababa, Ethiopia (November 6, 2026) - U.S. Embassy in Ethiopia (.gov)",
    "attribution": "independent",
    "last_seen": "2026-11-06",
    "translations": [],
@@ -862,7 +876,7 @@
    "grade": "REPORTED",
    "confidence": 18,
    "source_count": 1,
-   "news_source_count": 1,
+   "news_source_count": 2,
    "source_tier": "U",
    "best_source": "U.S. Embassy in Ethiopia (.gov)",
    "independent_source_count": 1,
@@ -948,6 +962,86 @@
    "independent_source_count": 1,
    "high_quality_source_count": 0,
    "evidence_explanation": "Best source: Genocide Watch (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-11-06-ef29072a",
+   "sources": [
+    {
+     "outlet": "Addis Standard",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBlMjBQVXROUUtHejhXbHBTb01qUzlhMmJ6ZG9lY19VUWd2d3hHNmVkUTVrSVQwb2k4QzBDNXBtamJDS1o3VXd3Rmlmb1JwZEdwaEE?oc=5",
+     "title": "Daily_Brief: #Ethiopia revises #GDP upward by 59%, becomes #Africa’s fifth-largest economy - Addis Standard",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Fri, 06 Nov 2026 11:15:30 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 50,
+     "credibility_label": "MODERATE",
+     "credibility_explanation": "Publisher registry: Addis Standard (provisional_manual_assessment; confidence medium). Publisher reputation component: 78/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Minimum score of 50 applied because article-level evidence was not extracted; this floor does not apply when evidence is assessed. Article credibility score: 50/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-11-06",
+   "kind": "other",
+   "summary": "Daily_Brief: #Ethiopia revises #GDP upward by 59%, becomes #Africa’s fifth-largest economy - Addis Standard",
+   "attribution": "independent",
+   "last_seen": "2026-11-06",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 35,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "B",
+   "best_source": "Addis Standard",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Addis Standard (B-tier). 1 independent source record; 0 A-tier, 1 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-11-06-3564415b",
+   "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdThUcm1YcFphY21jQ1dhcFlhdktvZUpwZHg4MTBrakZGal9pemJPenRjZm01RFdBSkl1bE5Tel9INGJySU5ZLUFCSDVHZm1Gb1pjQzZyRHAwTVdYZ1RZNllQaHRseU5jakt5M2l4NGRVNTJoTEIyUUJUdHZMR1NScGpzUllRV0VGSzl0QkFjVUNSOUFmVGNTWlJQand6ZTE5YTVodUMtQnEwZzg5N0dOZHhKZktpV2NKVlg2dWpPNTVxQjdBT0dqVE5hZEhqTDlFQmFxdHVGOFo3RElGQXVr?oc=5",
+     "title": "#Video_News:#Sudan closes #Ethiopian consulate in Gedaref, expels diplomats in retaliation for Assosa closure watch - Facebook",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Thu, 05 Nov 2026 13:00:59 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: Facebook (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-11-06",
+   "kind": "other",
+   "summary": "#Video_News:#Sudan closes #Ethiopian consulate in Gedaref, expels diplomats in retaliation for Assosa closure watch - Facebook",
+   "attribution": "independent",
+   "last_seen": "2026-11-06",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "Facebook",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Facebook (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
   },
   {
    "key": "unknown-2026-11-05-3467e339",

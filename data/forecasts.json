@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-06T18:00:23.759039+00:00",
+  "generated_at": "2026-11-06T23:12:33.397968+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 714,
+    "recent_event_records": 715,
     "regions_with_located_evidence": 8,
     "control_change_records": 13,
     "contested_or_early_records": 0,
-    "reported_records": 714,
-    "duplicate_records_ignored": 100,
+    "reported_records": 715,
+    "duplicate_records_ignored": 101,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -38,7 +38,7 @@
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 15,
-      "weighted_signal": 1.71,
+      "weighted_signal": 1.72,
       "control_change_signal": 0,
       "explanation": "15 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
