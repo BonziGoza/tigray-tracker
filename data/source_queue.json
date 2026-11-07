@@ -5960,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 07 Nov 2026 16:48:53 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-07T20:55:12.991695+00:00"
  },
  {
   "title": "Blasts heard in Addis Ababa as Ethiopia conflict widens in the north - GhanaWeb",
@@ -5971,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 07 Nov 2026 16:37:46 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-07T20:55:12.991695+00:00"
  },
  {
   "title": "How did the Eritrean People’s Liberation Front become the People’s Front for Democracy and Justice? - Britannica",
@@ -5982,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 06 Nov 2026 23:00:06 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-07T20:55:12.991695+00:00"
  },
  {
   "title": "How old are the Ardipithecus kadabba fossils from Ethiopia? - Britannica",
@@ -5993,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 06 Nov 2026 22:18:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-07T20:55:12.991695+00:00"
  }
 ]

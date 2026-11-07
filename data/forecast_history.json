@@ -1797,12 +1797,12 @@
   },
   {
     "date": "2026-11-07",
-    "generated_at": "2026-11-07T16:30:31.592573+00:00",
+    "generated_at": "2026-11-07T20:55:13.255575+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
         "name": "Continued localized conflict and shifting control",
-        "weight": 51,
+        "weight": 50,
         "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
       },
       {
@@ -1812,14 +1812,14 @@
       },
       {
         "name": "Relative stabilization or a temporary pause",
-        "weight": 12,
+        "weight": 13,
         "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
       }
     ],
     "regions": [
       {
         "region": "Addis Ababa",
-        "risk_index": 49,
+        "risk_index": 50,
         "level": "GUARDED"
       },
       {
