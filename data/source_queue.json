@@ -5924,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 07 Nov 2026 02:06:11 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-07T10:15:27.412963+00:00"
  },
  {
   "title": "Ethiopia is rising, but conflicts threaten the gains - The EastAfrican",
@@ -5935,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 07 Nov 2026 03:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-07T10:15:27.412963+00:00"
  },
  {
   "title": "Ethiopian-born Melat Kiros wins Colorado seat, becomes first black Gen-Z in Congress - The EastAfrican",
@@ -5946,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 05 Nov 2026 14:45:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-07T10:15:27.412963+00:00"
  },
  {
   "title": "Which ethnic group makes up about half of Eritrea’s population? - Britannica",
@@ -5957,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 06 Nov 2026 23:00:07 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-07T10:15:27.412963+00:00"
  },
  {
   "title": "Op-ed: The Ethiopian-Eritrean Escalation: Motives, scenarios, and regional implications - Addis Standard",
@@ -5968,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 07 Nov 2026 07:51:26 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-07T10:15:27.412963+00:00"
  },
  {
   "title": "Daily_Brief: #UK warns against travel to #Kenya’s Moyale amid #Ethiopia border clashes - Addis Standard",
@@ -5979,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 07 Nov 2026 07:06:37 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-07T10:15:27.412963+00:00"
  },
  {
   "title": "Daily_Brief: #UN agencies seek $8.9 million to assist up to 50,000 #Ethiopians displaced into #Kenya - Addis Standard",
@@ -5990,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 07 Nov 2026 07:16:26 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-07T10:15:27.412963+00:00"
  }
 ]
