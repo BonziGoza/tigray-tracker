@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-06T23:12:33.397968+00:00",
+  "generated_at": "2026-11-07T02:50:58.282840+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 715,
+    "recent_event_records": 656,
     "regions_with_located_evidence": 8,
-    "control_change_records": 13,
+    "control_change_records": 12,
     "contested_or_early_records": 0,
-    "reported_records": 715,
-    "duplicate_records_ignored": 101,
+    "reported_records": 656,
+    "duplicate_records_ignored": 82,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -34,11 +34,11 @@
   "regions": [
     {
       "region": "Addis Ababa",
-      "risk_index": 55,
+      "risk_index": 49,
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 15,
-      "weighted_signal": 1.72,
+      "weighted_signal": 1.44,
       "control_change_signal": 0,
       "explanation": "15 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -79,12 +79,12 @@
     },
     {
       "region": "Central Tigray",
-      "risk_index": 42,
+      "risk_index": 38,
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 35,
-      "weighted_signal": 1.85,
-      "control_change_signal": 0.11,
+      "weighted_signal": 1.73,
+      "control_change_signal": 0.1,
       "explanation": "35 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
@@ -99,6 +99,17 @@
           ]
         },
         {
+          "date": "2026-11-07",
+          "title": "Ethiopian Defense Forces Impose Nighttime Curfew and Security Restrictions in Mekelle - Borkena",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Borkena",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRlkzUFY1M1YzaExSYXVYTFhNZnlraTY0NTRXMTJaSmNrd0EwOS1FcUkyNUtTSEt5NGVFYzBnUktJeHdEeERveFdBOVVfM3BicGZlaWsxcWdfWENyTE5KcnhLVk0wQW1CMzJxVnQ3Mm1JT0RCVnJkS2RMLU1JclRMaDFVV1poQUVQeExwS2U5cDk3NEd1NldNTlA3OWhsQzZDMHgzTHQxQ2Fkdw?oc=5"
+            }
+          ]
+        },
+        {
           "date": "2026-11-06",
           "title": "Daily_Brief: Gambella Woreda imposes indefinite curfew as Mekelle introduces nighttime security restrictions - Addis Standard",
           "grade": "REPORTED",
@@ -108,29 +119,18 @@
               "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCbFRiNm1BU21XOXl3bGY1SVlRQy1CX1VXV0hxZlBTRzhDMHoxeTl5Qk9ZNWpxc1NuLV9tVnZaXzdFcG5MNHhaWDJJdHBaSXB6SXc?oc=5"
             }
           ]
-        },
-        {
-          "date": "2026-11-05",
-          "title": "#Daily_Brief: #ICRC #Ethiopia evacuates 161 people from Mekelle to Semera in Afar - Addis Standard",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Addis Standard",
-              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCODg3dGtzLWdtajlMNnlDOEd1SlhFZ2hDdEtfUy1qMjNfUnFtZWx3QzVITE01ZFJuOUtBY3R6b0ZwTUdJTXk2RmZUQlR5Y2lBMWc?oc=5"
-            }
-          ]
         }
       ]
     },
     {
       "region": "Amhara",
-      "risk_index": 15,
+      "risk_index": 12,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 5,
-      "weighted_signal": 0.34,
+      "event_count": 3,
+      "weighted_signal": 0.27,
       "control_change_signal": 0,
-      "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-02",
@@ -153,27 +153,16 @@
               "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DWFR1b1FicmxqdGRkMHNBTmJWUUtJMzhlci1ZeWtrNVBjVjdLRWROVWVEaW1mckxKbVl3NFE5Y2x1OVBJbDdqSWY5TWR3NDkxUEE?oc=5"
             }
           ]
-        },
-        {
-          "date": "2026-10-16",
-          "title": "News: Rally goers in Southern Tigray’s Kobo demand halt to Raya provisional admin election - Addis Standard",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Addis Standard",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSGVmVDd4VUdtZXFGY3FoR2pDbUdZVVZ6QXdQaVpFcWZVRDB1amN1bU9FS0J1Szd4LWRoYnNlcTI0RVpXRWIxVzMzZjdCVmRpVmpKdzNxR3g5V2ZsSldtOGVxOHR3YjZlNmdIc3VIWmdaeEd0cE5oZmZQQkZEUHJUZDhldDF6WjVlU1ZWZkUzeXdqQmI4QWZvcXFoeE5GYXgzenVjWGhYUjFRRTM5MFVz?oc=5"
-            }
-          ]
         }
       ]
     },
     {
       "region": "Eritrea",
-      "risk_index": 7,
+      "risk_index": 6,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 6,
-      "weighted_signal": 0.5,
+      "weighted_signal": 0.42,
       "control_change_signal": 0,
       "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -218,12 +207,12 @@
     },
     {
       "region": "Eastern Tigray",
-      "risk_index": 5,
+      "risk_index": 4,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 4,
-      "weighted_signal": 0.16,
-      "control_change_signal": 0.03,
+      "weighted_signal": 0.13,
+      "control_change_signal": 0.02,
       "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
@@ -263,13 +252,13 @@
     },
     {
       "region": "Northern Tigray",
-      "risk_index": 4,
+      "risk_index": 3,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 3,
-      "weighted_signal": 0.07,
+      "event_count": 2,
+      "weighted_signal": 0.05,
       "control_change_signal": 0,
-      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-10-22",
@@ -292,27 +281,16 @@
               "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9NaFFwWkpNRW1Da3dNOXMycGZ5Q3hvVWpHODNBUC1QN2NnVkw2c3EwZXZNekFxQ1o4VEZSSlQzdXQ1YUVBZm5wWXZ3S1dmTHFZcEM1RUN2RDBSazBFaHFGZlk5elQ3dWvSAVxBVV95cUxQSmRfMDlTQWZoYmNZTWVXRGU3U0x1MXdRWEJONVdCaWp3NVZaY0lnUFFSOVV4NS1PMUJ4UnI4NEdka2hldVhmYTVzd2JfSC0zZkc4N0Z4OHM4Z2pZUA?oc=5"
             }
           ]
-        },
-        {
-          "date": "2026-10-16",
-          "title": "Drone Strike Damage Reported in Rama as Fighting Continues in Northern Tigray - https://kulu-media.com/",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "https://kulu-media.com/",
-              "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53T1paRjFEb0VHNloydnp4by0xUG04VU1yRzYzckY0dlRxTWJiRnBORDhUSUs3XzBQRW1ZeDFUbzhpMjYtQU5uYVVsWml1Ui1FR1liTVJWcW92Z2tZLV9JanhhUEVBMU95UVE?oc=5"
-            }
-          ]
         }
       ]
     },
     {
       "region": "Southern Tigray",
-      "risk_index": 3,
+      "risk_index": 2,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 2,
-      "weighted_signal": 0.18,
+      "weighted_signal": 0.15,
       "control_change_signal": 0,
       "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
