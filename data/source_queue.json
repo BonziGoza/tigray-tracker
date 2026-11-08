@@ -5960,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 08 Nov 2026 02:26:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-08T07:24:54.147696+00:00"
  },
  {
   "title": "Ethiopian Ambassador Accuses Eritrea of Violating Ethiopia’s Sovereignty - Shabelle Media Network",
@@ -5971,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 07 Nov 2026 19:34:32 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-08T07:24:54.147696+00:00"
  },
  {
   "title": "Old Clips and Altered Image Falsely Link Ethiopian Forces to Shiraro - MultiFactCheck",
@@ -5982,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 08 Nov 2026 02:07:34 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-08T07:24:54.147696+00:00"
  },
  {
   "title": "TODAY Ethiopia-Eritrea Relations/AU - NewsBreak: Local News & Alerts",
@@ -5993,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 06 Nov 2026 14:50:53 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-08T07:24:54.147696+00:00"
  }
 ]
