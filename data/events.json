@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T19:45:17.257594+00:00",
+ "updated": "2026-11-08T23:45:16.799762+00:00",
  "events": [
   {
    "key": "unknown-2026-11-08-0e74bcfe",
@@ -440,6 +440,86 @@
    "independent_source_count": 1,
    "high_quality_source_count": 0,
    "evidence_explanation": "Best source: Borkena (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-11-08-4489b8c5",
+   "sources": [
+    {
+     "outlet": "CapitalEthiopia",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcFQtSERPaHZoMWtEUjZyN2o1Vy1kQTV6Y1RhYjNkaEN3aTkyUE4xcHdBcWpfNEYtMUg5cjlZQUdjV2NzLWpHdDh2TVdaU2pJZThlUWgwbDMwMDBYblE1bmdKUDR2N1hpLV9EcGZDcm5xWUd3VFpVc245RURYLUlFc3pNbnpKZXppSkhFYmItOGF0ejRwbUFTZEZYRXA?oc=5",
+     "title": "COMESA review looms over OLA–TotalEnergies Ethiopia deal - CapitalEthiopia",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Sat, 07 Nov 2026 22:00:00 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: CapitalEthiopia (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-11-08",
+   "kind": "other",
+   "summary": "COMESA review looms over OLA–TotalEnergies Ethiopia deal - CapitalEthiopia",
+   "attribution": "independent",
+   "last_seen": "2026-11-08",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "CapitalEthiopia",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: CapitalEthiopia (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-11-08-71485fb1",
+   "sources": [
+    {
+     "outlet": "horn review",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNN3UxMnQtTF9hcURGR20wZEhGUUVvV1JIRENady1Vd1pfdWZ4NzhjUHJHN3JISFpVRWVwWTR6VFkycVZSd2ZBWUwyRWtnNTNGcFJXOU1TRlB2dm8yM2hnekNEUzZrVVhiVTlocXZkOEF1ZDJyM09hLUkwd0M5VWhUR2x2d3FmY3BDcmdZalBWS3lkT0dpa2FnNXNOWFhvSU5BQnFWMw?oc=5",
+     "title": "Ethiopia and Yemen: A Strategic Relationship Beyond Political Change - horn review",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Sat, 07 Nov 2026 14:00:50 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: The Horn Review (provisional_manual_assessment; confidence low). Publisher reputation component: 50/100 (30% of score). Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-11-08",
+   "kind": "other",
+   "summary": "Ethiopia and Yemen: A Strategic Relationship Beyond Political Change - horn review",
+   "attribution": "independent",
+   "last_seen": "2026-11-08",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 22,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "C",
+   "best_source": "The Horn Review",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: The Horn Review (C-tier). 1 independent source record; 0 A-tier, 0 B-tier, 1 C-tier. Limited source-level sourcing."
   },
   {
    "key": "mekelle-2026-11-07-acc6d2ef",

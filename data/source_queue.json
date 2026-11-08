@@ -5984,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 07 Nov 2026 14:00:50 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-08T23:45:16.798927+00:00"
  },
  {
   "title": "COMESA review looms over OLA–TotalEnergies Ethiopia deal - CapitalEthiopia",
@@ -5995,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 07 Nov 2026 22:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-08T23:45:16.798927+00:00"
  }
 ]
