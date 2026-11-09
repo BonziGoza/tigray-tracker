@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-08T23:45:16.987107+00:00",
+  "generated_at": "2026-11-09T06:36:01.821770+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 667,
+    "recent_event_records": 624,
     "regions_with_located_evidence": 8,
     "control_change_records": 12,
     "contested_or_early_records": 0,
-    "reported_records": 667,
-    "duplicate_records_ignored": 75,
+    "reported_records": 624,
+    "duplicate_records_ignored": 71,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -34,11 +34,11 @@
   "regions": [
     {
       "region": "Addis Ababa",
-      "risk_index": 44,
+      "risk_index": 39,
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 15,
-      "weighted_signal": 1.35,
+      "weighted_signal": 1.14,
       "control_change_signal": 0,
       "explanation": "15 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -79,13 +79,13 @@
     },
     {
       "region": "Central Tigray",
-      "risk_index": 33,
+      "risk_index": 28,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 34,
-      "weighted_signal": 1.45,
-      "control_change_signal": 0.08,
-      "explanation": "34 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "event_count": 27,
+      "weighted_signal": 1.19,
+      "control_change_signal": 0.07,
+      "explanation": "27 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-05",
@@ -124,13 +124,13 @@
     },
     {
       "region": "Amhara",
-      "risk_index": 10,
+      "risk_index": 9,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 3,
-      "weighted_signal": 0.23,
+      "event_count": 2,
+      "weighted_signal": 0.19,
       "control_change_signal": 0,
-      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-02",
@@ -158,14 +158,25 @@
     },
     {
       "region": "Eritrea",
-      "risk_index": 5,
+      "risk_index": 7,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 5,
-      "weighted_signal": 0.35,
+      "event_count": 6,
+      "weighted_signal": 0.47,
       "control_change_signal": 0,
-      "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-11-09",
+          "title": "Moderate mag. 4.3 earthquake - Northern Red Sea Region, 93 km north of Asmara, Maekel Region, Eritrea, on Monday, Nov 9, 2026, at 04:11 am (Asmara time) - Volcano Discovery",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Volcano Discovery",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeHExd2pZMnZmUS1XblFtY3E5ZEVUR3RTa1l6YUw3Rnp6STA2dFBHYzVJNnRiUFZFQjJhajJKaGFLdVQzWDBFZFpYYVlaX3F5VHFuNVFnODRndUxJV3NFN294bXROWkc0dElYdGJNY0dKU0cxMlpqVzVIRDdUQVhrb18zSGNVdXhkZEpGYUthNUxsdkNYYlU0RXNLV2R6bUJUY0NEaGhqTFlIZGxEME1DZGNNTW5kdjJnd2c?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-11-06",
           "title": "#Daily_Brief: #Chinese envoys meet #Eritrea’s Isaias, #Ethiopia’s Gedion in Asmara and Addis Abeba Addis Abeba — Chinese diplomatic envoys held separate meetings with Eritrean Pres",
@@ -191,62 +202,6 @@
               "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1YX0kxTEtTUU1idGpvREd1NW10S1dBOGxJSnZESW9jX2hvZWVral9sc1VOTm9xZGszcWs3cTZuZGRQMkdYbGc?oc=5"
             }
           ]
-        },
-        {
-          "date": "2026-10-29",
-          "title": "FALSE: This photo does not show an explosion in Asmara, Eritrea, in 2026 - PesaCheck",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "PesaCheck",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObnhmT1hFRWY4TFU2bUZwcVNhZUZIYkQ1ZUZTR3hmSWZ5Vkw1LUw3cW9DOHZhRDF4WlF4ajNtY1h0al9JTjh0S3k3MnBUcWgyQjg2QklVV3U4WVY5ajZMRDRqcXc3WEVNV1V6UjNxZXVfczhqWVRNU2RSbEo4WlZDVE8zM2dORS1HaWpGRGlsLUxSY0VZd0xZ?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Eastern Tigray",
-      "risk_index": 3,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 4,
-      "weighted_signal": 0.11,
-      "control_change_signal": 0.02,
-      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-11-02",
-          "title": "Adigrat University Welcomes Returning and Newly Admitted Students as Academic Activities Resume Across Tigray Region - Fana Media Corporation S.C",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Fana Media Corporation S.C",
-              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUVJwMl8ySF9YSkFTdUJwUzNIeGdMLWRpOEVzYUs5SEtueHZkVGg1Y0FpLUpTQ0RIbGw5OXo4YUVZN0RTS3pYdWx2SDFfd0Y5bUdFTG9PQ1ZtWUlaVF95ZkFmNmFRUnNJbU94SG9XeEpkMnpEOUdDNnpRSy1yYVBOWDhPQlFRVW13WjdGc3B6eDhyQ2xUVXVRZC1raWNIelUyckk3QUJwY1dVZnJRVzlvSGw2RnpoOUxrYk9UaWRsSmxDTW95QVlZemgzVjgyZzdDczd5VnF6WkFCVFMzTlAySmlQbHdLelU?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-22",
-          "title": "Ethiopia takes control of Zalambessa on the border with Eritrea — France 24 - UA.NEWS",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "UA.NEWS",
-              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPakZRQ0VQczM1ZFNUejJBQWpHeV9YeEVVaU9od0xxOUNTa012UDg0WldSMkhWWnZMUzE5OEQ5UEE1ZWdUd010TExlZ2V4OXFGQ1NUaU1GQlFiMEFMRWNaM3pvOS1lNUpzTEs1dHRCZndDRUNsRFNHNHc2dHowNFFVV2FRUzcweU16U1R3am00SmhZbDc3LVlPRkpFVlZtaWw0bkloOTZ2LWs?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-18",
-          "title": "Residents recount drone strikes in Ethiopia’s northern Tigray region",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/residents-recount-drone-strikes-in-ethiopias-northern-tigray-region?traffic_source=rss"
-            }
-          ]
         }
       ]
     },
@@ -256,7 +211,7 @@
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 2,
-      "weighted_signal": 0.13,
+      "weighted_signal": 0.11,
       "control_change_signal": 0,
       "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -279,6 +234,40 @@
             {
               "outlet": "Borkena",
               "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVlp6MU83YnZrVFF5WGt2SjBWV2pfRDl6ZzlNMk5TSVJ1Y0I0YVpSZnVBdVpvTWJ2M0V0dmlBUkxDM1pYdG90c3VlRVR3Q193VFVlQTR0bWpJa20wMGw1WUhXak9qS1ZhOVh6LXdYMG1IX3JUemEtVmhKWjY3SmpFNlZqanpEOHU1b3Y3WWdsYUhEd0ZzSUo2cVpxU2pqYzRsTFdlYk5Mbk91V3lGdFU1Wi1hc3RFQ1lrbi15aF80TkJmOW1EQU95U1JtNFdzS25qY216VF9XbDVFcDRsaG5QVUt5c0R3Zw?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Eastern Tigray",
+      "risk_index": 2,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 2,
+      "weighted_signal": 0.07,
+      "control_change_signal": 0.02,
+      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-11-02",
+          "title": "Adigrat University Welcomes Returning and Newly Admitted Students as Academic Activities Resume Across Tigray Region - Fana Media Corporation S.C",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUVJwMl8ySF9YSkFTdUJwUzNIeGdMLWRpOEVzYUs5SEtueHZkVGg1Y0FpLUpTQ0RIbGw5OXo4YUVZN0RTS3pYdWx2SDFfd0Y5bUdFTG9PQ1ZtWUlaVF95ZkFmNmFRUnNJbU94SG9XeEpkMnpEOUdDNnpRSy1yYVBOWDhPQlFRVW13WjdGc3B6eDhyQ2xUVXVRZC1raWNIelUyckk3QUJwY1dVZnJRVzlvSGw2RnpoOUxrYk9UaWRsSmxDTW95QVlZemgzVjgyZzdDczd5VnF6WkFCVFMzTlAySmlQbHdLelU?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-22",
+          "title": "Ethiopia takes control of Zalambessa on the border with Eritrea — France 24 - UA.NEWS",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "UA.NEWS",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPakZRQ0VQczM1ZFNUejJBQWpHeV9YeEVVaU9od0xxOUNTa012UDg0WldSMkhWWnZMUzE5OEQ5UEE1ZWdUd010TExlZ2V4OXFGQ1NUaU1GQlFiMEFMRWNaM3pvOS1lNUpzTEs1dHRCZndDRUNsRFNHNHc2dHowNFFVV2FRUzcweU16U1R3am00SmhZbDc3LVlPRkpFVlZtaWw0bkloOTZ2LWs?oc=5"
             }
           ]
         }
