@@ -5960,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 10 Nov 2026 10:20:27 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-10T17:53:05.846494+00:00"
  },
  {
   "title": "Pakistan TV anchor allegedly shot dead at home by her husband",
@@ -5971,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 10 Nov 2026 10:10:32 +0000",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-10T17:53:05.846494+00:00"
  },
  {
   "title": "'Eritrea Must Stop': Abiy Ahmed's Ethiopia Displays Captured Weapons from Tigray | Firstpost Africa - Firstpost",
@@ -5982,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 10 Nov 2026 16:03:58 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-10T17:53:05.846494+00:00"
  },
  {
   "title": "Ethiopian Conflict Linked to Measles Surveillance Collapse - Bioengineer.org",
@@ -5993,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 10 Nov 2026 03:58:44 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-10T17:53:05.846494+00:00"
  }
 ]
