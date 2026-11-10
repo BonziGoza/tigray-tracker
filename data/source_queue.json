@@ -5936,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 09 Nov 2026 18:47:28 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-10T01:35:00.365735+00:00"
  },
  {
   "title": "TPLF’s Ship of Destruction and Port: 6th Anniversary Commemoration of the Mai Kadra \"Terminal Genocide\" and the Demand for Justice - Borkena",
@@ -5947,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 09 Nov 2026 19:51:25 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-10T01:35:00.365735+00:00"
  },
  {
   "title": "Fleeing conflict in Ethiopia, LGBT refugees find violence in Kenya and S. Sudan - Erasing 76 Crimes",
@@ -5958,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 09 Nov 2026 19:13:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-10T01:35:00.365735+00:00"
  },
  {
   "title": "In northern Ethiopia, conflict pushes a strained healthcare system to the brink - NPR",
@@ -5969,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 09 Nov 2026 22:25:13 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-10T01:35:00.365735+00:00"
  },
  {
   "title": "Tigray War Fast Facts - KESQ",
@@ -5980,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 09 Nov 2026 17:17:56 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-10T01:35:00.365735+00:00"
  },
  {
   "title": "High Stakes, Few Options: Why International Engagement With Ethiopia’s Alliance For Survival Can’t Wait - Analysis - Eurasia Review",
@@ -5991,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 10 Nov 2026 01:05:33 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-10T01:35:00.365735+00:00"
  }
 ]
