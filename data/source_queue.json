@@ -5924,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 10 Nov 2026 12:01:21 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-11T22:01:42.997984+00:00"
  },
  {
   "title": "News: #Ethiopia tells #UN envoy #Eritrea, #Sudan backing armed groups and drone attacks Addis Abeba — Ethiopia has accused Eritrean President #Isaias_Afwerki and Sudan’s army chief General Abdel Fattah #al_Burhan of supporting, arming and coordin - Facebook",
@@ -5935,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 16:02:36 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-11T22:01:42.997984+00:00"
  },
  {
   "title": "Renewed war fears deepen as displaced Tigray families lose hope of returning home - Face2Face Africa",
@@ -5946,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 17:14:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-11T22:01:42.997984+00:00"
  },
  {
   "title": "TPLF Accuses Ethiopian Government of Looting and Burning Crops in Tigray - DNE Africa",
@@ -5957,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 20:37:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-11T22:01:42.997984+00:00"
  },
  {
   "title": "Ethiopia Accuses Eritrea and Sudan of Arming Insurgent Factions and Coordinating Drone Attacks - Borkena",
@@ -5968,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 20:51:41 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-11T22:01:42.997984+00:00"
  },
  {
   "title": "Getachew Reda Accuses Eritrea, Sudan of Arming Groups and Backing Drone Attacks in Ethiopia - https://kulu-media.com/",
@@ -5979,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 19:14:35 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-11T22:01:42.997984+00:00"
  },
  {
   "title": "G7 Warns Ethiopia–Eritrea Tensions Could Trigger Wider Regional Escalation - www.nationpathindia.com",
@@ -5990,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 20:21:59 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-11T22:01:42.997984+00:00"
  }
 ]
