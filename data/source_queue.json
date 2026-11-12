@@ -5900,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 14:43:47 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-12T19:00:18.333969+00:00"
  },
  {
   "title": "News: Drought, conflict threaten Emergency-level food insecurity in Tigray, Amhara, Afar - Addis Standard",
@@ -5911,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 13:13:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-12T19:00:18.333969+00:00"
  },
  {
   "title": "Meta Returns to Kenya’s High Court Over Hate Speech in Ethiopia - Tech Policy Press",
@@ -5922,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 14:07:29 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-12T19:00:18.333969+00:00"
  },
  {
   "title": "For Ethiopian mothers sheltering in Kenya, safety brings a struggle to feed their children - ABC News - Breaking News, Latest News and Videos",
@@ -5933,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 10:08:24 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-12T19:00:18.333969+00:00"
  },
  {
   "title": "#G7 warns of regional escalation risk as #Ethiopia-#Eritrea tensions worsen Watch - Facebook",
@@ -5944,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 18:34:39 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-12T19:00:18.333969+00:00"
  },
  {
   "title": "Ethiopia Food Security Outlook: Drought and conflict expected to drive Emergency (IPC Phase 4) outcomes in the north, October 2026 - May 2027 - ReliefWeb",
@@ -5955,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 00:41:47 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-12T19:00:18.333969+00:00"
  },
  {
   "title": "Ethiopia Govt Responds to Eritrea, Sudan Over Armed Groups - allAfrica.com",
@@ -5966,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 13:41:52 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-12T19:00:18.333969+00:00"
  },
  {
   "title": "#Op_ed: From Boardrooms to Barracks: What military training for senior officials signals amid rising #Ethiopia-#Eritrea tensions Prime Minister Abiy Ahmed’s military exercises involving civilian officials at Hurso have raised questions about civilian governance, - Facebook",
@@ -5977,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 14:02:31 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-12T19:00:18.333969+00:00"
  },
  {
   "title": "Ethiopia Tells UN Envoy Eritrea, Sudan Backing Armed Groups and Drone Attacks - allAfrica.com",
@@ -5988,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 15:33:05 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-12T19:00:18.333969+00:00"
  }
 ]
