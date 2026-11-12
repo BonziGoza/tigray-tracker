@@ -5984,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 17:26:37 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-12T03:03:01.094400+00:00"
  },
  {
   "title": "Getachew Reda Says He Told the UN’s Horn Envoy That Eritrea and Sudan Are Arming Groups and Staging Drone Attacks in Ethiopia - Zegabi",
@@ -5995,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 11 Nov 2026 19:39:50 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-12T03:03:01.094400+00:00"
  }
 ]
