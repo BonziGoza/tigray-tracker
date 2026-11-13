@@ -2181,12 +2181,12 @@
   },
   {
     "date": "2026-11-13",
-    "generated_at": "2026-11-13T00:29:10.650877+00:00",
+    "generated_at": "2026-11-13T08:02:01.693743+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
         "name": "Continued localized conflict and shifting control",
-        "weight": 46,
+        "weight": 47,
         "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
       },
       {
@@ -2196,19 +2196,19 @@
       },
       {
         "name": "Relative stabilization or a temporary pause",
-        "weight": 13,
+        "weight": 12,
         "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
       }
     ],
     "regions": [
       {
-        "region": "Addis Ababa",
-        "risk_index": 32,
-        "level": "WATCH"
+        "region": "Central Tigray",
+        "risk_index": 46,
+        "level": "GUARDED"
       },
       {
-        "region": "Central Tigray",
-        "risk_index": 31,
+        "region": "Addis Ababa",
+        "risk_index": 32,
         "level": "WATCH"
       },
       {

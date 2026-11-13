@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-13T00:29:10.650877+00:00",
+  "generated_at": "2026-11-13T08:02:01.693743+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 530,
+    "recent_event_records": 537,
     "regions_with_located_evidence": 8,
     "control_change_records": 10,
     "contested_or_early_records": 0,
-    "reported_records": 530,
-    "duplicate_records_ignored": 55,
+    "reported_records": 537,
+    "duplicate_records_ignored": 58,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 46,
+      "weight": 47,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
@@ -27,11 +27,56 @@
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 13,
+      "weight": 12,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
+    {
+      "region": "Central Tigray",
+      "risk_index": 46,
+      "level": "GUARDED",
+      "uncertainty": 55,
+      "event_count": 21,
+      "weighted_signal": 1.36,
+      "control_change_signal": 0.03,
+      "explanation": "21 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-11-13",
+          "title": "Tigray Peace Process Resumes as Combatants Disarm, Daily Life Returns to Mekelle - ebc.et",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "ebc.et",
+              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1xVGU3bzJIWDVOajM0WHo3eDRYdWRiaHl3ZnhUeGNoZWFpc1lCVGtGM2U1UVpDSWRaQjA5X3pkZWxRNlFCVXdJdF9iOWNraWxPQWlodURlRjl1ZG1TN29nT3V0RnhvUQ?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-11",
+          "title": "Tigray displaced families fear renewed war as hopes of returning home fade",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/11/11/tigray-displaced-families-fear-renewed-war-as-hopes-of-returning-home-fade?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "title": "5,500 Former Tigray Combatants Disarm and Begin Rehabilitation Training in Mekelle - Fana Media Corporation S.C",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNM1BTV3N4MXNQQkVPd25kUjJFaVk5VW5IMzVMSnlYNmFGbU50cklHRVZGY1ZzbGJXcnNXUng0WnBsS01nLWxjUzhtYU0walhFRnBsOVMwSmVTUHNOaVV0RTNUZ1g4QUJxVkl5MnhNbUdZLVRpcmttaEVET3VLQlg0SEJRbU5WVGRXdTJVcllCd0N1T3ZkWUFoQkhvQm1pbmhOTE1QNXlaam5wa01qTk1SakNUbEJzZWJ2?oc=5"
+            }
+          ]
+        }
+      ]
+    },
     {
       "region": "Addis Ababa",
       "risk_index": 32,
@@ -72,51 +117,6 @@
             {
               "outlet": "aljazeera.com",
               "url": "https://www.aljazeera.com/news/2026/11/3/deadly-rsf-drone-strikes-reveal-deep-divisions-between-sudan-and-ethiopia?traffic_source=rss"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Central Tigray",
-      "risk_index": 31,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 20,
-      "weighted_signal": 0.93,
-      "control_change_signal": 0.03,
-      "explanation": "20 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-11-11",
-          "title": "Tigray displaced families fear renewed war as hopes of returning home fade",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/11/11/tigray-displaced-families-fear-renewed-war-as-hopes-of-returning-home-fade?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-11-05",
-          "title": "5,500 Former Tigray Combatants Disarm and Begin Rehabilitation Training in Mekelle - Fana Media Corporation S.C",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Fana Media Corporation S.C",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNM1BTV3N4MXNQQkVPd25kUjJFaVk5VW5IMzVMSnlYNmFGbU50cklHRVZGY1ZzbGJXcnNXUng0WnBsS01nLWxjUzhtYU0walhFRnBsOVMwSmVTUHNOaVV0RTNUZ1g4QUJxVkl5MnhNbUdZLVRpcmttaEVET3VLQlg0SEJRbU5WVGRXdTJVcllCd0N1T3ZkWUFoQkhvQm1pbmhOTE1QNXlaam5wa01qTk1SakNUbEJzZWJ2?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-11-07",
-          "title": "Ethiopian Defense Forces Impose Nighttime Curfew and Security Restrictions in Mekelle - Borkena",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Borkena",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRlkzUFY1M1YzaExSYXVYTFhNZnlraTY0NTRXMTJaSmNrd0EwOS1FcUkyNUtTSEt5NGVFYzBnUktJeHdEeERveFdBOVVfM3BicGZlaWsxcWdfWENyTE5KcnhLVk0wQW1CMzJxVnQ3Mm1JT0RCVnJkS2RMLU1JclRMaDFVV1poQUVQeExwS2U5cDk3NEd1NldNTlA3OWhsQzZDMHgzTHQxQ2Fkdw?oc=5"
             }
           ]
         }
