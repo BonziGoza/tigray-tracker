@@ -5912,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 07:32:45 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T16:28:26.201425+00:00"
  },
  {
   "title": "Tigray Humanitarian Snapshot - Refugees International",
@@ -5923,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 14:24:58 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T16:28:26.201425+00:00"
  },
  {
   "title": "Dagaal iyo nabad midna kama jiraan Tigray - dagaalkii ugu dambeeyay ee Itoobiya ma dhammaaday dhab ahaantii? - BBC",
@@ -5934,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 13:43:26 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T16:28:26.201425+00:00"
  },
  {
   "title": "Meta opposes new evidence in Kenya court case over alleged Facebook role in Tigray war killings - Addis Standard",
@@ -5945,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 12:11:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T16:28:26.201425+00:00"
  },
  {
   "title": "For Ethiopian mothers sheltering in Kenya, safety brings a struggle to feed their children - myMotherLode.com",
@@ -5956,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 16:04:20 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T16:28:26.201425+00:00"
  },
  {
   "title": "Ethiopia: U.S. Senators Send Second Letter to Rubio Urging Action to Avert Widening Conflict in Ethiopia - allAfrica.com",
@@ -5967,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 05:18:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T16:28:26.201425+00:00"
  },
  {
   "title": "Diplomatic sources report escalating clashes near Badme on Ethiopia-Eritrea border as residents flee bombardment - Addis Standard",
@@ -5978,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 14:03:01 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T16:28:26.201425+00:00"
  },
  {
   "title": "G7 warns of regional escalation risk as Ethiopia-Eritrea tensions worsen - The Eastleigh Voice",
@@ -5989,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 13:01:18 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T16:28:26.201425+00:00"
  }
 ]
