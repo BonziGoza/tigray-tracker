@@ -5900,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 14:50:26 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T22:40:55.987241+00:00"
  },
  {
   "title": "#Video_News :-Meta opposes new evidence in #Kenya court case over alleged Facebook role in #Tigray war killings watch - Facebook",
@@ -5911,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 17:00:28 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T22:40:55.987241+00:00"
  },
  {
   "title": "Stopping the next Ethiopian-Eritrean War - Brookings",
@@ -5922,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 19:23:56 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T22:40:55.987241+00:00"
  },
  {
   "title": "#Video_News :-Diplomatic sources report escalating clashes near Badme on Ethiopia-Eritrea border as residents flee bombardment watch - Facebook",
@@ -5933,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 17:01:14 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T22:40:55.987241+00:00"
  },
  {
   "title": "Logistic Regression Outperforms Frequency Ratio in Modeling Tigray Landslide Susceptibility - Bioengineer.org",
@@ -5944,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 21:27:33 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T22:40:55.987241+00:00"
  },
  {
   "title": "ENDF Chief of Staff Engages Mekelle Residents in Dialogue on Peace and Stability in Tigray Region - Fana Media Corporation S.C",
@@ -5955,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 17:32:57 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T22:40:55.987241+00:00"
  },
  {
   "title": "News: Diplomatic sources report escalating clashes near #Badme on #Ethiopia-#Eritrea border as residents flee bombardment Two diplomatic sources who spoke to #Addis_Standard said intelligence reports received over the past three days indicated clashe - Facebook",
@@ -5966,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 14:58:06 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T22:40:55.987241+00:00"
  },
  {
   "title": "Why Ethiopia and Eritrea are on the Brink of War - YouTube",
@@ -5977,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 16:00:21 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T22:40:55.987241+00:00"
  },
  {
   "title": "Abiy Ahmed’s Red Sea Obsession and the Politics of Manufactured Grievances - Democracy in Africa",
@@ -5988,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 10:22:21 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T22:40:55.987241+00:00"
  }
 ]
