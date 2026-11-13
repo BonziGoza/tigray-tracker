@@ -5936,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 17:30:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T00:29:10.383390+00:00"
  },
  {
   "title": "Pulling Eritrea and Ethiopia back from the brink of war - Brookings",
@@ -5947,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 19:23:56 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T00:29:10.383390+00:00"
  },
  {
   "title": "Assab port: G7 and US senators warn of Ethiopia-Eritrea conflict - DNE Africa",
@@ -5958,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 18:54:17 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T00:29:10.383390+00:00"
  },
  {
   "title": "Getachew Reda tells UN envoy that Eritrea and Sudan back armed groups and drone attacks in Ethiopia, a claim unanswered - Mereja",
@@ -5969,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 09:30:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T00:29:10.383390+00:00"
  },
  {
   "title": "Ethiopia's Tigray conflict: Has Abiy Ahmed defeated the TPLF? - BBC",
@@ -5980,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 00:20:24 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T00:29:10.383390+00:00"
  },
  {
   "title": "Daily_Brief: #Ethiopia, #China explore cooperation to develop traditional and herbal medicines - Addis Standard",
@@ -5991,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 12 Nov 2026 07:58:57 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-13T00:29:10.383390+00:00"
  }
 ]
