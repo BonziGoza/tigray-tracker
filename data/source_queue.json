@@ -5972,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 23:56:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-14T03:20:05.234352+00:00"
  },
  {
   "title": "Ethiopia War Security Review, November 13, 2026 - Critical Threats",
@@ -5983,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 23:37:35 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-14T03:20:05.234352+00:00"
  },
  {
   "title": "Daily_Brief: #Ethiopians, #Somalis make up 60–70% of non-compliant businesses in #Eswatini, minister says - Addis Standard",
@@ -5994,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 07:01:08 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-14T03:20:05.234352+00:00"
  }
 ]
