@@ -5936,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 14 Nov 2026 19:47:29 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-14T22:27:48.580017+00:00"
  },
  {
   "title": "Ethiopia accuses Eritrea of leading fresh offensive with Egypt's support - The Eastleigh Voice",
@@ -5947,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 14 Nov 2026 19:47:29 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-14T22:27:48.580017+00:00"
  },
  {
   "title": "ENDF Chief of Staff Engages Mekelle Residents in Dialogue on Peace and Stability in Tigray Region - Fana Media Corporation S.C",
@@ -5958,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 13 Nov 2026 17:01:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-14T22:27:48.580017+00:00"
  },
  {
   "title": "Residents Tell BBC That Federal and Tigray Forces Fought Near the Eritrean Border, Driving Families Out Again - Zegabi",
@@ -5969,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 14 Nov 2026 19:39:56 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-14T22:27:48.580017+00:00"
  },
  {
   "title": "Tigray Police Confirm to BBC the Killing of Mewael Gebreegziabher, Son of Brigadier General Gebreegziabher Beyene - Zegabi",
@@ -5980,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 14 Nov 2026 19:39:56 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-14T22:27:48.580017+00:00"
  },
  {
   "title": "Ethiopia accuses Eritrea of leading Tigray rebel offensive with Egyptian support - Middle East Monitor",
@@ -5991,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 14 Nov 2026 16:02:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-14T22:27:48.580017+00:00"
  }
 ]
