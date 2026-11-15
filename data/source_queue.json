@@ -5984,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 14 Nov 2026 23:30:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-15T22:52:09.262131+00:00"
  },
  {
   "title": "Refugees International Says Hunger and Child Malnutrition in Tigray Were Already Severe Before the Fighting Resumed - Zegabi",
@@ -5995,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 15 Nov 2026 19:39:58 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-15T22:52:09.262131+00:00"
  }
 ]

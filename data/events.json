@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T17:44:54.709573+00:00",
+ "updated": "2026-11-15T22:52:09.263279+00:00",
  "events": [
   {
    "key": "unknown-2026-11-15-e9ac89d7",
@@ -494,6 +494,60 @@
    "independent_source_count": 1,
    "high_quality_source_count": 1,
    "evidence_explanation": "Best source: Al Jazeera (A-tier). 1 independent source record; 1 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
+  {
+   "key": "unknown-2026-11-15-7cce4b86",
+   "sources": [
+    {
+     "outlet": "Zegabi",
+     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE50SWRMQV90enBTU1Zyb25xUS1Sd3VUSXE2dE8tMURZenEyb2JvMDRveXdGVWFLaTRMcXhHcWMta1NxRnFvaWw1M1NWVlRsUQ?oc=5",
+     "title": "Refugees International Says Hunger and Child Malnutrition in Tigray Were Already Severe Before the Fighting Resumed - Zegabi",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Sun, 15 Nov 2026 19:39:58 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 47,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: Zegabi (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 2; corroboration contributes up to 20 points. Article credibility score: 47/100."
+    },
+    {
+     "outlet": "Mereja",
+     "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5FRXlENDB0M3dXSjBXZmloaG0xUFB1TGtsU0wtS09OQm4xdWRNLUM2OEVkc2pFRVJTc2FhbGV3QjQtdW1XMnc?oc=5",
+     "title": "Refugees International says hunger and child malnutrition were already severe in Tigray before the new fighting began - Mereja",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Sat, 14 Nov 2026 23:30:00 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 47,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: Mereja (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 2; corroboration contributes up to 20 points. Article credibility score: 47/100."
+    }
+   ],
+   "manual": false,
+   "place": "",
+   "region": "",
+   "lat": null,
+   "lon": null,
+   "date": "2026-11-15",
+   "kind": "clash",
+   "summary": "Refugees International Says Hunger and Child Malnutrition in Tigray Were Already Severe Before the Fighting Resumed - Zegabi",
+   "attribution": "independent",
+   "last_seen": "2026-11-15",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 2,
+   "news_source_count": 2,
+   "source_tier": "U",
+   "best_source": "Zegabi",
+   "independent_source_count": 2,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Zegabi (U-tier). 2 independent source records; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
   },
   {
    "key": "unknown-2026-11-14-595c905c",
