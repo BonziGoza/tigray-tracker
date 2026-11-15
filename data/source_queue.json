@@ -5984,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 14 Nov 2026 17:58:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-15T10:58:31.510469+00:00"
  },
  {
   "title": "Ethiopia accuses Eritrea of leading fresh offensive with Egypt's support - The Eastleigh Voice",
@@ -5995,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 14 Nov 2026 19:47:29 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-15T10:58:31.510469+00:00"
  }
 ]
