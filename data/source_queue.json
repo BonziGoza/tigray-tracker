@@ -5888,7 +5888,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 16 Nov 2026 05:27:56 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-16T11:24:46.396263+00:00"
  },
  {
   "title": "Sudan Ethiopia Explainer - WV News",
@@ -5899,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 16 Nov 2026 05:00:27 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-16T11:24:46.396263+00:00"
  },
  {
   "title": "Sudan Ethiopia Explainer - GazetteXtra",
@@ -5910,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 16 Nov 2026 05:00:27 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-16T11:24:46.396263+00:00"
  },
  {
   "title": "Ethiopia and Sudan accuse each other of backing armed fighters as fears of a wider conflict grow - Traverse City Record-Eagle",
@@ -5921,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 16 Nov 2026 05:08:45 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-16T11:24:46.396263+00:00"
  },
  {
   "title": "Army chief Birhanu Jula says Eritrea led the latest Tigrayan offensive, with weapons and logistics from Egypt - Mereja",
@@ -5932,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 15 Nov 2026 09:30:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-16T11:24:46.396263+00:00"
  },
  {
   "title": "Ethiopia and Sudan accuse each other of backing armed fighters as fears of a wider conflict grow - Bozeman Daily Chronicle",
@@ -5943,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 16 Nov 2026 05:08:45 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-16T11:24:46.396263+00:00"
  },
  {
   "title": "Tigrayan youths face mounting execution fears in Saudi Arabia; caretaker admin pleads with fed. gov’t to intervene - Addis Standard",
@@ -5954,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 16 Nov 2026 09:31:31 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-16T11:24:46.396263+00:00"
  },
  {
   "title": "Ethiopian Army Chief Accuses Egypt of Supporting TPLF as Fighting Resumes - Shabelle Media Network",
@@ -5965,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 16 Nov 2026 07:20:39 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-16T11:24:46.396263+00:00"
  },
  {
   "title": "Soomaalida oo ka qeyb gashay dibadbax ka dhan ah Ra’iisul Wasaaraha Itoobiya Abiy Axmed oo ka dhacay Geneva - Shabelle Media Network",
@@ -5976,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 16 Nov 2026 06:39:30 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-16T11:24:46.396263+00:00"
  },
  {
   "title": "Eritrea’s Teklemichael joins Ethiopia’s Coffee - cecafa",
@@ -5987,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 15 Nov 2026 08:03:25 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-16T11:24:46.396263+00:00"
  }
 ]
