@@ -5888,7 +5888,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 06:00:45 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T14:28:38.820435+00:00"
  },
  {
   "title": "Daily_Brief: #Sudanese army deploys five combat units to #Blue_Nile region bordering #Ethiopia - Addis Standard",
@@ -5899,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 05:27:34 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T14:28:38.820435+00:00"
  },
  {
   "title": "International Diplomatic Community, UN Representatives Travel to Ethiopia’s Tigray Region for Official Engagements - Fana Media Corporation S.C",
@@ -5910,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 12:16:18 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T14:28:38.820435+00:00"
  },
  {
   "title": "TPLF Leaders Flee to Eritrea with More Than 830 Looted Public Vehicles, Tigray Caretaker Administration Says - Fana Media Corporation S.C",
@@ -5921,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 12:16:14 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T14:28:38.820435+00:00"
  },
  {
   "title": "Illegal TPLF Group’s War Agenda, Forced Recruitment & Economic Coercion Have Driven Tigray into Severe Poverty: Caretaker Administration - Fana Media Corporation S.C",
@@ -5932,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 12:16:20 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T14:28:38.820435+00:00"
  },
  {
   "title": "Tigray Caretaker Administration Hosts Addis Ababa-Based Diplomatic Community for Talks on Regional Peace and Humanitarian Priorities - Fana Media Corporation S.C",
@@ -5943,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 12:16:19 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T14:28:38.820435+00:00"
  },
  {
   "title": "Ethiopian Airlines restarts flights to key city in conflict-hit Tigray - Latest news from Azerbaijan",
@@ -5954,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 13:43:12 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T14:28:38.820435+00:00"
  },
  {
   "title": "Eritrea Condemns Ethiopian Army Chief’s Territorial Claims Over Its Land - Garowe Online",
@@ -5965,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 13:41:52 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T14:28:38.820435+00:00"
  },
  {
   "title": "News: Washington protest brings Horn of Africa diaspora over Ethiopia conflicts, regional instability - Addis Standard",
@@ -5976,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 10:38:12 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T14:28:38.820435+00:00"
  },
  {
   "title": "Daily_Brief: #Ethiopia childhood cancer program reports drop in treatment abandonment following cash transfers - Addis Standard",
@@ -5987,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 10:16:07 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T14:28:38.820435+00:00"
  }
 ]

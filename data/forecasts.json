@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-11-17T04:31:22.239522+00:00",
+  "generated_at": "2026-11-17T14:28:39.089562+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 504,
+    "recent_event_records": 514,
     "regions_with_located_evidence": 8,
     "control_change_records": 6,
     "contested_or_early_records": 0,
-    "reported_records": 504,
+    "reported_records": 514,
     "duplicate_records_ignored": 58,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 48,
+      "weight": 47,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 40,
+      "weight": 41,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
@@ -34,13 +34,13 @@
   "regions": [
     {
       "region": "Addis Ababa",
-      "risk_index": 39,
+      "risk_index": 41,
       "level": "GUARDED",
       "uncertainty": 55,
-      "event_count": 14,
-      "weighted_signal": 1.02,
+      "event_count": 15,
+      "weighted_signal": 1.27,
       "control_change_signal": 0,
-      "explanation": "14 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "15 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-17",
@@ -54,6 +54,17 @@
           ]
         },
         {
+          "date": "2026-11-17",
+          "title": "Tigray Caretaker Administration Hosts Addis Ababa-Based Diplomatic Community for Talks on Regional Peace and Humanitarian Priorities - Fana Media Corporation S.C",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQbzdmLVBUVVc5d21PYXZJdXNfNE1zTVVCYWhiR1QzVlhEejBjZXFMTkZnYVR5QWhvRDRmaGhtMjZ2ZkRuS2Vwc2lnb0p6dGgwQXNyN2ZXQWxYQXlyR2hYejBtNk1fblgtOFZHTE04eDl3SkxfVnpPZkpueUZLYTRSWm5RVUxMQ3NSTXhBMThuVWZ6VUFnTWphdXpyc2x4NkpjSkp6T3RsRVdodHpzUVlMTTExdExwUndkZ2pwbUk0c2pEZURVcGlGWkFPQUlEQ1BDQ3ZwVVRWSXN1RGtlSkR2c21hR0FjZWJwb1pGTkdpbkYtZE9HUzhtYm84REU?oc=5"
+            }
+          ]
+        },
+        {
           "date": "2026-11-09",
           "title": "More than 50,000 displaced by deadly Ethiopia border clashes",
           "grade": "REPORTED",
@@ -61,17 +72,6 @@
             {
               "outlet": "aljazeera.com",
               "url": "https://www.aljazeera.com/news/2026/11/9/more-than-50000-displaced-by-deadly-ethiopia-border-clashes?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-11-14",
-          "title": "Security Alert: U.S. Embassy Addis Ababa, Ethiopia (November 13, 2026) - U.S. Embassy in Ethiopia (.gov)",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "U.S. Embassy in Ethiopia (.gov)",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOTVxNTNCblZ5RVJWVVdQb2pEbUVCSzY3MWtDVjI5dGhqbmlTeDdDRjFiZVlxdTlyX1dOV1FsYkRWdklrV2tSYzZLZ05sOWVsNll6d2U4Wjh1WE1oMGwxSzBza0RVN3AtUVpYYm8xaFNZMllwRDhRdHJqV00zVzBIVjFjaWUxTWhVMVFRd3Vvd3h1amhl?oc=5"
             }
           ]
         }
@@ -117,6 +117,40 @@
             {
               "outlet": "aljazeera.com",
               "url": "https://www.aljazeera.com/news/2026/11/11/tigray-displaced-families-fear-renewed-war-as-hopes-of-returning-home-fade?traffic_source=rss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Northwestern Tigray",
+      "risk_index": 3,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 2,
+      "weighted_signal": 0.18,
+      "control_change_signal": 0,
+      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-11-17",
+          "title": "Ethiopian Airlines to Resume Shire Flights After Nearly Two-Month Suspension Amid Tigray Tensions - Birr Metrics",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Birr Metrics",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE54a0NUVjVlakxIcTBkYi1QRlhVNEs1bkg4REl1NEIwNFRRVExZcjVURVRlVEN1YWVIRnV1S2txejRuU09vZ0lXYkJ3S1RaSHAxdjRrSDJ5NXRiVl9RQW9DeFExU2NUbGpJSnpxYW1YWjFSUVN0THc?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "title": "UNHCR Ethiopia | PMS Report Ethiopia Tigray Region | Northwestern Zone (Shire Indaselassie town) | March 2026 - ReliefWeb",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "ReliefWeb",
+              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQ2RJNFNDSDVKbE9UdzhiOVotdi1idEx2X0FsQWstUzA2cnVyMHROQnBzc3NMV0V1RWxDQUtjMW5wZHF6WFZVVFl5bUVUclMtYW9BOEtuajl3VVVvdi1wYXNyQTFCaGk1d0g0N3h0MWZud0ZiRHNaQVlxTWtQZEl1SWk5c05YVGZucGVnazJudnNJUVprSWNUWEtVY0FJTF9QYkN5NGdheHBxM1RVSWxGN3F6alI3dW1NX0dXTTgtZ0p5Y1RfakhSSDVNd0pxQWM0YjN6QmFn?oc=5"
             }
           ]
         }
@@ -269,29 +303,6 @@
             {
               "outlet": "Fana Media Corporation S.C",
               "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUVJwMl8ySF9YSkFTdUJwUzNIeGdMLWRpOEVzYUs5SEtueHZkVGg1Y0FpLUpTQ0RIbGw5OXo4YUVZN0RTS3pYdWx2SDFfd0Y5bUdFTG9PQ1ZtWUlaVF95ZkFmNmFRUnNJbU94SG9XeEpkMnpEOUdDNnpRSy1yYVBOWDhPQlFRVW13WjdGc3B6eDhyQ2xUVXVRZC1raWNIelUyckk3QUJwY1dVZnJRVzlvSGw2RnpoOUxrYk9UaWRsSmxDTW95QVlZemgzVjgyZzdDczd5VnF6WkFCVFMzTlAySmlQbHdLelU?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Northwestern Tigray",
-      "risk_index": 0,
-      "level": "WATCH",
-      "uncertainty": 35,
-      "event_count": 1,
-      "weighted_signal": 0.01,
-      "control_change_signal": 0,
-      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-10-29",
-          "title": "UNHCR Ethiopia | PMS Report Ethiopia Tigray Region | Northwestern Zone (Shire Indaselassie town) | March 2026 - ReliefWeb",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "ReliefWeb",
-              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQ2RJNFNDSDVKbE9UdzhiOVotdi1idEx2X0FsQWstUzA2cnVyMHROQnBzc3NMV0V1RWxDQUtjMW5wZHF6WFZVVFl5bUVUclMtYW9BOEtuajl3VVVvdi1wYXNyQTFCaGk1d0g0N3h0MWZud0ZiRHNaQVlxTWtQZEl1SWk5c05YVGZucGVnazJudnNJUVprSWNUWEtVY0FJTF9QYkN5NGdheHBxM1RVSWxGN3F6alI3dW1NX0dXTTgtZ0p5Y1RfakhSSDVNd0pxQWM0YjN6QmFn?oc=5"
             }
           ]
         }

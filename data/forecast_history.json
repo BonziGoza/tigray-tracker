@@ -2437,17 +2437,17 @@
   },
   {
     "date": "2026-11-17",
-    "generated_at": "2026-11-17T04:31:22.239522+00:00",
+    "generated_at": "2026-11-17T14:28:39.089562+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
         "name": "Continued localized conflict and shifting control",
-        "weight": 48,
+        "weight": 47,
         "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
       },
       {
         "name": "Wider cross-border escalation",
-        "weight": 40,
+        "weight": 41,
         "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
       },
       {
@@ -2459,12 +2459,17 @@
     "regions": [
       {
         "region": "Addis Ababa",
-        "risk_index": 39,
+        "risk_index": 41,
         "level": "GUARDED"
       },
       {
         "region": "Central Tigray",
         "risk_index": 37,
+        "level": "WATCH"
+      },
+      {
+        "region": "Northwestern Tigray",
+        "risk_index": 3,
         "level": "WATCH"
       },
       {
@@ -2489,11 +2494,6 @@
       },
       {
         "region": "Eastern Tigray",
-        "risk_index": 0,
-        "level": "WATCH"
-      },
-      {
-        "region": "Northwestern Tigray",
         "risk_index": 0,
         "level": "WATCH"
       }
