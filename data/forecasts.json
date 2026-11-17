@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-17T14:28:39.089562+00:00",
+  "generated_at": "2026-11-17T22:54:33.641873+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 514,
+    "recent_event_records": 523,
     "regions_with_located_evidence": 8,
     "control_change_records": 6,
     "contested_or_early_records": 0,
-    "reported_records": 514,
-    "duplicate_records_ignored": 58,
+    "reported_records": 523,
+    "duplicate_records_ignored": 59,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -34,11 +34,11 @@
   "regions": [
     {
       "region": "Addis Ababa",
-      "risk_index": 41,
+      "risk_index": 42,
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 15,
-      "weighted_signal": 1.27,
+      "weighted_signal": 1.28,
       "control_change_signal": 0,
       "explanation": "15 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -61,6 +61,10 @@
             {
               "outlet": "Fana Media Corporation S.C",
               "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQbzdmLVBUVVc5d21PYXZJdXNfNE1zTVVCYWhiR1QzVlhEejBjZXFMTkZnYVR5QWhvRDRmaGhtMjZ2ZkRuS2Vwc2lnb0p6dGgwQXNyN2ZXQWxYQXlyR2hYejBtNk1fblgtOFZHTE04eDl3SkxfVnpPZkpueUZLYTRSWm5RVUxMQ3NSTXhBMThuVWZ6VUFnTWphdXpyc2x4NkpjSkp6T3RsRVdodHpzUVlMTTExdExwUndkZ2pwbUk0c2pEZURVcGlGWkFPQUlEQ1BDQ3ZwVVRWSXN1RGtlSkR2c21hR0FjZWJwb1pGTkdpbkYtZE9HUzhtYm84REU?oc=5"
+            },
+            {
+              "outlet": "Fana Media Corporation S.C",
+              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNcEpVUnVUcDFtNWdkSHliQWlxbTVNeF91VXI5M1VEWEtzYjBWNGdkM0JwdTJJWlNJYUtjMlN4TThIOGxYcVpwQVo4SlVYQXhnVFFEazJJeFlWUzhSNUhhYmttWlRmeHpMRGZJX25LTlBWdG5UTGxTaHBvTE9tODNxX3pBdXVZbml5MWY4UnUtVHJJWXg5blN6dkdHLWZDNDA5bFFobEZlaGw5ekVlc05RRlR3TTE5U2lZbC1MMmJmNWkzYUVjUHVVMzRVN0Rkd1l4Tlh2SmY5NE9tS0dxcTlvSTFjdHIxRWJjRFp3eHM5QUJTQmVXRC1r?oc=5"
             }
           ]
         },
@@ -117,6 +121,40 @@
             {
               "outlet": "aljazeera.com",
               "url": "https://www.aljazeera.com/news/2026/11/11/tigray-displaced-families-fear-renewed-war-as-hopes-of-returning-home-fade?traffic_source=rss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Southern Tigray",
+      "risk_index": 3,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 2,
+      "weighted_signal": 0.2,
+      "control_change_signal": 0,
+      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-11-17",
+          "title": "High Prevalence of Gender-Based Violence Follows Armed Conflict in Southern Tigray - Bioengineer.org",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Bioengineer.org",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQM1ZSdk54RFdLdFd6cVRQYkVSVjh5NHhDYVF0M2wwcVJCQWxYZ29WeGtEbGlQWThqSGE1QVFEdmRoWXlpdmhMaGdTVkd6US1DY05TSWMtWGU3eVVHWXRIZlU3bzM1Wkd2Z21DbXJVeFhJYU1Qb1g4OVFZeV9kSFpkLWxxSkVvT0IxRUJsN0l1bTRmaEl2dG15eXlJRHlCZFhhZjZNSEZtdWZkYjQ?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Southern Tigray Zone, Ethiopia, Earthquakes: Latest Quakes - Volcano Discovery",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Volcano Discovery",
+              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQeFI3ekhPOHRjS3NqcTg1VXFKcnFuN091ckcwcEhRQjhhYTdWa1c3dEJjSFpIaU5zV0NjaGQwVEtDVWN5RXlsbzdQT256T2hRSnpzT1NXRldkVDFPME1RRzRONU94VVh6M1VPSzFpMUVkdkJJTEJvazRlM081UWNpa21BMXZsY0lNanoydGRHSUhHaG12bno5Qm5VNTZOeURxY0M1eEl6YVNXamdtdjZLZU1ldGZoNG9sRmJpeWNJQlU0b0NJSlVxRDVoUWMzR3F4SlZFWS1nQXNSRTBzVzhMajU1Vks1MnhnY0NQVFY0U2puZw?oc=5"
             }
           ]
         }
@@ -257,29 +295,6 @@
             {
               "outlet": "GhanaWeb",
               "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdTBsTzBYQlNDdjhmVHlXVXhCSUJhMmRqTXBwMzVXY19GRkpnb3k4OUpKV1U0VE5VNkVIWW9KazN5NTg3bFdibEhVRDNDeXdoVEpielYybHpzYnlMVUFzeFlNblppeXo1MzhXZFFfQmduQ0pUN2xKWEJKNXFxOWhfSlBDcXYtTjdCV0VCWkpFbHBGMkhjV3c3S21LVHB6dWtwNWpCSDdzTm5BaWVpS2RFM1kzQXdZS2FLdEduTmVSTnBLY0lLb003VVZkR0w4dw?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Southern Tigray",
-      "risk_index": 0,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 1,
-      "weighted_signal": 0.03,
-      "control_change_signal": 0,
-      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-11-06",
-          "title": "Southern Tigray Zone, Ethiopia, Earthquakes: Latest Quakes - Volcano Discovery",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Volcano Discovery",
-              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQeFI3ekhPOHRjS3NqcTg1VXFKcnFuN091ckcwcEhRQjhhYTdWa1c3dEJjSFpIaU5zV0NjaGQwVEtDVWN5RXlsbzdQT256T2hRSnpzT1NXRldkVDFPME1RRzRONU94VVh6M1VPSzFpMUVkdkJJTEJvazRlM081UWNpa21BMXZsY0lNanoydGRHSUhHaG12bno5Qm5VNTZOeURxY0M1eEl6YVNXamdtdjZLZU1ldGZoNG9sRmJpeWNJQlU0b0NJSlVxRDVoUWMzR3F4SlZFWS1nQXNSRTBzVzhMajU1Vks1MnhnY0NQVFY0U2puZw?oc=5"
             }
           ]
         }
