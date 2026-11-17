@@ -5960,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 16 Nov 2026 05:08:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T04:31:21.986160+00:00"
  },
  {
   "title": "OPINION: Ethiopia’s second Tigray war: Same battlefield, different political reality - The Eastleigh Voice",
@@ -5971,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Mon, 16 Nov 2026 15:17:18 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T04:31:21.986160+00:00"
  },
  {
   "title": "Ethiopia’s Army Chief Claims Eritrea Led a New TPLF Offensive in Amhara and Afar, With Egyptian Support - Zegabi",
@@ -5982,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 15 Nov 2026 19:39:58 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T04:31:21.986160+00:00"
  },
  {
   "title": "Ethiopia Moyale clashes disrupt livelihoods as territorial dispute deepens",
@@ -5993,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 00:21:19 +0000",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-17T04:31:21.986160+00:00"
  }
 ]
