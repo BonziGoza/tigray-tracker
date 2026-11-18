@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-17T22:54:33.641873+00:00",
+  "generated_at": "2026-11-18T04:25:30.944426+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 523,
+    "recent_event_records": 495,
     "regions_with_located_evidence": 8,
-    "control_change_records": 6,
+    "control_change_records": 5,
     "contested_or_early_records": 0,
-    "reported_records": 523,
-    "duplicate_records_ignored": 59,
+    "reported_records": 495,
+    "duplicate_records_ignored": 54,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 47,
+      "weight": 46,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
@@ -27,18 +27,18 @@
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 12,
+      "weight": 13,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Addis Ababa",
-      "risk_index": 42,
-      "level": "GUARDED",
+      "risk_index": 36,
+      "level": "WATCH",
       "uncertainty": 55,
       "event_count": 15,
-      "weighted_signal": 1.28,
+      "weighted_signal": 1.07,
       "control_change_signal": 0,
       "explanation": "15 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -83,14 +83,25 @@
     },
     {
       "region": "Central Tigray",
-      "risk_index": 37,
+      "risk_index": 34,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 18,
-      "weighted_signal": 1.06,
+      "event_count": 19,
+      "weighted_signal": 1.13,
       "control_change_signal": 0,
-      "explanation": "18 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "19 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-11-18",
+          "title": "UN Officials and Ambassadors From Eight Countries Arrive in Mekelle for Talks With Tigray’s Caretaker Administration, Tigray TV Reports - www.zegabi.com",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "www.zegabi.com",
+              "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBQUU1yRjhlSENzS29IaFhZZzlCb0lKMjQyZkU2Y29mR0tubFNEQUlMQ2Y0cVVIUWxyZWxqb1pvSjdzclRBNkZ1SElMYkNRcDQ?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-11-14",
           "title": "Ethiopia’s army chief calls Eritrea a ‘vector of chaos’ on first Mekelle visit since Tigray fighting - The Insight International",
@@ -112,27 +123,16 @@
               "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1xVGU3bzJIWDVOajM0WHo3eDRYdWRiaHl3ZnhUeGNoZWFpc1lCVGtGM2U1UVpDSWRaQjA5X3pkZWxRNlFCVXdJdF9iOWNraWxPQWlodURlRjl1ZG1TN29nT3V0RnhvUQ?oc=5"
             }
           ]
-        },
-        {
-          "date": "2026-11-11",
-          "title": "Tigray displaced families fear renewed war as hopes of returning home fade",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/11/11/tigray-displaced-families-fear-renewed-war-as-hopes-of-returning-home-fade?traffic_source=rss"
-            }
-          ]
         }
       ]
     },
     {
       "region": "Southern Tigray",
-      "risk_index": 3,
+      "risk_index": 2,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 2,
-      "weighted_signal": 0.2,
+      "weighted_signal": 0.17,
       "control_change_signal": 0,
       "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -162,11 +162,11 @@
     },
     {
       "region": "Northwestern Tigray",
-      "risk_index": 3,
+      "risk_index": 2,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 2,
-      "weighted_signal": 0.18,
+      "weighted_signal": 0.15,
       "control_change_signal": 0,
       "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -195,14 +195,48 @@
       ]
     },
     {
-      "region": "Eritrea",
+      "region": "Amhara",
       "risk_index": 2,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 5,
-      "weighted_signal": 0.12,
+      "event_count": 2,
+      "weighted_signal": 0.04,
       "control_change_signal": 0,
-      "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-11-02",
+          "title": "Sudan files complaints against Ethiopia with UN over deadly drone spree",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "aljazeera.com",
+              "url": "https://www.aljazeera.com/news/2026/11/2/sudan-files-complaints-against-ethiopia-with-un-over-deadly-drone-spree?traffic_source=rss"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-30",
+          "title": "#Daily_Brief: 36 #Israelis evacuated from conflict-hit #Ethiopia, four remain in Lalibela - Addis Standard",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Addis Standard",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DWFR1b1FicmxqdGRkMHNBTmJWUUtJMzhlci1ZeWtrNVBjVjdLRWROVWVEaW1mckxKbVl3NFE5Y2x1OVBJbDdqSWY5TWR3NDkxUEE?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Eritrea",
+      "risk_index": 1,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 4,
+      "weighted_signal": 0.09,
+      "control_change_signal": 0,
+      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-09",
@@ -238,40 +272,6 @@
             {
               "outlet": "Mereja",
               "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1YX0kxTEtTUU1idGpvREd1NW10S1dBOGxJSnZESW9jX2hvZWVral9sc1VOTm9xZGszcWs3cTZuZGRQMkdYbGc?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Amhara",
-      "risk_index": 2,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 2,
-      "weighted_signal": 0.05,
-      "control_change_signal": 0,
-      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-11-02",
-          "title": "Sudan files complaints against Ethiopia with UN over deadly drone spree",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/11/2/sudan-files-complaints-against-ethiopia-with-un-over-deadly-drone-spree?traffic_source=rss"
-            }
-          ]
-        },
-        {
-          "date": "2026-10-30",
-          "title": "#Daily_Brief: 36 #Israelis evacuated from conflict-hit #Ethiopia, four remain in Lalibela - Addis Standard",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Addis Standard",
-              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DWFR1b1FicmxqdGRkMHNBTmJWUUtJMzhlci1ZeWtrNVBjVjdLRWROVWVEaW1mckxKbVl3NFE5Y2x1OVBJbDdqSWY5TWR3NDkxUEE?oc=5"
             }
           ]
         }
