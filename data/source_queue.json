@@ -5924,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 18 Nov 2026 17:47:39 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T03:32:56.136095+00:00"
  },
  {
   "title": "Vitamin A and Vaccination Predict Faster Malnutrition Recovery in Post-War Tigray - Bioengineer.org",
@@ -5935,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 19 Nov 2026 02:41:32 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T03:32:56.136095+00:00"
  },
  {
   "title": "Five Factors Associated with Delayed Malaria Treatment in Northern Ethiopia - Bioengineer.org",
@@ -5946,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 18 Nov 2026 23:51:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T03:32:56.136095+00:00"
  },
  {
   "title": "Ethiopia-Eritrea clashes threaten full-scale war - Courthouse News Service",
@@ -5957,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 18 Nov 2026 17:21:35 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T03:32:56.136095+00:00"
  },
  {
   "title": "Ethiopia and Eritrea mass troops on border as war fears grow - Somalia Today",
@@ -5968,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 18 Nov 2026 23:48:22 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T03:32:56.136095+00:00"
  },
  {
   "title": "Eritrea accuses Ethiopian army chief of making territorial claims, fueling war tensions - Anadolu Ajansı",
@@ -5979,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 15:16:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T03:32:56.136095+00:00"
  },
  {
   "title": "Ethiopia-Eritrea clashes raise war fears - The Express Tribune",
@@ -5990,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 19 Nov 2026 02:30:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T03:32:56.136095+00:00"
  }
 ]
