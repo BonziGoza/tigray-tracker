@@ -2565,7 +2565,7 @@
   },
   {
     "date": "2026-11-19",
-    "generated_at": "2026-11-19T03:32:56.416344+00:00",
+    "generated_at": "2026-11-19T13:13:38.275490+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
@@ -2575,12 +2575,12 @@
       },
       {
         "name": "Wider cross-border escalation",
-        "weight": 43,
+        "weight": 44,
         "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
       },
       {
         "name": "Relative stabilization or a temporary pause",
-        "weight": 13,
+        "weight": 12,
         "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
       }
     ],

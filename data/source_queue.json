@@ -5912,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 18 Nov 2026 06:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T13:13:37.996567+00:00"
  },
  {
   "title": "UK Ambassador Reaffirms Support for Peacebuilding and Recovery Efforts in Tigray Region - Fana Media Corporation S.C",
@@ -5923,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 18 Nov 2026 18:22:39 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T13:13:37.996567+00:00"
  },
  {
   "title": "What is the Pretoria agreement? The 2022 Tigray peace deal and how it broke down - Mereja",
@@ -5934,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 17 Nov 2026 13:30:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T13:13:37.996567+00:00"
  },
  {
   "title": "House Republican pushes minerals, trade for peace in escalating Ethiopia, Eritrea crisis - The Hill",
@@ -5945,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 19 Nov 2026 11:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T13:13:37.996567+00:00"
  },
  {
   "title": "Clashes between Ethiopia and Eritrea threaten to escalate into full-scale war - The Japan Times",
@@ -5956,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 19 Nov 2026 02:38:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T13:13:37.996567+00:00"
  },
  {
   "title": "Ethiopia and Eritrea mass troops on border as Badme clashes stoke Horn of Africa war fears - Yahoo",
@@ -5967,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 19 Nov 2026 07:51:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T13:13:37.996567+00:00"
  },
  {
   "title": "When Borders Become Battlefields: The human cost of buffering Ethiopia-Eritrea tensions - Addis Standard",
@@ -5978,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 19 Nov 2026 11:13:01 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T13:13:37.996567+00:00"
  },
  {
   "title": "Daily_Brief: #UN steps up diplomatic engagement to prevent further escalation of #Ethiopia-#Sudan tensions - Addis Standard",
@@ -5989,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 18 Nov 2026 05:30:13 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-19T13:13:37.996567+00:00"
  }
 ]
