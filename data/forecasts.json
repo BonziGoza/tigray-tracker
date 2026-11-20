@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-19T21:38:14.770647+00:00",
+  "generated_at": "2026-11-20T03:20:03.612759+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 529,
+    "recent_event_records": 493,
     "regions_with_located_evidence": 8,
     "control_change_records": 5,
     "contested_or_early_records": 0,
-    "reported_records": 529,
-    "duplicate_records_ignored": 51,
+    "reported_records": 493,
+    "duplicate_records_ignored": 47,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -34,13 +34,13 @@
   "regions": [
     {
       "region": "Central Tigray",
-      "risk_index": 35,
+      "risk_index": 32,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 22,
-      "weighted_signal": 1.49,
+      "event_count": 20,
+      "weighted_signal": 1.42,
       "control_change_signal": 0,
-      "explanation": "22 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "20 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-18",
@@ -54,6 +54,17 @@
           ]
         },
         {
+          "date": "2026-11-20",
+          "title": "Methodological Limitations Require Cautious Reading of Mekelle hr-HPV Findings - Bioengineer.org",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Bioengineer.org",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNll1aVhNT1pVUUhrajl0Y1hJZVZRbk1oLXJCNXp3YXVtWnNxY2tHMFRfN090eDh2MVo5cDhlMkFUSFBJNEdwem9lYXB5NjVrVEtkOEl4THJia09VV20zeGFvVDRFTEFWU254RjY3OVphLTk2Vjl1QVZldVpGZ2xPc0Q4T0pFaFBFVEVNa01ZUF9lS3c2UzdQczR6UUJQREtSWjB5bHZR?oc=5"
+            }
+          ]
+        },
+        {
           "date": "2026-11-18",
           "title": "UN Officials and Ambassadors From Eight Countries Arrive in Mekelle for Talks With Tigray’s Caretaker Administration, Tigray TV Reports - www.zegabi.com",
           "grade": "REPORTED",
@@ -63,29 +74,18 @@
               "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBQUU1yRjhlSENzS29IaFhZZzlCb0lKMjQyZkU2Y29mR0tubFNEQUlMQ2Y0cVVIUWxyZWxqb1pvSjdzclRBNkZ1SElMYkNRcDQ?oc=5"
             }
           ]
-        },
-        {
-          "date": "2026-11-14",
-          "title": "Ethiopia’s army chief calls Eritrea a ‘vector of chaos’ on first Mekelle visit since Tigray fighting - The Insight International",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "The Insight International",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVUZ0MWQzNHZDc0Y0UWhZRWVabkNSMld1ZmVlclk0eWhtS2dUOGpNWFlhSEo0ZXN6WGRPeE0yUF9QNTNFUE5KcVdKSHBoUldWaElCcXhnZEhORkdvWEdLRlJJSktITDROdTZSSmFvTVM5TmxkVTZiaE1ySUpudExod0xabGU1ZU5td1ZUdzVCMXBPSWpkbmlzNlMyVmg2X2JBUy13?oc=5"
-            }
-          ]
         }
       ]
     },
     {
       "region": "Addis Ababa",
-      "risk_index": 31,
+      "risk_index": 26,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 13,
-      "weighted_signal": 0.89,
+      "event_count": 11,
+      "weighted_signal": 0.73,
       "control_change_signal": 0,
-      "explanation": "13 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "11 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-17",
@@ -128,13 +128,13 @@
     },
     {
       "region": "Eritrea",
-      "risk_index": 18,
+      "risk_index": 15,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 5,
-      "weighted_signal": 0.41,
-      "control_change_signal": 0.33,
-      "explanation": "5 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "event_count": 4,
+      "weighted_signal": 0.34,
+      "control_change_signal": 0.28,
+      "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-18",
@@ -181,7 +181,7 @@
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 2,
-      "weighted_signal": 0.14,
+      "weighted_signal": 0.12,
       "control_change_signal": 0,
       "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -214,10 +214,10 @@
       "risk_index": 2,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 2,
-      "weighted_signal": 0.13,
+      "event_count": 1,
+      "weighted_signal": 0.1,
       "control_change_signal": 0,
-      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-17",
@@ -229,23 +229,12 @@
               "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE54a0NUVjVlakxIcTBkYi1QRlhVNEs1bkg4REl1NEIwNFRRVExZcjVURVRlVEN1YWVIRnV1S2txejRuU09vZ0lXYkJ3S1RaSHAxdjRrSDJ5NXRiVl9RQW9DeFExU2NUbGpJSnpxYW1YWjFSUVN0THc?oc=5"
             }
           ]
-        },
-        {
-          "date": "2026-10-29",
-          "title": "UNHCR Ethiopia | PMS Report Ethiopia Tigray Region | Northwestern Zone (Shire Indaselassie town) | March 2026 - ReliefWeb",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "ReliefWeb",
-              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQ2RJNFNDSDVKbE9UdzhiOVotdi1idEx2X0FsQWstUzA2cnVyMHROQnBzc3NMV0V1RWxDQUtjMW5wZHF6WFZVVFl5bUVUclMtYW9BOEtuajl3VVVvdi1wYXNyQTFCaGk1d0g0N3h0MWZud0ZiRHNaQVlxTWtQZEl1SWk5c05YVGZucGVnazJudnNJUVprSWNUWEtVY0FJTF9QYkN5NGdheHBxM1RVSWxGN3F6alI3dW1NX0dXTTgtZ0p5Y1RfakhSSDVNd0pxQWM0YjN6QmFn?oc=5"
-            }
-          ]
         }
       ]
     },
     {
       "region": "Amhara",
-      "risk_index": 2,
+      "risk_index": 1,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 2,
@@ -304,7 +293,7 @@
       "region": "Eastern Tigray",
       "risk_index": 0,
       "level": "WATCH",
-      "uncertainty": 53,
+      "uncertainty": 44,
       "event_count": 1,
       "weighted_signal": 0.01,
       "control_change_signal": 0,

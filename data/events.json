@@ -1,6 +1,46 @@
 {
- "updated": "2026-11-19T21:38:14.532365+00:00",
+ "updated": "2026-11-20T03:20:03.401070+00:00",
  "events": [
+  {
+   "key": "mekelle-2026-11-20-173b7d17",
+   "sources": [
+    {
+     "outlet": "Bioengineer.org",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNll1aVhNT1pVUUhrajl0Y1hJZVZRbk1oLXJCNXp3YXVtWnNxY2tHMFRfN090eDh2MVo5cDhlMkFUSFBJNEdwem9lYXB5NjVrVEtkOEl4THJia09VV20zeGFvVDRFTEFWU254RjY3OVphLTk2Vjl1QVZldVpGZ2xPc0Q4T0pFaFBFVEVNa01ZUF9lS3c2UzdQczR6UUJQREtSWjB5bHZR?oc=5",
+     "title": "Methodological Limitations Require Cautious Reading of Mekelle hr-HPV Findings - Bioengineer.org",
+     "source_type": "news",
+     "platform": "rss",
+     "author": "",
+     "published": "Thu, 19 Nov 2026 01:27:47 GMT",
+     "fingerprint": "",
+     "repost_of_fingerprint": "",
+     "credibility_score": 40,
+     "credibility_label": "LIMITED",
+     "credibility_explanation": "Publisher registry: Bioengineer.org (unassessed; confidence none). Publisher reputation is unassessed; neutral publisher baseline used, not a negative judgment. Article-level evidence extraction unavailable; neutral evidence baseline used, not a penalty. Independent reports counted after duplicate filtering: 1; corroboration contributes up to 20 points. Article credibility score: 40/100."
+    }
+   ],
+   "manual": false,
+   "place": "Mekelle",
+   "region": "",
+   "lat": 13.5,
+   "lon": 39.47,
+   "date": "2026-11-20",
+   "kind": "other",
+   "summary": "Methodological Limitations Require Cautious Reading of Mekelle hr-HPV Findings - Bioengineer.org",
+   "attribution": "independent",
+   "last_seen": "2026-11-20",
+   "translations": [],
+   "evidence": {},
+   "grade": "REPORTED",
+   "confidence": 18,
+   "source_count": 1,
+   "news_source_count": 1,
+   "source_tier": "U",
+   "best_source": "Bioengineer.org",
+   "independent_source_count": 1,
+   "high_quality_source_count": 0,
+   "evidence_explanation": "Best source: Bioengineer.org (U-tier). 1 independent source record; 0 A-tier, 0 B-tier, 0 C-tier. Limited source-level sourcing."
+  },
   {
    "key": "unknown-2026-11-19-f3f146d0",
    "sources": [
