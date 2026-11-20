@@ -2629,7 +2629,7 @@
   },
   {
     "date": "2026-11-20",
-    "generated_at": "2026-11-20T12:57:25.881267+00:00",
+    "generated_at": "2026-11-20T21:08:51.005350+00:00",
     "horizon_days": 7,
     "scenarios": [
       {
@@ -2656,7 +2656,7 @@
       },
       {
         "region": "Addis Ababa",
-        "risk_index": 26,
+        "risk_index": 28,
         "level": "WATCH"
       },
       {
@@ -2665,12 +2665,12 @@
         "level": "WATCH"
       },
       {
-        "region": "Southern Tigray",
-        "risk_index": 2,
+        "region": "Northwestern Tigray",
+        "risk_index": 4,
         "level": "WATCH"
       },
       {
-        "region": "Northwestern Tigray",
+        "region": "Southern Tigray",
         "risk_index": 2,
         "level": "WATCH"
       },
