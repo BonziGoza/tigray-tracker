@@ -5948,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 20 Nov 2026 17:30:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-21T02:19:11.113046+00:00"
  },
  {
   "title": "Ethiopia: Tensions Rise on the Border with Eritrea as Fears Grow of a New War - Sahel Intelligence",
@@ -5959,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 20 Nov 2026 11:17:52 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-21T02:19:11.113046+00:00"
  },
  {
   "title": "Tigray disarmament: caretaker says 30,000 registered fighters had no weapons to hand in - Mereja",
@@ -5970,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 20 Nov 2026 21:30:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-21T02:19:11.113046+00:00"
  },
  {
   "title": "Asgede Tsimbla surrender: Fana says more than 200 former TPLF fighters gave themselves up - Mereja",
@@ -5981,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 20 Nov 2026 23:30:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-21T02:19:11.113046+00:00"
  },
  {
   "title": "DEG-DEG Dowladaha Ethiopia Iyo Eritrea oo Dagaal Isugu Qalab qaatay & Eritrea oo Badme la Wareegtay. - YouTube",
@@ -5992,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 19 Nov 2026 02:50:08 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-21T02:19:11.113046+00:00"
  }
 ]
