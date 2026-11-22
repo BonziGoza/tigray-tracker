@@ -5984,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 22 Nov 2026 19:43:08 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-22T21:48:46.751860+00:00"
  },
  {
   "title": "Ethiopia : Critical Reflection on the “Alliance for Survival” - Borkena",
@@ -5995,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sun, 22 Nov 2026 17:14:45 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-22T21:48:46.751860+00:00"
  }
 ]
