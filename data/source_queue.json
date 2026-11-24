@@ -5912,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 05:07:06 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-24T10:58:32.847920+00:00"
  },
  {
   "title": "Amnesty International calls for an investigation into possible war crimes in Tigray - Le Temps",
@@ -5923,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 04:37:25 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-24T10:58:32.847920+00:00"
  },
  {
   "title": "Many Displaced Along Ethiopia–Eritrea Border as War Fears Grow and Aid Access Remains Restricted, Reports Say - Borkena",
@@ -5934,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 05:07:18 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-24T10:58:32.847920+00:00"
  },
  {
   "title": "The Silent Carnage: Drone Strikes on Aid Convoys and IDP Camps in Ethiopia Demand International Accountability - Borkena",
@@ -5945,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 05:34:16 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-24T10:58:32.847920+00:00"
  },
  {
   "title": "Ethiopian shelling of Tigray town should be investigated as possible war crimes, Amnesty says - Reuters",
@@ -5956,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 04:42:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-24T10:58:32.847920+00:00"
  },
  {
   "title": "Artillery strikes on Alamata civilians in Tigray region must be investigated as war crimes: Amnesty - Addis Standard",
@@ -5967,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 09:27:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-24T10:58:32.847920+00:00"
  },
  {
   "title": "Amnesty alleges possible war crimes in Ethiopia shelling - Mwanzo TV",
@@ -5978,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 08:04:54 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-24T10:58:32.847920+00:00"
  },
  {
   "title": "Eritrea president says during Ethiopia visit: 'History is being made' - Yeni Safak English",
@@ -5989,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 06:23:21 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-24T10:58:32.847920+00:00"
  }
 ]
