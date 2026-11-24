@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-23T12:50:02.383331+00:00",
+  "generated_at": "2026-11-24T00:54:42.938777+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 482,
-    "regions_with_located_evidence": 8,
+    "recent_event_records": 478,
+    "regions_with_located_evidence": 7,
     "control_change_records": 4,
     "contested_or_early_records": 0,
-    "reported_records": 482,
-    "duplicate_records_ignored": 51,
+    "reported_records": 478,
+    "duplicate_records_ignored": 43,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -33,15 +33,71 @@
   ],
   "regions": [
     {
-      "region": "Central Tigray",
+      "region": "Southern Tigray",
       "risk_index": 22,
       "level": "WATCH",
       "uncertainty": 55,
+      "event_count": 3,
+      "weighted_signal": 0.49,
+      "control_change_signal": 0,
+      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-11-24",
+          "title": "Ethiopia: Lethal artillery strikes on civilian neighbourhoods in Tigray’s Alamata city must be investigated as war crimes - Amnesty International",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Amnesty International",
+              "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPVHlHdGtkcFlkcG1DUExQVFoxVU5ydk1jbzUtTGtjeERhTHdoakktdWZNZ1phTXJFdVR5NS1zZEh4X202UnpYQ1Btc1Q2dkNadVhwY1UtOTFLTEJvRVBuOFd3X3hZc2Q1LUppRElaSUhNM0xwX3Q2TTFZdE1EU3ZjdGZyT2lRX3FuZkYweTA4SzhvbExrODNCVXA5UWxFcVY1TzRsWVc3Z1FUckduTzJIM2xzRW1JbERmNW9DczZzcU82ZFFLb0lsYlNYdEQweTFiMmUwZjFzMkR0N3Z2NHFsNzBkWkItVE1ac21ha2o4VVAwbjlvbW1EYTRuSQ?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-17",
+          "title": "High Prevalence of Gender-Based Violence Follows Armed Conflict in Southern Tigray - Bioengineer.org",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Bioengineer.org",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQM1ZSdk54RFdLdFd6cVRQYkVSVjh5NHhDYVF0M2wwcVJCQWxYZ29WeGtEbGlQWThqSGE1QVFEdmRoWXlpdmhMaGdTVkd6US1DY05TSWMtWGU3eVVHWXRIZlU3bzM1Wkd2Z21DbXJVeFhJYU1Qb1g4OVFZeV9kSFpkLWxxSkVvT0IxRUJsN0l1bTRmaEl2dG15eXlJRHlCZFhhZjZNSEZtdWZkYjQ?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-06",
+          "title": "Southern Tigray Zone, Ethiopia, Earthquakes: Latest Quakes - Volcano Discovery",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Volcano Discovery",
+              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQeFI3ekhPOHRjS3NqcTg1VXFKcnFuN091ckcwcEhRQjhhYTdWa1c3dEJjSFpIaU5zV0NjaGQwVEtDVWN5RXlsbzdQT256T2hRSnpzT1NXRldkVDFPME1RRzRONU94VVh6M1VPSzFpMUVkdkJJTEJvazRlM081UWNpa21BMXZsY0lNanoydGRHSUhHaG12bno5Qm5VNTZOeURxY0M1eEl6YVNXamdtdjZLZU1ldGZoNG9sRmJpeWNJQlU0b0NJSlVxRDVoUWMzR3F4SlZFWS1nQXNSRTBzVzhMajU1Vks1MnhnY0NQVFY0U2puZw?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Central Tigray",
+      "risk_index": 21,
+      "level": "WATCH",
+      "uncertainty": 55,
       "event_count": 17,
-      "weighted_signal": 0.93,
+      "weighted_signal": 0.96,
       "control_change_signal": 0,
       "explanation": "17 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-11-24",
+          "title": "Ver Mekelle 70 Enderta vs. Addis Ketema Online en Vivo | DAZN US - DAZN",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "DAZN",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUmRra0NCdWZZTFgyWjFIMGdSZlpPNEJ0TmREVDFBVGpjeklDb1JsMEVUbWMySTJRMWRpZmhlVVBfbGZiYzV5ZzRYVE5TX2FGTm9EaFRuVWh3QTdKZmM1NXJYYnNpdVRvLWh6enJzQXNBZ0V4c0JBWEZYZlJkR3BXaFg4djJ4VkJNeUFnYw?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-11-18",
           "title": "High-Level UN and Diplomatic Delegation Arrives in Mekelle to Assess Humanitarian Crisis and Post-Conflict Recovery - Borkena",
@@ -63,29 +119,18 @@
               "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNll1aVhNT1pVUUhrajl0Y1hJZVZRbk1oLXJCNXp3YXVtWnNxY2tHMFRfN090eDh2MVo5cDhlMkFUSFBJNEdwem9lYXB5NjVrVEtkOEl4THJia09VV20zeGFvVDRFTEFWU254RjY3OVphLTk2Vjl1QVZldVpGZ2xPc0Q4T0pFaFBFVEVNa01ZUF9lS3c2UzdQczR6UUJQREtSWjB5bHZR?oc=5"
             }
           ]
-        },
-        {
-          "date": "2026-11-20",
-          "title": "Mekelle visit: Fana says official told diplomats 830 vehicles were taken to Eritrea - Mereja",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Mereja",
-              "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9STGplbVNVVlRldXE0SW44X3BySVlYWnhZcGtDX2xBOU1uVy1MM1h4czg0ZlBVSEdFQlVQQmtnQ2dkbWhiLUE?oc=5"
-            }
-          ]
         }
       ]
     },
     {
       "region": "Addis Ababa",
-      "risk_index": 20,
+      "risk_index": 16,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 11,
-      "weighted_signal": 0.7,
+      "event_count": 10,
+      "weighted_signal": 0.58,
       "control_change_signal": 0,
-      "explanation": "11 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "10 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-17",
@@ -124,12 +169,12 @@
     },
     {
       "region": "Eritrea",
-      "risk_index": 9,
+      "risk_index": 8,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 4,
-      "weighted_signal": 0.2,
-      "control_change_signal": 0.16,
+      "weighted_signal": 0.17,
+      "control_change_signal": 0.14,
       "explanation": "4 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
@@ -172,12 +217,35 @@
       ]
     },
     {
+      "region": "Western Tigray",
+      "risk_index": 4,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 1,
+      "weighted_signal": 0.3,
+      "control_change_signal": 0,
+      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
+        {
+          "date": "2026-11-24",
+          "title": "Western Tigray: 1.2mn displaced still wait to return home - DNE Africa",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "DNE Africa",
+              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1JeHFjNHQ2Z3VZaFlIdDg3SnZjLTZ3d1JyQ2lhTExwU0Y1VGRSREV1RkluMG5UWF9EVE8yaS1jRjdRZkpIZmN3aDk5SWZOZGo3RXlCSVVzYnYtRWFyYmo5QmxKOE5qUFNGUlRzRi13Uy1WblRT?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "region": "Northwestern Tigray",
       "risk_index": 2,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 2,
-      "weighted_signal": 0.16,
+      "weighted_signal": 0.14,
       "control_change_signal": 0,
       "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -206,69 +274,12 @@
       ]
     },
     {
-      "region": "Southern Tigray",
-      "risk_index": 1,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 2,
-      "weighted_signal": 0.07,
-      "control_change_signal": 0,
-      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-11-17",
-          "title": "High Prevalence of Gender-Based Violence Follows Armed Conflict in Southern Tigray - Bioengineer.org",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Bioengineer.org",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQM1ZSdk54RFdLdFd6cVRQYkVSVjh5NHhDYVF0M2wwcVJCQWxYZ29WeGtEbGlQWThqSGE1QVFEdmRoWXlpdmhMaGdTVkd6US1DY05TSWMtWGU3eVVHWXRIZlU3bzM1Wkd2Z21DbXJVeFhJYU1Qb1g4OVFZeV9kSFpkLWxxSkVvT0IxRUJsN0l1bTRmaEl2dG15eXlJRHlCZFhhZjZNSEZtdWZkYjQ?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-11-06",
-          "title": "Southern Tigray Zone, Ethiopia, Earthquakes: Latest Quakes - Volcano Discovery",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Volcano Discovery",
-              "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQeFI3ekhPOHRjS3NqcTg1VXFKcnFuN091ckcwcEhRQjhhYTdWa1c3dEJjSFpIaU5zV0NjaGQwVEtDVWN5RXlsbzdQT256T2hRSnpzT1NXRldkVDFPME1RRzRONU94VVh6M1VPSzFpMUVkdkJJTEJvazRlM081UWNpa21BMXZsY0lNanoydGRHSUhHaG12bno5Qm5VNTZOeURxY0M1eEl6YVNXamdtdjZLZU1ldGZoNG9sRmJpeWNJQlU0b0NJSlVxRDVoUWMzR3F4SlZFWS1nQXNSRTBzVzhMajU1Vks1MnhnY0NQVFY0U2puZw?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Amhara",
-      "risk_index": 1,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 1,
-      "weighted_signal": 0.01,
-      "control_change_signal": 0,
-      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-11-02",
-          "title": "Sudan files complaints against Ethiopia with UN over deadly drone spree",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "aljazeera.com",
-              "url": "https://www.aljazeera.com/news/2026/11/2/sudan-files-complaints-against-ethiopia-with-un-over-deadly-drone-spree?traffic_source=rss"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "region": "Northern Tigray",
       "risk_index": 0,
       "level": "WATCH",
       "uncertainty": 55,
       "event_count": 1,
-      "weighted_signal": 0.02,
+      "weighted_signal": 0.01,
       "control_change_signal": 0,
       "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
@@ -280,29 +291,6 @@
             {
               "outlet": "GhanaWeb",
               "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdTBsTzBYQlNDdjhmVHlXVXhCSUJhMmRqTXBwMzVXY19GRkpnb3k4OUpKV1U0VE5VNkVIWW9KazN5NTg3bFdibEhVRDNDeXdoVEpielYybHpzYnlMVUFzeFlNblppeXo1MzhXZFFfQmduQ0pUN2xKWEJKNXFxOWhfSlBDcXYtTjdCV0VCWkpFbHBGMkhjV3c3S21LVHB6dWtwNWpCSDdzTm5BaWVpS2RFM1kzQXdZS2FLdEduTmVSTnBLY0lLb003VVZkR0w4dw?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Eastern Tigray",
-      "risk_index": 0,
-      "level": "WATCH",
-      "uncertainty": 26,
-      "event_count": 1,
-      "weighted_signal": 0.0,
-      "control_change_signal": 0,
-      "explanation": "1 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-11-02",
-          "title": "Adigrat University Welcomes Returning and Newly Admitted Students as Academic Activities Resume Across Tigray Region - Fana Media Corporation S.C",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Fana Media Corporation S.C",
-              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUVJwMl8ySF9YSkFTdUJwUzNIeGdMLWRpOEVzYUs5SEtueHZkVGg1Y0FpLUpTQ0RIbGw5OXo4YUVZN0RTS3pYdWx2SDFfd0Y5bUdFTG9PQ1ZtWUlaVF95ZkFmNmFRUnNJbU94SG9XeEpkMnpEOUdDNnpRSy1yYVBOWDhPQlFRVW13WjdGc3B6eDhyQ2xUVXVRZC1raWNIelUyckk3QUJwY1dVZnJRVzlvSGw2RnpoOUxrYk9UaWRsSmxDTW95QVlZemgzVjgyZzdDczd5VnF6WkFCVFMzTlAySmlQbHdLelU?oc=5"
             }
           ]
         }
