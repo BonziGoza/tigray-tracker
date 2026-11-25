@@ -5948,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 17:00:25 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-25T04:16:49.959964+00:00"
  },
  {
   "title": "Analysts Urge Unified African Union Lead on Ethiopia–Eritrea Tensions, Cite Lessons from Past Accords - Borkena",
@@ -5959,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 22:06:15 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-25T04:16:49.959964+00:00"
  },
  {
   "title": "Ethiopia-Eritrea, Acled: Ethiopian forces regain control of border areas near Badme - Agenzia Nova",
@@ -5970,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 17:00:21 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-25T04:16:49.959964+00:00"
  },
  {
   "title": "Amnesty calls for probe into possible war crimes in Ethiopia's Tigray - Africanews",
@@ -5981,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 14:09:13 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-25T04:16:49.959964+00:00"
  },
  {
   "title": "Amnesty urges independent probe into civilian killings in northern Ethiopia - APAnews - Agence de Presse Africaine",
@@ -5992,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 25 Nov 2026 00:10:07 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-25T04:16:49.959964+00:00"
  }
 ]
