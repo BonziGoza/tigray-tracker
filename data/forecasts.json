@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-25T14:35:17.292925+00:00",
+  "generated_at": "2026-11-25T23:39:48.186256+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 490,
+    "recent_event_records": 494,
     "regions_with_located_evidence": 8,
     "control_change_records": 5,
     "contested_or_early_records": 0,
-    "reported_records": 490,
-    "duplicate_records_ignored": 44,
+    "reported_records": 494,
+    "duplicate_records_ignored": 47,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 43,
+      "weight": 44,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
@@ -27,21 +27,32 @@
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 13,
+      "weight": 12,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
   "regions": [
     {
       "region": "Southern Tigray",
-      "risk_index": 58,
+      "risk_index": 61,
       "level": "GUARDED",
       "uncertainty": 55,
       "event_count": 6,
-      "weighted_signal": 1.57,
+      "weighted_signal": 1.7,
       "control_change_signal": 0,
       "explanation": "6 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
+        {
+          "date": "2026-11-25",
+          "title": "Ethiopia: Lethal Artillery Strikes On Civilian Neighbourhoods in Tigray's Alamata City Must Be Investigated As War Crimes - allAfrica.com",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "allAfrica.com",
+              "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE91cThQcmgweERxUkNOWE54Z3VwUV9yVGROTll6UG9STVlKdU0zdVFTaTFaaFVEZ3Y4cTVBcUl3R09hUENBY05jcmNjd09CWWR0TDdIVkJzQ09PV1k?oc=5"
+            }
+          ]
+        },
         {
           "date": "2026-11-24",
           "title": "Artillery strikes on Alamata civilians in Tigray region must be investigated as war crimes: Amnesty - Addis Standard",
@@ -50,17 +61,6 @@
             {
               "outlet": "Addis Standard",
               "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZUh5Rm9mNEk1MEtEYzRET0ZkTkxRc3RkcS1GcVR1cjhfa0JXeW95Xzg0SkF0TWFoTFpfZXBuVlB2dW9TTFpNSGJDb2hqSXc4TGxWZDE3N1l4ckctMDYwNjF6Q1hUaXRKLUZURXpXeWVvcTRJYVhVQ05Vc3laYzJYNEgtRUdqczV4S0NJaEtPYzE0clVtTm1OSnpvSWdrOEoxRDhHQ0JBTTBjYXBFTEhUS3VtTW5pRW04TTdLZGxIcG5wMlE?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-11-24",
-          "title": "Ethiopia: Lethal artillery strikes on civilian neighbourhoods in Tigray’s Alamata city must be investigated as war crimes - Amnesty International",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Amnesty International",
-              "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPVHlHdGtkcFlkcG1DUExQVFoxVU5ydk1jbzUtTGtjeERhTHdoakktdWZNZ1phTXJFdVR5NS1zZEh4X202UnpYQ1Btc1Q2dkNadVhwY1UtOTFLTEJvRVBuOFd3X3hZc2Q1LUppRElaSUhNM0xwX3Q2TTFZdE1EU3ZjdGZyT2lRX3FuZkYweTA4SzhvbExrODNCVXA5UWxFcVY1TzRsWVc3Z1FUckduTzJIM2xzRW1JbERmNW9DczZzcU82ZFFLb0lsYlNYdEQweTFiMmUwZjFzMkR0N3Z2NHFsNzBkWkItVE1ac21ha2o4VVAwbjlvbW1EYTRuSQ?oc=5"
             }
           ]
         },
