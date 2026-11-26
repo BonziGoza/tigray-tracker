@@ -5936,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 26 Nov 2026 00:33:49 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-26T08:23:39.269415+00:00"
  },
  {
   "title": "News: Two MPs raise alarm over civilian killings, displacement and insecurity in #Ethiopia during Abiy’s parliamentary appearance MP Aweke identified several affected areas, including parts of the Amhara region; Wollega, Arsi and Moyale in Oromia; Sodo an - Facebook",
@@ -5947,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 26 Nov 2026 08:01:45 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-26T08:23:39.269415+00:00"
  },
  {
   "title": "Ethiopian shelling of Tigray town should be investigated as possible war crimes, Amnesty says - CNBC Africa",
@@ -5958,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Tue, 24 Nov 2026 09:14:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-26T08:23:39.269415+00:00"
  },
  {
   "title": "Ethiopian shelling of Tigray town should be investigated as possible war crimes - The Citizen",
@@ -5969,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Wed, 25 Nov 2026 08:13:43 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-26T08:23:39.269415+00:00"
  },
  {
   "title": "News: MP urges permanent ‘treason law’ targeting Ethiopians accused of collaborating with Egypt - Addis Standard",
@@ -5980,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 26 Nov 2026 08:18:05 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-26T08:23:39.269415+00:00"
  },
  {
   "title": "Daily_Brief: Abiy receiving #MPs’ questions during #Ethiopia’s 7th Parliament regular session - Addis Standard",
@@ -5991,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 26 Nov 2026 06:35:25 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-26T08:23:39.269415+00:00"
  }
 ]
