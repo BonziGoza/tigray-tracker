@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-11-26T08:23:39.511170+00:00",
+  "generated_at": "2026-11-26T19:03:20.827393+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 448,
+    "recent_event_records": 464,
     "regions_with_located_evidence": 8,
     "control_change_records": 5,
     "contested_or_early_records": 0,
-    "reported_records": 448,
-    "duplicate_records_ignored": 47,
+    "reported_records": 464,
+    "duplicate_records_ignored": 49,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
     {
       "name": "Continued localized conflict and shifting control",
-      "weight": 44,
+      "weight": 43,
       "rationale": "Recent clash, strike, and control-change reporting supports continued instability as a plausible scenario; this does not predict a specific operation or outcome."
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 44,
+      "weight": 45,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
@@ -79,13 +79,13 @@
     },
     {
       "region": "Central Tigray",
-      "risk_index": 32,
+      "risk_index": 34,
       "level": "WATCH",
       "uncertainty": 55,
-      "event_count": 17,
-      "weighted_signal": 1.17,
+      "event_count": 18,
+      "weighted_signal": 1.34,
       "control_change_signal": 0,
-      "explanation": "17 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "explanation": "18 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
       "examples": [
         {
           "date": "2026-11-25",
@@ -99,6 +99,17 @@
           ]
         },
         {
+          "date": "2026-11-26",
+          "title": "Abiy Warns Ethiopia’s Adversaries: ‘Adwa Will Be Repeated, Do Not Test Us’ - ChimpReports",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "ChimpReports",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQLS1xSllGUG9DYndycDgxMUFzbUxjZ0FObzQ5RENiYXh2UkRiLXg5Zm1VYWJiRDUwdGl4ckhWUmRYeWZDZG5lckhnQks0YUNCMzVfUlNhNS1jT1UyZVVhY3hfby1HU205cm1adC1yWVNzd0RBeTJRNzVzbDBwOEc0cGZpcUFXQzF5dVJ6amFPdnJoSDZlZTBObWw4VQ?oc=5"
+            }
+          ]
+        },
+        {
           "date": "2026-11-24",
           "title": "Ver Mekelle 70 Enderta vs. Addis Ketema Online en Vivo | DAZN US - DAZN",
           "grade": "REPORTED",
@@ -108,15 +119,49 @@
               "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUmRra0NCdWZZTFgyWjFIMGdSZlpPNEJ0TmREVDFBVGpjeklDb1JsMEVUbWMySTJRMWRpZmhlVVBfbGZiYzV5ZzRYVE5TX2FGTm9EaFRuVWh3QTdKZmM1NXJYYnNpdVRvLWh6enJzQXNBZ0V4c0JBWEZYZlJkR3BXaFg4djJ4VkJNeUFnYw?oc=5"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "region": "Northwestern Tigray",
+      "risk_index": 23,
+      "level": "WATCH",
+      "uncertainty": 55,
+      "event_count": 3,
+      "weighted_signal": 0.53,
+      "control_change_signal": 0,
+      "explanation": "3 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
+      "examples": [
         {
-          "date": "2026-11-24",
-          "title": "Tigray war wounded: Ayder hospital in Mekelle treats drone and explosive injuries, surgeon says - Mereja",
+          "date": "2026-11-26",
+          "title": "Shire killings: convict freed during Tigray fighting is suspected of killing five women, police say - Mereja",
           "grade": "REPORTED",
           "sources": [
             {
               "outlet": "Mereja",
-              "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5lZ2lOdjJVNGNkSW9FMnNUNFloUENpaXlaSEExZjdNSW1uUnJnR1BLdlJqQTByRWRBYlVkdVBKNDhzbVJzSnc?oc=5"
+              "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFB2a2JWY1l2dE5ja3NaUDFQUDQ0YUNjYTdGQVJvZ3dYLW8wN19rQ29HclgtWWFqeTktU21MR0JJUmtpTWNHSmc?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-20",
+          "title": "Ethiopian state media reports that over 200 Tigrayan fighters have surrendered to the army in northwestern Tigray. - Agenzia Nova",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Agenzia Nova",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTXpYTDN1aS1PakltVWR0SHpSUUY4WlpGQXFmbld1VzJ0aE1MSHpzLW5KWWdvR3ZCM1ZLRUdabkFwSUhId3FVQ1VleUFKbzhuZldTaHFrcS1IaDNadEprOVlGeHJPS09MRks0cC14VmloMk1OdmRTUlQ1MkE3WDQ4Y3liTi00UWxFdXBKNDIwYjFqelRVenhsNFhMLXdOODE0MEN0WXdaQjBJYU5VZ1VTdUh2TFZaYW5OQW9Kd3pva011bUczSFY3Q25IcklQMmFubzBfTnBGT1dpQ1U?oc=5"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-17",
+          "title": "Ethiopian Airlines to Resume Shire Flights After Nearly Two-Month Suspension Amid Tigray Tensions - Birr Metrics",
+          "grade": "REPORTED",
+          "sources": [
+            {
+              "outlet": "Birr Metrics",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE54a0NUVjVlakxIcTBkYi1QRlhVNEs1bkg4REl1NEIwNFRRVExZcjVURVRlVEN1YWVIRnV1S2txejRuU09vZ0lXYkJ3S1RaSHAxdjRrSDJ5NXRiVl9RQW9DeFExU2NUbGpJSnpxYW1YWjFSUVN0THc?oc=5"
             }
           ]
         }
@@ -257,40 +302,6 @@
             {
               "outlet": "Bioengineer.org",
               "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNY2ZxUWxFMllIUUdOZ2lEdXprUUVKYWZPM0NQbk92YkwxNlZFRWUxajh3NE5YakxucnFjdVJYNXBnS0IyVThhcFpPX0dMMXBBbDQyMGpNTUZvdVRSbldXY050WWdEV1Qtd1lQQ1NyTmwwNkxYa1VrNmk0azl3VEVjcHJjZzBhRTRfS0hGbzN2M21xenUzY19yTzc4YVBmVHRTb19nSjVjRXBLSXJsWHFYajVFT2o1dw?oc=5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "region": "Northwestern Tigray",
-      "risk_index": 1,
-      "level": "WATCH",
-      "uncertainty": 55,
-      "event_count": 2,
-      "weighted_signal": 0.1,
-      "control_change_signal": 0,
-      "explanation": "2 recent event records weighted by recency, event type, existing evidence grade, and article credibility. 0 records are claim/developing-grade; source uncertainty is material.",
-      "examples": [
-        {
-          "date": "2026-11-20",
-          "title": "Ethiopian state media reports that over 200 Tigrayan fighters have surrendered to the army in northwestern Tigray. - Agenzia Nova",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Agenzia Nova",
-              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTXpYTDN1aS1PakltVWR0SHpSUUY4WlpGQXFmbld1VzJ0aE1MSHpzLW5KWWdvR3ZCM1ZLRUdabkFwSUhId3FVQ1VleUFKbzhuZldTaHFrcS1IaDNadEprOVlGeHJPS09MRks0cC14VmloMk1OdmRTUlQ1MkE3WDQ4Y3liTi00UWxFdXBKNDIwYjFqelRVenhsNFhMLXdOODE0MEN0WXdaQjBJYU5VZ1VTdUh2TFZaYW5OQW9Kd3pva011bUczSFY3Q25IcklQMmFubzBfTnBGT1dpQ1U?oc=5"
-            }
-          ]
-        },
-        {
-          "date": "2026-11-17",
-          "title": "Ethiopian Airlines to Resume Shire Flights After Nearly Two-Month Suspension Amid Tigray Tensions - Birr Metrics",
-          "grade": "REPORTED",
-          "sources": [
-            {
-              "outlet": "Birr Metrics",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE54a0NUVjVlakxIcTBkYi1QRlhVNEs1bkg4REl1NEIwNFRRVExZcjVURVRlVEN1YWVIRnV1S2txejRuU09vZ0lXYkJ3S1RaSHAxdjRrSDJ5NXRiVl9RQW9DeFExU2NUbGpJSnpxYW1YWjFSUVN0THc?oc=5"
             }
           ]
         }
