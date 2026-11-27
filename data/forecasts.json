@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-27T02:13:02.125767+00:00",
+  "generated_at": "2026-11-27T10:55:16.467673+00:00",
   "horizon_days": 7,
   "lookback_days": 21,
   "method": "experimental_heuristic_v1",
   "status": "EXPERIMENTAL — NOT CALIBRATED",
   "disclaimer": "Relative scenario weights and regional indicators, not validated probabilities, predictions of specific territorial outcomes, or operational intelligence. Coverage gaps, censorship, access restrictions, duplicated reports, and disputed claims can distort the signal. No event is inferred from an absent report.",
   "summary": {
-    "recent_event_records": 440,
+    "recent_event_records": 450,
     "regions_with_located_evidence": 8,
     "control_change_records": 4,
     "contested_or_early_records": 0,
-    "reported_records": 440,
-    "duplicate_records_ignored": 47,
+    "reported_records": 450,
+    "duplicate_records_ignored": 48,
     "overall_evidence_uncertainty": 55
   },
   "scenarios": [
@@ -22,12 +22,12 @@
     },
     {
       "name": "Wider cross-border escalation",
-      "weight": 45,
+      "weight": 46,
       "rationale": "Cross-border and diplomatic signals appear in recent reporting. Claims can be disputed and do not establish intent."
     },
     {
       "name": "Relative stabilization or a temporary pause",
-      "weight": 13,
+      "weight": 12,
       "rationale": "A pause remains plausible, but recent reports alone cannot establish a durable ceasefire or political settlement."
     }
   ],
