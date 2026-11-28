@@ -5900,7 +5900,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 27 Nov 2026 12:31:50 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T11:51:31.697410+00:00"
  },
  {
   "title": "ERITREA: Eritrean Bishops Implore Global Leaders to Shoulder “Inescapable Responsibility” for Horn of Africa Crisis - AMECEA",
@@ -5911,7 +5912,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 27 Nov 2026 18:59:42 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T11:51:31.697410+00:00"
  },
  {
   "title": "Remarks by Minister Yemane G/meskel at the 2026 UN Country Team Retreat – Eritrea Ministry Of Information - Eritrea Ministry Of Information",
@@ -5922,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 26 Nov 2026 13:48:25 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T11:51:31.697410+00:00"
  },
  {
   "title": "Fighting intensifies near Eritrean border between federal forces & Tigrayan troops - Ethiopia Observer",
@@ -5933,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 28 Nov 2026 10:11:46 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T11:51:31.697410+00:00"
  },
  {
   "title": "PM Abiy Reviews Tigray Region Recovery Progress, Reaffirms Priorities with Caretaker Administration - ENA English",
@@ -5944,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 28 Nov 2026 10:23:47 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T11:51:31.697410+00:00"
  },
  {
   "title": "Ethiopia: Tigrayans accuse Amhara militias of ‘colonisation’ - The Africa Report",
@@ -5955,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 27 Nov 2026 09:05:28 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T11:51:31.697410+00:00"
  },
  {
   "title": "Ethiopia: 'Stop Arming Ethiopia's Enemies' - Abiy Tells Eritrea, Says Addis Abeba Seeks Red Sea Access Through Dialogue - allAfrica.com",
@@ -5966,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 27 Nov 2026 05:17:25 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T11:51:31.697410+00:00"
  },
  {
   "title": "Ministirri Muummee Dr. Abiyyi Ahimad Bulchiinsa Amaanaa Tigray waliin raawwii hojii gamaaggaman - ENA English",
@@ -5977,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 28 Nov 2026 07:57:10 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T11:51:31.697410+00:00"
  },
  {
   "title": "Daily_Brief: #European Parliament demands release of #Dawit_Isaak after 25 years of detention in #Eritrea - Addis Standard",
@@ -5988,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Sat, 28 Nov 2026 06:56:07 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T11:51:31.697410+00:00"
  }
 ]
