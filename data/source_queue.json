@@ -5924,7 +5924,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 27 Nov 2026 20:02:40 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T02:44:06.929957+00:00"
  },
  {
   "title": "Philly Group Supports Tigrayan Refugee Family Stuck in Egypt - Hoodline",
@@ -5935,7 +5936,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 27 Nov 2026 22:07:36 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T02:44:06.929957+00:00"
  },
  {
   "title": "Eritrean FM warns against using force for maritime access at Cairo meeting with European diplomats - Egypt Today",
@@ -5946,7 +5948,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 27 Nov 2026 06:59:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T02:44:06.929957+00:00"
  },
  {
   "title": "NCEW Trains Union Leaders in the Central Region – Eritrea Ministry Of Information - Eritrea Ministry Of Information",
@@ -5957,7 +5960,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 26 Nov 2026 07:25:09 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T02:44:06.929957+00:00"
  },
  {
   "title": "The Day in Parliament! Abiy and Eritrea, Where To...? Peace and War; Illness and Insult - Mereja",
@@ -5968,7 +5972,8 @@
   "platform": "rss",
   "author": "",
   "published": "Thu, 26 Nov 2026 08:00:00 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T02:44:06.929957+00:00"
  },
  {
   "title": "Itiyoppiyak Agat Dooroh Borxi Tigray Rakaakayal Dooroh Abnisso Wagittaamal Wagittah Tan Dagortillih Walal Gexsem - ENA English",
@@ -5979,7 +5984,8 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 27 Nov 2026 20:16:43 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T02:44:06.929957+00:00"
  },
  {
   "title": "Eritrea Accuses Ethiopia of Using Maritime Diplomacy to 'Camouflage Its Irredentist Ambitions' - allAfrica.com",
@@ -5990,6 +5996,7 @@
   "platform": "rss",
   "author": "",
   "published": "Fri, 27 Nov 2026 10:45:38 GMT",
-  "processed": false
+  "processed": true,
+  "processed_at": "2026-11-28T02:44:06.929957+00:00"
  }
 ]
